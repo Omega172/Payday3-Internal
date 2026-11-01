@@ -16,6 +16,7 @@
 #include <array>
 #include <cmath>
 #include <deque>
+#include <mutex>
 #include <format>
 #include <span>
 #include <utility>
@@ -33,6 +34,45 @@ namespace OmegaWare::Menu
 		std::string s_strName;
 		std::string s_strPendingDelete;
 		std::deque<float> s_aFrameTimes;
+		float s_flBucketTime = 0.f;
+		int s_iBucketCount = 0;
+		constexpr float kMinFrameSample = .004f;
+		constexpr std::size_t kFrameLabelSamples = 30;
+
+		bool& ConsolePinned()
+		{
+			static bool& s_rPinned = Config::Add("menu.console_pinned", false);
+			return s_rPinned;
+		}
+
+		bool& PerformancePinned()
+		{
+			static bool& s_rPinned = Config::Add("menu.performance_pinned", false);
+			return s_rPinned;
+		}
+
+		constexpr int kDefaultOpacity = 75;
+
+		int& ConsoleOpacity()
+		{
+			static int& s_rOpacity = Config::Add("menu.console_opacity", kDefaultOpacity);
+			s_rOpacity = std::clamp(s_rOpacity, 10, 100);
+			return s_rOpacity;
+		}
+
+		int& PerformanceOpacity()
+		{
+			static int& s_rOpacity = Config::Add("menu.performance_opacity", kDefaultOpacity);
+			s_rOpacity = std::clamp(s_rOpacity, 10, 100);
+			return s_rOpacity;
+		}
+
+		int& WatermarkOpacity()
+		{
+			static int& s_rOpacity = Config::Add("menu.watermark_opacity", kDefaultOpacity);
+			s_rOpacity = std::clamp(s_rOpacity, 10, 100);
+			return s_rOpacity;
+		}
 		bool s_bOpenAbout = false;
 
 		struct stViewState
@@ -125,11 +165,47 @@ namespace OmegaWare::Menu
 			OmegaGUI::Spacing();
 		}
 
+		struct stPluginTheme
+		{
+			std::string strName;
+			FnPluginThemeApply pfnApply = nullptr;
+		};
+
+		std::mutex s_mtxPluginThemes;
+		std::vector<stPluginTheme> s_aPluginThemes;
+
+		std::string& PluginThemeName()
+		{
+			static std::string& s_rName = Config::Add("menu.theme_plugin", std::string());
+			return s_rName;
+		}
+
+		bool ApplyPluginTheme()
+		{
+			FnPluginThemeApply pfnApply = nullptr;
+			{
+				std::scoped_lock lckThemes(s_mtxPluginThemes);
+				const std::string& rName = PluginThemeName();
+				const auto itTheme = rName.empty() ? s_aPluginThemes.end() : std::ranges::find(s_aPluginThemes, rName, &stPluginTheme::strName);
+				if (itTheme == s_aPluginThemes.end())
+					return false;
+				pfnApply = itTheme->pfnApply;
+			}
+			OmegaGUI::GetStyle().aColors = OmegaGUI::stStyle::Console().aColors;
+			pfnApply(OmegaGUI::GetDeltaTime());
+			return true;
+		}
+
 		void ApplyTheme()
 		{
 			static int s_iApplied = -1;
 			int& rTheme = *View().pTheme;
 			rTheme = std::clamp(rTheme, 0, 2);
+			if (ApplyPluginTheme())
+			{
+				s_iApplied = -2;
+				return;
+			}
 			if (rTheme == s_iApplied)
 				return;
 			s_iApplied = rTheme;
@@ -160,8 +236,28 @@ namespace OmegaWare::Menu
 				s_rScale = std::clamp(s_rScale, 0, static_cast<int>(kScales.size()) - 1);
 				OmegaGUI::Combo("menu.ui_scale"_l, &s_rScale, aScaleNames);
 
-				const std::array<std::string_view, 3> aThemes = { "menu.theme_console"_t, "menu.theme_amber"_t, "menu.theme_phosphor"_t };
-				OmegaGUI::Combo("menu.theme"_l, View().pTheme, aThemes);
+				std::vector<std::string> aPluginThemeNames;
+				{
+					std::scoped_lock lckThemes(s_mtxPluginThemes);
+					for (const stPluginTheme& rTheme : s_aPluginThemes)
+						aPluginThemeNames.push_back(rTheme.strName);
+				}
+				std::vector<std::string_view> aThemes = { "menu.theme_console"_t, "menu.theme_amber"_t, "menu.theme_phosphor"_t };
+				for (const std::string& rName : aPluginThemeNames)
+					aThemes.push_back(rName);
+				int iTheme = *View().pTheme;
+				if (const auto itName = std::ranges::find(aPluginThemeNames, PluginThemeName()); itName != aPluginThemeNames.end())
+					iTheme = 3 + static_cast<int>(itName - aPluginThemeNames.begin());
+				if (OmegaGUI::Combo("menu.theme"_l, &iTheme, aThemes))
+				{
+					if (iTheme < 3)
+					{
+						*View().pTheme = iTheme;
+						PluginThemeName().clear();
+					}
+					else
+						PluginThemeName() = aPluginThemeNames[static_cast<std::size_t>(iTheme - 3)];
+				}
 				OmegaGUI::EndSection();
 			}
 			if (OmegaGUI::BeginSection("menu.section_keys"_l))
@@ -183,6 +279,22 @@ namespace OmegaWare::Menu
 					Console::Toggle();
 				if (WideButton("menu.open_folder"_l))
 					OpenDataFolder();
+				OmegaGUI::EndSection();
+			}
+			if (OmegaGUI::BeginSection("menu.section_windows"_l))
+			{
+				auto fnWindowRow = [&](const std::string& strName, std::string_view strLabel, int* pOpacity, bool* pPinned) {
+					OmegaGUI::TextMuted(strLabel);
+					OmegaGUI::SliderInt(std::format("{}###window.opacity.{}", OmegaLocalization::Get("menu.window_opacity"), strName), pOpacity, 10, 100, "{}%");
+					OmegaGUI::Checkbox(std::format("{}###window.pinned.{}", OmegaLocalization::Get("menu.window_pinned"), strName), pPinned);
+					OmegaGUI::Spacing();
+				};
+				fnWindowRow("console", "menu.console"_t, &ConsoleOpacity(), &ConsolePinned());
+				fnWindowRow("performance", "menu.performance"_t, &PerformanceOpacity(), &PerformancePinned());
+				OmegaGUI::TextMuted("menu.watermark"_t);
+				OmegaGUI::SliderInt(std::format("{}###window.opacity.watermark", OmegaLocalization::Get("menu.window_opacity")), &WatermarkOpacity(), 10, 100, "{}%");
+				OmegaGUI::Spacing();
+				OmegaGUI::TextDisabled("menu.windows_hint"_t);
 				OmegaGUI::EndSection();
 			}
 			OmegaGUI::EndColumns();
@@ -429,10 +541,11 @@ namespace OmegaWare::Menu
 			const OmegaGUI::vec2 vecMax = vecMin + vecText + vecPadding * 2.f + OmegaGUI::vec2{ vecPrompt.x, 0.f };
 
 			OmegaGUI::clDrawList& rList = OmegaGUI::GetBackgroundDrawList();
-			rList.AddShadowRect(vecMin, vecMax, rStyle.Get(OmegaGUI::EColor::Shadow), 16.f * flScale, rStyle.flRoundingSmall, { 0.f, 4.f * flScale });
-			rList.AddRectFilled(vecMin, vecMax, rStyle.Get(OmegaGUI::EColor::Surface).WithAlpha(235), rStyle.flRoundingSmall);
-			rList.AddRect(vecMin, vecMax, rStyle.Get(OmegaGUI::EColor::Border), rStyle.flRoundingSmall);
-			rList.AddRectFilled(vecMin, { vecMax.x, vecMin.y + 2.f }, rStyle.Get(OmegaGUI::EColor::Accent), rStyle.flRoundingSmall, OmegaGUI::ECorner::Top);
+			const float flOpacity = static_cast<float>(WatermarkOpacity()) / 100.f;
+			rList.AddShadowRect(vecMin, vecMax, rStyle.Get(OmegaGUI::EColor::Shadow).MultiplyAlpha(flOpacity), 16.f * flScale, rStyle.flRoundingSmall, { 0.f, 4.f * flScale });
+			rList.AddRectFilled(vecMin, vecMax, rStyle.Get(OmegaGUI::EColor::Surface).WithAlpha(235).MultiplyAlpha(flOpacity), rStyle.flRoundingSmall);
+			rList.AddRect(vecMin, vecMax, rStyle.Get(OmegaGUI::EColor::Border).MultiplyAlpha(flOpacity), rStyle.flRoundingSmall);
+			rList.AddRectFilled(vecMin, { vecMax.x, vecMin.y + 2.f }, rStyle.Get(OmegaGUI::EColor::Accent).MultiplyAlpha(flOpacity), rStyle.flRoundingSmall, OmegaGUI::ECorner::Top);
 			rList.AddText(vecMin + vecPadding, rStyle.Get(OmegaGUI::EColor::Accent), "> ");
 			rList.AddText(vecMin + vecPadding + OmegaGUI::vec2{ vecPrompt.x, 0.f }, rStyle.Get(OmegaGUI::EColor::Text), strWatermark);
 		}
@@ -445,17 +558,38 @@ namespace OmegaWare::Menu
 			const float flScale = OmegaGUI::GetConfig().flScale;
 			OmegaGUI::SetNextWindowPos({ OmegaGUI::GetDisplaySize().x - 340.f * flScale, 80.f * flScale });
 			OmegaGUI::SetNextWindowSize(OmegaGUI::vec2{ 300.f, 210.f } * flScale);
-			if (OmegaGUI::Begin(std::format("{}###menu.perf", "menu.performance"_t), &rOpen))
+			OmegaGUI::SetNextWindowOpacity(static_cast<float>(PerformanceOpacity()) / 100.f);
+			if (OmegaGUI::Begin(std::format("{}###menu.perf", "menu.performance"_t), &rOpen, PerformancePinned() ? OmegaGUI::EWindowFlags::AlwaysVisible : OmegaGUI::EWindowFlags::None))
 			{
 				std::vector<float> aValues(s_aFrameTimes.begin(), s_aFrameTimes.end());
 				for (float& rValue : aValues)
 					rValue *= 1000.f;
-				OmegaGUI::LabelText("menu.perf_frame"_t, std::format("{:.2f} ms", aValues.empty() ? 0.f : aValues.back()));
+				const std::size_t uLabelSamples = std::min(aValues.size(), kFrameLabelSamples);
+				float flLabelTime = 0.f;
+				for (std::size_t uSample = aValues.size() - uLabelSamples; uSample < aValues.size(); ++uSample)
+					flLabelTime += aValues[uSample];
+				OmegaGUI::LabelText("menu.perf_frame"_t, std::format("{:.2f} ms", uLabelSamples ? flLabelTime / static_cast<float>(uLabelSamples) : 0.f));
 				OmegaGUI::LabelText("menu.perf_backend"_t, strBackend);
 				OmegaGUI::PlotLines("##frametimes", aValues, 0.f, 0.f, { 0.f, -1.f });
 			}
 			OmegaGUI::End();
 		}
+	}
+
+	void RegisterPluginTheme(std::string_view strName, FnPluginThemeApply pfnApply)
+	{
+		std::scoped_lock lckThemes(s_mtxPluginThemes);
+		auto itTheme = std::ranges::find(s_aPluginThemes, strName, &stPluginTheme::strName);
+		if (itTheme == s_aPluginThemes.end())
+			s_aPluginThemes.push_back({ std::string(strName), pfnApply });
+		else
+			itTheme->pfnApply = pfnApply;
+	}
+
+	void UnregisterPluginTheme(std::string_view strName)
+	{
+		std::scoped_lock lckThemes(s_mtxPluginThemes);
+		std::erase_if(s_aPluginThemes, [&](const stPluginTheme& rTheme) { return rTheme.strName == strName; });
 	}
 
 	void Initialize()
@@ -473,7 +607,14 @@ namespace OmegaWare::Menu
 		ApplyLanguage();
 		ApplyTheme();
 
-		s_aFrameTimes.push_back(OmegaGUI::GetDeltaTime());
+		s_flBucketTime += OmegaGUI::GetDeltaTime();
+		++s_iBucketCount;
+		if (s_flBucketTime >= kMinFrameSample)
+		{
+			s_aFrameTimes.push_back(s_flBucketTime / static_cast<float>(s_iBucketCount));
+			s_flBucketTime = 0.f;
+			s_iBucketCount = 0;
+		}
 		while (s_aFrameTimes.size() > 120)
 			s_aFrameTimes.pop_front();
 
@@ -486,7 +627,7 @@ namespace OmegaWare::Menu
 		const OmegaGUI::ECondition eCondition = bScaleChanged ? OmegaGUI::ECondition::Always : OmegaGUI::ECondition::FirstUse;
 		OmegaGUI::SetNextWindowPos(OmegaGUI::vec2{ 80.f, 80.f } * flScale, eCondition);
 		OmegaGUI::SetNextWindowSize(OmegaGUI::vec2{ 780.f, 540.f } * flScale, eCondition);
-		if (OmegaGUI::Begin(kTitle, nullptr, OmegaGUI::EWindowFlags::MenuBar | OmegaGUI::EWindowFlags::CloseHidesMenu))
+		if (OmegaGUI::Begin(kTitle, nullptr, OmegaGUI::EWindowFlags::MenuBar | OmegaGUI::EWindowFlags::CloseHidesMenu | OmegaGUI::EWindowFlags::NoScrollbar | OmegaGUI::EWindowFlags::NoScrollWithMouse))
 		{
 			DrawMenuBar();
 			if (OmegaGUI::BeginTabBar("##pages", OmegaGUI::ETabBarFlags::Vertical))

@@ -7,6 +7,7 @@
 
 #include <algorithm>
 #include <array>
+#include <atomic>
 #include <cctype>
 #include <mutex>
 #include <unordered_map>
@@ -46,7 +47,7 @@ namespace OmegaWare::Payday3
 
 		constexpr stItemInfo kNoItem{};
 
-		constexpr std::array<stItemLookup, 35> g_aItemLookup = { {
+		constexpr std::array<stItemLookup, 45> g_aItemLookup = { {
 			{ "carriedredkeycard", { "Red Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carriedbluekeycard", { "Blue Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carried", kNoItem },
@@ -82,9 +83,19 @@ namespace OmegaWare::Payday3
 			{ "meth_hydrogenchloride", { "Hydrogen Chloride", EItemType::HydrogenChloride, EItemCategory::KeyItem } },
 			{ "meth_muriaticacid", { "Muriatic Acid", EItemType::MuriaticAcid, EItemCategory::KeyItem } },
 			{ "meth_causticsoda", { "Caustic Soda", EItemType::CausticSoda, EItemCategory::KeyItem } },
+			{ "ghost", kNoItem },
+			{ "destroyed", kNoItem },
+			{ "preview", kNoItem },
+			{ "firstaidpack", { "Medkit (small)", EItemType::MedkitSmall, EItemCategory::Supply } },
+			{ "doctorbag", { "Medkit (large)", EItemType::MedkitLarge, EItemCategory::Supply } },
+			{ "armorrepairkit", { "Armor", EItemType::Armor, EItemCategory::Supply } },
+			{ "armorbag", { "Armor", EItemType::Armor, EItemCategory::Supply } },
+			{ "ammopickup", { "Ammo", EItemType::Ammo, EItemCategory::Supply } },
+			{ "ammopack", { "Ammo", EItemType::Ammo, EItemCategory::Supply } },
+			{ "ammobag", { "Ammo", EItemType::Ammo, EItemCategory::Supply } },
 		} };
 
-		constexpr std::array<stEnemyInfo, 15> g_aEnemyInfo = { {
+		constexpr std::array<stEnemyInfo, 16> g_aEnemyInfo = { {
 			{ "Unknown", EEnemyCategory::None },
 			{ "Security", EEnemyCategory::Cop },
 			{ "Armed Cop", EEnemyCategory::Cop },
@@ -100,6 +111,7 @@ namespace OmegaWare::Payday3
 			{ "Grenadier", EEnemyCategory::Cop },
 			{ "Civilian", EEnemyCategory::Civilian },
 			{ "Sentry Gun", EEnemyCategory::Cop },
+			{ "Drone", EEnemyCategory::Cop },
 		} };
 
 		struct stTypeCache
@@ -164,6 +176,21 @@ namespace OmegaWare::Payday3
 		}
 	}
 
+	namespace
+	{
+		std::atomic<SDK::AActor*> g_pAimbotTarget = nullptr;
+	}
+
+	void SetAimbotTarget(SDK::AActor* pTarget)
+	{
+		g_pAimbotTarget = pTarget;
+	}
+
+	SDK::AActor* GetAimbotTarget()
+	{
+		return g_pAimbotTarget;
+	}
+
 	bool IsReady()
 	{
 		return Engine::IsReady() && Unreal::GetWorld();
@@ -189,10 +216,44 @@ namespace OmegaWare::Payday3
 		return pRuntime->AllPawns;
 	}
 
+	bool IsDrone(const SDK::AActor* pActor)
+	{
+		return Memory::IsValidObjectPtr(pActor) && pActor->IsA(SDK::ASBZAIDrone::StaticClass());
+	}
+
+	bool IsPawnAlive(SDK::AActor* pActor)
+	{
+		if (!IsAliveActor(pActor))
+			return false;
+		if (IsDrone(pActor))
+		{
+			SDK::USBZAIDroneAttributeSet* pAttributes = static_cast<SDK::ASBZAIDrone*>(pActor)->AttributeSet;
+			return !Memory::IsValidObjectPtr(pAttributes) || pAttributes->Health.CurrentValue > 0.f;
+		}
+		return static_cast<SDK::ASBZCharacter*>(pActor)->bIsAlive;
+	}
+
+	SDK::USkeletalMeshComponent* GetPawnMesh(SDK::AActor* pActor)
+	{
+		if (!Memory::IsValidObjectPtr(pActor))
+			return nullptr;
+		SDK::USkeletalMeshComponent* pMesh = static_cast<SDK::ACharacter*>(pActor)->Mesh;
+		return Memory::IsValidObjectPtr(pMesh) ? pMesh : nullptr;
+	}
+
+	SDK::USBZOutlineComponent* GetPawnOutline(SDK::AActor* pActor)
+	{
+		if (!Memory::IsValidObjectPtr(pActor))
+			return nullptr;
+		return IsDrone(pActor) ? static_cast<SDK::ASBZAIDrone*>(pActor)->OutlineComponent : static_cast<SDK::ASBZCharacter*>(pActor)->OutlineComponent;
+	}
+
 	EEnemyType ResolveEnemyType(SDK::AActor* pActor)
 	{
 		if (Memory::IsValidObjectPtr(pActor) && pActor->IsA(SDK::ASBZPlayerCharacter::StaticClass()))
 			return EEnemyType::None;
+		if (IsDrone(pActor))
+			return EEnemyType::Drone;
 		return ResolveType(g_stCache.mapEnemies, pActor, g_aEnemyLookup);
 	}
 

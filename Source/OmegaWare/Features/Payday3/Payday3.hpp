@@ -41,6 +41,7 @@ namespace OmegaWare::Payday3
 		Grenadier,
 		Civilian,
 		SentryGun,
+		Drone,
 	};
 
 	enum class EItemCategory : std::uint8_t
@@ -49,6 +50,7 @@ namespace OmegaWare::Payday3
 		Loot,
 		KeyItem,
 		KeycardReader,
+		Supply,
 	};
 
 	enum class EItemType : std::uint8_t
@@ -68,6 +70,10 @@ namespace OmegaWare::Payday3
 		HydrogenChloride,
 		MuriaticAcid,
 		CausticSoda,
+		MedkitSmall,
+		MedkitLarge,
+		Armor,
+		Ammo,
 	};
 
 	struct stItemInfo
@@ -84,10 +90,16 @@ namespace OmegaWare::Payday3
 	};
 
 	[[nodiscard]] bool IsReady();
+	void SetAimbotTarget(SDK::AActor* pTarget);
+	[[nodiscard]] SDK::AActor* GetAimbotTarget();
 	[[nodiscard]] SDK::ASBZPlayerCharacter* GetLocalCharacter();
 	[[nodiscard]] SDK::USBZActorContainer* GetAllPawns();
 
 	[[nodiscard]] EEnemyType ResolveEnemyType(SDK::AActor* pActor);
+	[[nodiscard]] bool IsDrone(const SDK::AActor* pActor);
+	[[nodiscard]] bool IsPawnAlive(SDK::AActor* pActor);
+	[[nodiscard]] SDK::USkeletalMeshComponent* GetPawnMesh(SDK::AActor* pActor);
+	[[nodiscard]] SDK::USBZOutlineComponent* GetPawnOutline(SDK::AActor* pActor);
 	[[nodiscard]] const stItemInfo& ResolveItem(SDK::AActor* pActor);
 	[[nodiscard]] const stEnemyInfo& GetEnemyInfo(EEnemyType eType);
 

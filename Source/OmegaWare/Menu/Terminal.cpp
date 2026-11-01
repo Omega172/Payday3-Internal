@@ -346,6 +346,8 @@ namespace OmegaWare::Terminal
 		if (!*pOpen)
 			return;
 		g_clConsole.pAlwaysVisible = &Config::Add("menu.console_pinned", false);
+		static int& s_rOpacity = Config::Add("menu.console_opacity", 75);
+		OmegaGUI::SetNextWindowOpacity(static_cast<float>(std::clamp(s_rOpacity, 10, 100)) / 100.f);
 		const OmegaGUI::vec2 vecDisplay = OmegaGUI::GetDisplaySize();
 		OmegaGUI::SetNextWindowPos({ vecDisplay.x - 660.f, vecDisplay.y - 420.f });
 		g_clConsole.Draw("console", pOpen);

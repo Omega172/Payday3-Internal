@@ -33,6 +33,8 @@ namespace OmegaWare
 	namespace
 	{
 		constexpr float kInstantRate = 10000.f;
+		constexpr float kArmorPenetration = 100.f;
+		constexpr std::uint32_t kShieldPenetrationCount = 8;
 
 		struct stWeaponBackup
 		{
@@ -49,6 +51,12 @@ namespace OmegaWare
 			float flRoundsPerMinute = 0.f;
 			SDK::ESBZFireMode eFireMode{};
 			std::uint32_t uProjectilesPerFiredRound = 1;
+
+			float flArmorPenetration = 0.f;
+			float flArmorPenetrationProjectile = 0.f;
+			float flArmorPenetrationCollision = 0.f;
+			std::uint32_t uMaximumPenetrationCount = 0;
+			bool bCanPenetrateBlocked = false;
 		};
 
 		struct stAttributeBackup
@@ -127,6 +135,8 @@ namespace OmegaWare
 				m_pHoldToShoot = &Config::Add("player.hold_to_shoot", false);
 				m_pMoreBullets = &Config::Add("player.more_bullets", false);
 				m_pMoreBulletsCount = &Config::Add("player.more_bullets_count", 20);
+				m_pArmorPenetration = &Config::Add("player.armor_penetration", false);
+				m_pShieldPenetration = &Config::Add("player.shield_penetration", false);
 				return true;
 			}
 
@@ -458,6 +468,10 @@ namespace OmegaWare
 					OmegaGUI::Checkbox("player.no_spread"_l, m_pNoSpread);
 					OmegaGUI::Checkbox("player.hold_to_shoot"_l, m_pHoldToShoot);
 					OmegaGUI::ItemTooltip("player.hold_to_shoot_hint"_t);
+					OmegaGUI::Checkbox("player.armor_penetration"_l, m_pArmorPenetration);
+					OmegaGUI::ItemTooltip("player.armor_penetration_hint"_t);
+					OmegaGUI::Checkbox("player.shield_penetration"_l, m_pShieldPenetration);
+					OmegaGUI::ItemTooltip("player.shield_penetration_hint"_t);
 					OmegaGUI::EndSection();
 				}
 				OmegaGUI::NextColumn();
@@ -958,6 +972,11 @@ namespace OmegaWare
 							.flRoundsPerMinute = pWeaponData->FireData->RoundsPerMinute,
 							.eFireMode = pWeaponData->FireData->FireMode,
 							.uProjectilesPerFiredRound = pWeaponData->FireData->ProjectilesPerFiredRound,
+							.flArmorPenetration = pWeaponData->FireData->ArmorPenetration,
+							.flArmorPenetrationProjectile = pWeaponData->FireData->ArmorPenetrationProjectile,
+							.flArmorPenetrationCollision = pWeaponData->FireData->ArmorPenetrationCollision,
+							.uMaximumPenetrationCount = pWeaponData->FireData->MaximumPenetrationCount,
+							.bCanPenetrateBlocked = pWeaponData->FireData->bCanPenetrateBlocked,
 						});
 					}
 				}
@@ -1058,6 +1077,13 @@ namespace OmegaWare
 					pFire->RoundsPerMinute = bEnabled && *m_pFireRate ? pBackup->flRoundsPerMinute * static_cast<float>(*m_pFireRateMultiplier) : pBackup->flRoundsPerMinute;
 					pFire->FireMode = bEnabled && *m_pHoldToShoot ? SDK::ESBZFireMode::Auto : pBackup->eFireMode;
 					pFire->ProjectilesPerFiredRound = bEnabled && *m_pMoreBullets ? static_cast<std::uint32_t>(std::clamp(*m_pMoreBulletsCount, 1, 100)) : pBackup->uProjectilesPerFiredRound;
+					const bool bArmor = bEnabled && *m_pArmorPenetration;
+					pFire->ArmorPenetration = bArmor ? kArmorPenetration : pBackup->flArmorPenetration;
+					pFire->ArmorPenetrationProjectile = bArmor ? kArmorPenetration : pBackup->flArmorPenetrationProjectile;
+					pFire->ArmorPenetrationCollision = bArmor ? kArmorPenetration : pBackup->flArmorPenetrationCollision;
+					const bool bShield = bEnabled && *m_pShieldPenetration;
+					pFire->bCanPenetrateBlocked = bShield ? true : pBackup->bCanPenetrateBlocked;
+					pFire->MaximumPenetrationCount = bShield ? std::max(pBackup->uMaximumPenetrationCount, kShieldPenetrationCount) : pBackup->uMaximumPenetrationCount;
 				}
 			}
 
@@ -1077,6 +1103,8 @@ namespace OmegaWare
 			bool* m_pHoldToShoot = nullptr;
 			bool* m_pMoreBullets = nullptr;
 			int* m_pMoreBulletsCount = nullptr;
+			bool* m_pArmorPenetration = nullptr;
+			bool* m_pShieldPenetration = nullptr;
 			std::atomic<bool> m_bQueued = false;
 			bool* m_pInstantInteraction = nullptr;
 			bool* m_pInstantBagGrab = nullptr;

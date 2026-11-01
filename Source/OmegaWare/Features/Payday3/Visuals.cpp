@@ -152,8 +152,16 @@ namespace OmegaWare
 			return OmegaGUI::vec2{ static_cast<float>(vecScreen.X), static_cast<float>(vecScreen.Y) };
 		}
 
-		std::optional<stPawnStats> ReadPawnStats(SDK::ASBZCharacter* pCharacter)
+		std::optional<stPawnStats> ReadPawnStats(SDK::AActor* pActor)
 		{
+			if (Payday3::IsDrone(pActor))
+			{
+				SDK::USBZAIDroneAttributeSet* pDroneSet = OW_FIELD(static_cast<SDK::ASBZAIDrone*>(pActor), AttributeSet);
+				if (!Memory::IsValidObjectPtr(pDroneSet))
+					return std::nullopt;
+				return stPawnStats{ pDroneSet->Health.CurrentValue, pDroneSet->HealthMax.CurrentValue, pDroneSet->Armor.CurrentValue, pDroneSet->ArmorMax.CurrentValue };
+			}
+			auto* pCharacter = static_cast<SDK::ASBZCharacter*>(pActor);
 			SDK::USBZAbilitySystemComponent* pAbilitySystem = OW_FIELD(pCharacter, AbilitySystem);
 			if (!Memory::IsValidObjectPtr(pAbilitySystem))
 				return std::nullopt;
@@ -169,6 +177,26 @@ namespace OmegaWare
 				return stPawnStats{ pPawnSet->Health.CurrentValue, pPawnSet->HealthMax.CurrentValue, pPawnSet->Armor.CurrentValue, pPawnSet->ArmorMax.CurrentValue };
 			}
 			return std::nullopt;
+		}
+
+		std::optional<stBox> CalculateActorBox(SDK::APlayerController* pController, SDK::AActor* pActor)
+		{
+			SDK::FVector vecOrigin;
+			SDK::FVector vecExtent;
+			pActor->GetActorBounds(true, &vecOrigin, &vecExtent, false);
+			stBox stResult{ std::numeric_limits<float>::max(), std::numeric_limits<float>::max(), std::numeric_limits<float>::lowest(), std::numeric_limits<float>::lowest() };
+			for (int iCorner = 0; iCorner < 8; ++iCorner)
+			{
+				const SDK::FVector vecCorner(vecOrigin.X + ((iCorner & 1) ? vecExtent.X : -vecExtent.X), vecOrigin.Y + ((iCorner & 2) ? vecExtent.Y : -vecExtent.Y), vecOrigin.Z + ((iCorner & 4) ? vecExtent.Z : -vecExtent.Z));
+				const std::optional<OmegaGUI::vec2> optScreen = Project(pController, vecCorner);
+				if (!optScreen)
+					return std::nullopt;
+				stResult.flLeft = std::min(stResult.flLeft, optScreen->x);
+				stResult.flTop = std::min(stResult.flTop, optScreen->y);
+				stResult.flRight = std::max(stResult.flRight, optScreen->x);
+				stResult.flBottom = std::max(stResult.flBottom, optScreen->y);
+			}
+			return stResult;
 		}
 
 		std::optional<stBox> CalculateBox(SDK::APlayerController* pController, SDK::AActor* pActor, SDK::USkeletalMeshComponent* pMesh, const SDK::FVector& vecCamera)
@@ -219,6 +247,7 @@ namespace OmegaWare
 			Loot,
 			KeyItems,
 			Objectives,
+			Supplies,
 		};
 
 		struct stCategory
@@ -305,6 +334,8 @@ namespace OmegaWare
 				Category(ECategory::Players).pArmorBar = &Config::Add("visuals.players.armor_bar", false);
 				m_pCameras = &Config::Add("visuals.enemies.cameras", false);
 				m_pOmegaTag = &Config::Add("visuals.players.omegaware_tag", true);
+				m_pAimbotTarget = &Config::Add("visuals.enemies.aimbot_target", true);
+				m_pAimbotTargetColor = &Config::Add("visuals.aimbot_target_color", OmegaGUI::color(255, 0, 255));
 
 				m_stBoxColors = { &Config::Add("visuals.box_cop_color", OmegaGUI::color(255, 0, 0)), &Config::Add("visuals.box_civilian_color", OmegaGUI::color(0, 255, 0)), &Config::Add("visuals.box_player_color", OmegaGUI::color(0, 255, 255)) };
 				m_stNameColors = { &Config::Add("visuals.name_cop_color", OmegaGUI::color(255, 255, 255)), &Config::Add("visuals.name_civilian_color", OmegaGUI::color(0, 0, 255)), &Config::Add("visuals.name_player_color", OmegaGUI::color(255, 255, 255)) };
@@ -364,12 +395,12 @@ namespace OmegaWare
 				ScanThings();
 				QueueOutlineColors();
 				using Clock_t = std::chrono::steady_clock;
-				if ((!AnyOutline() && !m_bOutlinesActive) || !Payday3::IsReady() || Clock_t::now() < m_tpNextOutlineUpdate || m_bOutlineUpdateQueued.exchange(true))
+				if ((!WantsOutlines() && !m_bOutlinesActive) || !Payday3::IsReady() || Clock_t::now() < m_tpNextOutlineUpdate || m_bOutlineUpdateQueued.exchange(true))
 					return;
 				m_tpNextOutlineUpdate = Clock_t::now() + std::chrono::milliseconds(100);
 				if (!Unreal::RunOnGameThread([this] {
 						m_bOutlineUpdateQueued = false;
-						if (IsActive() && AnyOutline())
+						if (IsActive() && WantsOutlines())
 							UpdateOutlined();
 						else
 							RestoreAllOutlined();
@@ -433,6 +464,16 @@ namespace OmegaWare
 				return std::ranges::any_of(m_aCategories, [](const stCategory& rCategory) { return rCategory.OutlineOn(); });
 			}
 
+			[[nodiscard]] bool HasAimbotTarget() const
+			{
+				return *m_pAimbotTarget && Payday3::GetAimbotTarget();
+			}
+
+			[[nodiscard]] bool WantsOutlines() const
+			{
+				return AnyOutline() || HasAimbotTarget();
+			}
+
 			[[nodiscard]] static ECategory CategoryOf(Payday3::EItemType eType)
 			{
 				switch (eType)
@@ -444,6 +485,11 @@ namespace OmegaWare
 				case Payday3::EItemType::ATM:
 				case Payday3::EItemType::Plank:
 					return ECategory::Loot;
+				case Payday3::EItemType::MedkitSmall:
+				case Payday3::EItemType::MedkitLarge:
+				case Payday3::EItemType::Armor:
+				case Payday3::EItemType::Ammo:
+					return ECategory::Supplies;
 				case Payday3::EItemType::KeycardReader:
 				case Payday3::EItemType::HydrogenChloride:
 				case Payday3::EItemType::MuriaticAcid:
@@ -506,6 +552,12 @@ namespace OmegaWare
 					OmegaGUI::Checkbox("visuals.cameras"_l, m_pCameras);
 					OmegaGUI::ItemTooltip("visuals.cameras_hint"_t);
 				}
+				if (eCategory == ECategory::Enemies)
+				{
+					OmegaGUI::Separator();
+					OmegaGUI::Checkbox("visuals.aimbot_target"_l, m_pAimbotTarget);
+					OmegaGUI::ItemTooltip("visuals.aimbot_target_hint"_t);
+				}
 				if (eCategory == ECategory::Players)
 				{
 					OmegaGUI::Separator();
@@ -549,6 +601,8 @@ namespace OmegaWare
 					fnPair("visuals.health_bar", "visuals.health_bar_cop_color", "visuals.health_bar_civilian_color", "visuals.health_bar_player_color", m_stHealthColors);
 					if (bCop || bPlayer)
 						fnRow("visuals.armor_bar", "visuals.armor_bar_color", m_pArmorColor);
+					if (bCop)
+						fnRow("visuals.aimbot_target", "visuals.aimbot_target_color", m_pAimbotTargetColor);
 					fnPair("visuals.skeleton", "visuals.skeleton_cop_color", "visuals.skeleton_civilian_color", "visuals.skeleton_player_color", m_stSkeletonColors);
 				}
 				else
@@ -792,17 +846,17 @@ namespace OmegaWare
 						auto* pActor = static_cast<SDK::AActor*>(aActors[iActor]);
 						if (!Payday3::IsAliveActor(pActor) || pActor == pLocalPawn)
 							continue;
-						auto* pCharacter = static_cast<SDK::ASBZCharacter*>(pActor);
 						const bool bPlayerPawn = pActor->IsA(SDK::ASBZPlayerCharacter::StaticClass());
 						const Payday3::EEnemyCategory eKind = Payday3::GetEnemyInfo(Payday3::ResolveEnemyType(pActor)).eCategory;
 						if (!bPlayerPawn && eKind != Payday3::EEnemyCategory::Cop && eKind != Payday3::EEnemyCategory::Civilian)
 							continue;
 						const ECategory eCategory = bPlayerPawn ? ECategory::Players : (eKind == Payday3::EEnemyCategory::Cop ? ECategory::Enemies : ECategory::Civilians);
-						if (pCharacter->bIsAlive && Category(eCategory).OutlineOn())
+						const bool bAimbotTarget = *m_pAimbotTarget && pActor == Payday3::GetAimbotTarget();
+						if (Payday3::IsPawnAlive(pActor) && (Category(eCategory).OutlineOn() || bAimbotTarget))
 						{
 							int iColorIndex = kPeopleOutlineIndex;
-							SDK::USBZOutlineComponent* pPawnOutline = pCharacter->OutlineComponent;
-							if (bPlayerPawn && Payday3::IsLiveObject(pPawnOutline) && Payday3::IsLiveObject(pPawnOutline->ActiveAsset))
+							SDK::USBZOutlineComponent* pPawnOutline = Payday3::GetPawnOutline(pActor);
+							if (!bAimbotTarget && bPlayerPawn && Payday3::IsLiveObject(pPawnOutline) && Payday3::IsLiveObject(pPawnOutline->ActiveAsset))
 								iColorIndex = pPawnOutline->ActiveAsset->ColorIndex;
 							mapWanted[pActor] = { iColorIndex, pPawnOutline };
 						}
@@ -810,7 +864,7 @@ namespace OmegaWare
 				}
 
 				const bool bCameras = *m_pCameras && Category(ECategory::Enemies).OutlineOn();
-				const bool bItems = Category(ECategory::Loot).OutlineOn() || Category(ECategory::KeyItems).OutlineOn() || Category(ECategory::Objectives).OutlineOn();
+				const bool bItems = Category(ECategory::Loot).OutlineOn() || Category(ECategory::KeyItems).OutlineOn() || Category(ECategory::Objectives).OutlineOn() || Category(ECategory::Supplies).OutlineOn();
 				if (bCameras || bItems)
 				{
 					Payday3::ForEachLevelActor(Unreal::GetWorld(), [&](SDK::AActor* pActor) {
@@ -877,9 +931,10 @@ namespace OmegaWare
 					auto* pActor = static_cast<SDK::AActor*>(aActors[iActor]);
 					if (!Memory::IsValidObjectPtr(pActor) || pActor == pLocalPawn)
 						continue;
-					auto* pCharacter = static_cast<SDK::ASBZCharacter*>(pActor);
-					if (!pCharacter->bIsAlive || !Memory::IsValidObjectPtr(pCharacter->Mesh))
+					SDK::USkeletalMeshComponent* pMesh = Payday3::GetPawnMesh(pActor);
+					if (!pMesh || !Payday3::IsPawnAlive(pActor))
 						continue;
+					const bool bDrone = Payday3::IsDrone(pActor);
 
 					const bool bPlayerPawn = pActor->IsA(SDK::ASBZPlayerCharacter::StaticClass());
 					const Payday3::stEnemyInfo& stInfo = Payday3::GetEnemyInfo(Payday3::ResolveEnemyType(pActor));
@@ -901,31 +956,39 @@ namespace OmegaWare
 					}
 					if (!rCategory.AnyDrawn())
 						continue;
+					const bool bTarget = *m_pAimbotTarget && pActor == Payday3::GetAimbotTarget();
 
-					if (stCategory::On(rCategory.pBox) || *rCategory.pName || *rCategory.pDistance || stCategory::On(rCategory.pHealthBar) || stCategory::On(rCategory.pArmorBar))
+					if (stCategory::On(rCategory.pBox) || bTarget || *rCategory.pName || *rCategory.pDistance || stCategory::On(rCategory.pHealthBar) || stCategory::On(rCategory.pArmorBar))
 					{
-						const std::optional<stBox> optBox = CalculateBox(pController, pActor, pCharacter->Mesh, vecCamera);
+						const std::optional<stBox> optBox = bDrone ? CalculateActorBox(pController, pActor) : CalculateBox(pController, pActor, pMesh, vecCamera);
 						if (!optBox)
 							continue;
 						const bool bStats = stCategory::On(rCategory.pHealthBar) || stCategory::On(rCategory.pArmorBar);
-						const stPawnStats stStats = bStats ? ReadPawnStats(pCharacter).value_or(stPawnStats{}) : stPawnStats{};
+						const stPawnStats stStats = bStats ? ReadPawnStats(pActor).value_or(stPawnStats{}) : stPawnStats{};
 						const float flDistance = static_cast<float>((pActor->K2_GetActorLocation() - vecCamera).Magnitude() / 100.0);
-						DrawBox(rList, *optBox, bPlayerPawn ? std::string_view(strPlayerName) : stInfo.strName, flDistance, stStats, rCategory, eSet, *m_pOmegaTag ? eModKind : Payday3::EModUserKind::None);
+						DrawBox(rList, *optBox, bPlayerPawn ? std::string_view(strPlayerName) : stInfo.strName, flDistance, stStats, rCategory, eSet, *m_pOmegaTag ? eModKind : Payday3::EModUserKind::None, bTarget);
 					}
 
-					if (stCategory::On(rCategory.pSkeleton))
-						DrawSkeleton(rList, pController, pCharacter->Mesh, m_stSkeletonColors.Get(eSet));
+					if (!bDrone && stCategory::On(rCategory.pSkeleton))
+						DrawSkeleton(rList, pController, pMesh, bTarget ? *m_pAimbotTargetColor : m_stSkeletonColors.Get(eSet));
 				}
 			}
 
-			void DrawBox(OmegaGUI::clDrawList& rList, const stBox& stRect, std::string_view strName, float flDistance, const stPawnStats& stStats, const stCategory& rCategory, EColorSet eSet, Payday3::EModUserKind eModKind) const
+			void DrawBox(OmegaGUI::clDrawList& rList, const stBox& stRect, std::string_view strName, float flDistance, const stPawnStats& stStats, const stCategory& rCategory, EColorSet eSet, Payday3::EModUserKind eModKind, bool bTarget) const
 			{
 				const float flBoxWidth = stRect.flRight - stRect.flLeft;
 				const float flBoxHeight = stRect.flBottom - stRect.flTop;
 				if (!std::isfinite(flBoxWidth) || !std::isfinite(flBoxHeight) || flBoxWidth <= 0.f || flBoxHeight <= 0.f)
 					return;
 
-				if (stCategory::On(rCategory.pBox))
+				if (bTarget)
+				{
+					const OmegaGUI::color colTarget = *m_pAimbotTargetColor;
+					rList.AddRectFilled({ stRect.flLeft, stRect.flTop }, { stRect.flRight, stRect.flBottom }, colTarget.WithAlpha(40));
+					rList.AddRect({ stRect.flLeft - 2.f, stRect.flTop - 2.f }, { stRect.flRight + 2.f, stRect.flBottom + 2.f }, kOutline, 0.f, 3.f);
+					rList.AddRect({ stRect.flLeft, stRect.flTop }, { stRect.flRight, stRect.flBottom }, colTarget, 0.f, 3.f);
+				}
+				else if (stCategory::On(rCategory.pBox))
 				{
 					rList.AddRect({ stRect.flLeft - 1.f, stRect.flTop - 1.f }, { stRect.flRight + 1.f, stRect.flBottom + 1.f }, kOutline, 0.f, 1.6f);
 					rList.AddRect({ stRect.flLeft, stRect.flTop }, { stRect.flRight, stRect.flBottom }, m_stBoxColors.Get(eSet), 0.f, 1.5f);
@@ -939,7 +1002,7 @@ namespace OmegaWare
 					DrawOutlinedText(rList, { stRect.flLeft + flBoxWidth * .5f - vecTagSize.x * .5f, stRect.flTop - 4.f - flNameLift - vecTagSize.y }, OmegaGUI::color(0, 255, 255), kTag);
 				}
 				if (*rCategory.pName || *rCategory.pDistance)
-					DrawNameAndDistance(rList, stRect.flLeft + flBoxWidth * .5f, stRect.flTop - 4.f, *rCategory.pName ? FormatEntityName(strName) : std::string(), m_stNameColors.Get(eSet), *rCategory.pDistance ? FormatDistance(flDistance) : std::string(), m_stDistanceColors.Get(eSet));
+					DrawNameAndDistance(rList, stRect.flLeft + flBoxWidth * .5f, stRect.flTop - 4.f, *rCategory.pName ? FormatEntityName(strName) : std::string(), bTarget ? *m_pAimbotTargetColor : m_stNameColors.Get(eSet), *rCategory.pDistance ? FormatDistance(flDistance) : std::string(), bTarget ? *m_pAimbotTargetColor : m_stDistanceColors.Get(eSet));
 
 				constexpr float flBarWidth = 4.f;
 				if (stCategory::On(rCategory.pHealthBar))
@@ -1101,7 +1164,7 @@ namespace OmegaWare
 
 			[[nodiscard]] bool ThingsShown() const
 			{
-				return CamerasShown() || Category(ECategory::Loot).AnyDrawn() || Category(ECategory::KeyItems).AnyDrawn() || Category(ECategory::Objectives).AnyDrawn();
+				return CamerasShown() || Category(ECategory::Loot).AnyDrawn() || Category(ECategory::KeyItems).AnyDrawn() || Category(ECategory::Objectives).AnyDrawn() || Category(ECategory::Supplies).AnyDrawn();
 			}
 
 			void ScanThings()
@@ -1194,16 +1257,19 @@ namespace OmegaWare
 				DrawNameAndDistance(rList, optScreen->x, optScreen->y + flLineHeight * .5f, *rCategory.pName ? rItem.strLabel : std::string_view(), *pSetting->pColor, *rCategory.pDistance ? FormatDistance(DistanceMeters(pActor, vecCamera)) : std::string(), *pSetting->pColor);
 			}
 
-			std::array<stCategory, 6> m_aCategories = { {
+			std::array<stCategory, 7> m_aCategories = { {
 				{ "enemies", "visuals.tab_enemies", true },
 				{ "civilians", "visuals.tab_civilians", true },
 				{ "players", "visuals.tab_players", true },
 				{ "loot", "visuals.loot", false },
 				{ "key_items", "visuals.items", false },
 				{ "objectives", "visuals.tab_objectives", false },
+				{ "supplies", "visuals.supplies", false },
 			} };
 			bool* m_pCameras = nullptr;
 			bool* m_pOmegaTag = nullptr;
+			bool* m_pAimbotTarget = nullptr;
+			OmegaGUI::color* m_pAimbotTargetColor = nullptr;
 			stColorPair m_stBoxColors;
 			stColorPair m_stNameColors;
 			stColorPair m_stDistanceColors;
@@ -1212,7 +1278,7 @@ namespace OmegaWare
 			stColorPair m_stSkeletonColors;
 			bool* m_pShowDropOffs = nullptr;
 			OmegaGUI::color* m_pDropOffColor = nullptr;
-			std::array<stItemSetting, 14> m_aItems = { {
+			std::array<stItemSetting, 18> m_aItems = { {
 				{ Payday3::EItemType::Cash, "visuals.show_cash", "visuals.item_cash_color", OmegaGUI::color(0, 255, 255) },
 				{ Payday3::EItemType::MoneyMedium, "visuals.show_money_medium", "visuals.item_money_medium_color", OmegaGUI::color(120, 220, 120) },
 				{ Payday3::EItemType::MoneyLarge, "visuals.show_money_large", "visuals.item_money_large_color", OmegaGUI::color(0, 255, 0) },
@@ -1227,6 +1293,10 @@ namespace OmegaWare
 				{ Payday3::EItemType::HydrogenChloride, "visuals.show_hydrogen_chloride", "visuals.item_hydrogen_chloride_color", OmegaGUI::color(120, 255, 200) },
 				{ Payday3::EItemType::MuriaticAcid, "visuals.show_muriatic_acid", "visuals.item_muriatic_acid_color", OmegaGUI::color(255, 230, 80) },
 				{ Payday3::EItemType::CausticSoda, "visuals.show_caustic_soda", "visuals.item_caustic_soda_color", OmegaGUI::color(180, 140, 255) },
+				{ Payday3::EItemType::MedkitSmall, "visuals.show_medkit_small", "visuals.item_medkit_small_color", OmegaGUI::color(120, 255, 120) },
+				{ Payday3::EItemType::MedkitLarge, "visuals.show_medkit_large", "visuals.item_medkit_large_color", OmegaGUI::color(0, 220, 90) },
+				{ Payday3::EItemType::Armor, "visuals.show_armor", "visuals.item_armor_color", OmegaGUI::color(90, 160, 255) },
+				{ Payday3::EItemType::Ammo, "visuals.show_ammo", "visuals.item_ammo_color", OmegaGUI::color(255, 220, 60) },
 			} };
 
 			bool* m_pOutlineColors = nullptr;
