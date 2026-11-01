@@ -691,6 +691,7 @@ namespace OmegaWare
 				if (!InNormalRange(pTeammate, pInteraction))
 					return;
 				rTrack = { pInteraction, pInteractor->InteractId };
+				const Payday3::clInternalInteraction clInternal;
 				pInteractor->Server_CompleteInteraction(pInteraction, pInteractor->InteractId);
 				pInteractor->Multicast_CompletedInteraction(pInteraction, false);
 			}
@@ -734,6 +735,9 @@ namespace OmegaWare
 				SDK::UWorld* pWorld = Unreal::GetWorld();
 				if (!Memory::IsValidObjectPtr(pInteractor) || !pWorld)
 					return;
+				SDK::ASBZPlayerState* pLocalState = pCharacter->SBZPlayerState;
+				if (Memory::IsValidObjectPtr(pLocalState) && (pLocalState->MiniGameState == SDK::EPD3MiniGameState::Initiated || pLocalState->MiniGameState == SDK::EPD3MiniGameState::InProgress))
+					return;
 				if (pWorld != m_pReachWorld || m_setGrabbed.size() > 512)
 				{
 					m_pReachWorld = pWorld;
@@ -749,7 +753,7 @@ namespace OmegaWare
 						return;
 					const Payday3::stItemInfo& rItem = Payday3::ResolveItem(pActor);
 					const bool bMiniGame = pActor->IsA(SDK::ASBZMiniGameActor::StaticClass());
-					const bool bOpens = bMiniGame || rItem.eType == Payday3::EItemType::DepositBox || pActor->IsA(SDK::ASBZInteractableGate::StaticClass());
+					const bool bOpens = bMiniGame || rItem.eType == Payday3::EItemType::DepositBox || rItem.eType == Payday3::EItemType::ATM || pActor->IsA(SDK::ASBZInteractableGate::StaticClass());
 					const bool bDyePack = pActor->IsA(SDK::ASBZTimedBagConverter::StaticClass());
 					const bool bPickup = (rItem.eCategory == Payday3::EItemCategory::Loot || rItem.eCategory == Payday3::EItemCategory::KeyItem || bDyePack) && !bOpens;
 					if (!bPickup && !(bOpens && *m_pReachOpen))
@@ -817,8 +821,10 @@ namespace OmegaWare
 					LogInfo("reach: finished the minigame on {}", pPending->GetOwner()->GetName());
 					return;
 				}
+				SDK::AActor* pPendingOwner = pPending->GetOwner();
+				const bool bMiniGameOwner = Payday3::IsAliveActor(pPendingOwner) && pPendingOwner->IsA(SDK::ASBZMiniGameActor::StaticClass());
 				const auto msElapsed = std::chrono::duration_cast<std::chrono::milliseconds>(Clock_t::now() - m_tpReachPending);
-				if (msElapsed < std::chrono::milliseconds(250))
+				if (msElapsed < (bMiniGameOwner ? std::chrono::milliseconds(2000) : std::chrono::milliseconds(250)))
 				{
 					m_pReachPending = pPending;
 					return;

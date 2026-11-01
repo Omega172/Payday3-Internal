@@ -6,6 +6,7 @@
 #pragma warning(disable : 4005 4369 4309 4267 4244)
 #include "SDK/BP_MethIngredientBase_classes.hpp"
 #include "SDK/BP_QRPhone_classes.hpp"
+#include "SDK/BP_USBDrive_classes.hpp"
 #pragma warning(pop)
 
 #include "Config/Config.hpp"
@@ -1269,10 +1270,39 @@ namespace OmegaWare
 				return pActor->bHidden || static_cast<SDK::ASBZInstantLoot*>(pActor)->bIsLooted;
 			}
 
+			[[nodiscard]] static bool IsUsableInteractable(SDK::USBZInteractableComponent* pInteractable)
+			{
+				return Payday3::IsAlive(pInteractable) && pInteractable->bInteractionEnabled && !pInteractable->bIsHidden;
+			}
+
+			[[nodiscard]] static bool IsUsbDriveClass(SDK::UClass* pClass)
+			{
+				thread_local std::unordered_map<SDK::UClass*, bool> t_mapUsbClasses;
+				if (t_mapUsbClasses.size() > 512)
+					t_mapUsbClasses.clear();
+				const auto [itClass, bInserted] = t_mapUsbClasses.try_emplace(pClass, false);
+				if (bInserted)
+					for (SDK::UStruct* pStruct = pClass; pStruct && !itClass->second; pStruct = static_cast<SDK::UStruct*>(pStruct->SuperStruct))
+						itClass->second = pStruct->Name.ToString() == "BP_USBDrive_C";
+				return itClass->second;
+			}
+
+			[[nodiscard]] static bool IsUnusableUsb(SDK::AActor* pActor)
+			{
+				if (!pActor->Class || !IsUsbDriveClass(pActor->Class))
+					return true;
+				auto* pUsb = static_cast<SDK::ABP_USBDrive_C*>(pActor);
+				return !IsUsableInteractable(pUsb->SBZInteractable) && !IsUsableInteractable(pUsb->SBZInteractableGhost);
+			}
+
 			[[nodiscard]] static bool IsDepleted(Payday3::EItemType eType, SDK::AActor* pActor)
 			{
 				switch (eType)
 				{
+				case Payday3::EItemType::USB:
+					return IsUnusableUsb(pActor);
+				case Payday3::EItemType::RFIDTag:
+					return pActor->bHidden;
 				case Payday3::EItemType::Cash:
 				case Payday3::EItemType::MoneyMedium:
 				case Payday3::EItemType::Jewelry:
@@ -1716,7 +1746,7 @@ namespace OmegaWare
 			OmegaGUI::color* m_pVipColor = nullptr;
 			stCategory m_stVip{ "vip", "", true };
 			OmegaGUI::color* m_pDropOffColor = nullptr;
-			std::array<stItemSetting, 18> m_aItems = { {
+			std::array<stItemSetting, 19> m_aItems = { {
 				{ Payday3::EItemType::Cash, "visuals.show_cash", "visuals.item_cash_color", OmegaGUI::color(0, 255, 255) },
 				{ Payday3::EItemType::MoneyMedium, "visuals.show_money_medium", "visuals.item_money_medium_color", OmegaGUI::color(120, 220, 120) },
 				{ Payday3::EItemType::MoneyLarge, "visuals.show_money_large", "visuals.item_money_large_color", OmegaGUI::color(0, 255, 0) },
@@ -1726,6 +1756,7 @@ namespace OmegaWare
 				{ Payday3::EItemType::Keycard, "visuals.show_keycards", "visuals.item_keycard_color", OmegaGUI::color(0, 0, 255) },
 				{ Payday3::EItemType::QRPhone, "visuals.show_qr_phones", "visuals.item_qr_phone_color", OmegaGUI::color(255, 255, 0) },
 				{ Payday3::EItemType::USB, "visuals.show_usbs", "visuals.item_usb_color", OmegaGUI::color(255, 128, 0) },
+				{ Payday3::EItemType::RFIDTag, "visuals.show_rfid_tags", "visuals.item_rfid_tag_color", OmegaGUI::color(0, 200, 255) },
 				{ Payday3::EItemType::KeycardReader, "visuals.show_keycard_readers", "visuals.item_keycard_reader_color", OmegaGUI::color(255, 128, 128) },
 				{ Payday3::EItemType::Plank, "visuals.show_planks", "visuals.item_plank_color", OmegaGUI::color(200, 150, 90) },
 				{ Payday3::EItemType::HydrogenChloride, "visuals.show_hydrogen_chloride", "visuals.item_hydrogen_chloride_color", OmegaGUI::color(120, 255, 200) },

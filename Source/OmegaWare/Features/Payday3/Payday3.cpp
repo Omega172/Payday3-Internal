@@ -47,7 +47,7 @@ namespace OmegaWare::Payday3
 
 		constexpr stItemInfo kNoItem{};
 
-		constexpr std::array<stItemLookup, 45> g_aItemLookup = { {
+		constexpr std::array<stItemLookup, 47> g_aItemLookup = { {
 			{ "carriedredkeycard", { "Red Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carriedbluekeycard", { "Blue Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carried", kNoItem },
@@ -66,6 +66,8 @@ namespace OmegaWare::Payday3
 			{ "keycardbase", { "Keycard", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "qrphone", { "QR Phone", EItemType::QRPhone, EItemCategory::KeyItem } },
 			{ "usbdrive", { "USB", EItemType::USB, EItemCategory::KeyItem } },
+			{ "rfidtagred", { "Red RFID Tag", EItemType::RFIDTag, EItemCategory::KeyItem } },
+			{ "rfidtagblue", { "Blue RFID Tag", EItemType::RFIDTag, EItemCategory::KeyItem } },
 			{ "depositbox", { "Deposit Box", EItemType::DepositBox, EItemCategory::KeyItem } },
 			{ "breakable_atm", { "ATM", EItemType::ATM, EItemCategory::Loot } },
 			{ "instantloot_money", { "Cash", EItemType::Cash, EItemCategory::Loot } },
@@ -264,7 +266,7 @@ namespace OmegaWare::Payday3
 		for (SDK::UStruct* pStruct = pActor->Class; pStruct && !bVip; pStruct = static_cast<SDK::UStruct*>(pStruct->SuperStruct))
 		{
 			const std::string& strName = LowerStructName(pStruct);
-			bVip = strName.find("vip") != std::string::npos || strName.find("civilian_bank_manager") != std::string::npos;
+			bVip = strName.find("vip") != std::string::npos || strName.find("civilian_bank_manager") != std::string::npos || strName.find("insider") != std::string::npos;
 		}
 		g_stCache.mapVips.emplace(pActor->Class, bVip);
 		return bVip;
@@ -343,6 +345,26 @@ namespace OmegaWare::Payday3
 	SDK::FName MakeName(const wchar_t* wszName)
 	{
 		return SDK::UKismetStringLibrary::Conv_StringToName(SDK::FString(wszName));
+	}
+
+	namespace
+	{
+		thread_local int t_iInternalInteractions = 0;
+	}
+
+	clInternalInteraction::clInternalInteraction()
+	{
+		++t_iInternalInteractions;
+	}
+
+	clInternalInteraction::~clInternalInteraction()
+	{
+		--t_iInternalInteractions;
+	}
+
+	bool IsInternalInteraction()
+	{
+		return t_iInternalInteractions > 0;
 	}
 
 	SDK::FName CachedLiteralName(const wchar_t* wszLiteral)

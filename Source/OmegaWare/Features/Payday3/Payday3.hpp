@@ -74,6 +74,7 @@ namespace OmegaWare::Payday3
 		MedkitLarge,
 		Armor,
 		Ammo,
+		RFIDTag,
 	};
 
 	struct stItemInfo
@@ -138,6 +139,16 @@ namespace OmegaWare::Payday3
 		}
 	}
 
+	class clInternalInteraction
+	{
+	public:
+		clInternalInteraction();
+		~clInternalInteraction();
+		clInternalInteraction(const clInternalInteraction&) = delete;
+		clInternalInteraction& operator=(const clInternalInteraction&) = delete;
+	};
+
+	[[nodiscard]] bool IsInternalInteraction();
 	[[nodiscard]] SDK::FName MakeName(const wchar_t* wszName);
 	[[nodiscard]] SDK::FName CachedLiteralName(const wchar_t* wszLiteral);
 	[[nodiscard]] SDK::FVector GetActorLocation(SDK::AActor* pActor);

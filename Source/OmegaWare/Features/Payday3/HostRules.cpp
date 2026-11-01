@@ -53,6 +53,7 @@ namespace OmegaWare
 				m_pLongInteraction = &Config::Add("hostrules.long_interaction", false);
 				m_pInteractionRange = &Config::Add("hostrules.interaction_range", 1000.f);
 				m_pClientMovement = &Config::Add("hostrules.client_movement", false);
+				m_pAllowPickups = &Config::Add("hostrules.allow_pickups", false);
 				m_pAllPlayers = &Config::Add("hostrules.all_players", false);
 				m_pOmegaWareUsers = &Config::Add("hostrules.omegaware_users", true);
 				return true;
@@ -108,6 +109,8 @@ namespace OmegaWare
 					}
 					OmegaGUI::Checkbox("hostrules.client_movement"_l, m_pClientMovement);
 					OmegaGUI::ItemTooltip("hostrules.client_movement_hint"_t);
+					OmegaGUI::Checkbox("hostrules.allow_pickups"_l, m_pAllowPickups);
+					OmegaGUI::ItemTooltip("hostrules.allow_pickups_hint"_t);
 					OmegaGUI::EndSection();
 				}
 				OmegaGUI::NextColumn();
@@ -252,18 +255,51 @@ namespace OmegaWare
 				return aCharacters;
 			}
 
+			static bool IsPickupInteraction(SDK::USBZBaseInteractableComponent* pInteraction)
+			{
+				SDK::AActor* pOwner = pInteraction->GetOwner();
+				if (!Payday3::IsAliveActor(pOwner))
+					return false;
+				if (pOwner->IsA(SDK::ASBZBagItem::StaticClass()) || pOwner->IsA(SDK::ASBZInstantLoot::StaticClass()) || pOwner->IsA(SDK::ASBZTimedBagConverter::StaticClass()))
+					return true;
+				const Payday3::stItemInfo& rItem = Payday3::ResolveItem(pOwner);
+				return (rItem.eCategory == Payday3::EItemCategory::Loot || rItem.eCategory == Payday3::EItemCategory::KeyItem) && rItem.eType != Payday3::EItemType::DepositBox && rItem.eType != Payday3::EItemType::ATM;
+			}
+
+			void LogRejection(SDK::UObject* pObject, SDK::USBZBaseInteractableComponent* pInteraction, std::string_view strReason)
+			{
+				using Clock_t = std::chrono::steady_clock;
+				const auto tpNow = Clock_t::now();
+				if (tpNow < m_tpNextRejectionLog)
+					return;
+				m_tpNextRejectionLog = tpNow + std::chrono::milliseconds(500);
+				SDK::AActor* pOwner = Payday3::IsAlive(pObject) ? static_cast<SDK::UActorComponent*>(pObject)->GetOwner() : nullptr;
+				SDK::AActor* pTarget = Payday3::IsAlive(pInteraction) ? pInteraction->GetOwner() : nullptr;
+				LogWarning("hostrules: rejected a complete interaction from {} on {}: {}", Payday3::IsAliveActor(pOwner) ? pOwner->GetName() : std::string("unknown"), Payday3::IsAliveActor(pTarget) ? pTarget->GetName() : std::string("unknown"), strReason);
+			}
+
 			bool AllowCompleteInteraction(SDK::UObject* pObject, SDK::USBZBaseInteractableComponent* pInteraction, std::int32_t)
 			{
+				if (Payday3::IsInternalInteraction())
+					return true;
 				if (!Payday3::IsAlive(pInteraction))
 					return false;
 				SDK::ASBZPlayerCharacter* pCharacter = nullptr;
 				{
 					std::scoped_lock lckArmed(m_mtxArmed);
 					const auto itArmed = m_mapArmedInteractors.find(static_cast<SDK::USBZPlayerInteractorComponent*>(pObject));
-					if (itArmed == m_mapArmedInteractors.end())
-						return false;
-					pCharacter = itArmed->second;
+					if (itArmed != m_mapArmedInteractors.end())
+						pCharacter = itArmed->second;
 				}
+				if (!pCharacter)
+				{
+					if (*m_pAllowPickups && IsPickupInteraction(pInteraction))
+						return true;
+					LogRejection(pObject, pInteraction, "player is not trusted");
+					return false;
+				}
+				if (*m_pAllowPickups && IsPickupInteraction(pInteraction))
+					return true;
 				if (pCharacter == Payday3::GetLocalCharacter() || !*m_pLongInteraction)
 					return true;
 				SDK::AActor* pTarget = pInteraction->GetOwner();
@@ -271,7 +307,10 @@ namespace OmegaWare
 					return false;
 				const double dDistance = (pTarget->K2_GetActorLocation() - pCharacter->K2_GetActorLocation()).Magnitude();
 				if (dDistance > *m_pInteractionRange)
+				{
+					LogRejection(pObject, pInteraction, std::format("{:.0f} cm is past the {:.0f} cm limit", dDistance, *m_pInteractionRange));
 					return false;
+				}
 				LogDebug("hostrules: allowed {} to interact with {} from {:.0f}", pCharacter->GetName(), pTarget->GetName(), dDistance);
 				return true;
 			}
@@ -310,6 +349,7 @@ namespace OmegaWare
 			bool* m_pLongInteraction = nullptr;
 			float* m_pInteractionRange = nullptr;
 			bool* m_pClientMovement = nullptr;
+			bool* m_pAllowPickups = nullptr;
 			bool* m_pAllPlayers = nullptr;
 			bool* m_pOmegaWareUsers = nullptr;
 
@@ -329,6 +369,7 @@ namespace OmegaWare
 			std::unordered_set<SDK::APlayerState*> m_setTrusted;
 			std::mutex m_mtxArmed;
 			std::unordered_map<SDK::USBZPlayerInteractorComponent*, SDK::ASBZPlayerCharacter*> m_mapArmedInteractors;
+			std::chrono::steady_clock::time_point m_tpNextRejectionLog;
 			std::atomic<bool> m_bHost = false;
 			std::atomic<bool> m_bQueued = false;
 		};

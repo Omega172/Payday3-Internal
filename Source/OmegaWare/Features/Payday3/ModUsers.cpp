@@ -30,7 +30,7 @@ namespace OmegaWare::Payday3
 	{
 		constexpr std::wstring_view kMarker = L"​‌‍‌​⁠";
 
-		constexpr std::array<std::string_view, 4> kDeveloperIds = { "2fcca5d712be444b982db718d35d475e", "00025912616f43229dc574b16428c29f", "e2fe86ccda6142cf8a146a3ce77fbd2f", "000269aa76594f42af4b8d83f6945468" };
+		constexpr std::array<std::string_view, 2> kDeveloperIds = { "e2fe86ccda6142cf8a146a3ce77fbd2f", "000269aa76594f42af4b8d83f6945468" };
 
 		std::string IdsOf(SDK::APlayerState* pState)
 		{
