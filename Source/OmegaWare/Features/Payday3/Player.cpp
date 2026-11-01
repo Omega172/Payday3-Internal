@@ -753,7 +753,13 @@ namespace OmegaWare
 					const bool bPickup = (rItem.eCategory == Payday3::EItemCategory::Loot || rItem.eCategory == Payday3::EItemCategory::KeyItem) && !bOpens;
 					if (!bPickup && !(bOpens && *m_pReachOpen))
 						return;
-					if (bMiniGame && static_cast<SDK::ASBZMiniGameActor*>(pActor)->bIsUnlocked)
+					if (bMiniGame)
+					{
+						const auto* pMiniGame = static_cast<SDK::ASBZMiniGameActor*>(pActor);
+						if (pMiniGame->bIsUnlocked || pMiniGame->bIsMiniGameIgnored || !Payday3::IsAlive(pMiniGame->MiniGameComponent))
+							return;
+					}
+					else if (bOpens && pActor->IsA(SDK::ASBZInteractableGate::StaticClass()) && !Payday3::IsAlive(static_cast<SDK::ASBZInteractableGate*>(pActor)->MiniGameComponent))
 						return;
 					auto* pInteractable = bMiniGame ? static_cast<SDK::USBZBaseInteractableComponent*>(static_cast<SDK::ASBZMiniGameActor*>(pActor)->Interactable) : static_cast<SDK::USBZBaseInteractableComponent*>(pActor->GetComponentByClass(SDK::USBZBaseInteractableComponent::StaticClass()));
 					if (!Payday3::IsAlive(pInteractable) || pInteractable->bIsHidden || m_setGrabbed.contains(pInteractable) || pInteractable->GetOwner() != pActor)
@@ -775,13 +781,14 @@ namespace OmegaWare
 				pInteractor->InteractId = iId;
 				m_setGrabbed.insert(pBest);
 				const std::string strName = pBest->GetOwner()->GetName();
+				if (bBestOpens)
+					LogInfo("reach: starting {} ({}) at {:.0f} cm", strName, pBest->GetOwner()->Class ? pBest->GetOwner()->Class->GetName() : std::string(), dBest);
 				pInteractor->Server_StartInteraction(pBest, iId, 0);
 				if (bBestOpens)
 				{
 					m_pReachPending = pBest;
 					m_iReachPendingId = iId;
 					m_tpReachPending = std::chrono::steady_clock::now();
-					LogInfo("reach: started on {} at {:.0f} cm", strName, dBest);
 					return;
 				}
 				pInteractor->Server_CompleteInteraction(pBest, iId);
