@@ -120,6 +120,7 @@ namespace OmegaWare::Payday3
 			SDK::UWorld* pWorld = nullptr;
 			std::unordered_map<SDK::UStruct*, std::string> mapLowerNames;
 			std::unordered_map<SDK::UClass*, EEnemyType> mapEnemies;
+			std::unordered_map<SDK::UClass*, bool> mapVips;
 			std::unordered_map<SDK::UClass*, const stItemInfo*> mapItems;
 		};
 
@@ -133,6 +134,7 @@ namespace OmegaWare::Payday3
 			g_stCache.pWorld = pWorld;
 			g_stCache.mapLowerNames.clear();
 			g_stCache.mapEnemies.clear();
+			g_stCache.mapVips.clear();
 			g_stCache.mapItems.clear();
 		}
 
@@ -248,6 +250,26 @@ namespace OmegaWare::Payday3
 		return IsDrone(pActor) ? static_cast<SDK::ASBZAIDrone*>(pActor)->OutlineComponent : static_cast<SDK::ASBZCharacter*>(pActor)->OutlineComponent;
 	}
 
+	bool IsVip(SDK::AActor* pActor)
+	{
+		if (!Memory::IsValidObjectPtr(pActor) || !pActor->Class)
+			return false;
+
+		std::scoped_lock lckCache(g_stCache.mtxCache);
+		ResetOnWorldChange();
+		if (auto itVip = g_stCache.mapVips.find(pActor->Class); itVip != g_stCache.mapVips.end())
+			return itVip->second;
+
+		bool bVip = false;
+		for (SDK::UStruct* pStruct = pActor->Class; pStruct && !bVip; pStruct = static_cast<SDK::UStruct*>(pStruct->SuperStruct))
+		{
+			const std::string& strName = LowerStructName(pStruct);
+			bVip = strName.find("vip") != std::string::npos || strName.find("civilian_bank_manager") != std::string::npos;
+		}
+		g_stCache.mapVips.emplace(pActor->Class, bVip);
+		return bVip;
+	}
+
 	EEnemyType ResolveEnemyType(SDK::AActor* pActor)
 	{
 		if (Memory::IsValidObjectPtr(pActor) && pActor->IsA(SDK::ASBZPlayerCharacter::StaticClass()))
@@ -321,6 +343,23 @@ namespace OmegaWare::Payday3
 	SDK::FName MakeName(const wchar_t* wszName)
 	{
 		return SDK::UKismetStringLibrary::Conv_StringToName(SDK::FString(wszName));
+	}
+
+	SDK::FName CachedLiteralName(const wchar_t* wszLiteral)
+	{
+		thread_local std::unordered_map<const wchar_t*, SDK::FName> t_mapNames;
+		auto itName = t_mapNames.find(wszLiteral);
+		if (itName == t_mapNames.end())
+			itName = t_mapNames.emplace(wszLiteral, MakeName(wszLiteral)).first;
+		return itName->second;
+	}
+
+	SDK::FVector GetActorLocation(SDK::AActor* pActor)
+	{
+		SDK::USceneComponent* pRoot = pActor->RootComponent;
+		if (Memory::IsValidObjectPtr(pRoot) && !pRoot->AttachParent)
+			return pRoot->RelativeLocation;
+		return pActor->K2_GetActorLocation();
 	}
 
 	std::string SafeSubstr(const std::string& strValue, std::size_t uOffset, std::size_t uTrimEnd)

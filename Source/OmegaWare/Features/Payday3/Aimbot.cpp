@@ -619,8 +619,8 @@ namespace OmegaWare
 					return;
 				}
 
-				const SDK::FVector vecCamera = pCamera->GetCameraLocation();
-				const SDK::FRotator rotCamera = pCamera->GetCameraRotation();
+				const SDK::FVector vecCamera = pCamera->CameraCachePrivate.POV.Location;
+				const SDK::FRotator rotCamera = pCamera->CameraCachePrivate.POV.Rotation;
 				const double dYaw = rotCamera.Yaw * (std::numbers::pi / 180.0);
 				const double dPitch = rotCamera.Pitch * (std::numbers::pi / 180.0);
 				const SDK::FVector vecForward(std::cos(dPitch) * std::cos(dYaw), std::cos(dPitch) * std::sin(dYaw), std::sin(dPitch));
@@ -722,8 +722,8 @@ namespace OmegaWare
 
 				const float flCenterX = static_cast<float>(iWidth) * .5f;
 				const float flCenterY = static_cast<float>(iHeight) * .5f;
-				const SDK::FName nameBone = Payday3::MakeName(wszBone);
-				const SDK::FName nameHead = Payday3::MakeName(g_aBones[0]);
+				const SDK::FName nameBone = Payday3::CachedLiteralName(wszBone);
+				const SDK::FName nameHead = Payday3::CachedLiteralName(g_aBones[0]);
 				SDK::APawn* pLocalPawn = pController->AcknowledgedPawn;
 
 				std::optional<stRankedTarget> optBest;
@@ -758,7 +758,7 @@ namespace OmegaWare
 						vecAim = optPlate ? *optPlate : pMesh->GetSocketLocation(nameHead);
 					}
 					else if (eType == Payday3::EEnemyType::Drone)
-						vecAim = pActor->K2_GetActorLocation();
+						vecAim = Payday3::GetActorLocation(pActor);
 					else
 						vecAim = pMesh->GetSocketLocation(nameBone);
 					const SDK::FVector vecOffset = vecAim - vecCamera;

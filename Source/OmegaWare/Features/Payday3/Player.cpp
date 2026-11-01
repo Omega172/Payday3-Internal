@@ -221,7 +221,7 @@ namespace OmegaWare
 				if (pCharacter && m_bNameRequested.exchange(false))
 					ApplyName(pCharacter);
 
-				if (*m_pAutoSecure)
+				if (*m_pAutoSecure && Due(m_tpNextSecure, kActorScanInterval))
 					SecureThrownBags();
 
 				RunTeammates(pCharacter);
@@ -230,7 +230,7 @@ namespace OmegaWare
 
 				if (pCharacter && m_pReachPending)
 					ResolveReachPending(pCharacter);
-				else if (pCharacter && *m_pReach && m_pReachKey->uKey != 0 && m_pReachKey->bActive)
+				else if (pCharacter && *m_pReach && m_pReachKey->uKey != 0 && m_pReachKey->bActive && Due(m_tpNextReach, kActorScanInterval))
 					GrabThroughWalls(pCharacter);
 
 				ApplyMontageRate(m_stReload, pCharacter ? pCharacter->LastLocalReloadMontage : nullptr, *m_pInstantReload);
@@ -750,7 +750,8 @@ namespace OmegaWare
 					const Payday3::stItemInfo& rItem = Payday3::ResolveItem(pActor);
 					const bool bMiniGame = pActor->IsA(SDK::ASBZMiniGameActor::StaticClass());
 					const bool bOpens = bMiniGame || rItem.eType == Payday3::EItemType::DepositBox || pActor->IsA(SDK::ASBZInteractableGate::StaticClass());
-					const bool bPickup = (rItem.eCategory == Payday3::EItemCategory::Loot || rItem.eCategory == Payday3::EItemCategory::KeyItem) && !bOpens;
+					const bool bDyePack = pActor->IsA(SDK::ASBZTimedBagConverter::StaticClass());
+					const bool bPickup = (rItem.eCategory == Payday3::EItemCategory::Loot || rItem.eCategory == Payday3::EItemCategory::KeyItem || bDyePack) && !bOpens;
 					if (!bPickup && !(bOpens && *m_pReachOpen))
 						return;
 					if (bMiniGame)
@@ -759,9 +760,15 @@ namespace OmegaWare
 						if (pMiniGame->bIsUnlocked || pMiniGame->bIsMiniGameIgnored || !Payday3::IsAlive(pMiniGame->MiniGameComponent))
 							return;
 					}
+					else if (bDyePack)
+					{
+						const auto* pConverter = static_cast<SDK::ASBZTimedBagConverter*>(pActor);
+						if (!Payday3::IsAlive(pConverter->InteractableComponent) || !Payday3::IsAlive(pConverter->PropDamageComponent))
+							return;
+					}
 					else if (bOpens && pActor->IsA(SDK::ASBZInteractableGate::StaticClass()) && !Payday3::IsAlive(static_cast<SDK::ASBZInteractableGate*>(pActor)->MiniGameComponent))
 						return;
-					auto* pInteractable = bMiniGame ? static_cast<SDK::USBZBaseInteractableComponent*>(static_cast<SDK::ASBZMiniGameActor*>(pActor)->Interactable) : static_cast<SDK::USBZBaseInteractableComponent*>(pActor->GetComponentByClass(SDK::USBZBaseInteractableComponent::StaticClass()));
+					auto* pInteractable = bMiniGame ? static_cast<SDK::USBZBaseInteractableComponent*>(static_cast<SDK::ASBZMiniGameActor*>(pActor)->Interactable) : (bDyePack ? static_cast<SDK::USBZBaseInteractableComponent*>(static_cast<SDK::ASBZTimedBagConverter*>(pActor)->InteractableComponent) : static_cast<SDK::USBZBaseInteractableComponent*>(pActor->GetComponentByClass(SDK::USBZBaseInteractableComponent::StaticClass())));
 					if (!Payday3::IsAlive(pInteractable) || pInteractable->bIsHidden || m_setGrabbed.contains(pInteractable) || pInteractable->GetOwner() != pActor)
 						return;
 					if (pInteractable->IsA(SDK::USBZInteractableComponent::StaticClass()) && !static_cast<SDK::USBZInteractableComponent*>(pInteractable)->bInteractionEnabled)
@@ -822,6 +829,17 @@ namespace OmegaWare
 					pInteractor->Server_CompleteInteraction(pPending, m_iReachPendingId);
 					LogInfo("reach: opened {}", pOwner->GetName());
 				}
+			}
+
+			static constexpr std::chrono::milliseconds kActorScanInterval{ 50 };
+
+			[[nodiscard]] static bool Due(std::chrono::steady_clock::time_point& rNext, std::chrono::milliseconds msInterval)
+			{
+				const auto tpNow = std::chrono::steady_clock::now();
+				if (tpNow < rNext)
+					return false;
+				rNext = tpNow + msInterval;
+				return true;
 			}
 
 			void SecureThrownBags()
@@ -1131,6 +1149,8 @@ namespace OmegaWare
 			SDK::UWorld* m_pReachWorld = nullptr;
 			std::unordered_set<SDK::USBZBaseInteractableComponent*> m_setGrabbed;
 			SDK::UWorld* m_pSecureWorld = nullptr;
+			std::chrono::steady_clock::time_point m_tpNextSecure;
+			std::chrono::steady_clock::time_point m_tpNextReach;
 			std::unordered_set<SDK::ASBZBagItem*> m_setHandledBags;
 			std::atomic<bool> m_bNameRequested = false;
 			std::atomic<bool> m_bResetName = false;

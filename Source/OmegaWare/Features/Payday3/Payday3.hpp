@@ -97,6 +97,7 @@ namespace OmegaWare::Payday3
 
 	[[nodiscard]] EEnemyType ResolveEnemyType(SDK::AActor* pActor);
 	[[nodiscard]] bool IsDrone(const SDK::AActor* pActor);
+	[[nodiscard]] bool IsVip(SDK::AActor* pActor);
 	[[nodiscard]] bool IsPawnAlive(SDK::AActor* pActor);
 	[[nodiscard]] SDK::USkeletalMeshComponent* GetPawnMesh(SDK::AActor* pActor);
 	[[nodiscard]] SDK::USBZOutlineComponent* GetPawnOutline(SDK::AActor* pActor);
@@ -138,6 +139,8 @@ namespace OmegaWare::Payday3
 	}
 
 	[[nodiscard]] SDK::FName MakeName(const wchar_t* wszName);
+	[[nodiscard]] SDK::FName CachedLiteralName(const wchar_t* wszLiteral);
+	[[nodiscard]] SDK::FVector GetActorLocation(SDK::AActor* pActor);
 	[[nodiscard]] std::string SafeSubstr(const std::string& strValue, std::size_t uOffset, std::size_t uTrimEnd = 0);
 }
 

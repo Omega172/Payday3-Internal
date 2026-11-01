@@ -111,6 +111,7 @@ namespace OmegaWare
 			Cop,
 			Civilian,
 			Player,
+			Vip,
 		};
 
 		struct stColorPair
@@ -118,6 +119,7 @@ namespace OmegaWare
 			OmegaGUI::color* pCop = nullptr;
 			OmegaGUI::color* pCivilian = nullptr;
 			OmegaGUI::color* pPlayer = nullptr;
+			OmegaGUI::color* pVip = nullptr;
 
 			[[nodiscard]] OmegaGUI::color Get(EColorSet eSet) const
 			{
@@ -125,6 +127,7 @@ namespace OmegaWare
 				{
 				case EColorSet::Cop: return *pCop;
 				case EColorSet::Civilian: return *pCivilian;
+				case EColorSet::Vip: return *pVip;
 				default: return *pPlayer;
 				}
 			}
@@ -144,12 +147,102 @@ namespace OmegaWare
 			return flDistance >= 0.f && flDistance < 10000.f ? std::format("[{:.0f}m]", flDistance) : "[???m]";
 		}
 
-		std::optional<OmegaGUI::vec2> Project(SDK::APlayerController* pController, const SDK::FVector& vecWorld)
+		std::optional<OmegaGUI::vec2> ProjectEngine(SDK::APlayerController* pController, const SDK::FVector& vecWorld)
 		{
 			SDK::FVector2D vecScreen;
 			if (!pController->ProjectWorldLocationToScreen(vecWorld, &vecScreen, false))
 				return std::nullopt;
 			return OmegaGUI::vec2{ static_cast<float>(vecScreen.X), static_cast<float>(vecScreen.Y) };
+		}
+
+		struct stProjector
+		{
+			struct stAxis
+			{
+				double x = 0.;
+				double y = 0.;
+				double z = 0.;
+
+				[[nodiscard]] double Dot(const stAxis& rOther) const { return x * rOther.x + y * rOther.y + z * rOther.z; }
+			};
+
+			bool bPrepared = false;
+			bool bValid = false;
+			stAxis vecOrigin;
+			stAxis vecForward;
+			stAxis vecRight;
+			stAxis vecUp;
+			double dCenterX = 0.;
+			double dCenterY = 0.;
+			double dFocalX = 0.;
+			double dFocalY = 0.;
+
+			[[nodiscard]] SDK::FVector Point(double dForward, double dRight, double dUp) const
+			{
+				return SDK::FVector(vecOrigin.x + vecForward.x * dForward + vecRight.x * dRight + vecUp.x * dUp, vecOrigin.y + vecForward.y * dForward + vecRight.y * dRight + vecUp.y * dUp, vecOrigin.z + vecForward.z * dForward + vecRight.z * dRight + vecUp.z * dUp);
+			}
+
+			[[nodiscard]] std::optional<OmegaGUI::vec2> ProjectOwn(const SDK::FVector& vecWorld) const
+			{
+				const stAxis vecDelta{ vecWorld.X - vecOrigin.x, vecWorld.Y - vecOrigin.y, vecWorld.Z - vecOrigin.z };
+				const double dDepth = vecDelta.Dot(vecForward);
+				if (dDepth <= 0.)
+					return std::nullopt;
+				return OmegaGUI::vec2{ static_cast<float>(dCenterX + dFocalX * vecDelta.Dot(vecRight) / dDepth), static_cast<float>(dCenterY - dFocalY * vecDelta.Dot(vecUp) / dDepth) };
+			}
+
+			void Prepare(SDK::APlayerController* pController)
+			{
+				bPrepared = false;
+				bValid = false;
+				SDK::APlayerCameraManager* pCamera = pController->PlayerCameraManager;
+				if (!Memory::IsValidObjectPtr(pCamera))
+					return;
+				const SDK::FMinimalViewInfo& rView = pCamera->CameraCachePrivate.POV;
+				vecOrigin = { rView.Location.X, rView.Location.Y, rView.Location.Z };
+				constexpr double kDegrees = std::numbers::pi / 180.0;
+				const double dSinPitch = std::sin(rView.Rotation.Pitch * kDegrees);
+				const double dCosPitch = std::cos(rView.Rotation.Pitch * kDegrees);
+				const double dSinYaw = std::sin(rView.Rotation.Yaw * kDegrees);
+				const double dCosYaw = std::cos(rView.Rotation.Yaw * kDegrees);
+				const double dSinRoll = std::sin(rView.Rotation.Roll * kDegrees);
+				const double dCosRoll = std::cos(rView.Rotation.Roll * kDegrees);
+				vecForward = { dCosPitch * dCosYaw, dCosPitch * dSinYaw, dSinPitch };
+				vecRight = { dSinRoll * dSinPitch * dCosYaw - dCosRoll * dSinYaw, dSinRoll * dSinPitch * dSinYaw + dCosRoll * dCosYaw, -dSinRoll * dCosPitch };
+				vecUp = { -(dCosRoll * dSinPitch * dCosYaw + dSinRoll * dSinYaw), dCosYaw * dSinRoll - dCosRoll * dSinPitch * dSinYaw, dCosRoll * dCosPitch };
+				bPrepared = true;
+
+				constexpr double kDepth = 1000.;
+				constexpr double kSide = 400.;
+				constexpr double kRise = 300.;
+				const std::optional<OmegaGUI::vec2> optFirst = ProjectEngine(pController, Point(kDepth, kSide, kRise));
+				const std::optional<OmegaGUI::vec2> optSecond = ProjectEngine(pController, Point(kDepth, -kSide, -kRise));
+				if (!optFirst || !optSecond)
+					return;
+				dFocalX = (static_cast<double>(optFirst->x) - optSecond->x) / (2. * kSide / kDepth);
+				dFocalY = (static_cast<double>(optSecond->y) - optFirst->y) / (2. * kRise / kDepth);
+				dCenterX = (static_cast<double>(optFirst->x) + optSecond->x) * .5;
+				dCenterY = (static_cast<double>(optFirst->y) + optSecond->y) * .5;
+				if (!std::isfinite(dFocalX) || !std::isfinite(dFocalY) || dFocalX <= 1. || dFocalY <= 1.)
+					return;
+
+				constexpr float kTolerance = 1.5f;
+				const SDK::FVector vecCheck = Point(1700., -650., 180.);
+				const std::optional<OmegaGUI::vec2> optExpected = ProjectEngine(pController, vecCheck);
+				const std::optional<OmegaGUI::vec2> optOwn = ProjectOwn(vecCheck);
+				bValid = optExpected && optOwn && std::abs(optExpected->x - optOwn->x) <= kTolerance && std::abs(optExpected->y - optOwn->y) <= kTolerance;
+			}
+
+			[[nodiscard]] SDK::FVector Origin() const { return SDK::FVector(vecOrigin.x, vecOrigin.y, vecOrigin.z); }
+		};
+
+		stProjector g_stProjector;
+
+		std::optional<OmegaGUI::vec2> Project(SDK::APlayerController* pController, const SDK::FVector& vecWorld)
+		{
+			if (g_stProjector.bValid)
+				return g_stProjector.ProjectOwn(vecWorld);
+			return ProjectEngine(pController, vecWorld);
 		}
 
 		std::optional<stPawnStats> ReadPawnStats(SDK::AActor* pActor)
@@ -199,7 +292,7 @@ namespace OmegaWare
 			return stResult;
 		}
 
-		std::optional<stBox> CalculateBox(SDK::APlayerController* pController, SDK::AActor* pActor, SDK::USkeletalMeshComponent* pMesh, const SDK::FVector& vecCamera)
+		std::optional<stBox> CalculateBox(SDK::APlayerController* pController, SDK::AActor* pActor, SDK::USkeletalMeshComponent* pMesh, const SDK::FVector& vecCamera, const SDK::FVector& vecActor)
 		{
 			static const SDK::FName s_nameTop = Payday3::MakeName(L"HeadEnd");
 			static const SDK::FName s_nameBottom = Payday3::MakeName(L"Reference");
@@ -211,7 +304,7 @@ namespace OmegaWare
 			const float flHeight = std::abs(optTop->y - optBottom->y);
 			const double dYaw = pActor->K2_GetActorRotation().Yaw * (std::numbers::pi / 180.0);
 			const SDK::FVector vecFacing = SDK::FVector(std::cos(dYaw), std::sin(dYaw), 0.0).GetNormalized();
-			const SDK::FVector vecToActor = (pActor->K2_GetActorLocation() - vecCamera).GetNormalized();
+			const SDK::FVector vecToActor = (vecActor - vecCamera).GetNormalized();
 			const float flWidth = flHeight * (.25f + static_cast<float>(std::abs(vecFacing.Dot(vecToActor))) * .15f);
 			const float flCenter = (optTop->x + optBottom->x) * .5f;
 			return stBox{ flCenter - flWidth * .5f, std::min(optTop->y, optBottom->y), flCenter + flWidth * .5f, std::max(optTop->y, optBottom->y) };
@@ -344,6 +437,26 @@ namespace OmegaWare
 				m_pArmorColor = &Config::Add("visuals.armor_bar_color", OmegaGUI::color(0, 128, 255));
 				m_stSkeletonColors = { &Config::Add("visuals.skeleton_cop_color", OmegaGUI::color(255, 255, 0)), &Config::Add("visuals.skeleton_civilian_color", OmegaGUI::color(0, 255, 255)), &Config::Add("visuals.skeleton_player_color", OmegaGUI::color(0, 255, 255)) };
 				m_pShowDropOffs = &Config::Add("visuals.show_drop_offs", true);
+				m_pShowVips = &Config::Add("visuals.show_vips", true);
+				m_pVipColor = &Config::Add("visuals.vip_color", OmegaGUI::color(255, 215, 0));
+				for (stColorPair* pPair : { &m_stBoxColors, &m_stNameColors, &m_stDistanceColors, &m_stHealthColors, &m_stSkeletonColors })
+					pPair->pVip = m_pVipColor;
+				m_stVip.pEnabled = m_pShowVips;
+				m_stVip.pBox = &Config::Add("visuals.vip.box", true);
+				m_stVip.pName = &Config::Add("visuals.vip.name", true);
+				m_stVip.pDistance = &Config::Add("visuals.vip.distance", true);
+				m_stVip.pOutline = &Config::Add("visuals.vip.outline", false);
+#ifdef _DEBUG
+				m_pDebugEnabled = &Config::Add("visuals.debug.enabled", false);
+				m_pDebugActors = &Config::Add("visuals.debug.actors", true);
+				m_pDebugHierarchy = &Config::Add("visuals.debug.hierarchy", true);
+				m_pDebugActorDistance = &Config::Add("visuals.debug.actor_distance", 10.f);
+				m_pDebugBones = &Config::Add("visuals.debug.bones", false);
+				m_pDebugBoneLines = &Config::Add("visuals.debug.bone_lines", true);
+				m_pDebugBoneIndices = &Config::Add("visuals.debug.bone_indices", false);
+				m_pDebugBoneNames = &Config::Add("visuals.debug.bone_names", false);
+				m_pDebugBoneDistance = &Config::Add("visuals.debug.bone_distance", 30.f);
+#endif
 				m_pDropOffColor = &Config::Add("visuals.drop_off_color", OmegaGUI::color(0, 255, 128));
 				for (stItemSetting& rSetting : m_aItems)
 				{
@@ -364,8 +477,15 @@ namespace OmegaWare
 
 			void Render() override
 			{
+#ifdef _DEBUG
+				if (DebugOn())
+				{
+					RenderDebug();
+					return;
+				}
+#endif
 				const stCategory& rEnemies = Category(ECategory::Enemies);
-				const bool bPeople = rEnemies.AnyDrawn() || Category(ECategory::Civilians).AnyDrawn() || Category(ECategory::Players).AnyDrawn();
+				const bool bPeople = rEnemies.AnyDrawn() || Category(ECategory::Civilians).AnyDrawn() || Category(ECategory::Players).AnyDrawn() || (VipOn() && m_stVip.AnyDrawn());
 				const bool bCameras = CamerasShown();
 				const bool bThings = ThingsShown();
 				if ((!bPeople && !bThings) || !Payday3::IsReady())
@@ -383,7 +503,8 @@ namespace OmegaWare
 				}
 
 				OmegaGUI::clDrawList& rList = OmegaGUI::GetBackgroundDrawList();
-				const SDK::FVector vecCamera = pController->PlayerCameraManager->GetCameraLocation();
+				g_stProjector.Prepare(pController);
+				const SDK::FVector vecCamera = g_stProjector.bPrepared ? g_stProjector.Origin() : pController->PlayerCameraManager->GetCameraLocation();
 				if (bPeople)
 					DrawCharacters(rList, pController, vecCamera);
 				if (bThings)
@@ -436,6 +557,13 @@ namespace OmegaWare
 					DrawCategoryPage(uCategory);
 					OmegaGUI::EndTabItem();
 				}
+#ifdef _DEBUG
+				if (OmegaGUI::BeginTabItem("Debug###visuals.esp.debug"))
+				{
+					DrawDebugPage();
+					OmegaGUI::EndTabItem();
+				}
+#endif
 				OmegaGUI::EndTabBar();
 			}
 
@@ -459,9 +587,23 @@ namespace OmegaWare
 			[[nodiscard]] stCategory& Category(ECategory eCategory) { return m_aCategories[static_cast<std::size_t>(eCategory)]; }
 			[[nodiscard]] const stCategory& Category(ECategory eCategory) const { return m_aCategories[static_cast<std::size_t>(eCategory)]; }
 
+			[[nodiscard]] bool DebugOn() const
+			{
+#ifdef _DEBUG
+				return *m_pDebugEnabled;
+#else
+				return false;
+#endif
+			}
+
+			[[nodiscard]] bool VipOn() const
+			{
+				return stCategory::On(Category(ECategory::Objectives).pEnabled) && stCategory::On(m_pShowVips);
+			}
+
 			[[nodiscard]] bool AnyOutline() const
 			{
-				return std::ranges::any_of(m_aCategories, [](const stCategory& rCategory) { return rCategory.OutlineOn(); });
+				return (VipOn() && m_stVip.OutlineOn()) || std::ranges::any_of(m_aCategories, [](const stCategory& rCategory) { return rCategory.OutlineOn(); });
 			}
 
 			[[nodiscard]] bool HasAimbotTarget() const
@@ -471,7 +613,7 @@ namespace OmegaWare
 
 			[[nodiscard]] bool WantsOutlines() const
 			{
-				return AnyOutline() || HasAimbotTarget();
+				return !DebugOn() && (AnyOutline() || HasAimbotTarget());
 			}
 
 			[[nodiscard]] static ECategory CategoryOf(Payday3::EItemType eType)
@@ -571,7 +713,22 @@ namespace OmegaWare
 					if (CategoryOf(rSetting.eType) == eCategory)
 						OmegaGUI::Checkbox(std::format("{}###{}", OmegaLocalization::Get(rSetting.strShow), rSetting.strShow), rSetting.pShow);
 				if (eCategory == ECategory::Objectives)
+				{
 					OmegaGUI::Checkbox("visuals.show_drop_offs"_l, m_pShowDropOffs);
+					OmegaGUI::Separator();
+					OmegaGUI::Checkbox("visuals.show_vips"_l, m_pShowVips);
+					OmegaGUI::ItemTooltip("visuals.show_vips_hint"_t);
+					if (*m_pShowVips)
+					{
+						auto fnVipOption = [&](std::string_view strText, std::string_view strOption, bool* pValue) {
+							OmegaGUI::Checkbox(std::format("{}###visuals.vip.{}", OmegaLocalization::Get(strText), strOption), pValue);
+						};
+						fnVipOption("visuals.box", "box", m_stVip.pBox);
+						fnVipOption("visuals.name", "name", m_stVip.pName);
+						fnVipOption("visuals.distance", "distance", m_stVip.pDistance);
+						fnVipOption("visuals.outline", "outline", m_stVip.pOutline);
+					}
+				}
 			}
 
 			void DrawCategoryColors(ECategory eCategory)
@@ -611,7 +768,10 @@ namespace OmegaWare
 						if (CategoryOf(rSetting.eType) == eCategory)
 							fnRow(rSetting.strShow, rSetting.strColor, rSetting.pColor);
 					if (eCategory == ECategory::Objectives)
+					{
 						fnRow("visuals.show_drop_offs", "visuals.drop_off_color", m_pDropOffColor);
+						fnRow("visuals.show_vips", "visuals.vip_color", m_pVipColor);
+					}
 				}
 				OmegaGUI::EndTable();
 			}
@@ -851,8 +1011,9 @@ namespace OmegaWare
 						if (!bPlayerPawn && eKind != Payday3::EEnemyCategory::Cop && eKind != Payday3::EEnemyCategory::Civilian)
 							continue;
 						const ECategory eCategory = bPlayerPawn ? ECategory::Players : (eKind == Payday3::EEnemyCategory::Cop ? ECategory::Enemies : ECategory::Civilians);
+						const bool bVip = eCategory == ECategory::Civilians && VipOn() && Payday3::IsVip(pActor);
 						const bool bAimbotTarget = *m_pAimbotTarget && pActor == Payday3::GetAimbotTarget();
-						if (Payday3::IsPawnAlive(pActor) && (Category(eCategory).OutlineOn() || bAimbotTarget))
+						if (Payday3::IsPawnAlive(pActor) && ((bVip ? m_stVip : Category(eCategory)).OutlineOn() || bAimbotTarget))
 						{
 							int iColorIndex = kPeopleOutlineIndex;
 							SDK::USBZOutlineComponent* pPawnOutline = Payday3::GetPawnOutline(pActor);
@@ -941,8 +1102,9 @@ namespace OmegaWare
 					if (!bPlayerPawn && stInfo.eCategory != Payday3::EEnemyCategory::Cop && stInfo.eCategory != Payday3::EEnemyCategory::Civilian)
 						continue;
 					const bool bCop = stInfo.eCategory == Payday3::EEnemyCategory::Cop;
-					const EColorSet eSet = bPlayerPawn ? EColorSet::Player : (bCop ? EColorSet::Cop : EColorSet::Civilian);
-					const stCategory& rCategory = Category(bPlayerPawn ? ECategory::Players : (bCop ? ECategory::Enemies : ECategory::Civilians));
+					const bool bVip = !bPlayerPawn && !bCop && VipOn() && Payday3::IsVip(pActor);
+					const EColorSet eSet = bPlayerPawn ? EColorSet::Player : (bVip ? EColorSet::Vip : (bCop ? EColorSet::Cop : EColorSet::Civilian));
+					const stCategory& rCategory = bVip ? m_stVip : Category(bPlayerPawn ? ECategory::Players : (bCop ? ECategory::Enemies : ECategory::Civilians));
 					std::string strPlayerName;
 					Payday3::EModUserKind eModKind = Payday3::EModUserKind::None;
 					if (bPlayerPawn)
@@ -960,13 +1122,14 @@ namespace OmegaWare
 
 					if (stCategory::On(rCategory.pBox) || bTarget || *rCategory.pName || *rCategory.pDistance || stCategory::On(rCategory.pHealthBar) || stCategory::On(rCategory.pArmorBar))
 					{
-						const std::optional<stBox> optBox = bDrone ? CalculateActorBox(pController, pActor) : CalculateBox(pController, pActor, pMesh, vecCamera);
+						const SDK::FVector vecActor = Payday3::GetActorLocation(pActor);
+						const std::optional<stBox> optBox = bDrone ? CalculateActorBox(pController, pActor) : CalculateBox(pController, pActor, pMesh, vecCamera, vecActor);
 						if (!optBox)
 							continue;
 						const bool bStats = stCategory::On(rCategory.pHealthBar) || stCategory::On(rCategory.pArmorBar);
 						const stPawnStats stStats = bStats ? ReadPawnStats(pActor).value_or(stPawnStats{}) : stPawnStats{};
-						const float flDistance = static_cast<float>((pActor->K2_GetActorLocation() - vecCamera).Magnitude() / 100.0);
-						DrawBox(rList, *optBox, bPlayerPawn ? std::string_view(strPlayerName) : stInfo.strName, flDistance, stStats, rCategory, eSet, *m_pOmegaTag ? eModKind : Payday3::EModUserKind::None, bTarget);
+						const float flDistance = static_cast<float>((vecActor - vecCamera).Magnitude() / 100.0);
+						DrawBox(rList, *optBox, bPlayerPawn ? std::string_view(strPlayerName) : (bVip ? std::string_view("VIP") : stInfo.strName), flDistance, stStats, rCategory, eSet, *m_pOmegaTag ? eModKind : Payday3::EModUserKind::None, bTarget);
 					}
 
 					if (!bDrone && stCategory::On(rCategory.pSkeleton))
@@ -1099,10 +1262,21 @@ namespace OmegaWare
 				return OW_FIELD(pMachine, CurrentState) == SDK::ESBZBreakableMachineState::OpenBroken;
 			}
 
+			[[nodiscard]] static bool IsLootedInstant(SDK::AActor* pActor)
+			{
+				if (!pActor->IsA(SDK::ASBZInstantLoot::StaticClass()))
+					return false;
+				return pActor->bHidden || static_cast<SDK::ASBZInstantLoot*>(pActor)->bIsLooted;
+			}
+
 			[[nodiscard]] static bool IsDepleted(Payday3::EItemType eType, SDK::AActor* pActor)
 			{
 				switch (eType)
 				{
+				case Payday3::EItemType::Cash:
+				case Payday3::EItemType::MoneyMedium:
+				case Payday3::EItemType::Jewelry:
+					return IsLootedInstant(pActor);
 				case Payday3::EItemType::QRPhone:
 					return IsCollectedPhone(pActor);
 				case Payday3::EItemType::ATM:
@@ -1116,16 +1290,22 @@ namespace OmegaWare
 				}
 			}
 
+			[[nodiscard]] static float DistanceMeters(const SDK::FVector& vecActor, const SDK::FVector& vecCamera)
+			{
+				return static_cast<float>((vecActor - vecCamera).Magnitude() / 100.0);
+			}
+
 			[[nodiscard]] static float DistanceMeters(SDK::AActor* pActor, const SDK::FVector& vecCamera)
 			{
-				return static_cast<float>((pActor->K2_GetActorLocation() - vecCamera).Magnitude() / 100.0);
+				return DistanceMeters(Payday3::GetActorLocation(pActor), vecCamera);
 			}
 
 			void DrawCamera(OmegaGUI::clDrawList& rList, SDK::APlayerController* pController, SDK::ASBZSecurityCamera* pCamera, const SDK::FVector& vecCamera) const
 			{
 				if (pCamera->CameraState == SDK::ESBZCameraState::Destroyed || !Payday3::IsAliveActor(pCamera))
 					return;
-				const std::optional<OmegaGUI::vec2> optScreen = Project(pController, pCamera->K2_GetActorLocation());
+				const SDK::FVector vecActor = Payday3::GetActorLocation(pCamera);
+				const std::optional<OmegaGUI::vec2> optScreen = Project(pController, vecActor);
 				if (!optScreen)
 					return;
 				const stCategory& rEnemies = Category(ECategory::Enemies);
@@ -1138,13 +1318,14 @@ namespace OmegaWare
 				if (*rEnemies.pName || *rEnemies.pDistance)
 				{
 					const std::string_view strLabel = byAlpha == 255 ? "Camera" : "Camera (off)";
-					DrawNameAndDistance(rList, optScreen->x, optScreen->y - 8.f, *rEnemies.pName ? strLabel : std::string_view(), m_stNameColors.pCop->WithAlpha(byAlpha), *rEnemies.pDistance ? FormatDistance(DistanceMeters(pCamera, vecCamera)) : std::string(), m_stDistanceColors.pCop->WithAlpha(byAlpha));
+					DrawNameAndDistance(rList, optScreen->x, optScreen->y - 8.f, *rEnemies.pName ? strLabel : std::string_view(), m_stNameColors.pCop->WithAlpha(byAlpha), *rEnemies.pDistance ? FormatDistance(DistanceMeters(vecActor, vecCamera)) : std::string(), m_stDistanceColors.pCop->WithAlpha(byAlpha));
 				}
 			}
 
 			void DrawDropOff(OmegaGUI::clDrawList& rList, SDK::APlayerController* pController, SDK::ASBZBagTriggerVolume* pVolume, const SDK::FVector& vecCamera) const
 			{
-				const std::optional<OmegaGUI::vec2> optScreen = Project(pController, pVolume->K2_GetActorLocation());
+				const SDK::FVector vecActor = Payday3::GetActorLocation(pVolume);
+				const std::optional<OmegaGUI::vec2> optScreen = Project(pController, vecActor);
 				if (!optScreen)
 					return;
 				const stCategory& rObjectives = Category(ECategory::Objectives);
@@ -1153,9 +1334,242 @@ namespace OmegaWare
 				rList.AddCircle(*optScreen, 6.f, kOutline, 16, 3.f);
 				rList.AddCircle(*optScreen, 6.f, col, 16, 1.5f);
 				const std::string_view strLabel = bActive ? "Drop-off" : "Drop-off (inactive)";
-				DrawNameAndDistance(rList, optScreen->x, optScreen->y - 10.f, *rObjectives.pName ? strLabel : std::string_view(), col, *rObjectives.pDistance ? FormatDistance(DistanceMeters(pVolume, vecCamera)) : std::string(), col);
+				DrawNameAndDistance(rList, optScreen->x, optScreen->y - 10.f, *rObjectives.pName ? strLabel : std::string_view(), col, *rObjectives.pDistance ? FormatDistance(DistanceMeters(vecActor, vecCamera)) : std::string(), col);
 			}
 
+#ifdef _DEBUG
+			static constexpr std::size_t kDebugActorSlice = 600;
+			static constexpr std::size_t kDebugBoneTargets = 8;
+			static constexpr std::chrono::milliseconds kDebugCycleMinimum{ 250 };
+
+			struct stDebugBones
+			{
+				std::vector<SDK::FName> aNames;
+				std::vector<int> aParents;
+				std::vector<std::string> aNameText;
+				std::vector<std::string> aIndexText;
+				std::vector<std::string> aBothText;
+			};
+
+			struct stDebugBoneTarget
+			{
+				SDK::USkeletalMeshComponent* pMesh = nullptr;
+				float flDistance = 0.f;
+			};
+
+			void DrawDebugPage()
+			{
+				OmegaGUI::Checkbox("Debug ESP###visuals.debug.enabled", m_pDebugEnabled);
+				OmegaGUI::ItemTooltip("replaces every other esp and outline while on");
+				if (!*m_pDebugEnabled)
+					return;
+				OmegaGUI::Spacing();
+				OmegaGUI::BeginColumns(2);
+				if (OmegaGUI::BeginSection("Actors###visuals.debug.section_actors"))
+				{
+					OmegaGUI::Checkbox("class names###visuals.debug.actors", m_pDebugActors);
+					OmegaGUI::ItemTooltip("labels every actor in range with its class");
+					if (*m_pDebugActors)
+					{
+						OmegaGUI::Checkbox("full hierarchy###visuals.debug.hierarchy", m_pDebugHierarchy);
+						OmegaGUI::ItemTooltip("also lists every parent class below the actor class");
+						OmegaGUI::SliderFloat("range###visuals.debug.actor_distance", m_pDebugActorDistance, 1.f, 200.f, "{:.0f} m");
+					}
+					OmegaGUI::EndSection();
+				}
+				OmegaGUI::NextColumn();
+				if (OmegaGUI::BeginSection("Bones###visuals.debug.section_bones"))
+				{
+					OmegaGUI::Checkbox("bones###visuals.debug.bones", m_pDebugBones);
+					OmegaGUI::ItemTooltip("debug skeleton of every pawn in range, built from the mesh's own bone hierarchy");
+					if (*m_pDebugBones)
+					{
+						OmegaGUI::Checkbox("bone lines###visuals.debug.bone_lines", m_pDebugBoneLines);
+						OmegaGUI::Checkbox("bone indices###visuals.debug.bone_indices", m_pDebugBoneIndices);
+						OmegaGUI::Checkbox("bone names###visuals.debug.bone_names", m_pDebugBoneNames);
+						OmegaGUI::SliderFloat("range###visuals.debug.bone_distance", m_pDebugBoneDistance, 1.f, 200.f, "{:.0f} m");
+					}
+					OmegaGUI::EndSection();
+				}
+				OmegaGUI::EndColumns();
+			}
+
+			void RenderDebug()
+			{
+				if (!Payday3::IsReady())
+					return;
+				SDK::UWorld* pWorld = Unreal::GetWorld();
+				SDK::APlayerController* pController = Unreal::GetPlayerController();
+				if (!pWorld || !Memory::IsValidObjectPtr(pWorld->PersistentLevel) || !pController || !Memory::IsValidObjectPtr(pController->PlayerCameraManager))
+					return;
+
+				if (pWorld != m_pDebugWorld)
+				{
+					m_pDebugWorld = pWorld;
+					m_aDebugActors.clear();
+					m_aDebugNear.clear();
+					m_aDebugNearNext.clear();
+					m_uDebugCursor = 0;
+					m_mapDebugClasses.clear();
+					m_mapDebugBones.clear();
+				}
+
+				OmegaGUI::clDrawList& rList = OmegaGUI::GetBackgroundDrawList();
+				g_stProjector.Prepare(pController);
+				const SDK::FVector vecCamera = g_stProjector.bPrepared ? g_stProjector.Origin() : pController->PlayerCameraManager->GetCameraLocation();
+				if (*m_pDebugActors)
+				{
+					RefreshDebugActors(pWorld, vecCamera);
+					DrawDebugActors(rList, pController, vecCamera);
+				}
+				if (*m_pDebugBones)
+					DrawDebugBones(rList, pController, vecCamera);
+			}
+
+			void RefreshDebugActors(SDK::UWorld* pWorld, const SDK::FVector& vecCamera)
+			{
+				using Clock_t = std::chrono::steady_clock;
+				if (m_uDebugCursor >= m_aDebugActors.size())
+				{
+					if (Clock_t::now() < m_tpDebugCycle)
+						return;
+					if (!m_aDebugActors.empty())
+						m_aDebugNear.swap(m_aDebugNearNext);
+					m_aDebugNearNext.clear();
+					m_aDebugActors.clear();
+					Payday3::ForEachLevelActor(pWorld, [&](SDK::AActor* pActor) { m_aDebugActors.push_back(pActor); });
+					m_uDebugCursor = 0;
+					m_tpDebugCycle = Clock_t::now() + kDebugCycleMinimum;
+				}
+
+				const float flReach = *m_pDebugActorDistance * 1.5f + 5.f;
+				const std::size_t uEnd = std::min(m_uDebugCursor + kDebugActorSlice, m_aDebugActors.size());
+				for (; m_uDebugCursor < uEnd; ++m_uDebugCursor)
+				{
+					SDK::AActor* pActor = m_aDebugActors[m_uDebugCursor];
+					if (Payday3::IsAliveActor(pActor) && DistanceMeters(pActor, vecCamera) <= flReach)
+						m_aDebugNearNext.push_back(pActor);
+				}
+			}
+
+			const std::vector<std::string>& DebugClassChain(SDK::UClass* pClass)
+			{
+				auto [itChain, bInserted] = m_mapDebugClasses.try_emplace(pClass);
+				if (bInserted)
+					for (SDK::UStruct* pStruct = pClass; pStruct; pStruct = static_cast<SDK::UStruct*>(pStruct->SuperStruct))
+						itChain->second.push_back(pStruct->Name.ToString());
+				return itChain->second;
+			}
+
+			void DrawDebugActors(OmegaGUI::clDrawList& rList, SDK::APlayerController* pController, const SDK::FVector& vecCamera)
+			{
+				constexpr OmegaGUI::color colText(255, 0, 0);
+				for (SDK::AActor* pActor : m_aDebugNear)
+				{
+					if (!Payday3::IsAliveActor(pActor) || !pActor->Class || DistanceMeters(pActor, vecCamera) > *m_pDebugActorDistance)
+						continue;
+					const std::optional<OmegaGUI::vec2> optScreen = Project(pController, pActor->K2_GetActorLocation());
+					if (!optScreen)
+						continue;
+					const std::vector<std::string>& rChain = DebugClassChain(pActor->Class);
+					const std::size_t uLines = *m_pDebugHierarchy ? rChain.size() : std::min<std::size_t>(rChain.size(), 1);
+					float flY = optScreen->y - 8.f;
+					for (std::size_t uLine = 0; uLine < uLines; ++uLine)
+					{
+						const OmegaGUI::vec2 vecSize = OmegaGUI::CalcTextSize(rChain[uLine]);
+						DrawOutlinedText(rList, { optScreen->x - vecSize.x * .5f, flY }, colText, rChain[uLine]);
+						flY += vecSize.y + 2.f;
+					}
+				}
+			}
+
+			const stDebugBones& DebugBones(SDK::USkeletalMeshComponent* pMesh)
+			{
+				auto [itCache, bInserted] = m_mapDebugBones.try_emplace(pMesh);
+				stDebugBones& rBones = itCache->second;
+				const int iBones = pMesh->GetNumBones();
+				if (!bInserted && static_cast<int>(rBones.aNames.size()) == iBones)
+					return rBones;
+
+				rBones = {};
+				rBones.aNames.reserve(iBones);
+				rBones.aParents.reserve(iBones);
+				for (int iBone = 0; iBone < iBones; ++iBone)
+				{
+					const SDK::FName nameBone = pMesh->GetBoneName(iBone);
+					rBones.aNames.push_back(nameBone);
+					rBones.aParents.push_back(pMesh->GetBoneIndex(pMesh->GetParentBone(nameBone)));
+					std::string strName = nameBone.ToString();
+					std::string strIndex = std::to_string(iBone);
+					rBones.aBothText.push_back(std::format("{} {}", strIndex, strName));
+					rBones.aNameText.push_back(std::move(strName));
+					rBones.aIndexText.push_back(std::move(strIndex));
+				}
+				return rBones;
+			}
+
+			void DrawDebugBones(OmegaGUI::clDrawList& rList, SDK::APlayerController* pController, const SDK::FVector& vecCamera)
+			{
+				SDK::USBZActorContainer* pPawns = Payday3::GetAllPawns();
+				if (!pPawns)
+					return;
+
+				std::erase_if(m_mapDebugBones, [](const auto& rEntry) { return !Payday3::IsLiveObject(rEntry.first); });
+
+				std::vector<stDebugBoneTarget> aTargets;
+				SDK::APawn* pLocalPawn = pController->AcknowledgedPawn;
+				SDK::TArray<SDK::UObject*>& aActors = pPawns->Objects;
+				for (int iActor = 0; iActor < aActors.Num(); ++iActor)
+				{
+					auto* pActor = static_cast<SDK::AActor*>(aActors[iActor]);
+					if (!Payday3::IsAliveActor(pActor) || pActor == pLocalPawn || Payday3::IsDrone(pActor))
+						continue;
+					SDK::USkeletalMeshComponent* pMesh = Payday3::GetPawnMesh(pActor);
+					const float flDistance = DistanceMeters(pActor, vecCamera);
+					if (pMesh && flDistance <= *m_pDebugBoneDistance)
+						aTargets.push_back({ pMesh, flDistance });
+				}
+				std::ranges::sort(aTargets, {}, &stDebugBoneTarget::flDistance);
+				if (aTargets.size() > kDebugBoneTargets)
+					aTargets.resize(kDebugBoneTargets);
+
+				for (const stDebugBoneTarget& rTarget : aTargets)
+					DrawDebugSkeleton(rList, pController, rTarget.pMesh);
+			}
+
+			void DrawDebugSkeleton(OmegaGUI::clDrawList& rList, SDK::APlayerController* pController, SDK::USkeletalMeshComponent* pMesh)
+			{
+				constexpr OmegaGUI::color colLine(255, 0, 255);
+				constexpr OmegaGUI::color colText(0, 255, 0);
+				const stDebugBones& rBones = DebugBones(pMesh);
+				const std::size_t uCount = rBones.aNames.size();
+				const bool bLines = *m_pDebugBoneLines;
+				const bool bIndices = *m_pDebugBoneIndices;
+				const bool bNames = *m_pDebugBoneNames;
+				if (uCount < 2 || (!bLines && !bIndices && !bNames))
+					return;
+
+				m_aDebugScreen.assign(uCount, std::nullopt);
+				for (std::size_t uBone = 1; uBone < uCount; ++uBone)
+					m_aDebugScreen[uBone] = Project(pController, pMesh->GetSocketLocation(rBones.aNames[uBone]));
+
+				for (std::size_t uBone = 1; uBone < uCount; ++uBone)
+				{
+					const std::optional<OmegaGUI::vec2>& optBone = m_aDebugScreen[uBone];
+					if (!optBone)
+						continue;
+					const int iParent = rBones.aParents[uBone];
+					if (bLines && iParent > 0 && m_aDebugScreen[iParent])
+					{
+						rList.AddLine(*m_aDebugScreen[iParent] - OmegaGUI::vec2{ 1.f, 1.f }, *optBone - OmegaGUI::vec2{ 1.f, 1.f }, kOutline, 3.f);
+						rList.AddLine(*m_aDebugScreen[iParent], *optBone, colLine, 1.5f);
+					}
+					if (bIndices || bNames)
+						DrawOutlinedText(rList, *optBone, colText, bIndices && bNames ? rBones.aBothText[uBone] : (bNames ? rBones.aNameText[uBone] : rBones.aIndexText[uBone]));
+				}
+			}
+
+#endif
 			[[nodiscard]] bool CamerasShown() const
 			{
 				const stCategory& rEnemies = Category(ECategory::Enemies);
@@ -1164,7 +1578,7 @@ namespace OmegaWare
 
 			[[nodiscard]] bool ThingsShown() const
 			{
-				return CamerasShown() || Category(ECategory::Loot).AnyDrawn() || Category(ECategory::KeyItems).AnyDrawn() || Category(ECategory::Objectives).AnyDrawn() || Category(ECategory::Supplies).AnyDrawn();
+				return !DebugOn() && (CamerasShown() || Category(ECategory::Loot).AnyDrawn() || Category(ECategory::KeyItems).AnyDrawn() || Category(ECategory::Objectives).AnyDrawn() || Category(ECategory::Supplies).AnyDrawn());
 			}
 
 			void ScanThings()
@@ -1250,13 +1664,34 @@ namespace OmegaWare
 				if (IsDepleted(rItem.eType, pActor))
 					return;
 
-				const std::optional<OmegaGUI::vec2> optScreen = Project(pController, pActor->K2_GetActorLocation());
+				const SDK::FVector vecActor = Payday3::GetActorLocation(pActor);
+				const std::optional<OmegaGUI::vec2> optScreen = Project(pController, vecActor);
 				if (!optScreen)
 					return;
 				const float flLineHeight = OmegaGUI::CalcTextSize(rItem.strLabel).y;
-				DrawNameAndDistance(rList, optScreen->x, optScreen->y + flLineHeight * .5f, *rCategory.pName ? rItem.strLabel : std::string_view(), *pSetting->pColor, *rCategory.pDistance ? FormatDistance(DistanceMeters(pActor, vecCamera)) : std::string(), *pSetting->pColor);
+				DrawNameAndDistance(rList, optScreen->x, optScreen->y + flLineHeight * .5f, *rCategory.pName ? rItem.strLabel : std::string_view(), *pSetting->pColor, *rCategory.pDistance ? FormatDistance(DistanceMeters(vecActor, vecCamera)) : std::string(), *pSetting->pColor);
 			}
 
+#ifdef _DEBUG
+			bool* m_pDebugEnabled = nullptr;
+			bool* m_pDebugActors = nullptr;
+			bool* m_pDebugHierarchy = nullptr;
+			float* m_pDebugActorDistance = nullptr;
+			bool* m_pDebugBones = nullptr;
+			bool* m_pDebugBoneLines = nullptr;
+			bool* m_pDebugBoneIndices = nullptr;
+			bool* m_pDebugBoneNames = nullptr;
+			float* m_pDebugBoneDistance = nullptr;
+			SDK::UWorld* m_pDebugWorld = nullptr;
+			std::vector<SDK::AActor*> m_aDebugActors;
+			std::vector<SDK::AActor*> m_aDebugNear;
+			std::vector<SDK::AActor*> m_aDebugNearNext;
+			std::size_t m_uDebugCursor = 0;
+			std::chrono::steady_clock::time_point m_tpDebugCycle;
+			std::unordered_map<SDK::UClass*, std::vector<std::string>> m_mapDebugClasses;
+			std::unordered_map<SDK::USkeletalMeshComponent*, stDebugBones> m_mapDebugBones;
+			std::vector<std::optional<OmegaGUI::vec2>> m_aDebugScreen;
+#endif
 			std::array<stCategory, 7> m_aCategories = { {
 				{ "enemies", "visuals.tab_enemies", true },
 				{ "civilians", "visuals.tab_civilians", true },
@@ -1277,6 +1712,9 @@ namespace OmegaWare
 			OmegaGUI::color* m_pArmorColor = nullptr;
 			stColorPair m_stSkeletonColors;
 			bool* m_pShowDropOffs = nullptr;
+			bool* m_pShowVips = nullptr;
+			OmegaGUI::color* m_pVipColor = nullptr;
+			stCategory m_stVip{ "vip", "", true };
 			OmegaGUI::color* m_pDropOffColor = nullptr;
 			std::array<stItemSetting, 18> m_aItems = { {
 				{ Payday3::EItemType::Cash, "visuals.show_cash", "visuals.item_cash_color", OmegaGUI::color(0, 255, 255) },
