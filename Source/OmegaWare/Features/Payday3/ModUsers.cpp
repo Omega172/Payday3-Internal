@@ -21,6 +21,7 @@
 #include <cstdint>
 #include <mutex>
 #include <string>
+#include <unordered_map>
 #include <unordered_set>
 #include <vector>
 
@@ -98,8 +99,7 @@ namespace OmegaWare::Payday3
 					return;
 				if (!Unreal::RunOnGameThread([this] {
 						m_bQueued = false;
-						if (IsActive())
-							Announce();
+						Features::Guard(*this, "game thread", [this] { Announce(); });
 					}))
 					m_bQueued = false;
 			}
@@ -132,12 +132,20 @@ namespace OmegaWare::Payday3
 				}
 			}
 
+		public:
+			bool SendRawPublic(const std::wstring& wstrText) { return SendRaw(wstrText); }
+
 		private:
 			void OnChat(SDK::FSBZPlayerChatEvent& rEvent, bool& bSkip)
 			{
+				const std::wstring wstrText = rEvent.Message.ToWString();
+				if (Payday3::HandleSpawnMessage(rEvent.PlayerState, wstrText))
+				{
+					bSkip = true;
+					return;
+				}
 				if (!*m_pDetect)
 					return;
-				const std::wstring wstrText = rEvent.Message.ToWString();
 				const std::string strSender = Memory::IsValidObjectPtr(rEvent.PlayerState) ? rEvent.PlayerState->GetPlayerName().ToString() : std::string();
 				if (m_iChatLogged < 12)
 				{
@@ -159,6 +167,29 @@ namespace OmegaWare::Payday3
 					g_aNewModUsers.push_back(strName);
 					LogInfo("omegaware users: {} is using OmegaWare ({})", strName, IdsOf(rEvent.PlayerState));
 				}
+			}
+
+			bool SendRaw(const std::wstring& wstrText)
+			{
+				SDK::UWorld* pWorld = Unreal::GetWorld();
+				SDK::APawn* pLocalPawn = Unreal::GetLocalPawn();
+				if (!pWorld || !Memory::IsValidObjectPtr(pLocalPawn) || !Memory::IsValidObjectPtr(pLocalPawn->PlayerState))
+					return false;
+				if (!Payday3::IsAlive(m_pChat))
+				{
+					m_pChat = nullptr;
+					SDK::TArray<SDK::AActor*> aChats;
+					SDK::UGameplayStatics::GetAllActorsOfClass(pWorld, SDK::ASBZChatInGame::StaticClass(), &aChats);
+					if (aChats.Num() > 0)
+						m_pChat = static_cast<SDK::ASBZChatInGame*>(aChats[0]);
+				}
+				if (!m_pChat)
+					return false;
+				SDK::FSBZPlayerChatEvent stEvent{};
+				stEvent.PlayerState = pLocalPawn->PlayerState;
+				stEvent.Message = SDK::FString(wstrText.c_str());
+				m_pChat->SendChatMessageToServer(stEvent);
+				return true;
 			}
 
 			void Announce()
@@ -191,7 +222,7 @@ namespace OmegaWare::Payday3
 				if (iCount < 2 || (!bNewPlayers && tpNow < m_tpNext) || tpNow < m_tpEarliest)
 					return;
 
-				if (!Payday3::IsLiveObject(m_pChat))
+				if (!Payday3::IsAlive(m_pChat))
 				{
 					m_pChat = nullptr;
 					if (tpNow < m_tpNextSearch)
@@ -239,15 +270,68 @@ namespace OmegaWare::Payday3
 		g_clModUsersFeature.DrawSection();
 	}
 
+	bool SendModChat(const std::wstring& wstrText)
+	{
+		return g_clModUsersFeature.SendRawPublic(wstrText);
+	}
+
+	std::size_t ModUserCount()
+	{
+		std::scoped_lock lckUsers(g_mtxModUsers);
+		return g_setModUsers.size();
+	}
+
+	namespace
+	{
+		constexpr std::chrono::milliseconds kNameRefresh{ 500 };
+		constexpr std::size_t kNameCacheLimit = 128;
+
+		struct stCachedPlayer
+		{
+			std::string strName;
+			EModUserKind eKind = EModUserKind::None;
+			std::chrono::steady_clock::time_point tpRefreshed;
+		};
+
+		std::mutex g_mtxNames;
+		std::unordered_map<const SDK::APlayerState*, stCachedPlayer> g_mapNames;
+
+		[[nodiscard]] stCachedPlayer LookupPlayer(const SDK::APlayerState* pState)
+		{
+			if (!Memory::IsValidObjectPtr(pState))
+				return {};
+			const auto tpNow = std::chrono::steady_clock::now();
+			{
+				std::scoped_lock lckNames(g_mtxNames);
+				if (const auto itCached = g_mapNames.find(pState); itCached != g_mapNames.end() && tpNow - itCached->second.tpRefreshed < kNameRefresh)
+					return itCached->second;
+			}
+			stCachedPlayer stFresh;
+			stFresh.tpRefreshed = tpNow;
+			const SDK::FString& rName = pState->PlayerNamePrivate;
+			if (rName.Num() > 0 && rName.Num() < 256 && Memory::IsReadable(rName.CStr(), static_cast<std::size_t>(rName.Num()) * sizeof(wchar_t)))
+				stFresh.strName = rName.ToString();
+			{
+				std::scoped_lock lckUsers(g_mtxModUsers);
+				if (g_setModUsers.contains(stFresh.strName))
+					stFresh.eKind = g_setDevelopers.contains(stFresh.strName) ? EModUserKind::Developer : EModUserKind::User;
+			}
+			std::scoped_lock lckNames(g_mtxNames);
+			if (g_mapNames.size() >= kNameCacheLimit)
+				g_mapNames.clear();
+			g_mapNames[pState] = stFresh;
+			return stFresh;
+		}
+	}
+
 	EModUserKind GetModUserKind(const SDK::APlayerState* pState)
 	{
-		if (!Memory::IsValidObjectPtr(pState))
-			return EModUserKind::None;
-		const std::string strName = pState->GetPlayerName().ToString();
-		std::scoped_lock lckUsers(g_mtxModUsers);
-		if (!g_setModUsers.contains(strName))
-			return EModUserKind::None;
-		return g_setDevelopers.contains(strName) ? EModUserKind::Developer : EModUserKind::User;
+		return LookupPlayer(pState).eKind;
+	}
+
+	std::string PlayerName(const SDK::APlayerState* pState)
+	{
+		return LookupPlayer(pState).strName;
 	}
 }
 

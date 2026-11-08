@@ -16,6 +16,8 @@ namespace OmegaWare::Payday3
 {
 	namespace
 	{
+		constexpr std::size_t kObjectItemFlagsOffset = 0x8;
+
 		struct stEnemyLookup
 		{
 			std::string_view strKeyword;
@@ -47,7 +49,7 @@ namespace OmegaWare::Payday3
 
 		constexpr stItemInfo kNoItem{};
 
-		constexpr std::array<stItemLookup, 47> g_aItemLookup = { {
+		constexpr std::array<stItemLookup, 53> g_aItemLookup = { {
 			{ "carriedredkeycard", { "Red Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carriedbluekeycard", { "Blue Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carried", kNoItem },
@@ -68,6 +70,12 @@ namespace OmegaWare::Payday3
 			{ "usbdrive", { "USB", EItemType::USB, EItemCategory::KeyItem } },
 			{ "rfidtagred", { "Red RFID Tag", EItemType::RFIDTag, EItemCategory::KeyItem } },
 			{ "rfidtagblue", { "Blue RFID Tag", EItemType::RFIDTag, EItemCategory::KeyItem } },
+			{ "interactablerareminerals", { "Rare Minerals", EItemType::RareMinerals, EItemCategory::Loot } },
+			{ "instantloot_cocaine", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
+			{ "interactablecocaine", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
+			{ "cocainepile", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
+			{ "cookingstation", { "Lab", EItemType::Lab, EItemCategory::KeycardReader } },
+			{ "interactablesatellite", { "Satellite Part", EItemType::SatellitePart, EItemCategory::Loot } },
 			{ "depositbox", { "Deposit Box", EItemType::DepositBox, EItemCategory::KeyItem } },
 			{ "breakable_atm", { "ATM", EItemType::ATM, EItemCategory::Loot } },
 			{ "instantloot_money", { "Cash", EItemType::Cash, EItemCategory::Loot } },
@@ -185,9 +193,26 @@ namespace OmegaWare::Payday3
 		std::atomic<SDK::AActor*> g_pAimbotTarget = nullptr;
 	}
 
+	namespace
+	{
+		std::atomic<std::int64_t> g_iAimbotTargetMs = 0;
+
+		[[nodiscard]] std::int64_t SteadyMs()
+		{
+			return std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now().time_since_epoch()).count();
+		}
+	}
+
 	void SetAimbotTarget(SDK::AActor* pTarget)
 	{
 		g_pAimbotTarget = pTarget;
+		if (pTarget)
+			g_iAimbotTargetMs.store(SteadyMs(), std::memory_order_relaxed);
+	}
+
+	bool IsAimbotTargeting()
+	{
+		return g_pAimbotTarget.load() != nullptr || SteadyMs() - g_iAimbotTargetMs.load(std::memory_order_relaxed) < 150;
 	}
 
 	SDK::AActor* GetAimbotTarget()
@@ -315,18 +340,26 @@ namespace OmegaWare::Payday3
 	{
 		if (!Memory::IsValidObjectPtr(pObject))
 			return false;
+		const SDK::TUObjectArray* pObjects = SDK::UObject::GObjects.GetTypedPtr();
+		const std::int32_t iIndex = pObject->Index;
+		if (!pObjects || iIndex < 0 || iIndex >= pObjects->NumElements)
+			return false;
+		const SDK::FUObjectItem* pChunk = pObjects->GetDecrytedObjPtr()[iIndex / SDK::TUObjectArray::ElementsPerChunk];
+		if (!pChunk)
+			return false;
+		const SDK::FUObjectItem& rItem = pChunk[iIndex % SDK::TUObjectArray::ElementsPerChunk];
+		if (rItem.Object != pObject)
+			return false;
+		constexpr std::uint32_t uUnreachableOrGarbage = (1u << 28) | (1u << 21);
+		if (Unreal::FieldAt<const std::uint32_t>(&rItem, kObjectItemFlagsOffset) & uUnreachableOrGarbage)
+			return false;
 		constexpr std::uint32_t uDying = static_cast<std::uint32_t>(SDK::EObjectFlags::BeginDestroyed) | static_cast<std::uint32_t>(SDK::EObjectFlags::FinishDestroyed) | static_cast<std::uint32_t>(SDK::EObjectFlags::MirroredGarbage);
 		return (static_cast<std::uint32_t>(pObject->Flags) & uDying) == 0;
 	}
 
-	bool IsLiveObject(const SDK::UObject* pObject)
+	bool IsSameObject(const SDK::UObject* pObject, std::int32_t iIndex)
 	{
-		if (!IsAlive(pObject) || !SDK::UObject::GObjects)
-			return false;
-		const std::int32_t iIndex = pObject->Index;
-		if (iIndex < 0 || iIndex >= SDK::UObject::GObjects->Num())
-			return false;
-		return SDK::UObject::GObjects->GetByIndex(iIndex) == pObject;
+		return IsAlive(pObject) && pObject->Index == iIndex;
 	}
 
 	bool IsAliveActor(const SDK::AActor* pActor)
@@ -344,7 +377,7 @@ namespace OmegaWare::Payday3
 
 	SDK::FName MakeName(const wchar_t* wszName)
 	{
-		return SDK::UKismetStringLibrary::Conv_StringToName(SDK::FString(wszName));
+		return Unreal::MakeName(wszName);
 	}
 
 	namespace
@@ -369,19 +402,12 @@ namespace OmegaWare::Payday3
 
 	SDK::FName CachedLiteralName(const wchar_t* wszLiteral)
 	{
-		thread_local std::unordered_map<const wchar_t*, SDK::FName> t_mapNames;
-		auto itName = t_mapNames.find(wszLiteral);
-		if (itName == t_mapNames.end())
-			itName = t_mapNames.emplace(wszLiteral, MakeName(wszLiteral)).first;
-		return itName->second;
+		return Unreal::CachedLiteralName(wszLiteral);
 	}
 
 	SDK::FVector GetActorLocation(SDK::AActor* pActor)
 	{
-		SDK::USceneComponent* pRoot = pActor->RootComponent;
-		if (Memory::IsValidObjectPtr(pRoot) && !pRoot->AttachParent)
-			return pRoot->RelativeLocation;
-		return pActor->K2_GetActorLocation();
+		return Unreal::GetActorLocation(pActor);
 	}
 
 	std::string SafeSubstr(const std::string& strValue, std::size_t uOffset, std::size_t uTrimEnd)
