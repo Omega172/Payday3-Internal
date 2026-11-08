@@ -26,7 +26,7 @@ Game strings live in [English.hpp](Source/OmegaWare/Locales/English.hpp) next to
    - Check that the font has every character you used. A missing character shows as an empty box.
 6. Build, start the game, open the menu and pick the language. Check the log in `Documents\Payday3-Internal\<exe>\Logs` for a "no installed font covers ..." warning if text shows as boxes.
 
-Players can also add or override strings without rebuilding by putting locale files in the `Locales` folder next to the logs. The format is described in the [OmegaWare-Localization readme](Source/Third-Party/OmegaWareProjects/OmegaWare-Localization/README.md). Characters that are not in the built-in strings of a `ScriptFonts()` language will not have glyphs baked.
+Players can also add or override strings without rebuilding by putting locale files in the `Locales` folder next to the logs. The format is described in the [OmegaWare-Localization readme](https://github.com/OmegaWareProjects/OmegaWare-Localization/blob/main/README.md). Characters that are not in the built-in strings of a `ScriptFonts()` language will not have glyphs baked.
 
 ## Profiling
 
