@@ -481,7 +481,14 @@ namespace OmegaWare
 			{
 				if (*m_pDrawFov && *m_pFov > 0)
 					OmegaGUI::GetBackgroundDrawList().AddCircle((OmegaGUI::GetDisplaySize() * .5f).Floor(), static_cast<float>(*m_pFov), *m_pFovColor, 100, 1.f);
-				UpdateAim();
+				m_bGuiWantsMouse = OmegaGUI::WantsMouse();
+				if (m_bAimQueued.exchange(true))
+					return;
+				if (!Unreal::RunOnGameThread([this] {
+						Features::Guard(*this, "game thread", [this] { UpdateAim(); });
+						m_bAimQueued = false;
+					}))
+					m_bAimQueued = false;
 			}
 
 			void DrawMenu() override
@@ -543,47 +550,49 @@ namespace OmegaWare
 			}
 
 		private:
-			static void InstallClientViewGuard()
+			void InstallClientViewGuard()
 			{
 				if (g_clLocalPlayerGetViewPoint.IsInstalled())
 					return;
-				const bool bQueued = Unreal::RunOnGameThread([] {
-					SDK::ULocalPlayer* pLocalPlayer = Unreal::GetLocalPlayer(0);
-					SDK::APlayerController* pController = Unreal::GetPlayerController();
-					SDK::APlayerCameraManager* pCamera = Memory::IsValidObjectPtr(pController) ? pController->PlayerCameraManager : nullptr;
-					std::size_t uSlot = kLocalPlayerGetViewPointIndex;
-					if (Memory::IsValidObjectPtr(pLocalPlayer))
-					{
-						const std::uintptr_t uFunction = FindLocalPlayerGetViewPoint();
-						for (std::size_t uCandidate = 0x20; uFunction && uCandidate < 0x90; ++uCandidate)
+				const bool bQueued = Unreal::RunOnGameThread([this] {
+					Features::Guard(*this, "game thread", [] {
+						SDK::ULocalPlayer* pLocalPlayer = Unreal::GetLocalPlayer(0);
+						SDK::APlayerController* pController = Unreal::GetPlayerController();
+						SDK::APlayerCameraManager* pCamera = Memory::IsValidObjectPtr(pController) ? pController->PlayerCameraManager : nullptr;
+						std::size_t uSlot = kLocalPlayerGetViewPointIndex;
+						if (Memory::IsValidObjectPtr(pLocalPlayer))
 						{
-							if (reinterpret_cast<std::uintptr_t>(Memory::GetVirtualMethod(pLocalPlayer, uCandidate)) != uFunction)
-								continue;
-							uSlot = uCandidate;
-							LogInfo("ULocalPlayer::GetViewPoint found by signature in vtable slot {:#x}", uSlot);
-							break;
+							const std::uintptr_t uFunction = FindLocalPlayerGetViewPoint();
+							for (std::size_t uCandidate = 0x20; uFunction && uCandidate < 0x90; ++uCandidate)
+							{
+								if (reinterpret_cast<std::uintptr_t>(Memory::GetVirtualMethod(pLocalPlayer, uCandidate)) != uFunction)
+									continue;
+								uSlot = uCandidate;
+								LogInfo("ULocalPlayer::GetViewPoint found by signature in vtable slot {:#x}", uSlot);
+								break;
+							}
 						}
-					}
-					const auto pfnGetViewPoint = reinterpret_cast<FnLocalPlayerGetViewPoint>(Memory::IsValidObjectPtr(pLocalPlayer) ? Memory::GetVirtualMethod(pLocalPlayer, uSlot) : nullptr);
-					if (!pfnGetViewPoint || !Memory::IsValidObjectPtr(pCamera))
-						return;
-					SDK::FMinimalViewInfo stView{};
-					OmegaRenderHook::stFault stFault;
-					auto fnProbe = [&] { pfnGetViewPoint(pLocalPlayer, &stView); };
-					if (!OmegaRenderHook::InvokeGuarded(fnProbe, stFault))
-					{
-						LogWarning("ULocalPlayer::GetViewPoint check faulted at slot {:#x}, the client view guard is off", uSlot);
-						return;
-					}
-					const SDK::FVector& vecCamera = pCamera->CameraCachePrivate.POV.Location;
-					const bool bMatches = std::abs(stView.Location.X - vecCamera.X) < 100.0 && std::abs(stView.Location.Y - vecCamera.Y) < 100.0 && std::abs(stView.Location.Z - vecCamera.Z) < 100.0 && stView.FOV > 1.f && stView.FOV < 180.f;
-					if (!bMatches)
-					{
-						LogWarning("vtable slot {:#x} of the local player does not return the camera view, the client view guard is off", uSlot);
-						return;
-					}
-					if (g_clLocalPlayerGetViewPoint.InstallVirtual(pLocalPlayer, uSlot, &HkLocalPlayerGetViewPoint))
-						LogInfo("client view guard installed at local player vtable slot {:#x}", uSlot);
+						const auto pfnGetViewPoint = reinterpret_cast<FnLocalPlayerGetViewPoint>(Memory::IsValidObjectPtr(pLocalPlayer) ? Memory::GetVirtualMethod(pLocalPlayer, uSlot) : nullptr);
+						if (!pfnGetViewPoint || !Memory::IsValidObjectPtr(pCamera))
+							return;
+						SDK::FMinimalViewInfo stView{};
+						OmegaRenderHook::stFault stFault;
+						auto fnProbe = [&] { pfnGetViewPoint(pLocalPlayer, &stView); };
+						if (!OmegaRenderHook::InvokeGuarded(fnProbe, stFault))
+						{
+							LogWarning("ULocalPlayer::GetViewPoint check faulted at slot {:#x}, the client view guard is off", uSlot);
+							return;
+						}
+						const SDK::FVector& vecCamera = pCamera->CameraCachePrivate.POV.Location;
+						const bool bMatches = std::abs(stView.Location.X - vecCamera.X) < 100.0 && std::abs(stView.Location.Y - vecCamera.Y) < 100.0 && std::abs(stView.Location.Z - vecCamera.Z) < 100.0 && stView.FOV > 1.f && stView.FOV < 180.f;
+						if (!bMatches)
+						{
+							LogWarning("vtable slot {:#x} of the local player does not return the camera view, the client view guard is off", uSlot);
+							return;
+						}
+						if (g_clLocalPlayerGetViewPoint.InstallVirtual(pLocalPlayer, uSlot, &HkLocalPlayerGetViewPoint))
+							LogInfo("client view guard installed at local player vtable slot {:#x}", uSlot);
+					});
 				});
 				if (!bQueued)
 					LogWarning("could not queue the client view guard install");
@@ -642,7 +651,7 @@ namespace OmegaWare
 					QueueAutoFire();
 				if (*m_pType == 0)
 				{
-					const bool bManualFire = !OmegaGUI::WantsMouse() && (GetAsyncKeyState(VK_LBUTTON) & 0x8000);
+					const bool bManualFire = !m_bGuiWantsMouse && (GetAsyncKeyState(VK_LBUTTON) & 0x8000);
 					if (bManualFire && !bAutoFire && LearningNeeded() && m_iLearnShots < kMaxLearnShots && std::chrono::steady_clock::now() >= m_tpNextLearn)
 					{
 						++m_iLearnShots;
@@ -661,13 +670,15 @@ namespace OmegaWare
 				const float flPitch = -NormalizeAngle(static_cast<float>(rotDesired.Pitch - rotCamera.Pitch)) * flAlpha;
 				if (!Unreal::RunOnGameThread([this, flYaw, flPitch] {
 						m_bInputQueued = false;
-						SDK::APlayerController* pGameController = IsActive() && Payday3::IsReady() ? Unreal::GetPlayerController() : nullptr;
-						if (Memory::IsValidObjectPtr(pGameController) && Payday3::IsAlive(pGameController) && Memory::IsValidObjectPtr(pGameController->AcknowledgedPawn) && Payday3::IsAlive(pGameController->AcknowledgedPawn)
-							&& Memory::IsValidObjectPtr(pGameController->PlayerCameraManager))
-						{
-							pGameController->AddYawInput(flYaw);
-							pGameController->AddPitchInput(flPitch);
-						}
+						Features::Guard(*this, "game thread", [flYaw, flPitch] {
+							SDK::APlayerController* pGameController = Payday3::IsReady() ? Unreal::GetPlayerController() : nullptr;
+							if (Memory::IsValidObjectPtr(pGameController) && Payday3::IsAlive(pGameController) && Memory::IsValidObjectPtr(pGameController->AcknowledgedPawn) && Payday3::IsAlive(pGameController->AcknowledgedPawn)
+								&& Memory::IsValidObjectPtr(pGameController->PlayerCameraManager))
+							{
+								pGameController->AddYawInput(flYaw);
+								pGameController->AddPitchInput(flPitch);
+							}
+						});
 					}))
 					m_bInputQueued = false;
 			}
@@ -684,8 +695,10 @@ namespace OmegaWare
 					return;
 				if (!Unreal::RunOnGameThread([this, bLearnOnly] {
 						m_bFireQueued = false;
-						if (IsActive() && (bLearnOnly || *m_pAutoFire))
-							ActivateFireAbility();
+						Features::Guard(*this, "game thread", [this, bLearnOnly] {
+							if (bLearnOnly || *m_pAutoFire)
+								ActivateFireAbility();
+						});
 					}))
 					m_bFireQueued = false;
 			}
@@ -807,6 +820,8 @@ namespace OmegaWare
 			SDK::APlayerController* m_pHookAttempt = nullptr;
 			mutable SDK::AActor* m_pLockedTarget = nullptr;
 			std::atomic<bool> m_bInputQueued = false;
+			std::atomic<bool> m_bAimQueued = false;
+			std::atomic<bool> m_bGuiWantsMouse = false;
 		};
 
 		clAimbotFeature g_clAimbotFeature;
