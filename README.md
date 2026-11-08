@@ -12,7 +12,28 @@ or from the official Xenos Github [here](https://github.com/DarthTon/Xenos)
 # Contributing
 
 ## Want to add a translation?
-Game strings live in [English.hpp](Source/OmegaWare/Locales/English.hpp) next to the framework's own; add a matching `Locales/<Language>.hpp` entry for each key. Missing keys fall back to English.
+Game strings live in [English.hpp](Source/OmegaWare/Locales/English.hpp) next to the framework's own. Missing keys fall back to English, so a partial translation works. Follow these steps for a new language:
+
+1. Copy `Source/OmegaWare/Locales/English.hpp` to `Source/OmegaWare/Locales/<Language>.hpp` and translate the second string of every entry. Do not change the keys. Keep every `{}` placeholder and any game tag in the translated text. The file must be saved as UTF-8.
+2. Rename the variable to `g_stLocale<Language>` and set the header fields:
+   - `.strCode` is the language code (`de`, `pl`, `ru`, `zh-CN`). If it matches the Windows display language the menu picks it automatically on first launch.
+   - `.strName` is the language's own name as shown in the language selector.
+   - `.aGlyphRanges` lists extra Unicode ranges the font needs. Latin, Greek and Cyrillic come with the default font. Polish uses `{ { 0x0100, 0x017F } }` for Latin Extended-A. Leave it out if the language only needs the default ranges.
+3. Add `#include "<Language>.hpp"` to [Locales.hpp](Source/OmegaWare/Locales/Locales.hpp).
+4. Add `g_stLocale<Language>` to the list passed to `OmegaLocalization::GUI::Attach` in [Overlay.cpp](Source/OmegaWare/Overlay/Overlay.cpp). Without this step the language never shows up in the selector.
+5. If the script is not covered by the default Windows monospace font (Chinese, Japanese, Korean, Arabic and so on), also add an entry to `ScriptFonts()` in [Overlay.cpp](Source/OmegaWare/Overlay/Overlay.cpp) with the locale and a list of font files from `C:\Windows\Fonts` to try in order (Simplified Chinese uses `msyh.ttc` then `simsun.ttc`). The font is merged into the atlas as a fallback that only supplies characters the main font lacks, so the Latin text keeps its look.
+   - Do not list the whole script in `.aGlyphRanges`. The CJK block alone is about 21,000 glyphs and does not fit in the font atlas. For languages listed in `ScriptFonts()` the glyphs are generated from the characters your strings actually use and are always loaded, so switching language never waits for a font rebuild and never shows empty boxes. You never have to maintain ranges by hand.
+   - Check that the font has every character you used. A missing character shows as an empty box.
+6. Build, start the game, open the menu and pick the language. Check the log in `Documents\Payday3-Internal\<exe>\Logs` for a "no installed font covers ..." warning if text shows as boxes.
+
+Players can also add or override strings without rebuilding by putting locale files in the `Locales` folder next to the logs. The format is described in the [OmegaWare-Localization readme](Source/Third-Party/OmegaWareProjects/OmegaWare-Localization/README.md). Characters that are not in the built-in strings of a `ScriptFonts()` language will not have glyphs baked.
+
+## Profiling
+
+Two tools show whether the mod is behind a slowdown or a leak:
+
+- **Profiler page** (menu, misc, profiler): times every feature stage, every game thread task and every hooked game function, and lists the most expensive ones per second. With "write slow spots to the log" on, anything over 1 ms per second or 12 ms in one call is logged every 5 seconds, and the log gets the memory, handle and thread counts once a minute so a leak shows as numbers that keep climbing.
+- **`Scripts/ProfileGame.bat`** (or `.ps1` and `.sh`): run it from outside the game, it waits for `PAYDAY3-Win64-Shipping`, samples CPU, memory, handles and threads every second into `Build/Profile/*.csv` and attributes CPU to threads started by the mod's DLLs. Close the game or press Ctrl+C for a summary and a verdict. Run it once with the mod and once without to compare. Work the mod does inside game threads is not visible to it, use the profiler page and log for that.
 
 ## Building
 
