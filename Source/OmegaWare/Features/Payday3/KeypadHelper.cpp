@@ -3,8 +3,10 @@
 #if OMEGAWARE_ENGINE_UNREAL
 
 #include "SDK/G_Cookie_Scripting_classes.hpp"
+#include "SDK/Starbreeze_parameters.hpp"
 
 #include "Config/Config.hpp"
+#include "Core/Log.hpp"
 #include "Engines/Unreal/ProcessEvent.hpp"
 #include "Features/Feature.hpp"
 #include "Memory/Safety.hpp"
@@ -15,6 +17,9 @@
 #include <algorithm>
 #include <atomic>
 #include <chrono>
+#include <format>
+#include <string>
+#include <unordered_map>
 #include <vector>
 
 namespace OmegaWare
@@ -23,14 +28,23 @@ namespace OmegaWare
 	{
 		constexpr std::chrono::milliseconds kRefreshInterval{ 1000 };
 		constexpr std::chrono::milliseconds kUpdateInterval{ 100 };
-		constexpr std::chrono::seconds kClassRetryInterval{ 10 };
-		constexpr int kClearKey = 10;
+				constexpr int kClearKey = 10;
 		constexpr int kEnterKey = 11;
+
+		struct stKeypad
+		{
+			SDK::ASBZKeypadBase* pKeypad = nullptr;
+			std::int32_t iIndex = -1;
+		};
 
 		struct stStation
 		{
 			SDK::ASBZCookingStation* pStation = nullptr;
+			std::int32_t iIndex = -1;
 			bool bRestricted = false;
+			int iLoggedRequest = -2;
+			int iLoggedState = -1;
+			bool bLoggedScript = false;
 		};
 
 		[[nodiscard]] int ActiveKey(const SDK::ASBZKeypadBase* pKeypad)
@@ -53,13 +67,14 @@ namespace OmegaWare
 		void SetKeysEnabled(SDK::TArray<SDK::USBZInteractableComponent*>& rKeys, int iOnly)
 		{
 			for (int iKey = 0; iKey < rKeys.Num(); ++iKey)
-				if (Payday3::IsLiveObject(rKeys[iKey]))
+				if (Payday3::IsAlive(rKeys[iKey]))
 					rKeys[iKey]->SetLocalEnabled(iOnly < 0 || iKey == iOnly);
 		}
 
 		struct stWireBox
 		{
 			SDK::ASBZConnectedCableBox* pBox = nullptr;
+			std::int32_t iIndex = -1;
 			bool bRestricted = false;
 		};
 
@@ -87,11 +102,25 @@ namespace OmegaWare
 				m_pEnabled = &Config::Add("keypadhelper.enabled", false);
 				m_pMethLab = &Config::Add("keypadhelper.methlab", false);
 				m_pWireSwitch = &Config::Add("keypadhelper.wireswitch", false);
+				m_hIngredientAdded = Unreal::OnFunction<SDK::Params::SBZCookingStation_BP_OnIngredientAdded>("Starbreeze.SBZCookingStation.BP_OnIngredientAdded",
+					[](SDK::UObject* pObject, SDK::Params::SBZCookingStation_BP_OnIngredientAdded& rParams, bool&) {
+						LogInfo("meth helper: {} added ingredient index {}", pObject ? pObject->GetName() : std::string("?"), rParams.IngredientIndex);
+					});
+				m_hIngredientAck = Unreal::OnFunction<SDK::Params::SBZCookingStation_OnAckIngredientAdded>("Starbreeze.SBZCookingStation.OnAckIngredientAdded",
+					[](SDK::UObject* pObject, SDK::Params::SBZCookingStation_OnAckIngredientAdded& rParams, bool&) {
+						LogInfo("meth helper: {} ack for {} locally controlled {}", pObject ? pObject->GetName() : std::string("?"), Payday3::IsAlive(rParams.Comp) ? rParams.Comp->GetName() : std::string("null"), static_cast<bool>(rParams.bInIsLocallyControlled));
+					});
 				return true;
 			}
 
 			void Destroy() override
 			{
+				if (m_hIngredientAdded != Unreal::kInvalidHook)
+					Unreal::RemoveProcessEvent(m_hIngredientAdded);
+				m_hIngredientAdded = Unreal::kInvalidHook;
+				if (m_hIngredientAck != Unreal::kInvalidHook)
+					Unreal::RemoveProcessEvent(m_hIngredientAck);
+				m_hIngredientAck = Unreal::kInvalidHook;
 				if (Payday3::IsReady())
 					Unreal::RunOnGameThreadAndWait([this] { RestoreKeypads(); RestoreStations(); RestoreWireBoxes(); }, std::chrono::seconds(1));
 			}
@@ -104,7 +133,7 @@ namespace OmegaWare
 				m_tpNextUpdate = Clock_t::now() + kUpdateInterval;
 				if (!Unreal::RunOnGameThread([this] {
 						m_bQueued = false;
-						Tick();
+						Features::Guard(*this, "game thread", [this] { Tick(); });
 					}))
 					m_bQueued = false;
 			}
@@ -151,21 +180,17 @@ namespace OmegaWare
 				m_bApplied = m_bKeypadsRestricted || std::ranges::any_of(m_aStations, [](const stStation& rStation) { return rStation.bRestricted; }) || std::ranges::any_of(m_aWireBoxes, [](const stWireBox& rBox) { return rBox.bRestricted; });
 			}
 
-			[[nodiscard]] const SDK::UClass* ScriptClass()
+			[[nodiscard]] bool IsScriptClass(const SDK::UClass* pClass)
 			{
-				if (!*m_pMethLab)
-					return nullptr;
-				if (m_pScriptClass && !Payday3::IsLiveObject(m_pScriptClass))
-					m_pScriptClass = nullptr;
-				const auto tpNow = std::chrono::steady_clock::now();
-				if (!m_pScriptClass && tpNow >= m_tpNextClassLookup)
-				{
-					m_pScriptClass = SDK::AG_Cookie_Scripting_C::StaticClass();
-					if (!Payday3::IsLiveObject(m_pScriptClass))
-						m_pScriptClass = nullptr;
-					m_tpNextClassLookup = tpNow + kClassRetryInterval;
-				}
-				return m_pScriptClass;
+				if (const auto itKnown = m_mapScriptClasses.find(pClass); itKnown != m_mapScriptClasses.end())
+					return itKnown->second;
+				if (m_mapScriptClasses.size() > 1024)
+					m_mapScriptClasses.clear();
+				bool bScript = false;
+				for (const SDK::UStruct* pStruct = pClass; pStruct && !bScript; pStruct = pStruct->SuperStruct)
+					bScript = pStruct->Name.ToString() == "G_Cookie_Scripting_C";
+				m_mapScriptClasses.emplace(pClass, bScript);
+				return bScript;
 			}
 
 			void Refresh()
@@ -174,36 +199,35 @@ namespace OmegaWare
 				std::vector<stStation> aKept;
 				for (const stStation& rStation : m_aStations)
 					aOldStations.push_back(rStation.pStation);
-				std::vector<SDK::ASBZKeypadBase*> aKeypads;
+				std::vector<stKeypad> aKeypads;
 				std::vector<SDK::ASBZCookingStation*> aStations;
 				std::vector<SDK::ASBZConnectedCableBox*> aWireBoxes;
 				SDK::AG_Cookie_Scripting_C* pScript = nullptr;
-				const SDK::UClass* pScriptClass = ScriptClass();
 				Payday3::ForEachLevelActor(Unreal::GetWorld(), [&](SDK::AActor* pActor) {
 					if (!Payday3::IsAliveActor(pActor))
 						return;
 					if (pActor->IsA(SDK::ASBZKeypadBase::StaticClass()))
-						aKeypads.push_back(static_cast<SDK::ASBZKeypadBase*>(pActor));
+						aKeypads.push_back({ static_cast<SDK::ASBZKeypadBase*>(pActor), pActor->Index });
 					else if (pActor->IsA(SDK::ASBZCookingStation::StaticClass()))
 						aStations.push_back(static_cast<SDK::ASBZCookingStation*>(pActor));
 					else if (*m_pWireSwitch && pActor->IsA(SDK::ASBZConnectedCableBox::StaticClass()))
 						aWireBoxes.push_back(static_cast<SDK::ASBZConnectedCableBox*>(pActor));
-					else if (pScriptClass && pActor->IsA(pScriptClass))
+					else if (*m_pMethLab && pActor->Class && IsScriptClass(pActor->Class))
 						pScript = static_cast<SDK::AG_Cookie_Scripting_C*>(pActor);
 				});
 				for (SDK::ASBZCookingStation* pStation : aStations)
 				{
 					const auto itOld = std::ranges::find(m_aStations, pStation, &stStation::pStation);
-					aKept.push_back(itOld != m_aStations.end() ? *itOld : stStation{ pStation });
+					aKept.push_back(itOld != m_aStations.end() && itOld->iIndex == pStation->Index ? *itOld : stStation{ pStation, pStation->Index });
 				}
 				for (const stStation& rStation : m_aStations)
-					if (rStation.bRestricted && std::ranges::find(aStations, rStation.pStation) == aStations.end() && Payday3::IsLiveObject(rStation.pStation))
+					if (rStation.bRestricted && std::ranges::find(aStations, rStation.pStation) == aStations.end() && Payday3::IsSameObject(rStation.pStation, rStation.iIndex))
 						SetKeysEnabled(rStation.pStation->IngredientInteractableArray, -1);
 				std::vector<stWireBox> aKeptBoxes;
 				for (SDK::ASBZConnectedCableBox* pBox : aWireBoxes)
 				{
 					const auto itOld = std::ranges::find(m_aWireBoxes, pBox, &stWireBox::pBox);
-					aKeptBoxes.push_back(itOld != m_aWireBoxes.end() ? *itOld : stWireBox{ pBox });
+					aKeptBoxes.push_back(itOld != m_aWireBoxes.end() && itOld->iIndex == pBox->Index ? *itOld : stWireBox{ pBox, pBox->Index });
 				}
 				m_aWireBoxes = std::move(aKeptBoxes);
 				m_aKeypads = std::move(aKeypads);
@@ -214,9 +238,9 @@ namespace OmegaWare
 
 			void UpdateKeypads()
 			{
-				for (SDK::ASBZKeypadBase* pKeypad : m_aKeypads)
-					if (Payday3::IsLiveObject(pKeypad))
-						SetKeysEnabled(pKeypad->KeypadInteractableComponentArray, ActiveKey(pKeypad));
+				for (const stKeypad& rKeypad : m_aKeypads)
+					if (Payday3::IsSameObject(rKeypad.pKeypad, rKeypad.iIndex))
+						SetKeysEnabled(rKeypad.pKeypad->KeypadInteractableComponentArray, ActiveKey(rKeypad.pKeypad));
 				m_bKeypadsRestricted = true;
 			}
 
@@ -224,23 +248,35 @@ namespace OmegaWare
 			{
 				if (!m_bKeypadsRestricted)
 					return;
-				for (SDK::ASBZKeypadBase* pKeypad : m_aKeypads)
-					if (Payday3::IsLiveObject(pKeypad))
-						SetKeysEnabled(pKeypad->KeypadInteractableComponentArray, -1);
+				for (const stKeypad& rKeypad : m_aKeypads)
+					if (Payday3::IsSameObject(rKeypad.pKeypad, rKeypad.iIndex))
+						SetKeysEnabled(rKeypad.pKeypad->KeypadInteractableComponentArray, -1);
 				m_bKeypadsRestricted = false;
 			}
 
 			void UpdateStations()
 			{
-				const bool bRequest = Payday3::IsLiveObject(m_pScript) && m_pScript->IngredientRequestActive;
+				const bool bRequest = Payday3::IsAlive(m_pScript) && m_pScript->IngredientRequestActive;
 				const int iRequested = bRequest ? m_pScript->New_Ingredient_Index : -1;
 				for (stStation& rStation : m_aStations)
 				{
-					if (!Payday3::IsLiveObject(rStation.pStation))
+					if (!Payday3::IsSameObject(rStation.pStation, rStation.iIndex))
 						continue;
 					SDK::TArray<SDK::USBZInteractableComponent*>& rKeys = rStation.pStation->IngredientInteractableArray;
 					const bool bWaiting = rStation.pStation->CurrentState == SDK::ESBZCookingState::WaitingForIngredients;
 					const bool bRestrict = bWaiting && iRequested >= 1 && iRequested <= rKeys.Num();
+					const int iState = static_cast<int>(rStation.pStation->CurrentState);
+					if (iRequested != rStation.iLoggedRequest || iState != rStation.iLoggedState || bRequest != rStation.bLoggedScript)
+					{
+						rStation.iLoggedRequest = iRequested;
+						rStation.iLoggedState = iState;
+						rStation.bLoggedScript = bRequest;
+						std::string strKeys;
+						for (int iKey = 0; iKey < rKeys.Num(); ++iKey)
+							strKeys += std::format("{}{}:{}", iKey ? ", " : "", iKey, Payday3::IsAlive(rKeys[iKey]) ? rKeys[iKey]->GetName() : std::string("null"));
+						LogInfo("meth helper: {} state {} script {} requested index {} (raw {}) seed {} static order {} keys [{}] -> {}", rStation.pStation->GetName(), iState, Payday3::IsAlive(m_pScript) ? "found" : "missing", iRequested,
+							Payday3::IsAlive(m_pScript) ? m_pScript->New_Ingredient_Index : -1, rStation.pStation->Seed, static_cast<bool>(rStation.pStation->bIsOrderStatic), strKeys, bRestrict ? std::format("only key {} enabled", iRequested - 1) : std::string("no restriction"));
+					}
 					if (bRestrict)
 						SetKeysEnabled(rKeys, iRequested - 1);
 					else if (rStation.bRestricted)
@@ -253,7 +289,7 @@ namespace OmegaWare
 			{
 				for (stWireBox& rBox : m_aWireBoxes)
 				{
-					if (!Payday3::IsLiveObject(rBox.pBox))
+					if (!Payday3::IsSameObject(rBox.pBox, rBox.iIndex))
 						continue;
 					const int iCorrect = CorrectWire(rBox.pBox);
 					if (iCorrect >= 0)
@@ -268,7 +304,7 @@ namespace OmegaWare
 			{
 				for (stWireBox& rBox : m_aWireBoxes)
 				{
-					if (rBox.bRestricted && Payday3::IsLiveObject(rBox.pBox) && !rBox.pBox->bIsCompleted && !rBox.pBox->bIsDoorOpen)
+					if (rBox.bRestricted && Payday3::IsSameObject(rBox.pBox, rBox.iIndex) && !rBox.pBox->bIsCompleted && !rBox.pBox->bIsDoorOpen)
 						SetWiresEnabled(rBox.pBox, -1);
 					rBox.bRestricted = false;
 				}
@@ -277,12 +313,14 @@ namespace OmegaWare
 			void RestoreStations()
 			{
 				for (stStation& rStation : m_aStations)
-					if (rStation.bRestricted && Payday3::IsLiveObject(rStation.pStation))
+					if (rStation.bRestricted && Payday3::IsSameObject(rStation.pStation, rStation.iIndex))
 						SetKeysEnabled(rStation.pStation->IngredientInteractableArray, -1);
 				for (stStation& rStation : m_aStations)
 					rStation.bRestricted = false;
 			}
 
+			Unreal::HookHandle m_hIngredientAdded = Unreal::kInvalidHook;
+			Unreal::HookHandle m_hIngredientAck = Unreal::kInvalidHook;
 			bool* m_pEnabled = nullptr;
 			bool* m_pMethLab = nullptr;
 			bool* m_pWireSwitch = nullptr;
@@ -291,12 +329,11 @@ namespace OmegaWare
 			std::atomic<bool> m_bApplied = false;
 			std::chrono::steady_clock::time_point m_tpNextUpdate;
 			std::chrono::steady_clock::time_point m_tpNextRefresh;
-			std::vector<SDK::ASBZKeypadBase*> m_aKeypads;
+			std::vector<stKeypad> m_aKeypads;
 			std::vector<stStation> m_aStations;
 			std::vector<stWireBox> m_aWireBoxes;
 			SDK::AG_Cookie_Scripting_C* m_pScript = nullptr;
-			SDK::UClass* m_pScriptClass = nullptr;
-			std::chrono::steady_clock::time_point m_tpNextClassLookup;
+			std::unordered_map<const SDK::UClass*, bool> m_mapScriptClasses;
 		};
 
 		clKeypadHelperFeature g_clKeypadHelperFeature;
