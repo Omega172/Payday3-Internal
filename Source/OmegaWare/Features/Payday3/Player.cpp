@@ -4,6 +4,8 @@
 
 #include "Config/Config.hpp"
 #include "Core/Log.hpp"
+#include "Engines/Unreal/RpcValidate.hpp"
+#include "Core/Profiler.hpp"
 #include "Engines/Unreal/ProcessEvent.hpp"
 #include "Features/Feature.hpp"
 #include "Memory/Safety.hpp"
@@ -146,8 +148,7 @@ namespace OmegaWare
 					return;
 				if (!Unreal::RunOnGameThread([this] {
 						m_bQueued = false;
-						if (IsActive())
-							RunGame();
+						Features::Guard(*this, "game thread", [this] { RunGame(); });
 					}))
 					m_bQueued = false;
 			}
@@ -220,6 +221,7 @@ namespace OmegaWare
 
 				if (pCharacter && m_bNameRequested.exchange(false))
 					ApplyName(pCharacter);
+				CheckName();
 
 				if (*m_pAutoSecure && Due(m_tpNextSecure, kActorScanInterval))
 					SecureThrownBags();
@@ -429,7 +431,7 @@ namespace OmegaWare
 
 					OmegaGUI::TableNextRow();
 					OmegaGUI::TableNextColumn();
-					OmegaGUI::TextUnformatted(pState->GetPlayerName().ToString());
+					OmegaGUI::TextUnformatted(Payday3::PlayerName(pState));
 					if (const Payday3::EModUserKind eKind = Payday3::GetModUserKind(pState); eKind != Payday3::EModUserKind::None)
 					{
 						OmegaGUI::SameLine();
@@ -561,6 +563,7 @@ namespace OmegaWare
 
 			void CompleteInteraction(SDK::ASBZPlayerCharacter* pCharacter)
 			{
+				const Profiler::clScope clProfile("player.instant interaction");
 				SDK::USBZPlayerInteractorComponent* pInteractor = OW_FIELD(pCharacter, Interactor);
 				if (!Memory::IsValidObjectPtr(pInteractor))
 					return;
@@ -574,7 +577,7 @@ namespace OmegaWare
 					return;
 
 				SDK::AActor* pOwner = pInteraction->GetOwner();
-				if (Memory::IsValidObjectPtr(pOwner) && pOwner->IsA(SDK::ASBZMiniGameActor::StaticClass()))
+				if (Memory::IsValidObjectPtr(pOwner) && (pOwner->IsA(SDK::ASBZMiniGameActor::StaticClass()) || pOwner->IsA(SDK::ASBZCookingStation::StaticClass())))
 					return;
 				const bool bBag = Memory::IsValidObjectPtr(pOwner) && pOwner->IsA(SDK::ASBZBagItem::StaticClass());
 				if (!(bBag ? *m_pInstantBagGrab : *m_pInstantInteraction))
@@ -615,6 +618,7 @@ namespace OmegaWare
 
 			void RunTeammates(SDK::ASBZPlayerCharacter* pLocal)
 			{
+				const Profiler::clScope clProfile("player.teammates");
 				SDK::UWorld* pWorld = Unreal::GetWorld();
 				const bool bHost = pWorld && SDK::UKismetSystemLibrary::IsServer(pWorld) && !SDK::UKismetSystemLibrary::IsStandalone(pWorld);
 				m_bIsHost = bHost;
@@ -686,7 +690,7 @@ namespace OmegaWare
 				if (pInteraction == rTrack.pInteraction && pInteractor->InteractId == rTrack.iInteractId)
 					return;
 				SDK::AActor* pOwner = pInteraction->GetOwner();
-				if (Memory::IsValidObjectPtr(pOwner) && (pOwner->IsA(SDK::ASBZMiniGameActor::StaticClass()) || pOwner->IsA(SDK::ASBZBagItem::StaticClass())))
+				if (Memory::IsValidObjectPtr(pOwner) && (pOwner->IsA(SDK::ASBZMiniGameActor::StaticClass()) || pOwner->IsA(SDK::ASBZBagItem::StaticClass()) || pOwner->IsA(SDK::ASBZCookingStation::StaticClass())))
 					return;
 				if (!InNormalRange(pTeammate, pInteraction))
 					return;
@@ -731,6 +735,7 @@ namespace OmegaWare
 
 			void GrabThroughWalls(SDK::ASBZPlayerCharacter* pCharacter)
 			{
+				const Profiler::clScope clProfile("player.auto loot");
 				SDK::USBZPlayerInteractorComponent* pInteractor = pCharacter->Interactor;
 				SDK::UWorld* pWorld = Unreal::GetWorld();
 				if (!Memory::IsValidObjectPtr(pInteractor) || !pWorld)
@@ -837,7 +842,7 @@ namespace OmegaWare
 				}
 			}
 
-			static constexpr std::chrono::milliseconds kActorScanInterval{ 50 };
+			static constexpr std::chrono::milliseconds kActorScanInterval{ 150 };
 
 			[[nodiscard]] static bool Due(std::chrono::steady_clock::time_point& rNext, std::chrono::milliseconds msInterval)
 			{
@@ -850,6 +855,7 @@ namespace OmegaWare
 
 			void SecureThrownBags()
 			{
+				const Profiler::clScope clProfile("player.secure bags");
 				SDK::UWorld* pWorld = Unreal::GetWorld();
 				if (!pWorld || !SDK::UKismetSystemLibrary::IsServer(pWorld))
 					return;
@@ -904,7 +910,27 @@ namespace OmegaWare
 					wstrName.resize(32);
 				if (wstrName.empty())
 					return;
+				SDK::APlayerController* pController = Unreal::GetPlayerController();
+				const std::string strWanted = UtfN::WStringToString<std::wstring, std::string>(wstrName);
+				if (Payday3::IsAlive(pController))
+					pController->ServerChangeName(SDK::FString(wstrName.c_str()));
 				pState->Multicast_SetAccelByteDisplayName(SDK::FString(wstrName.c_str()));
+				LogInfo("name: asked the server to rename to \"{}\" (was player name \"{}\", display name \"{}\", {})", strWanted, Payday3::PlayerName(pState), pState->AccelByteDisplayName.ToString(), Unreal::IsNetHost() ? "host" : "client");
+				m_pNameCheckState = pState;
+				m_strNameWanted = strWanted;
+				m_tpNameCheck = std::chrono::steady_clock::now() + std::chrono::milliseconds(1500);
+			}
+
+			void CheckName()
+			{
+				if (!m_pNameCheckState || std::chrono::steady_clock::now() < m_tpNameCheck)
+					return;
+				SDK::ASBZPlayerState* pState = std::exchange(m_pNameCheckState, nullptr);
+				if (!Payday3::IsAlive(pState))
+					return;
+				const std::string strPlayer = pState->PlayerNamePrivate.ToString();
+				const std::string strDisplay = pState->AccelByteDisplayName.ToString();
+				LogInfo("name: after the request the player name is \"{}\" and the display name is \"{}\", {}", strPlayer, strDisplay, (strPlayer == m_strNameWanted || strDisplay == m_strNameWanted) ? "the change took effect" : "the change did not take effect");
 			}
 
 			static void ClearDetection(SDK::ASBZPlayerCharacter* pCharacter)
@@ -912,10 +938,11 @@ namespace OmegaWare
 				for (int iDetector = 0; iDetector < pCharacter->VisualDetectors.Num(); ++iDetector)
 				{
 					auto* pDetector = pCharacter->VisualDetectors[iDetector];
-					if (!Memory::IsValidObjectPtr(pDetector))
+					if (!Payday3::IsAlive(pDetector))
 						continue;
-					for (int iEnemy = 0; iEnemy < pDetector->EnemyDetectionValue.Num(); ++iEnemy)
-						pDetector->EnemyDetectionValue[iEnemy].Target = nullptr;
+					for (int iEnemy = pDetector->EnemyDetectionValue.Num() - 1; iEnemy >= 0; --iEnemy)
+						if (pDetector->EnemyDetectionValue[iEnemy].Target == pCharacter)
+							pDetector->EnemyDetectionValue.Remove(iEnemy);
 					pDetector->bMarkAsCriminalOnSearch = false;
 					pDetector->bShouldDisplayDetectionBuildup = false;
 				}
@@ -923,6 +950,7 @@ namespace OmegaWare
 
 			void BackupAttributes(SDK::ASBZPlayerCharacter* pCharacter)
 			{
+				const Profiler::clScope clProfile("player.backup attributes");
 				SDK::USBZPlayerAttributeSet* pAttributes = GetAttributes(pCharacter);
 				if (!pAttributes)
 					return;
@@ -1161,6 +1189,9 @@ namespace OmegaWare
 			std::atomic<bool> m_bNameRequested = false;
 			std::atomic<bool> m_bResetName = false;
 			bool m_bOriginalNameSaved = false;
+			SDK::ASBZPlayerState* m_pNameCheckState = nullptr;
+			std::string m_strNameWanted;
+			std::chrono::steady_clock::time_point m_tpNameCheck;
 			std::wstring m_wstrOriginalName;
 			SDK::USBZBaseInteractableComponent* m_pLastInteraction = nullptr;
 			std::int32_t m_iLastInteractId = -1;
