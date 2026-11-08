@@ -76,8 +76,7 @@ namespace OmegaWare
 					return;
 				if (!Unreal::RunOnGameThread([this] {
 						m_bQueued = false;
-						if (IsActive())
-							RunGame();
+						Features::Guard(*this, "game thread", [this] { RunGame(); });
 					}))
 					m_bQueued = false;
 			}
@@ -181,8 +180,7 @@ namespace OmegaWare
 					return;
 				if (!Unreal::RunOnGameThread([this] {
 						m_bFreecamQueued = false;
-						if (IsActive())
-							StepFreecam();
+						Features::Guard(*this, "game thread", [this] { StepFreecam(); });
 					}))
 					m_bFreecamQueued = false;
 			}
@@ -257,6 +255,8 @@ namespace OmegaWare
 					SDK::APawn* pPawn = pController->AcknowledgedPawn;
 					if (Payday3::IsAliveActor(pPawn))
 						pController->SetViewTargetWithBlend(pPawn, 0.f, SDK::EViewTargetBlendFunction::VTBlend_Linear, 0.f, false);
+					else
+						pController->SetViewTargetWithBlend(pController, 0.f, SDK::EViewTargetBlendFunction::VTBlend_Linear, 0.f, false);
 					if (m_bFreecamIgnoring)
 						pController->SetIgnoreMoveInput(false);
 				}
