@@ -42,13 +42,21 @@ namespace OmegaWare::Unreal
 		}
 	}
 
-	bool IsNetHost()
+	ENetRole GetNetRole()
 	{
 		SDK::UWorld* pWorld = GetWorld();
 		if (!Memory::IsValidObjectPtr(pWorld))
-			return false;
+			return ENetRole::Unknown;
 		SDK::UNetDriver* pDriver = OW_FIELD(pWorld, NetDriver);
-		return Memory::IsValidObjectPtr(pDriver) && !OW_FIELD(pDriver, ServerConnection);
+		if (!Memory::IsValidObjectPtr(pDriver))
+			return ENetRole::Solo;
+		return OW_FIELD(pDriver, ServerConnection) ? ENetRole::Client : ENetRole::Host;
+	}
+
+	bool IsNetHost()
+	{
+		const ENetRole eRole = GetNetRole();
+		return eRole == ENetRole::Solo || eRole == ENetRole::Host;
 	}
 
 	std::optional<std::size_t> FindValidateOffset(SDK::UFunction* pFunction)

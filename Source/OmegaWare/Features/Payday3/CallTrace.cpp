@@ -139,9 +139,12 @@ namespace OmegaWare
 			{
 				std::string strReason;
 				bool bWanted = false;
-				if (!Payday3::IsReady())
+				const Unreal::ENetRole eRole = Unreal::GetNetRole();
+				if (!Payday3::IsReady() || eRole == Unreal::ENetRole::Unknown)
 					strReason = "waiting for a world";
-				else if (Unreal::IsNetHost())
+				else if (eRole == Unreal::ENetRole::Solo)
+					strReason = "off: solo mode, there is no host to kick you";
+				else if (eRole == Unreal::ENetRole::Host)
 					strReason = "off: you are hosting";
 				else
 				{

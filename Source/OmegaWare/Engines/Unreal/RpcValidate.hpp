@@ -27,6 +27,15 @@ namespace OmegaWare::Unreal
 	};
 
 	[[nodiscard]] std::string_view ToString(EValidateStatus eStatus);
+	enum class ENetRole : std::uint8_t
+	{
+		Unknown,
+		Solo,
+		Host,
+		Client,
+	};
+
+	[[nodiscard]] ENetRole GetNetRole();
 	[[nodiscard]] bool IsNetHost();
 	[[nodiscard]] std::optional<std::size_t> FindValidateOffset(SDK::UFunction* pFunction);
 
