@@ -11,6 +11,7 @@
 
 #include "Config/Config.hpp"
 #include "Core/Log.hpp"
+#include "Core/Profiler.hpp"
 #include "Engines/Unreal/Field.hpp"
 #include "Engines/Unreal/ProcessEvent.hpp"
 #include "Features/Feature.hpp"
@@ -87,6 +88,7 @@ namespace OmegaWare
 
 		struct BoneCache_t
 		{
+			std::int32_t iIndex = -1;
 			std::array<int, BoneCount> aIndices;
 			std::array<SDK::FName, BoneCount> aNames;
 		};
@@ -394,7 +396,7 @@ namespace OmegaWare
 			std::vector<stThing> aThings;
 		};
 
-		constexpr std::chrono::milliseconds kThingScanInterval{ 300 };
+		constexpr std::chrono::milliseconds kThingScanInterval{ 1000 };
 
 		struct stOutlineSetting
 		{
@@ -502,6 +504,11 @@ namespace OmegaWare
 					m_mapBones.clear();
 					m_pLastWorld = pWorld;
 				}
+				else if (const auto tpNow = std::chrono::steady_clock::now(); tpNow - m_tpBonesPruned > std::chrono::seconds(10))
+				{
+					m_tpBonesPruned = tpNow;
+					std::erase_if(m_mapBones, [](const auto& rEntry) { return !Payday3::IsSameObject(rEntry.first, rEntry.second.iIndex); });
+				}
 
 				OmegaGUI::clDrawList& rList = OmegaGUI::GetBackgroundDrawList();
 				g_stProjector.Prepare(pController);
@@ -519,13 +526,15 @@ namespace OmegaWare
 				using Clock_t = std::chrono::steady_clock;
 				if ((!WantsOutlines() && !m_bOutlinesActive) || !Payday3::IsReady() || Clock_t::now() < m_tpNextOutlineUpdate || m_bOutlineUpdateQueued.exchange(true))
 					return;
-				m_tpNextOutlineUpdate = Clock_t::now() + std::chrono::milliseconds(100);
+				m_tpNextOutlineUpdate = Clock_t::now() + std::chrono::milliseconds(250);
 				if (!Unreal::RunOnGameThread([this] {
 						m_bOutlineUpdateQueued = false;
-						if (IsActive() && WantsOutlines())
-							UpdateOutlined();
-						else
-							RestoreAllOutlined();
+						Features::Guard(*this, "game thread", [this] {
+							if (WantsOutlines())
+								UpdateOutlined();
+							else
+								RestoreAllOutlined();
+						});
 					}))
 					m_bOutlineUpdateQueued = false;
 			}
@@ -581,6 +590,7 @@ namespace OmegaWare
 
 			struct stOutlined
 			{
+				std::int32_t iActorIndex = -1;
 				std::vector<SDK::UMeshComponent*> aMeshes;
 				SDK::USBZOutlineComponent* pOutline = nullptr;
 			};
@@ -625,6 +635,9 @@ namespace OmegaWare
 				case Payday3::EItemType::MoneyMedium:
 				case Payday3::EItemType::MoneyLarge:
 				case Payday3::EItemType::Jewelry:
+				case Payday3::EItemType::RareMinerals:
+				case Payday3::EItemType::Cocaine:
+				case Payday3::EItemType::SatellitePart:
 				case Payday3::EItemType::ATM:
 				case Payday3::EItemType::Plank:
 					return ECategory::Loot;
@@ -634,6 +647,7 @@ namespace OmegaWare
 				case Payday3::EItemType::Ammo:
 					return ECategory::Supplies;
 				case Payday3::EItemType::KeycardReader:
+				case Payday3::EItemType::Lab:
 				case Payday3::EItemType::HydrogenChloride:
 				case Payday3::EItemType::MuriaticAcid:
 				case Payday3::EItemType::CausticSoda:
@@ -814,10 +828,12 @@ namespace OmegaWare
 				m_tpNextOutline = Clock_t::now() + std::chrono::milliseconds(250);
 				if (!Unreal::RunOnGameThread([this] {
 						m_bOutlineQueued = false;
-						if (IsActive() && *m_pOutlineColors)
-							ApplyOutlines();
-						else
-							RestoreOutlines();
+						Features::Guard(*this, "game thread", [this] {
+							if (*m_pOutlineColors)
+								ApplyOutlines();
+							else
+								RestoreOutlines();
+						});
 					}))
 					m_bOutlineQueued = false;
 			}
@@ -944,7 +960,7 @@ namespace OmegaWare
 			{
 				for (SDK::UMeshComponent* pMesh : aMeshes)
 				{
-					if (!Payday3::IsLiveObject(pMesh))
+					if (!Payday3::IsAlive(pMesh))
 						continue;
 					const int iStencil = bEnabled ? iColorIndex : 0;
 					if (pMesh->CustomDepthStencilValue != iStencil)
@@ -956,36 +972,37 @@ namespace OmegaWare
 
 			stOutlined& Outlined(SDK::AActor* pActor, SDK::USBZOutlineComponent* pOutline)
 			{
-				if (const auto itOutlined = m_mapOutlined.find(pActor); itOutlined != m_mapOutlined.end())
+				if (const auto itOutlined = m_mapOutlined.find(pActor); itOutlined != m_mapOutlined.end() && itOutlined->second.iActorIndex == pActor->Index)
 					return itOutlined->second;
 				stOutlined stEntry;
-				stEntry.pOutline = Payday3::IsLiveObject(pOutline) ? pOutline : static_cast<SDK::USBZOutlineComponent*>(pActor->GetComponentByClass(SDK::USBZOutlineComponent::StaticClass()));
-				if (Payday3::IsLiveObject(stEntry.pOutline))
+				stEntry.iActorIndex = pActor->Index;
+				stEntry.pOutline = Payday3::IsAlive(pOutline) ? pOutline : static_cast<SDK::USBZOutlineComponent*>(pActor->GetComponentByClass(SDK::USBZOutlineComponent::StaticClass()));
+				if (Payday3::IsAlive(stEntry.pOutline))
 					for (SDK::UMeshComponent* pMesh : stEntry.pOutline->Meshes)
-						if (Payday3::IsLiveObject(pMesh))
+						if (Payday3::IsAlive(pMesh))
 							stEntry.aMeshes.push_back(pMesh);
 				if (stEntry.aMeshes.empty())
 				{
 					const SDK::TArray<SDK::UActorComponent*> aComponents = pActor->K2_GetComponentsByClass(SDK::UMeshComponent::StaticClass());
 					for (SDK::UActorComponent* pComponent : aComponents)
-						if (Payday3::IsLiveObject(pComponent))
+						if (Payday3::IsAlive(pComponent))
 							stEntry.aMeshes.push_back(static_cast<SDK::UMeshComponent*>(pComponent));
 				}
-				return m_mapOutlined.emplace(pActor, std::move(stEntry)).first->second;
+				return m_mapOutlined.insert_or_assign(pActor, std::move(stEntry)).first->second;
 			}
 
 			static void RestoreOutlined(const stOutlined& rEntry)
 			{
 				SDK::USBZOutlineComponent* pOutline = rEntry.pOutline;
-				SDK::USBZOutlineAsset* pAsset = Payday3::IsLiveObject(pOutline) ? pOutline->ActiveAsset : nullptr;
-				const bool bGameOutline = Payday3::IsLiveObject(pAsset) && !pOutline->bIsReplicatedHidden;
+				SDK::USBZOutlineAsset* pAsset = Payday3::IsAlive(pOutline) ? pOutline->ActiveAsset : nullptr;
+				const bool bGameOutline = Payday3::IsAlive(pAsset) && !pOutline->bIsReplicatedHidden;
 				SetMeshStencil(rEntry.aMeshes, bGameOutline, bGameOutline ? pAsset->ColorIndex : 0);
 			}
 
 			void RestoreAllOutlined()
 			{
 				for (const auto& [pActor, rEntry] : m_mapOutlined)
-					if (Payday3::IsAliveActor(pActor))
+					if (Payday3::IsAliveActor(pActor) && pActor->Index == rEntry.iActorIndex)
 						RestoreOutlined(rEntry);
 				m_mapOutlined.clear();
 				m_bOutlinesActive = false;
@@ -993,32 +1010,32 @@ namespace OmegaWare
 
 			void UpdateOutlined()
 			{
-				std::erase_if(m_mapOutlined, [](const auto& rEntry) { return !Payday3::IsLiveObject(rEntry.first) || !Payday3::IsAliveActor(rEntry.first); });
+				const Profiler::clScope clProfile("visuals.update outlines");
+				std::erase_if(m_mapOutlined, [](const auto& rEntry) { return !Payday3::IsAliveActor(rEntry.first) || rEntry.first->Index != rEntry.second.iActorIndex; });
 
 				std::unordered_map<SDK::AActor*, std::pair<int, SDK::USBZOutlineComponent*>> mapWanted;
-				SDK::USBZActorContainer* pPawns = Payday3::GetAllPawns();
+				const std::shared_ptr<const Payday3::stWorldSnapshot> pWorldSnapshot = Payday3::GetWorldSnapshot();
 				SDK::APlayerController* pController = Unreal::GetPlayerController();
-				if (pPawns && pController)
+				if (pWorldSnapshot && pController && pWorldSnapshot->pWorld == Unreal::GetWorld())
 				{
 					SDK::APawn* pLocalPawn = pController->AcknowledgedPawn;
-					SDK::TArray<SDK::UObject*>& aActors = pPawns->Objects;
-					for (int iActor = 0; iActor < aActors.Num(); ++iActor)
+					for (const Payday3::stPawnEntry& rPawn : pWorldSnapshot->aPawns)
 					{
-						auto* pActor = static_cast<SDK::AActor*>(aActors[iActor]);
-						if (!Payday3::IsAliveActor(pActor) || pActor == pLocalPawn)
+						SDK::AActor* pActor = rPawn.pActor;
+						if (!Payday3::IsAliveActor(pActor) || pActor == pLocalPawn || pActor->Class != rPawn.pClass || !rPawn.bAlive)
 							continue;
-						const bool bPlayerPawn = pActor->IsA(SDK::ASBZPlayerCharacter::StaticClass());
-						const Payday3::EEnemyCategory eKind = Payday3::GetEnemyInfo(Payday3::ResolveEnemyType(pActor)).eCategory;
+						const bool bPlayerPawn = rPawn.bPlayer;
+						const Payday3::EEnemyCategory eKind = rPawn.pInfo->eCategory;
 						if (!bPlayerPawn && eKind != Payday3::EEnemyCategory::Cop && eKind != Payday3::EEnemyCategory::Civilian)
 							continue;
 						const ECategory eCategory = bPlayerPawn ? ECategory::Players : (eKind == Payday3::EEnemyCategory::Cop ? ECategory::Enemies : ECategory::Civilians);
-						const bool bVip = eCategory == ECategory::Civilians && VipOn() && Payday3::IsVip(pActor);
+						const bool bVip = eCategory == ECategory::Civilians && VipOn() && rPawn.bVip;
 						const bool bAimbotTarget = *m_pAimbotTarget && pActor == Payday3::GetAimbotTarget();
-						if (Payday3::IsPawnAlive(pActor) && ((bVip ? m_stVip : Category(eCategory)).OutlineOn() || bAimbotTarget))
+						if ((bVip ? m_stVip : Category(eCategory)).OutlineOn() || bAimbotTarget)
 						{
 							int iColorIndex = kPeopleOutlineIndex;
 							SDK::USBZOutlineComponent* pPawnOutline = Payday3::GetPawnOutline(pActor);
-							if (!bAimbotTarget && bPlayerPawn && Payday3::IsLiveObject(pPawnOutline) && Payday3::IsLiveObject(pPawnOutline->ActiveAsset))
+							if (!bAimbotTarget && bPlayerPawn && Payday3::IsAlive(pPawnOutline) && Payday3::IsAlive(pPawnOutline->ActiveAsset))
 								iColorIndex = pPawnOutline->ActiveAsset->ColorIndex;
 							mapWanted[pActor] = { iColorIndex, pPawnOutline };
 						}
@@ -1029,26 +1046,34 @@ namespace OmegaWare
 				const bool bItems = Category(ECategory::Loot).OutlineOn() || Category(ECategory::KeyItems).OutlineOn() || Category(ECategory::Objectives).OutlineOn() || Category(ECategory::Supplies).OutlineOn();
 				if (bCameras || bItems)
 				{
-					Payday3::ForEachLevelActor(Unreal::GetWorld(), [&](SDK::AActor* pActor) {
-						if (!Payday3::IsAliveActor(pActor))
-							return;
-						if (pActor->IsA(SDK::ASBZSecurityCamera::StaticClass()))
+					std::shared_ptr<const stThingSnapshot> pSnapshot;
+					{
+						std::scoped_lock lckThings(m_mtxThings);
+						pSnapshot = m_pThings;
+					}
+					if (pSnapshot && pSnapshot->pWorld == Unreal::GetWorld())
+						for (const stThing& rThing : pSnapshot->aThings)
 						{
-							auto* pCamera = static_cast<SDK::ASBZSecurityCamera*>(pActor);
-							if (bCameras && pCamera->CameraState != SDK::ESBZCameraState::Destroyed)
-								mapWanted[pActor] = { kPeopleOutlineIndex, pCamera->OutlineComponent };
-							return;
+							SDK::AActor* pActor = rThing.pActor;
+							if (!Payday3::IsAliveActor(pActor) || pActor->Class != rThing.pClass)
+								continue;
+							if (rThing.eKind == EThingKind::Camera)
+							{
+								auto* pCamera = static_cast<SDK::ASBZSecurityCamera*>(pActor);
+								if (bCameras && pCamera->CameraState != SDK::ESBZCameraState::Destroyed)
+									mapWanted[pActor] = { kPeopleOutlineIndex, pCamera->OutlineComponent };
+								continue;
+							}
+							if (rThing.eKind != EThingKind::Item || !bItems)
+								continue;
+							const Payday3::stItemInfo& rItem = rThing.stItem;
+							const stItemSetting* pSetting = Setting(rItem.eType);
+							if (!pSetting || !*pSetting->pShow || !Category(CategoryOf(rItem.eType)).OutlineOn())
+								continue;
+							if (IsDepleted(rItem.eType, pActor))
+								continue;
+							mapWanted[pActor] = { kItemOutlineIndex, nullptr };
 						}
-						if (!bItems)
-							return;
-						const Payday3::stItemInfo& rItem = Payday3::ResolveItem(pActor);
-						const stItemSetting* pSetting = Setting(rItem.eType);
-						if (!pSetting || !*pSetting->pShow || !Category(CategoryOf(rItem.eType)).OutlineOn())
-							return;
-						if (IsDepleted(rItem.eType, pActor))
-							return;
-						mapWanted[pActor] = { kItemOutlineIndex, nullptr };
-					});
 				}
 
 				for (auto itOutlined = m_mapOutlined.begin(); itOutlined != m_mapOutlined.end();)
@@ -1064,7 +1089,7 @@ namespace OmegaWare
 				for (const auto& [pActor, prWanted] : mapWanted)
 				{
 					stOutlined& rEntry = Outlined(pActor, prWanted.second);
-					if (!std::ranges::all_of(rEntry.aMeshes, [](SDK::UMeshComponent* pMesh) { return Payday3::IsLiveObject(pMesh); }))
+					if (!std::ranges::all_of(rEntry.aMeshes, [](SDK::UMeshComponent* pMesh) { return Payday3::IsAlive(pMesh); }))
 					{
 						m_mapOutlined.erase(pActor);
 						continue;
@@ -1082,41 +1107,29 @@ namespace OmegaWare
 
 			void DrawCharacters(OmegaGUI::clDrawList& rList, SDK::APlayerController* pController, const SDK::FVector& vecCamera)
 			{
-				SDK::USBZActorContainer* pPawns = Payday3::GetAllPawns();
-				if (!pPawns)
+				const Profiler::clScope clProfile("visuals.draw characters");
+				const std::shared_ptr<const Payday3::stWorldSnapshot> pSnapshot = Payday3::GetWorldSnapshot();
+				if (!pSnapshot || pSnapshot->pWorld != Unreal::GetWorld())
 					return;
 
 				SDK::APawn* pLocalPawn = pController->AcknowledgedPawn;
-				SDK::TArray<SDK::UObject*>& aActors = pPawns->Objects;
-				for (int iActor = 0; iActor < aActors.Num(); ++iActor)
+				for (const Payday3::stPawnEntry& rPawn : pSnapshot->aPawns)
 				{
-					auto* pActor = static_cast<SDK::AActor*>(aActors[iActor]);
-					if (!Memory::IsValidObjectPtr(pActor) || pActor == pLocalPawn)
+					SDK::AActor* pActor = rPawn.pActor;
+					if (pActor == pLocalPawn || !rPawn.bAlive || !Memory::IsValidObjectPtr(pActor) || pActor->Class != rPawn.pClass || !Memory::IsValidObjectPtr(rPawn.pMesh))
 						continue;
-					SDK::USkeletalMeshComponent* pMesh = Payday3::GetPawnMesh(pActor);
-					if (!pMesh || !Payday3::IsPawnAlive(pActor))
-						continue;
-					const bool bDrone = Payday3::IsDrone(pActor);
-
-					const bool bPlayerPawn = pActor->IsA(SDK::ASBZPlayerCharacter::StaticClass());
-					const Payday3::stEnemyInfo& stInfo = Payday3::GetEnemyInfo(Payday3::ResolveEnemyType(pActor));
+					SDK::USkeletalMeshComponent* pMesh = rPawn.pMesh;
+					const bool bDrone = rPawn.bDrone;
+					const bool bPlayerPawn = rPawn.bPlayer;
+					const Payday3::stEnemyInfo& stInfo = *rPawn.pInfo;
 					if (!bPlayerPawn && stInfo.eCategory != Payday3::EEnemyCategory::Cop && stInfo.eCategory != Payday3::EEnemyCategory::Civilian)
 						continue;
 					const bool bCop = stInfo.eCategory == Payday3::EEnemyCategory::Cop;
-					const bool bVip = !bPlayerPawn && !bCop && VipOn() && Payday3::IsVip(pActor);
+					const bool bVip = rPawn.bVip && VipOn();
 					const EColorSet eSet = bPlayerPawn ? EColorSet::Player : (bVip ? EColorSet::Vip : (bCop ? EColorSet::Cop : EColorSet::Civilian));
 					const stCategory& rCategory = bVip ? m_stVip : Category(bPlayerPawn ? ECategory::Players : (bCop ? ECategory::Enemies : ECategory::Civilians));
-					std::string strPlayerName;
-					Payday3::EModUserKind eModKind = Payday3::EModUserKind::None;
-					if (bPlayerPawn)
-					{
-						SDK::ASBZPlayerState* pPlayerState = OW_FIELD(static_cast<SDK::ASBZPlayerCharacter*>(pActor), SBZPlayerState);
-						if (Memory::IsValidObjectPtr(pPlayerState))
-						{
-							strPlayerName = pPlayerState->GetPlayerName().ToString();
-							eModKind = Payday3::GetModUserKind(pPlayerState);
-						}
-					}
+					const std::string& strPlayerName = rPawn.strName;
+					const Payday3::EModUserKind eModKind = rPawn.eModKind;
 					if (!rCategory.AnyDrawn())
 						continue;
 					const bool bTarget = *m_pAimbotTarget && pActor == Payday3::GetAimbotTarget();
@@ -1188,9 +1201,10 @@ namespace OmegaWare
 			const BoneCache_t& Bones(SDK::USkeletalMeshComponent* pMesh)
 			{
 				auto [itCache, bInserted] = m_mapBones.try_emplace(pMesh);
-				if (!bInserted)
+				if (!bInserted && itCache->second.iIndex == pMesh->Index)
 					return itCache->second;
 
+				itCache->second.iIndex = pMesh->Index;
 				itCache->second.aIndices.fill(-1);
 				const int iBones = pMesh->GetNumBones();
 				for (int iBone = 0; iBone < iBones; ++iBone)
@@ -1303,6 +1317,17 @@ namespace OmegaWare
 					return IsUnusableUsb(pActor);
 				case Payday3::EItemType::RFIDTag:
 					return pActor->bHidden;
+				case Payday3::EItemType::RareMinerals:
+				case Payday3::EItemType::SatellitePart:
+					return pActor->bHidden || !IsUsableInteractable(static_cast<SDK::ASBZSingleBagGenerator*>(pActor)->Interactable);
+				case Payday3::EItemType::Cocaine:
+					if (pActor->IsA(SDK::ASBZInstantLoot::StaticClass()))
+						return IsLootedInstant(pActor);
+					if (pActor->IsA(SDK::ASBZSingleBagGenerator::StaticClass()))
+						return pActor->bHidden || !IsUsableInteractable(static_cast<SDK::ASBZSingleBagGenerator*>(pActor)->Interactable);
+					if (pActor->IsA(SDK::ASBZMultiBagGenerator::StaticClass()))
+						return pActor->bHidden || !IsUsableInteractable(static_cast<SDK::ASBZMultiBagGenerator*>(pActor)->InteractableComponent);
+					return false;
 				case Payday3::EItemType::Cash:
 				case Payday3::EItemType::MoneyMedium:
 				case Payday3::EItemType::Jewelry:
@@ -1374,6 +1399,7 @@ namespace OmegaWare
 
 			struct stDebugBones
 			{
+				std::int32_t iIndex = -1;
 				std::vector<SDK::FName> aNames;
 				std::vector<int> aParents;
 				std::vector<std::string> aNameText;
@@ -1518,10 +1544,11 @@ namespace OmegaWare
 				auto [itCache, bInserted] = m_mapDebugBones.try_emplace(pMesh);
 				stDebugBones& rBones = itCache->second;
 				const int iBones = pMesh->GetNumBones();
-				if (!bInserted && static_cast<int>(rBones.aNames.size()) == iBones)
+				if (!bInserted && rBones.iIndex == pMesh->Index && static_cast<int>(rBones.aNames.size()) == iBones)
 					return rBones;
 
 				rBones = {};
+				rBones.iIndex = pMesh->Index;
 				rBones.aNames.reserve(iBones);
 				rBones.aParents.reserve(iBones);
 				for (int iBone = 0; iBone < iBones; ++iBone)
@@ -1544,7 +1571,7 @@ namespace OmegaWare
 				if (!pPawns)
 					return;
 
-				std::erase_if(m_mapDebugBones, [](const auto& rEntry) { return !Payday3::IsLiveObject(rEntry.first); });
+				std::erase_if(m_mapDebugBones, [](const auto& rEntry) { return !Payday3::IsSameObject(rEntry.first, rEntry.second.iIndex); });
 
 				std::vector<stDebugBoneTarget> aTargets;
 				SDK::APawn* pLocalPawn = pController->AcknowledgedPawn;
@@ -1606,6 +1633,11 @@ namespace OmegaWare
 				return stCategory::On(rEnemies.pEnabled) && *m_pCameras && (*rEnemies.pBox || *rEnemies.pName || *rEnemies.pDistance);
 			}
 
+			[[nodiscard]] bool ItemOutlinesWanted() const
+			{
+				return !DebugOn() && ((*m_pCameras && Category(ECategory::Enemies).OutlineOn()) || Category(ECategory::Loot).OutlineOn() || Category(ECategory::KeyItems).OutlineOn() || Category(ECategory::Objectives).OutlineOn() || Category(ECategory::Supplies).OutlineOn());
+			}
+
 			[[nodiscard]] bool ThingsShown() const
 			{
 				return !DebugOn() && (CamerasShown() || Category(ECategory::Loot).AnyDrawn() || Category(ECategory::KeyItems).AnyDrawn() || Category(ECategory::Objectives).AnyDrawn() || Category(ECategory::Supplies).AnyDrawn());
@@ -1613,8 +1645,9 @@ namespace OmegaWare
 
 			void ScanThings()
 			{
+				const Profiler::clScope clProfile("visuals.scan things");
 				using Clock_t = std::chrono::steady_clock;
-				if (!ThingsShown() || !Payday3::IsReady())
+				if (!(ThingsShown() || ItemOutlinesWanted()) || !Payday3::IsReady())
 				{
 					std::scoped_lock lckThings(m_mtxThings);
 					m_pThings.reset();
@@ -1639,6 +1672,13 @@ namespace OmegaWare
 						pSnapshot->aThings.push_back({ pActor, pActor->Class, EThingKind::DropOff, {} });
 						return;
 					}
+					if (pActor->IsA(SDK::ASBZWaypoint::StaticClass()))
+					{
+						static constexpr Payday3::stItemInfo kLabWaypoint{ "Lab", Payday3::EItemType::Lab, Payday3::EItemCategory::KeycardReader };
+						if (pActor->GetName().starts_with("SBZWaypoint_Lab"))
+							pSnapshot->aThings.push_back({ pActor, pActor->Class, EThingKind::Item, kLabWaypoint });
+						return;
+					}
 					const Payday3::stItemInfo& rItem = Payday3::ResolveItem(pActor);
 					if (rItem.eType != Payday3::EItemType::None)
 						pSnapshot->aThings.push_back({ pActor, pActor->Class, EThingKind::Item, rItem });
@@ -1650,6 +1690,7 @@ namespace OmegaWare
 
 			void DrawThings(OmegaGUI::clDrawList& rList, SDK::APlayerController* pController, SDK::UWorld* pWorld, const SDK::FVector& vecCamera, bool bCameras)
 			{
+				const Profiler::clScope clProfile("visuals.draw things");
 				std::shared_ptr<const stThingSnapshot> pSnapshot;
 				{
 					std::scoped_lock lckThings(m_mtxThings);
@@ -1746,17 +1787,21 @@ namespace OmegaWare
 			OmegaGUI::color* m_pVipColor = nullptr;
 			stCategory m_stVip{ "vip", "", true };
 			OmegaGUI::color* m_pDropOffColor = nullptr;
-			std::array<stItemSetting, 19> m_aItems = { {
+			std::array<stItemSetting, 23> m_aItems = { {
 				{ Payday3::EItemType::Cash, "visuals.show_cash", "visuals.item_cash_color", OmegaGUI::color(0, 255, 255) },
 				{ Payday3::EItemType::MoneyMedium, "visuals.show_money_medium", "visuals.item_money_medium_color", OmegaGUI::color(120, 220, 120) },
 				{ Payday3::EItemType::MoneyLarge, "visuals.show_money_large", "visuals.item_money_large_color", OmegaGUI::color(0, 255, 0) },
 				{ Payday3::EItemType::Jewelry, "visuals.show_jewelry", "visuals.item_jewelry_color", OmegaGUI::color(255, 0, 255) },
+				{ Payday3::EItemType::RareMinerals, "visuals.show_rare_minerals", "visuals.item_rare_minerals_color", OmegaGUI::color(255, 90, 200) },
+				{ Payday3::EItemType::SatellitePart, "visuals.show_satellite_parts", "visuals.item_satellite_parts_color", OmegaGUI::color(120, 200, 255) },
+				{ Payday3::EItemType::Cocaine, "visuals.show_cocaine", "visuals.item_cocaine_color", OmegaGUI::color(240, 240, 255) },
 				{ Payday3::EItemType::ATM, "visuals.show_atms", "visuals.item_atm_color", OmegaGUI::color(80, 200, 255) },
 				{ Payday3::EItemType::DepositBox, "visuals.show_deposit_boxes", "visuals.item_deposit_box_color", OmegaGUI::color(255, 0, 0) },
 				{ Payday3::EItemType::Keycard, "visuals.show_keycards", "visuals.item_keycard_color", OmegaGUI::color(0, 0, 255) },
 				{ Payday3::EItemType::QRPhone, "visuals.show_qr_phones", "visuals.item_qr_phone_color", OmegaGUI::color(255, 255, 0) },
 				{ Payday3::EItemType::USB, "visuals.show_usbs", "visuals.item_usb_color", OmegaGUI::color(255, 128, 0) },
 				{ Payday3::EItemType::RFIDTag, "visuals.show_rfid_tags", "visuals.item_rfid_tag_color", OmegaGUI::color(0, 200, 255) },
+				{ Payday3::EItemType::Lab, "visuals.show_lab", "visuals.item_lab_color", OmegaGUI::color(255, 120, 40) },
 				{ Payday3::EItemType::KeycardReader, "visuals.show_keycard_readers", "visuals.item_keycard_reader_color", OmegaGUI::color(255, 128, 128) },
 				{ Payday3::EItemType::Plank, "visuals.show_planks", "visuals.item_plank_color", OmegaGUI::color(200, 150, 90) },
 				{ Payday3::EItemType::HydrogenChloride, "visuals.show_hydrogen_chloride", "visuals.item_hydrogen_chloride_color", OmegaGUI::color(120, 255, 200) },
@@ -1795,6 +1840,7 @@ namespace OmegaWare
 			std::chrono::steady_clock::time_point m_tpNextThingScan;
 
 			SDK::UWorld* m_pLastWorld = nullptr;
+			std::chrono::steady_clock::time_point m_tpBonesPruned;
 			std::unordered_map<SDK::USkeletalMeshComponent*, BoneCache_t> m_mapBones;
 		};
 
