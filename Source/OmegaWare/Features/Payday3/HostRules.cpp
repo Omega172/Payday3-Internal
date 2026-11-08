@@ -38,6 +38,7 @@ namespace OmegaWare
 
 		struct stMovementBackup
 		{
+			std::int32_t iIndex = -1;
 			bool bIgnoreErrorChecks = false;
 			bool bAcceptClientPosition = false;
 		};
@@ -65,8 +66,7 @@ namespace OmegaWare
 					return;
 				if (!Unreal::RunOnGameThread([this] {
 						m_bQueued = false;
-						if (IsActive())
-							RunGame();
+						Features::Guard(*this, "game thread", [this] { RunGame(); });
 					}))
 					m_bQueued = false;
 			}
@@ -149,7 +149,7 @@ namespace OmegaWare
 					bool bTrusted = bForced || m_setTrusted.contains(pState);
 					OmegaGUI::PushID(pState);
 					OmegaGUI::BeginDisabled(bForced && !bAllPlayers);
-					const bool bToggled = OmegaGUI::Checkbox(pState->GetPlayerName().ToString(), &bTrusted);
+					const bool bToggled = OmegaGUI::Checkbox(Payday3::PlayerName(pState), &bTrusted);
 					OmegaGUI::EndDisabled();
 					if (bToggled && !bForced)
 					{
@@ -269,11 +269,13 @@ namespace OmegaWare
 			void LogRejection(SDK::UObject* pObject, SDK::USBZBaseInteractableComponent* pInteraction, std::string_view strReason)
 			{
 				using Clock_t = std::chrono::steady_clock;
+				SDK::AActor* pOwner = Payday3::IsAlive(pObject) ? static_cast<SDK::UActorComponent*>(pObject)->GetOwner() : nullptr;
+				if (Payday3::IsAliveActor(pOwner) && pOwner->IsA(SDK::APawn::StaticClass()))
+					Payday3::NoteDisconnectCause(static_cast<SDK::APawn*>(pOwner)->PlayerState, std::format("rejected network call: a complete interaction check failed ({})", strReason));
 				const auto tpNow = Clock_t::now();
 				if (tpNow < m_tpNextRejectionLog)
 					return;
 				m_tpNextRejectionLog = tpNow + std::chrono::milliseconds(500);
-				SDK::AActor* pOwner = Payday3::IsAlive(pObject) ? static_cast<SDK::UActorComponent*>(pObject)->GetOwner() : nullptr;
 				SDK::AActor* pTarget = Payday3::IsAlive(pInteraction) ? pInteraction->GetOwner() : nullptr;
 				LogWarning("hostrules: rejected a complete interaction from {} on {}: {}", Payday3::IsAliveActor(pOwner) ? pOwner->GetName() : std::string("unknown"), Payday3::IsAliveActor(pTarget) ? pTarget->GetName() : std::string("unknown"), strReason);
 			}
@@ -320,8 +322,8 @@ namespace OmegaWare
 				RestoreMovement(setWanted);
 				for (SDK::UCharacterMovementComponent* pMovement : setWanted)
 				{
-					if (!m_mapMovement.contains(pMovement))
-						m_mapMovement.emplace(pMovement, stMovementBackup{ static_cast<bool>(pMovement->bIgnoreClientMovementErrorChecksAndCorrection), static_cast<bool>(pMovement->bServerAcceptClientAuthoritativePosition) });
+					if (const auto itBackup = m_mapMovement.find(pMovement); itBackup == m_mapMovement.end() || itBackup->second.iIndex != pMovement->Index)
+						m_mapMovement.insert_or_assign(pMovement, stMovementBackup{ pMovement->Index, static_cast<bool>(pMovement->bIgnoreClientMovementErrorChecksAndCorrection), static_cast<bool>(pMovement->bServerAcceptClientAuthoritativePosition) });
 					pMovement->bIgnoreClientMovementErrorChecksAndCorrection = true;
 					pMovement->bServerAcceptClientAuthoritativePosition = true;
 				}
@@ -337,7 +339,7 @@ namespace OmegaWare
 						++itMovement;
 						continue;
 					}
-					if (Payday3::IsAlive(pMovement))
+					if (Payday3::IsSameObject(pMovement, stBackup.iIndex))
 					{
 						pMovement->bIgnoreClientMovementErrorChecksAndCorrection = stBackup.bIgnoreErrorChecks;
 						pMovement->bServerAcceptClientAuthoritativePosition = stBackup.bAcceptClientPosition;
@@ -360,8 +362,25 @@ namespace OmegaWare
 			clSprintOverride m_clSprint{ "Starbreeze.SBZPlayerMovementComponent.Server_SetWantToSprint",
 				[this](SDK::UObject* pObject, bool) { return IsArmedMovement(pObject); } };
 			std::unordered_set<SDK::UObject*> m_setArmedMovement;
+			void LogAllowed(SDK::UObject* pObject, SDK::USBZBaseInteractableComponent* pInteraction)
+			{
+				using Clock_t = std::chrono::steady_clock;
+				const auto tpNow = Clock_t::now();
+				if (tpNow < m_tpNextAllowedLog)
+					return;
+				m_tpNextAllowedLog = tpNow + std::chrono::seconds(2);
+				SDK::AActor* pOwner = Payday3::IsAlive(pObject) ? static_cast<SDK::UActorComponent*>(pObject)->GetOwner() : nullptr;
+				SDK::AActor* pTarget = Payday3::IsAlive(pInteraction) ? pInteraction->GetOwner() : nullptr;
+				LogInfo("net: {} failed the game's interaction check on {} and was let through by the host rules", Payday3::IsAliveActor(pOwner) ? pOwner->GetName() : std::string("a player"), Payday3::IsAliveActor(pTarget) ? pTarget->GetName() : std::string("something"));
+			}
+
 			clCompleteInteractionOverride m_clCompleteInteraction{ "Starbreeze.SBZInteractorComponent.Server_CompleteInteraction",
-				[this](SDK::UObject* pObject, SDK::USBZBaseInteractableComponent* pInteraction, std::int32_t iId) { return AllowCompleteInteraction(pObject, pInteraction, iId); } };
+				[this](SDK::UObject* pObject, SDK::USBZBaseInteractableComponent* pInteraction, std::int32_t iId) {
+					const bool bAllow = AllowCompleteInteraction(pObject, pInteraction, iId);
+					if (bAllow)
+						LogAllowed(pObject, pInteraction);
+					return bAllow;
+				} };
 
 			SDK::UWorld* m_pWorld = nullptr;
 			std::unordered_map<SDK::UCharacterMovementComponent*, stMovementBackup> m_mapMovement;
@@ -370,6 +389,7 @@ namespace OmegaWare
 			std::mutex m_mtxArmed;
 			std::unordered_map<SDK::USBZPlayerInteractorComponent*, SDK::ASBZPlayerCharacter*> m_mapArmedInteractors;
 			std::chrono::steady_clock::time_point m_tpNextRejectionLog;
+			std::chrono::steady_clock::time_point m_tpNextAllowedLog;
 			std::atomic<bool> m_bHost = false;
 			std::atomic<bool> m_bQueued = false;
 		};
