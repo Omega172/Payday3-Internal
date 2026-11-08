@@ -231,6 +231,7 @@ inline const OmegaLocalization::stLocaleData g_stLocaleGerman{
 		{ "visuals.show_rare_minerals", "seltene mineralien" },
 		{ "visuals.show_cocaine", "kokain" },
 		{ "visuals.show_satellite_parts", "satellitenteile" },
+		{ "visuals.show_containers", "behälter (host: inhalt, client: ungeöffnet)" },
 		{ "visuals.show_lab", "labore (kochstationen)" },
 		{ "menu.section_windows", "fenster" },
 		{ "menu.window_opacity", "deckkraft" },

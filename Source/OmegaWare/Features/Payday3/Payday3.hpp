@@ -81,6 +81,7 @@ namespace OmegaWare::Payday3
 		Cocaine,
 		Lab,
 		SatellitePart,
+		Container,
 	};
 
 	struct stItemInfo

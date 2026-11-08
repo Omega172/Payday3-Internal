@@ -243,6 +243,7 @@ inline const OmegaLocalization::stLocaleData g_stLocaleChinese{
 		{ "visuals.show_rare_minerals", "稀有矿物" },
 		{ "visuals.show_cocaine", "可卡因" },
 		{ "visuals.show_satellite_parts", "卫星部件" },
+		{ "visuals.show_containers", "容器（主机：内容，客户端：未打开）" },
 		{ "visuals.show_lab", "实验室（烹饪台）" },
 		{ "menu.section_windows", "窗口" },
 		{ "menu.window_opacity", "不透明度" },

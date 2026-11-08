@@ -232,6 +232,7 @@ inline const OmegaLocalization::stLocaleData g_stLocaleRussian{
 		{ "visuals.show_rare_minerals", "редкие минералы" },
 		{ "visuals.show_cocaine", "кокаин" },
 		{ "visuals.show_satellite_parts", "части спутника" },
+		{ "visuals.show_containers", "контейнеры (хост: содержимое, клиент: закрытые)" },
 		{ "visuals.show_lab", "лаборатории (станции варки)" },
 		{ "menu.section_windows", "окна" },
 		{ "menu.window_opacity", "непрозрачность" },

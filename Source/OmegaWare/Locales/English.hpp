@@ -243,6 +243,7 @@ inline const OmegaLocalization::stLocaleData g_stLocaleEnglish{
 		{ "visuals.show_rare_minerals", "rare minerals" },
 		{ "visuals.show_cocaine", "cocaine" },
 		{ "visuals.show_satellite_parts", "satellite parts" },
+		{ "visuals.show_containers", "containers (host: contents, client: unopened)" },
 		{ "visuals.show_lab", "labs (cooking stations)" },
 		{ "menu.section_windows", "windows" },
 		{ "menu.window_opacity", "opacity" },

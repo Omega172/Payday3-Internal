@@ -7,13 +7,18 @@
 #include "SDK/BP_MethIngredientBase_classes.hpp"
 #include "SDK/BP_QRPhone_classes.hpp"
 #include "SDK/BP_USBDrive_classes.hpp"
+#include "SDK/BP_WoodenCrate_classes.hpp"
+#include "SDK/BP_WoodenCrate_SatellitePart_LowValue_classes.hpp"
 #pragma warning(pop)
+
+#include "SDK/Starbreeze_parameters.hpp"
 
 #include "Config/Config.hpp"
 #include "Core/Log.hpp"
 #include "Core/Profiler.hpp"
 #include "Engines/Unreal/Field.hpp"
 #include "Engines/Unreal/ProcessEvent.hpp"
+#include "Engines/Unreal/RpcValidate.hpp"
 #include "Features/Feature.hpp"
 #include "Memory/Safety.hpp"
 
@@ -388,6 +393,7 @@ namespace OmegaWare
 			SDK::UClass* pClass = nullptr;
 			EThingKind eKind = EThingKind::Item;
 			Payday3::stItemInfo stItem;
+			std::string strLabel;
 		};
 
 		struct stThingSnapshot
@@ -413,6 +419,25 @@ namespace OmegaWare
 
 			bool Setup() override
 			{
+				m_hKeyItems = Unreal::OnFunction<SDK::Params::PD3KeyItemContainer_OnKeyItemCountChanged>("Starbreeze.PD3KeyItemContainer.OnKeyItemCountChanged",
+					[this](SDK::UObject*, SDK::Params::PD3KeyItemContainer_OnKeyItemCountChanged& rParams, bool&) {
+						const SDK::FSBZKeyItemCountChangedEvent& rEvent = rParams.KeyItemCountChangedEventData;
+						SDK::APlayerController* pController = Unreal::GetPlayerController();
+						if (!Payday3::IsAlive(pController) || !pController->PlayerState || rEvent.PlayerState != pController->PlayerState)
+							return;
+						std::string strKey = rEvent.KeyTagName.ToString() + " " + (Payday3::IsAlive(rEvent.KeyItem) ? rEvent.KeyItem->GetName() : std::string());
+						std::ranges::transform(strKey, strKey.begin(), [](unsigned char chLetter) { return static_cast<char>(std::tolower(chLetter)); });
+						std::scoped_lock lckHeld(m_mtxHeldKeys);
+						if (rEvent.NewValue > 0)
+						{
+							if (m_mapHeldKeys.emplace(strKey, rEvent.NewValue).second)
+								LogInfo("visuals: you now hold the key item \"{}\"", strKey);
+							else
+								m_mapHeldKeys[strKey] = rEvent.NewValue;
+						}
+						else
+							m_mapHeldKeys.erase(strKey);
+					});
 				for (stCategory& rCategory : m_aCategories)
 				{
 					auto fnAdd = [&](std::string_view strOption) { return &Config::Add(std::format("visuals.{}.{}", rCategory.strKey, strOption), false); };
@@ -474,6 +499,9 @@ namespace OmegaWare
 
 			void Destroy() override
 			{
+				if (m_hKeyItems != Unreal::kInvalidHook)
+					Unreal::RemoveProcessEvent(m_hKeyItems);
+				m_hKeyItems = Unreal::kInvalidHook;
 				if (Payday3::IsReady() && (m_bOutlinesApplied || m_bOutlinesActive))
 					Unreal::RunOnGameThreadAndWait([this] { RestoreAllOutlined(); RestoreOutlines(); }, std::chrono::seconds(1));
 			}
@@ -638,6 +666,7 @@ namespace OmegaWare
 				case Payday3::EItemType::RareMinerals:
 				case Payday3::EItemType::Cocaine:
 				case Payday3::EItemType::SatellitePart:
+				case Payday3::EItemType::Container:
 				case Payday3::EItemType::ATM:
 				case Payday3::EItemType::Plank:
 					return ECategory::Loot;
@@ -1070,7 +1099,7 @@ namespace OmegaWare
 							const stItemSetting* pSetting = Setting(rItem.eType);
 							if (!pSetting || !*pSetting->pShow || !Category(CategoryOf(rItem.eType)).OutlineOn())
 								continue;
-							if (IsDepleted(rItem.eType, pActor))
+							if (IsDepleted(rItem.eType, pActor) || HoldsKeyFor(rItem))
 								continue;
 							mapWanted[pActor] = { kItemOutlineIndex, nullptr };
 						}
@@ -1284,6 +1313,59 @@ namespace OmegaWare
 				return pActor->bHidden || static_cast<SDK::ASBZInstantLoot*>(pActor)->bIsLooted;
 			}
 
+			[[nodiscard]] static std::uint8_t CrateFlags(SDK::UClass* pClass)
+			{
+				thread_local std::unordered_map<SDK::UClass*, std::uint8_t> t_mapCrates;
+				if (t_mapCrates.size() > 512)
+					t_mapCrates.clear();
+				const auto [itClass, bInserted] = t_mapCrates.try_emplace(pClass, std::uint8_t{ 0 });
+				if (bInserted)
+					for (const SDK::UStruct* pStruct = pClass; pStruct; pStruct = pStruct->SuperStruct)
+					{
+						const std::string strName = pStruct->Name.ToString();
+						if (strName == "BP_WoodenCrate_C")
+							itClass->second |= 1;
+						else if (strName == "BP_WoodenCrate_SatellitePart_LowValue_C")
+							itClass->second |= 2;
+					}
+				return itClass->second;
+			}
+
+			[[nodiscard]] bool HoldsKeyFor(const Payday3::stItemInfo& rItem) const
+			{
+				std::string_view strColor;
+				if (rItem.strLabel.find("Blue") != std::string_view::npos)
+					strColor = "blue";
+				else if (rItem.strLabel.find("Red") != std::string_view::npos)
+					strColor = "red";
+				std::string_view strKind;
+				switch (rItem.eType)
+				{
+				case Payday3::EItemType::Keycard:
+					strKind = "card";
+					break;
+				case Payday3::EItemType::RFIDTag:
+					strKind = "rfid";
+					break;
+				case Payday3::EItemType::USB:
+					strKind = "usb";
+					break;
+				case Payday3::EItemType::QRPhone:
+					strKind = "phone";
+					break;
+				default:
+					return false;
+				}
+				const bool bColored = rItem.eType == Payday3::EItemType::Keycard || rItem.eType == Payday3::EItemType::RFIDTag;
+				if (bColored && strColor.empty())
+					return false;
+				std::scoped_lock lckHeld(m_mtxHeldKeys);
+				for (const auto& [strKey, iCount] : m_mapHeldKeys)
+					if (iCount > 0 && strKey.find(strKind) != std::string::npos && (!bColored || strKey.find(strColor) != std::string::npos))
+						return true;
+				return false;
+			}
+
 			[[nodiscard]] static bool IsUsableInteractable(SDK::USBZInteractableComponent* pInteractable)
 			{
 				return Payday3::IsAlive(pInteractable) && pInteractable->bInteractionEnabled && !pInteractable->bIsHidden;
@@ -1320,6 +1402,10 @@ namespace OmegaWare
 				case Payday3::EItemType::RareMinerals:
 				case Payday3::EItemType::SatellitePart:
 					return pActor->bHidden || !IsUsableInteractable(static_cast<SDK::ASBZSingleBagGenerator*>(pActor)->Interactable);
+				case Payday3::EItemType::Container:
+					if (const std::uint8_t uCrate = pActor->Class ? CrateFlags(pActor->Class) : std::uint8_t{ 0 }; (uCrate & 1) != 0)
+						return pActor->bHidden || !IsUsableInteractable(static_cast<SDK::ABP_WoodenCrate_C*>(pActor)->SBZInteractable);
+					return pActor->bHidden || !IsUsableInteractable(static_cast<SDK::ASBZItemContainer*>(pActor)->InteractableComponent);
 				case Payday3::EItemType::Cocaine:
 					if (pActor->IsA(SDK::ASBZInstantLoot::StaticClass()))
 						return IsLootedInstant(pActor);
@@ -1647,6 +1733,15 @@ namespace OmegaWare
 			{
 				const Profiler::clScope clProfile("visuals.scan things");
 				using Clock_t = std::chrono::steady_clock;
+				{
+					SDK::UWorld* pHeldWorld = Unreal::GetWorld();
+					std::scoped_lock lckHeld(m_mtxHeldKeys);
+					if (pHeldWorld != m_pHeldWorld)
+					{
+						m_pHeldWorld = pHeldWorld;
+						m_mapHeldKeys.clear();
+					}
+				}
 				if (!(ThingsShown() || ItemOutlinesWanted()) || !Payday3::IsReady())
 				{
 					std::scoped_lock lckThings(m_mtxThings);
@@ -1670,6 +1765,51 @@ namespace OmegaWare
 					if (Payday3::AsDropOff(pActor))
 					{
 						pSnapshot->aThings.push_back({ pActor, pActor->Class, EThingKind::DropOff, {} });
+						return;
+					}
+					if (const std::uint8_t uCrate = pActor->Class ? CrateFlags(pActor->Class) : std::uint8_t{ 0 }; (uCrate & 1) != 0)
+					{
+						static constexpr Payday3::stItemInfo kCrate{ "Crate", Payday3::EItemType::Container, Payday3::EItemCategory::KeycardReader };
+						auto* pCrate = static_cast<SDK::ABP_WoodenCrate_C*>(pActor);
+						if (!IsUsableInteractable(pCrate->SBZInteractable))
+							return;
+						std::string strLabel = "Unopened crate";
+						if (Unreal::IsNetHost() && (uCrate & 2) != 0)
+						{
+							SDK::TArray<SDK::AActor*>& aInside = static_cast<SDK::ABP_WoodenCrate_SatellitePart_LowValue_C*>(pActor)->actorsInside;
+							std::string strContents;
+							for (int iInside = 0; iInside < aInside.Num(); ++iInside)
+							{
+								SDK::AActor* pInside = aInside[iInside];
+								if (!Payday3::IsAliveActor(pInside))
+									continue;
+								const Payday3::stItemInfo& rInside = Payday3::ResolveItem(pInside);
+								if (rInside.eType == Payday3::EItemType::None || strContents.find(rInside.strLabel) != std::string::npos)
+									continue;
+								strContents += (strContents.empty() ? "" : ", ") + std::string(rInside.strLabel);
+							}
+							if (!strContents.empty())
+								strLabel = "Crate: " + strContents;
+						}
+						pSnapshot->aThings.push_back({ pActor, pActor->Class, EThingKind::Item, kCrate, std::move(strLabel) });
+						return;
+					}
+					if (pActor->IsA(SDK::ASBZItemContainer::StaticClass()))
+					{
+						static constexpr Payday3::stItemInfo kContainer{ "Container", Payday3::EItemType::Container, Payday3::EItemCategory::KeycardReader };
+						auto* pContainer = static_cast<SDK::ASBZItemContainer*>(pActor);
+						if (!IsUsableInteractable(pContainer->InteractableComponent))
+							return;
+						std::string strLabel = "Unopened container";
+						if (Unreal::IsNetHost())
+						{
+							SDK::AActor* pHidden = pContainer->HiddenItem;
+							if (!pContainer->bHasItem || !Payday3::IsAliveActor(pHidden))
+								return;
+							const Payday3::stItemInfo& rHidden = Payday3::ResolveItem(pHidden);
+							strLabel = std::format("Container: {}", rHidden.eType != Payday3::EItemType::None ? std::string(rHidden.strLabel) : (pHidden->Class ? pHidden->Class->GetName() : std::string("item")));
+						}
+						pSnapshot->aThings.push_back({ pActor, pActor->Class, EThingKind::Item, kContainer, std::move(strLabel) });
 						return;
 					}
 					if (pActor->IsA(SDK::ASBZWaypoint::StaticClass()))
@@ -1718,13 +1858,13 @@ namespace OmegaWare
 							DrawDropOff(rList, pController, static_cast<SDK::ASBZBagTriggerVolume*>(pActor), vecCamera);
 						break;
 					case EThingKind::Item:
-						DrawItem(rList, pController, pActor, rThing.stItem, vecCamera);
+						DrawItem(rList, pController, pActor, rThing.stItem, rThing.strLabel, vecCamera);
 						break;
 					}
 				}
 			}
 
-			void DrawItem(OmegaGUI::clDrawList& rList, SDK::APlayerController* pController, SDK::AActor* pActor, const Payday3::stItemInfo& rItem, const SDK::FVector& vecCamera) const
+			void DrawItem(OmegaGUI::clDrawList& rList, SDK::APlayerController* pController, SDK::AActor* pActor, const Payday3::stItemInfo& rItem, std::string_view strLabelOverride, const SDK::FVector& vecCamera) const
 			{
 				const stItemSetting* pSetting = Setting(rItem.eType);
 				if (!pSetting || !*pSetting->pShow)
@@ -1732,15 +1872,16 @@ namespace OmegaWare
 				const stCategory& rCategory = Category(CategoryOf(rItem.eType));
 				if (!stCategory::On(rCategory.pEnabled) || (!*rCategory.pName && !*rCategory.pDistance))
 					return;
-				if (IsDepleted(rItem.eType, pActor))
+				if (IsDepleted(rItem.eType, pActor) || HoldsKeyFor(rItem))
 					return;
 
 				const SDK::FVector vecActor = Payday3::GetActorLocation(pActor);
 				const std::optional<OmegaGUI::vec2> optScreen = Project(pController, vecActor);
 				if (!optScreen)
 					return;
-				const float flLineHeight = OmegaGUI::CalcTextSize(rItem.strLabel).y;
-				DrawNameAndDistance(rList, optScreen->x, optScreen->y + flLineHeight * .5f, *rCategory.pName ? rItem.strLabel : std::string_view(), *pSetting->pColor, *rCategory.pDistance ? FormatDistance(DistanceMeters(vecActor, vecCamera)) : std::string(), *pSetting->pColor);
+				const std::string_view strLabel = strLabelOverride.empty() ? rItem.strLabel : strLabelOverride;
+				const float flLineHeight = OmegaGUI::CalcTextSize(strLabel).y;
+				DrawNameAndDistance(rList, optScreen->x, optScreen->y + flLineHeight * .5f, *rCategory.pName ? strLabel : std::string_view(), *pSetting->pColor, *rCategory.pDistance ? FormatDistance(DistanceMeters(vecActor, vecCamera)) : std::string(), *pSetting->pColor);
 			}
 
 #ifdef _DEBUG
@@ -1787,12 +1928,13 @@ namespace OmegaWare
 			OmegaGUI::color* m_pVipColor = nullptr;
 			stCategory m_stVip{ "vip", "", true };
 			OmegaGUI::color* m_pDropOffColor = nullptr;
-			std::array<stItemSetting, 23> m_aItems = { {
+			std::array<stItemSetting, 24> m_aItems = { {
 				{ Payday3::EItemType::Cash, "visuals.show_cash", "visuals.item_cash_color", OmegaGUI::color(0, 255, 255) },
 				{ Payday3::EItemType::MoneyMedium, "visuals.show_money_medium", "visuals.item_money_medium_color", OmegaGUI::color(120, 220, 120) },
 				{ Payday3::EItemType::MoneyLarge, "visuals.show_money_large", "visuals.item_money_large_color", OmegaGUI::color(0, 255, 0) },
 				{ Payday3::EItemType::Jewelry, "visuals.show_jewelry", "visuals.item_jewelry_color", OmegaGUI::color(255, 0, 255) },
 				{ Payday3::EItemType::RareMinerals, "visuals.show_rare_minerals", "visuals.item_rare_minerals_color", OmegaGUI::color(255, 90, 200) },
+				{ Payday3::EItemType::Container, "visuals.show_containers", "visuals.item_containers_color", OmegaGUI::color(200, 170, 110) },
 				{ Payday3::EItemType::SatellitePart, "visuals.show_satellite_parts", "visuals.item_satellite_parts_color", OmegaGUI::color(120, 200, 255) },
 				{ Payday3::EItemType::Cocaine, "visuals.show_cocaine", "visuals.item_cocaine_color", OmegaGUI::color(240, 240, 255) },
 				{ Payday3::EItemType::ATM, "visuals.show_atms", "visuals.item_atm_color", OmegaGUI::color(80, 200, 255) },
@@ -1835,6 +1977,10 @@ namespace OmegaWare
 			std::atomic<bool> m_bOutlineUpdateQueued = false;
 			std::atomic<bool> m_bOutlinesActive = false;
 
+			mutable std::mutex m_mtxHeldKeys;
+			std::unordered_map<std::string, int> m_mapHeldKeys;
+			SDK::UWorld* m_pHeldWorld = nullptr;
+			Unreal::HookHandle m_hKeyItems = Unreal::kInvalidHook;
 			std::mutex m_mtxThings;
 			std::shared_ptr<const stThingSnapshot> m_pThings;
 			std::chrono::steady_clock::time_point m_tpNextThingScan;

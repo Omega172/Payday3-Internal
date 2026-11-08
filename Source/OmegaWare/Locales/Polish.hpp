@@ -232,6 +232,7 @@ inline const OmegaLocalization::stLocaleData g_stLocalePolish{
 		{ "visuals.show_rare_minerals", "rzadkie minerały" },
 		{ "visuals.show_cocaine", "kokaina" },
 		{ "visuals.show_satellite_parts", "części satelity" },
+		{ "visuals.show_containers", "pojemniki (host: zawartość, klient: nieotwarte)" },
 		{ "visuals.show_lab", "laboratoria (stacje do gotowania)" },
 		{ "menu.section_windows", "okna" },
 		{ "menu.window_opacity", "przezroczystość" },
