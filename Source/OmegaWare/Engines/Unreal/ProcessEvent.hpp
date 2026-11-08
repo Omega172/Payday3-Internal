@@ -41,7 +41,16 @@ namespace OmegaWare::Unreal
 	void ShutdownProcessEvent();
 
 	[[nodiscard]] bool IsGameThread();
+	struct stModCall
+	{
+		SDK::UObject* pObject = nullptr;
+		SDK::UFunction* pFunction = nullptr;
+	};
+
+	using FnModCallObserver = void (*)(const stModCall&);
+	void SetModCallObserver(FnModCallObserver pfnObserver);
 	bool RunOnGameThread(std::function<void()> fnTask);
+	void SetGameThreadTick(std::function<void()> fnTick, std::chrono::milliseconds msInterval);
 	bool RunOnGameThreadAndWait(std::function<void()> fnTask, std::chrono::milliseconds msTimeout);
 	[[nodiscard]] std::vector<stProcessEventHookInfo> ProcessEventHooks();
 

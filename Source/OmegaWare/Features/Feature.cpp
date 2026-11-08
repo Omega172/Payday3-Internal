@@ -1,5 +1,6 @@
 #include "Features/Feature.hpp"
 #include "Core/Log.hpp"
+#include "Core/Profiler.hpp"
 #include "Memory/Safety.hpp"
 #include "Plugins/Plugins.hpp"
 
@@ -25,6 +26,8 @@ namespace OmegaWare
 		static bool Invoke(clFeature& rFeature, std::string_view strStage, F&& fnCall)
 		{
 			Memory::InvalidateCache();
+			const std::string strProfileKey = std::format("{}.{}", rFeature.GetName(), strStage);
+			const Profiler::clScope clProfile(strProfileKey);
 			OmegaRenderHook::stFault stFault;
 			auto fnGuarded = [&] { fnCall(); };
 			if (OmegaRenderHook::InvokeGuarded(fnGuarded, stFault))
@@ -108,6 +111,11 @@ namespace OmegaWare
 			for (clFeature* pFeature : stFeatureAccess::Registry())
 				if (pFeature->IsActive())
 					stFeatureAccess::Invoke(*pFeature, "Render", [&] { pFeature->Render(); });
+		}
+
+		bool Guard(clFeature& rFeature, std::string_view strStage, const std::function<void()>& fnCall)
+		{
+			return rFeature.IsActive() && stFeatureAccess::Invoke(rFeature, strStage, fnCall);
 		}
 
 		std::string DisplayName(const clFeature& rFeature)

@@ -4,7 +4,9 @@
 #if OMEGAWARE_ENGINE_UNREAL
 
 #include "Core/Log.hpp"
+#include "Core/Profiler.hpp"
 #include "Hooks/Hook.hpp"
+#include "Memory/Memory.hpp"
 #include "Memory/Safety.hpp"
 
 #include "OmegaRenderHook/Core/Guarded.hpp"
@@ -12,6 +14,7 @@
 #include "OmegaRenderHook/Hook/InlineHook.hpp"
 
 #include <Windows.h>
+#include <intrin.h>
 #include <TlHelp32.h>
 
 #include <algorithm>
@@ -21,6 +24,7 @@
 #include <functional>
 #include <memory>
 #include <mutex>
+#include <optional>
 #include <shared_mutex>
 #include <unordered_map>
 #include <vector>
@@ -79,6 +83,37 @@ namespace OmegaWare::Unreal
 		std::atomic<DWORD> g_uGameThread = 0;
 		std::atomic<bool> g_bLoggedGameThread = false;
 		thread_local bool t_bRunningTasks = false;
+		thread_local int t_iNesting = 0;
+		std::atomic<std::int64_t> g_iTasksPendingSince = 0;
+		constexpr std::int64_t kTaskStarvationMs = 250;
+
+		std::atomic<std::uint32_t> g_uDyingSkips = 0;
+
+		[[nodiscard]] bool IsDying(const SDK::UObject* pObject)
+		{
+			constexpr std::uint32_t uDying = static_cast<std::uint32_t>(SDK::EObjectFlags::BeginDestroyed) | static_cast<std::uint32_t>(SDK::EObjectFlags::FinishDestroyed) | static_cast<std::uint32_t>(SDK::EObjectFlags::MirroredGarbage);
+			return (static_cast<std::uint32_t>(pObject->Flags) & uDying) != 0;
+		}
+
+		struct clNesting
+		{
+			clNesting() { ++t_iNesting; }
+			~clNesting() { --t_iNesting; }
+			clNesting(const clNesting&) = delete;
+			clNesting& operator=(const clNesting&) = delete;
+		};
+
+		[[nodiscard]] std::int64_t NowMs()
+		{
+			return std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now().time_since_epoch()).count();
+		}
+
+		[[nodiscard]] bool ShouldRunTasks()
+		{
+			if (!g_bTasksPending.load(std::memory_order_acquire) || t_bRunningTasks || GetCurrentThreadId() != g_uGameThread.load(std::memory_order_relaxed))
+				return false;
+			return t_iNesting == 0 || NowMs() - g_iTasksPendingSince.load(std::memory_order_relaxed) > kTaskStarvationMs;
+		}
 
 		[[nodiscard]] DWORD FindMainThread()
 		{
@@ -124,6 +159,46 @@ namespace OmegaWare::Unreal
 			return uThread;
 		}
 
+		std::atomic<bool> g_bTickSet = false;
+		std::atomic<std::int64_t> g_iNextTickMs = 0;
+		std::atomic<std::int64_t> g_iTickIntervalMs = 8;
+		std::mutex g_mtxTick;
+		std::function<void()> g_fnTick;
+
+		std::atomic<FnModCallObserver> g_pfnModCallObserver = nullptr;
+
+		[[nodiscard]] bool IsModCaller(const void* pReturnAddress)
+		{
+			static const std::optional<Memory::stModule> s_optGame = Memory::GetModule();
+			if (!s_optGame)
+				return false;
+			const auto uAddress = reinterpret_cast<std::uintptr_t>(pReturnAddress);
+			return uAddress < s_optGame->uBase || uAddress >= s_optGame->uBase + s_optGame->uSize;
+		}
+
+		void RunTick(std::int64_t iNowMs)
+		{
+			std::function<void()> fnTick;
+			{
+				std::scoped_lock lckTick(g_mtxTick);
+				fnTick = g_fnTick;
+			}
+			g_iNextTickMs.store(iNowMs + g_iTickIntervalMs.load(std::memory_order_relaxed), std::memory_order_relaxed);
+			if (!fnTick)
+				return;
+			t_bRunningTasks = true;
+			{
+				Hooks::clCallGuard clGuard;
+				Memory::InvalidateCache();
+				const Profiler::clScope clProfile("engine.game thread tick");
+				OmegaRenderHook::stFault stFault;
+				auto fnInvoke = [&] { fnTick(); };
+				if (!OmegaRenderHook::InvokeGuarded(fnInvoke, stFault))
+					LogError("game thread tick faulted (code 0x{:08X} at {})", stFault.uCode, stFault.pAddress);
+			}
+			t_bRunningTasks = false;
+		}
+
 		void RunTasks()
 		{
 			std::vector<stTask> aTasks;
@@ -133,6 +208,7 @@ namespace OmegaWare::Unreal
 				g_bTasksPending.store(false, std::memory_order_release);
 			}
 			t_bRunningTasks = true;
+			const Profiler::clScope clBatch("engine.game thread task batch");
 			for (stTask& rTask : aTasks)
 			{
 				Hooks::clCallGuard clGuard;
@@ -167,6 +243,7 @@ namespace OmegaWare::Unreal
 			if (!fnCallback || rEntry.bFaulted.load(std::memory_order_relaxed))
 				return;
 			Hooks::clCallGuard clGuard;
+			const Profiler::clScope clProfile(rEntry.strFunction);
 			auto fnInvoke = [&] { fnCallback(rCall); };
 			OmegaRenderHook::stFault stFault;
 			if (OmegaRenderHook::InvokeGuarded(fnInvoke, stFault))
@@ -186,11 +263,30 @@ namespace OmegaWare::Unreal
 		void DetourProcessEvent(const SDK::UObject* pObject, SDK::UFunction* pFunction, void* pParams)
 		{
 			clEngineScope clScope;
-			if (g_bTasksPending.load(std::memory_order_acquire) && !t_bRunningTasks && GetCurrentThreadId() == g_uGameThread.load(std::memory_order_relaxed))
+			Profiler::CountProcessEvent();
+			if (ShouldRunTasks())
 			{
 				if (!g_bLoggedGameThread.exchange(true))
 					LogInfo("unreal: game thread tasks running on thread {}", GetCurrentThreadId());
 				RunTasks();
+			}
+			if (g_bTickSet.load(std::memory_order_relaxed) && t_iNesting == 0 && !t_bRunningTasks && GetCurrentThreadId() == g_uGameThread.load(std::memory_order_relaxed))
+			{
+				const std::int64_t iNowMs = NowMs();
+				if (iNowMs >= g_iNextTickMs.load(std::memory_order_relaxed))
+					RunTick(iNowMs);
+			}
+#ifdef _DEBUG
+			if (const FnModCallObserver pfnObserver = g_pfnModCallObserver.load(std::memory_order_relaxed); pfnObserver && pFunction && IsModCaller(_ReturnAddress()))
+				pfnObserver({ const_cast<SDK::UObject*>(pObject), pFunction });
+#endif
+			const clNesting clDepth;
+			if (pObject && pFunction && IsDying(pObject))
+			{
+				const std::uint32_t uSkips = g_uDyingSkips.fetch_add(1, std::memory_order_relaxed) + 1;
+				if (uSkips <= 5 || uSkips % 1000 == 0)
+					LogWarning("process event: skipped {} on an object that is being destroyed ({} so far)", pFunction->GetName(), uSkips);
+				return;
 			}
 			if (!pFunction || g_uResolved.load(std::memory_order_acquire) == 0 || g_aFilter[FilterSlot(pFunction)].load(std::memory_order_acquire) == 0)
 				return CallOriginal(pObject, pFunction, pParams);
@@ -322,9 +418,29 @@ namespace OmegaWare::Unreal
 		if (!fnTask || !g_bAcceptTasks.load(std::memory_order_acquire) || !EnsureInstalled() || !GameThreadId())
 			return false;
 		std::scoped_lock lckTasks(g_mtxTasks);
+		if (!g_bTasksPending.load(std::memory_order_relaxed))
+			g_iTasksPendingSince.store(NowMs(), std::memory_order_relaxed);
 		g_aTasks.push_back({ std::move(fnTask), nullptr });
 		g_bTasksPending.store(true, std::memory_order_release);
 		return true;
+	}
+
+	void SetModCallObserver(FnModCallObserver pfnObserver)
+	{
+		g_pfnModCallObserver.store(pfnObserver, std::memory_order_release);
+	}
+
+	void SetGameThreadTick(std::function<void()> fnTick, std::chrono::milliseconds msInterval)
+	{
+		const bool bSet = static_cast<bool>(fnTick);
+		if (bSet && (!EnsureInstalled() || !GameThreadId()))
+			return;
+		{
+			std::scoped_lock lckTick(g_mtxTick);
+			g_fnTick = std::move(fnTick);
+		}
+		g_iTickIntervalMs.store(msInterval.count(), std::memory_order_relaxed);
+		g_bTickSet.store(bSet, std::memory_order_release);
 	}
 
 	bool RunOnGameThreadAndWait(std::function<void()> fnTask, std::chrono::milliseconds msTimeout)
@@ -341,6 +457,8 @@ namespace OmegaWare::Unreal
 		auto pDone = std::make_shared<std::atomic<bool>>(false);
 		{
 			std::scoped_lock lckTasks(g_mtxTasks);
+			if (!g_bTasksPending.load(std::memory_order_relaxed))
+				g_iTasksPendingSince.store(NowMs(), std::memory_order_relaxed);
 			g_aTasks.push_back({ std::move(fnTask), pDone });
 			g_bTasksPending.store(true, std::memory_order_release);
 		}
@@ -360,6 +478,11 @@ namespace OmegaWare::Unreal
 	void ShutdownProcessEvent()
 	{
 		g_bAcceptTasks.store(false, std::memory_order_release);
+		g_bTickSet.store(false, std::memory_order_release);
+		{
+			std::scoped_lock lckTick(g_mtxTick);
+			g_fnTick = nullptr;
+		}
 		{
 			std::scoped_lock lckTasks(g_mtxTasks);
 			g_aTasks.clear();

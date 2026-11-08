@@ -453,7 +453,7 @@ namespace OmegaWare::Menu
 				if (!pFeature->HasMenu())
 					continue;
 				const std::string_view strGroup = pFeature->GetGroup();
-				if (std::ranges::find(kFeatureGroups, strGroup) == kFeatureGroups.end() && std::ranges::find(aExtra, strGroup) == aExtra.end())
+				if (strGroup != "debug" && std::ranges::find(kFeatureGroups, strGroup) == kFeatureGroups.end() && std::ranges::find(aExtra, strGroup) == aExtra.end())
 					aExtra.push_back(strGroup);
 			}
 			for (const std::string_view strGroup : aExtra)
@@ -637,6 +637,9 @@ namespace OmegaWare::Menu
 				OmegaGUI::TabBarSection("menu.section_framework"_t);
 				Page("menu.page_settings"_l, DrawSettings);
 				Page("menu.page_config"_l, DrawConfig);
+#ifdef _DEBUG
+				DrawFeatureGroup("debug", Features::All());
+#endif
 				OmegaGUI::EndTabBar();
 			}
 			DrawAbout(strBackend);
