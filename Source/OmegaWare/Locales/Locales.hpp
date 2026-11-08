@@ -3,3 +3,4 @@
 #include "German.hpp"
 #include "Polish.hpp"
 #include "Russian.hpp"
+#include "Chinese.hpp"
