@@ -11,8 +11,111 @@
 #include "OmegaGUI/OmegaGUI.hpp"
 #include "OmegaLocalization/GUI.hpp"
 
+#include <Windows.h>
+
+#include <filesystem>
+#include <set>
+#include <string_view>
+#include <vector>
+
 namespace OmegaWare
 {
+	namespace
+	{
+		struct stScriptFont
+		{
+			const OmegaLocalization::stLocaleData& rLocale;
+			std::vector<const wchar_t*> aFonts;
+		};
+
+		const std::vector<stScriptFont>& ScriptFonts()
+		{
+			static const std::vector<stScriptFont> s_aScriptFonts = {
+				{ g_stLocaleChinese, { L"SarasaMonoSC-Regular.ttf", L"SarasaMonoSC-Light.ttf", L"NotoSansMonoCJKsc-Regular.otf", L"msyhl.ttc", L"msyh.ttc", L"simsun.ttc" } },
+			};
+			return s_aScriptFonts;
+		}
+
+		void CollectCodepoints(std::string_view strText, std::set<char32_t>& rCodepoints)
+		{
+			for (std::size_t uByte = 0; uByte < strText.size();)
+			{
+				const auto byLead = static_cast<unsigned char>(strText[uByte]);
+				const std::size_t uLength = byLead < 0x80 ? 1 : (byLead >> 5) == 0x6 ? 2 : (byLead >> 4) == 0xE ? 3 : (byLead >> 3) == 0x1E ? 4 : 1;
+				if (uByte + uLength > strText.size())
+					break;
+				char32_t uCodepoint = uLength == 1 ? byLead : static_cast<char32_t>(byLead & (0xFF >> (uLength + 1)));
+				for (std::size_t uContinuation = 1; uContinuation < uLength; ++uContinuation)
+					uCodepoint = (uCodepoint << 6) | (static_cast<unsigned char>(strText[uByte + uContinuation]) & 0x3F);
+				rCodepoints.insert(uCodepoint);
+				uByte += uLength;
+			}
+		}
+
+		void CollectLocaleCodepoints(const OmegaLocalization::stLocaleData& rLocale, bool bStrings, std::set<char32_t>& rCodepoints)
+		{
+			CollectCodepoints(rLocale.strName, rCodepoints);
+			if (bStrings)
+				for (const auto& [strKey, strText] : rLocale.aStrings)
+					CollectCodepoints(strText, rCodepoints);
+		}
+
+		std::filesystem::path FindScriptFont(const std::vector<const wchar_t*>& aFonts)
+		{
+			wchar_t szWindows[MAX_PATH]{};
+			const bool bWindows = GetWindowsDirectoryW(szWindows, MAX_PATH) != 0;
+			std::error_code errCode;
+			for (const wchar_t* wszFont : aFonts)
+			{
+				const std::filesystem::path pathUser = DataDirectory() / L"Fonts" / wszFont;
+				if (std::filesystem::is_regular_file(pathUser, errCode))
+					return pathUser;
+				if (!bWindows)
+					continue;
+				const std::filesystem::path pathSystem = std::filesystem::path(szWindows) / L"Fonts" / wszFont;
+				if (std::filesystem::is_regular_file(pathSystem, errCode))
+					return pathSystem;
+			}
+			return {};
+		}
+
+		void ApplyLocaleFont()
+		{
+			const std::string_view strLocale = OmegaLocalization::GetLocale();
+
+			std::vector<OmegaGUI::stGlyphRange> aRanges;
+			for (const OmegaLocalization::stGlyphRange& rRange : OmegaLocalization::GlyphRanges())
+				aRanges.push_back({ rRange.uFirst, rRange.uLast });
+			OmegaGUI::SetGlyphRanges(aRanges);
+
+			std::set<char32_t> setCodepoints;
+			std::filesystem::path pathFallback;
+			for (const stScriptFont& rScript : ScriptFonts())
+			{
+				const bool bActive = rScript.rLocale.strCode == strLocale;
+				CollectLocaleCodepoints(rScript.rLocale, true, setCodepoints);
+				if (!pathFallback.empty() && !bActive)
+					continue;
+				const std::filesystem::path pathScript = FindScriptFont(rScript.aFonts);
+				if (pathScript.empty() && bActive)
+					OmegaRenderHook::Log(OmegaRenderHook::ELogLevel::Warning, "no installed font covers {}, its text will show as empty boxes", strLocale);
+				if (!pathScript.empty())
+					pathFallback = pathScript;
+			}
+			std::vector<OmegaGUI::stGlyphRange> aFallback;
+			for (const char32_t uCodepoint : setCodepoints)
+			{
+				if (uCodepoint < 0x80)
+					continue;
+				if (!aFallback.empty() && aFallback.back().uLast + 1 == uCodepoint)
+					aFallback.back().uLast = uCodepoint;
+				else
+					aFallback.push_back({ uCodepoint, uCodepoint });
+			}
+			OmegaGUI::SetFallbackFont(pathFallback, aFallback);
+		}
+	}
+
 	void clOverlay::OnAttach(const OmegaRenderHook::stDeviceDX12& rDevice)
 	{
 		std::scoped_lock lckGui(m_mtxGui);
@@ -182,6 +285,7 @@ namespace OmegaWare
 		DetachGui();
 		if (!m_bGuiInitialized)
 			return;
+		OmegaLocalization::Unsubscribe(m_uFontSubscription);
 		OmegaLocalization::Unsubscribe(m_uLocaleSubscription);
 		OmegaGUI::Shutdown();
 		m_bGuiInitialized = false;
@@ -212,9 +316,11 @@ namespace OmegaWare
 		}
 
 		std::string strErrors;
-		m_uLocaleSubscription = OmegaLocalization::GUI::Attach({ g_stLocaleEnglish, g_stLocaleGerman, g_stLocalePolish, g_stLocaleRussian }, "en", DataDirectory() / "Locales", &strErrors);
+		m_uLocaleSubscription = OmegaLocalization::GUI::Attach({ g_stLocaleEnglish, g_stLocaleGerman, g_stLocalePolish, g_stLocaleRussian, g_stLocaleChinese }, "en", DataDirectory() / "Locales", &strErrors);
 		if (!strErrors.empty())
 			OmegaRenderHook::Log(OmegaRenderHook::ELogLevel::Warning, "locale overrides: {}", strErrors);
+		ApplyLocaleFont();
+		m_uFontSubscription = OmegaLocalization::Subscribe(ApplyLocaleFont);
 		m_bGuiInitialized = true;
 		m_bAttached = true;
 		OmegaRenderHook::Log(OmegaRenderHook::ELogLevel::Info, "gui initialized on {} in {} at {:.2f}x scale", pBackend->GetName(), OmegaLocalization::GetLocale(), m_flScale);

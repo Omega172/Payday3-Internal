@@ -59,6 +59,7 @@ namespace OmegaWare
 		OmegaGUI::stWorldPass m_stWorldPass;
 		bool m_bGuiInitialized = false;
 		std::size_t m_uLocaleSubscription = 0;
+		std::size_t m_uFontSubscription = 0;
 		float m_flScale = 1.f;
 		bool m_bDisplayKnown = false;
 		std::atomic<bool> m_bAttached = false;
