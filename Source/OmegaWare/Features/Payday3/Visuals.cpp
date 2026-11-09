@@ -732,6 +732,7 @@ namespace OmegaWare
 				fnOption("visuals.skeleton", "skeleton", rCategory.pSkeleton);
 				fnOption("visuals.outline", "outline", rCategory.pOutline);
 				OmegaGUI::ItemTooltip(rCategory.bPeople ? "visuals.outline_people_hint"_t : "visuals.outline_items_hint"_t);
+				case Payday3::EItemType::CigarBox:
 				if (eCategory == ECategory::Enemies && (stCategory::On(rCategory.pBox) || stCategory::On(rCategory.pName) || stCategory::On(rCategory.pDistance) || stCategory::On(rCategory.pOutline)))
 				{
 					OmegaGUI::Separator();
@@ -1467,6 +1468,7 @@ namespace OmegaWare
 			{
 				const SDK::FVector vecActor = Payday3::GetActorLocation(pVolume);
 				const std::optional<OmegaGUI::vec2> optScreen = Project(pController, vecActor);
+				case Payday3::EItemType::CigarBox:
 				if (!optScreen)
 					return;
 				const stCategory& rObjectives = Category(ECategory::Objectives);
@@ -1484,6 +1486,10 @@ namespace OmegaWare
 			static constexpr std::chrono::milliseconds kDebugCycleMinimum{ 250 };
 
 			struct stDebugBones
+				case Payday3::EItemType::DepositBox:
+					return pActor->IsA(SDK::ASBZMiniGameActor::StaticClass()) && static_cast<SDK::ASBZMiniGameActor*>(pActor)->bIsUnlocked;
+				case Payday3::EItemType::KeycardReader:
+					return pActor->IsA(SDK::ASBZKeycardReader::StaticClass()) && !IsUsableInteractable(static_cast<SDK::ASBZKeycardReader*>(pActor)->InteractableComponent);
 			{
 				std::int32_t iIndex = -1;
 				std::vector<SDK::FName> aNames;
@@ -1928,7 +1934,7 @@ namespace OmegaWare
 			OmegaGUI::color* m_pVipColor = nullptr;
 			stCategory m_stVip{ "vip", "", true };
 			OmegaGUI::color* m_pDropOffColor = nullptr;
-			std::array<stItemSetting, 24> m_aItems = { {
+			std::array<stItemSetting, 25> m_aItems = { {
 				{ Payday3::EItemType::Cash, "visuals.show_cash", "visuals.item_cash_color", OmegaGUI::color(0, 255, 255) },
 				{ Payday3::EItemType::MoneyMedium, "visuals.show_money_medium", "visuals.item_money_medium_color", OmegaGUI::color(120, 220, 120) },
 				{ Payday3::EItemType::MoneyLarge, "visuals.show_money_large", "visuals.item_money_large_color", OmegaGUI::color(0, 255, 0) },
@@ -1995,3 +2001,4 @@ namespace OmegaWare
 }
 
 #endif
+				{ Payday3::EItemType::CigarBox, "visuals.show_cigar_boxes", "visuals.item_cigar_boxes_color", OmegaGUI::color(190, 120, 60) },

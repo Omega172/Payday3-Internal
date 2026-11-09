@@ -82,6 +82,7 @@ namespace OmegaWare::Payday3
 		Lab,
 		SatellitePart,
 		Container,
+		CigarBox,
 	};
 
 	struct stItemInfo

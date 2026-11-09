@@ -49,7 +49,7 @@ namespace OmegaWare::Payday3
 
 		constexpr stItemInfo kNoItem{};
 
-		constexpr std::array<stItemLookup, 53> g_aItemLookup = { {
+		constexpr std::array<stItemLookup, 57> g_aItemLookup = { {
 			{ "carriedredkeycard", { "Red Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carriedbluekeycard", { "Blue Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carried", kNoItem },
@@ -76,6 +76,10 @@ namespace OmegaWare::Payday3
 			{ "cocainepile", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
 			{ "cookingstation", { "Lab", EItemType::Lab, EItemCategory::KeycardReader } },
 			{ "interactablesatellite", { "Satellite Part", EItemType::SatellitePart, EItemCategory::Loot } },
+			{ "baggablecigarbox", { "Cigar Box", EItemType::CigarBox, EItemCategory::Loot } },
+			{ "rfidtagreaderblue", { "Blue RFID Reader", EItemType::KeycardReader, EItemCategory::KeycardReader } },
+			{ "rfidtagreaderred", { "Red RFID Reader", EItemType::KeycardReader, EItemCategory::KeycardReader } },
+			{ "qrreader", { "QR Reader", EItemType::KeycardReader, EItemCategory::KeycardReader } },
 			{ "depositbox", { "Deposit Box", EItemType::DepositBox, EItemCategory::KeyItem } },
 			{ "breakable_atm", { "ATM", EItemType::ATM, EItemCategory::Loot } },
 			{ "instantloot_money", { "Cash", EItemType::Cash, EItemCategory::Loot } },
