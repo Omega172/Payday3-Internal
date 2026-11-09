@@ -48,6 +48,8 @@ namespace OmegaWare
 		constexpr std::chrono::milliseconds kCatalogInterval{ 4000 };
 		constexpr std::chrono::milliseconds kShootInterval{ 250 };
 		constexpr std::chrono::milliseconds kFinishDelay{ 1500 };
+		constexpr std::chrono::seconds kSettleTime{ 10 };
+		constexpr std::chrono::milliseconds kReadyPoll{ 250 };
 		constexpr std::chrono::milliseconds kFinishCheckDelay{ 2500 };
 		constexpr std::chrono::milliseconds kRemoteInterval{ 500 };
 		constexpr std::chrono::seconds kRelocateWindow{ 4 };
@@ -187,6 +189,7 @@ namespace OmegaWare
 						Features::Guard(*this, "game thread", [this, bCatalog] {
 							if (bCatalog)
 								BuildCatalog();
+							UpdateReadiness(bCatalog);
 							ProcessPending();
 						});
 						m_bTickQueued = false;
@@ -241,9 +244,21 @@ namespace OmegaWare
 					OmegaGUI::TextMuted("spawner.finish_host_only"_t);
 				else
 				{
-					if (OmegaGUI::Button("spawner.finish"_l))
-						QueueTask([this] { BeginFinishHeist(); });
-					OmegaGUI::ItemTooltip("spawner.finish_hint"_t);
+					const EWait eWait = m_eWait.load();
+					if (eWait == EWait::Ready)
+					{
+						if (OmegaGUI::Button("spawner.finish"_l))
+							QueueTask([this] { BeginFinishHeist(); });
+						OmegaGUI::ItemTooltip("spawner.finish_hint"_t);
+					}
+					else
+					{
+						static constexpr std::array<std::string_view, 7> aKeys = { "", "spawner.wait_world", "spawner.wait_match", "spawner.wait_pawn", "spawner.wait_input", "spawner.wait_scan", "spawner.wait_settle" };
+						std::string strWait(OmegaLocalization::Get(aKeys[static_cast<std::size_t>(eWait)]));
+						if (eWait == EWait::Settling)
+							strWait += std::format(" {}", m_iSettleLeft.load());
+						OmegaGUI::TextMuted(strWait);
+					}
 				}
 				OmegaGUI::Separator();
 				OmegaGUI::Checkbox("spawner.allow_clients"_l, m_pAllowClients);
@@ -544,11 +559,104 @@ namespace OmegaWare
 				return vecCenter + SDK::FVector(std::cos(dAngle) * dReach, std::sin(dAngle) * dReach, 20.0);
 			}
 
+			enum class EWait : int
+			{
+				Ready,
+				NoWorld,
+				MatchNotStarted,
+				NoPawn,
+				InputLocked,
+				NoScan,
+				Settling,
+			};
+
+			void UpdateReadiness(bool bScan)
+			{
+				const auto tpNow = std::chrono::steady_clock::now();
+				if (tpNow < m_tpNextReadyPoll && !bScan)
+					return;
+				m_tpNextReadyPoll = tpNow + kReadyPoll;
+				SDK::UWorld* pWorld = Unreal::GetWorld();
+				if (pWorld != m_pReadyWorld)
+				{
+					m_pReadyWorld = pWorld;
+					m_bHasEscape = false;
+					m_bHasObjectives = false;
+					m_bScanned = false;
+					m_bPlayable = false;
+				}
+				EWait eWait = CheckPlayable();
+				if (eWait == EWait::Ready)
+				{
+					if (!m_bPlayable)
+					{
+						m_bPlayable = true;
+						m_tpPlayable = tpNow;
+					}
+					if (bScan || !m_bScanned)
+						ScanForFinish();
+					if (!m_bHasEscape || !m_bHasObjectives)
+						eWait = EWait::NoScan;
+					else if (tpNow - m_tpPlayable < kSettleTime)
+					{
+						eWait = EWait::Settling;
+						m_iSettleLeft = static_cast<int>(std::chrono::ceil<std::chrono::seconds>(kSettleTime - (tpNow - m_tpPlayable)).count());
+					}
+				}
+				else
+					m_bPlayable = false;
+				if (eWait != m_eWait.load())
+					LogInfo("spawner: finish heist readiness is now {}", static_cast<int>(eWait));
+				m_eWait = eWait;
+			}
+
+			[[nodiscard]] static EWait CheckPlayable()
+			{
+				SDK::UWorld* pWorld = Unreal::GetWorld();
+				SDK::AGameStateBase* pGameState = Unreal::GetGameState();
+				if (!pWorld || !Payday3::IsAlive(pGameState))
+					return EWait::NoWorld;
+				if (!pGameState->HasMatchStarted())
+					return EWait::MatchNotStarted;
+				SDK::APawn* pPawn = Unreal::GetLocalPawn();
+				if (!Payday3::IsAliveActor(pPawn) || !pPawn->IsA(SDK::ASBZPlayerCharacter::StaticClass()))
+					return EWait::NoPawn;
+				SDK::APlayerController* pController = Unreal::GetPlayerController();
+				if (!Payday3::IsAlive(pController) || pController->IsMoveInputIgnored())
+					return EWait::InputLocked;
+				return EWait::Ready;
+			}
+
+			void ScanForFinish()
+			{
+				bool bEscape = false;
+				bool bObjectives = false;
+				Payday3::ForEachLevelActor(Unreal::GetWorld(), [&](SDK::AActor* pActor) {
+					if (bEscape && bObjectives)
+						return;
+					if (!Payday3::IsAliveActor(pActor))
+						return;
+					if (pActor->IsA(SDK::ASBZPlayerEscapeVolume::StaticClass()))
+						bEscape = true;
+					else if (pActor->IsA(SDK::ASBZObjective::StaticClass()))
+						bObjectives = true;
+				});
+				m_bHasEscape = bEscape;
+				m_bHasObjectives = bObjectives;
+				m_bScanned = true;
+			}
+
 			void BeginFinishHeist()
 			{
 				if (!Unreal::IsNetHost())
 				{
 					LogWarning("spawner: only the host can finish the heist");
+					return;
+				}
+				UpdateReadiness(true);
+				if (m_eWait.load() != EWait::Ready)
+				{
+					LogWarning("spawner: the mission is not ready to be finished yet (state {})", static_cast<int>(m_eWait.load()));
 					return;
 				}
 				SDK::APlayerController* pController = Unreal::GetPlayerController();
@@ -564,7 +672,9 @@ namespace OmegaWare
 				pSbzCheat->ListenToRewardLogs();
 				pSbzCheat->GrabInstantLoot();
 				BankGeneratedBags(pSbzCheat);
+				SecureManagerBags();
 				pSbzCheat->SecureAllAvailableLoot(true, true);
+				LogManagerBags("after the secure all request");
 				m_flEscapeSeconds = MovePlayersToEscape();
 				m_tpFinishAt = std::chrono::steady_clock::now() + kFinishDelay;
 				m_bFinishPending = true;
@@ -601,6 +711,42 @@ namespace OmegaWare
 				}
 				LogInfo("spawner: moved {} players into the escape volume, which needs {:.0f} s", iSlot, pVolume->EscapeTimeDuration);
 				return pVolume->EscapeTimeDuration;
+			}
+
+			static void LogManagerBags(std::string_view strWhen)
+			{
+				SDK::USBZBagManager* pManager = SDK::USBZBagManager::Get(Unreal::GetWorld());
+				if (!Payday3::IsAlive(pManager))
+				{
+					LogWarning("spawner: the bag manager was not found {}", strWhen);
+					return;
+				}
+				int iSecured = 0;
+				const SDK::TArray<SDK::FSBZBagPersistentData>& aBags = pManager->Bags;
+				for (int iBag = 0; iBag < aBags.Num(); ++iBag)
+					if (aBags[iBag].Secured)
+						++iSecured;
+				LogInfo("spawner: the bag manager holds {} bags and {} are secured {}", aBags.Num(), iSecured, strWhen);
+			}
+
+			static void SecureManagerBags()
+			{
+				SDK::USBZBagManager* pManager = SDK::USBZBagManager::Get(Unreal::GetWorld());
+				if (!Payday3::IsAlive(pManager))
+				{
+					LogWarning("spawner: the bag manager was not found, bags are not secured directly");
+					return;
+				}
+				LogManagerBags("before securing");
+				std::vector<SDK::FSBZBagHandle> aHandles;
+				const SDK::TArray<SDK::FSBZBagPersistentData>& aBags = pManager->Bags;
+				for (int iBag = 0; iBag < aBags.Num(); ++iBag)
+					if (!aBags[iBag].Secured)
+						aHandles.push_back(aBags[iBag].Handle);
+				for (const SDK::FSBZBagHandle& rHandle : aHandles)
+					pManager->SecureBag(rHandle, true, true);
+				LogInfo("spawner: asked the bag manager to secure {} bags directly", aHandles.size());
+				LogManagerBags("after securing");
 			}
 
 			static bool IsUnused(SDK::USBZInteractableComponent* pInteractable)
@@ -725,6 +871,15 @@ namespace OmegaWare
 			std::vector<stPendingMove> m_aPending;
 			std::atomic<bool> m_bGuiWantsMouse = false;
 			std::atomic<bool> m_bTickQueued = false;
+			std::atomic<EWait> m_eWait = EWait::NoWorld;
+			std::atomic<int> m_iSettleLeft = 0;
+			SDK::UWorld* m_pReadyWorld = nullptr;
+			bool m_bPlayable = false;
+			bool m_bHasEscape = false;
+			bool m_bHasObjectives = false;
+			bool m_bScanned = false;
+			std::chrono::steady_clock::time_point m_tpPlayable;
+			std::chrono::steady_clock::time_point m_tpNextReadyPoll;
 			bool m_bFinishPending = false;
 			float m_flEscapeSeconds = 0.f;
 			bool m_bFinishCheck = false;
