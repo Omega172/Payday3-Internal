@@ -562,10 +562,88 @@ namespace OmegaWare
 				SDK::AGameStateBase* pGameState = Unreal::GetGameState();
 				m_iFinishPlayers = Payday3::IsAlive(pGameState) ? std::max(pGameState->PlayerArray.Num(), 1) : 1;
 				pSbzCheat->ListenToRewardLogs();
+				pSbzCheat->GrabInstantLoot();
+				BankGeneratedBags(pSbzCheat);
 				pSbzCheat->SecureAllAvailableLoot(true, true);
+				m_flEscapeSeconds = MovePlayersToEscape();
 				m_tpFinishAt = std::chrono::steady_clock::now() + kFinishDelay;
 				m_bFinishPending = true;
 				LogInfo("spawner: secured all available loot, finishing the heist in {} ms for {} players", kFinishDelay.count(), m_iFinishPlayers);
+			}
+
+			static float MovePlayersToEscape()
+			{
+				SDK::ASBZPlayerEscapeVolume* pVolume = nullptr;
+				Payday3::ForEachLevelActor(Unreal::GetWorld(), [&](SDK::AActor* pActor) {
+					if (!pVolume && Payday3::IsAliveActor(pActor) && pActor->IsA(SDK::ASBZPlayerEscapeVolume::StaticClass()))
+						pVolume = static_cast<SDK::ASBZPlayerEscapeVolume*>(pActor);
+				});
+				SDK::AGameStateBase* pGameState = Unreal::GetGameState();
+				if (!pVolume || !Payday3::IsAlive(pGameState))
+				{
+					LogWarning("spawner: no escape volume was found, players are not moved so they may count as in custody");
+					return 0.f;
+				}
+				const SDK::FVector vecCenter = pVolume->K2_GetActorLocation();
+				SDK::APawn* pLocalPawn = Unreal::GetLocalPawn();
+				int iSlot = 0;
+				SDK::TArray<SDK::APlayerState*>& aPlayers = pGameState->PlayerArray;
+				for (int iPlayer = 0; iPlayer < aPlayers.Num(); ++iPlayer)
+				{
+					SDK::APlayerState* pState = aPlayers[iPlayer];
+					SDK::APawn* pPawn = Payday3::IsAlive(pState) ? pState->PawnPrivate : nullptr;
+					if (!Payday3::IsAliveActor(pPawn) || !pPawn->IsA(SDK::ASBZPlayerCharacter::StaticClass()))
+						continue;
+					const SDK::FVector vecAt = Offset(vecCenter, iSlot++, 80.0) + SDK::FVector(0.0, 0.0, 40.0);
+					pPawn->K2_SetActorLocation(vecAt, false, nullptr, true);
+					if (pPawn != pLocalPawn)
+						static_cast<SDK::ASBZPlayerCharacter*>(pPawn)->Client_Teleport(vecAt, 0.f);
+				}
+				LogInfo("spawner: moved {} players into the escape volume, which needs {:.0f} s", iSlot, pVolume->EscapeTimeDuration);
+				return pVolume->EscapeTimeDuration;
+			}
+
+			static bool IsUnused(SDK::USBZInteractableComponent* pInteractable)
+			{
+				return Payday3::IsAlive(pInteractable) && pInteractable->bInteractionEnabled && !pInteractable->bIsHidden;
+			}
+
+			static void BankGeneratedBags(SDK::USBZCheatManager* pCheat)
+			{
+				std::unordered_map<std::string, std::pair<SDK::FName, int>> mapBags;
+				auto fnAdd = [&](SDK::USBZBagType* pType, int iCount) {
+					if (!Payday3::IsAlive(pType) || iCount <= 0)
+						return;
+					auto& rEntry = mapBags[pType->GetName()];
+					rEntry.first = pType->Name;
+					rEntry.second += iCount;
+				};
+				Payday3::ForEachLevelActor(Unreal::GetWorld(), [&](SDK::AActor* pActor) {
+					if (!Payday3::IsAliveActor(pActor))
+						return;
+					if (pActor->IsA(SDK::ASBZSingleBagGenerator::StaticClass()))
+					{
+						auto* pGenerator = static_cast<SDK::ASBZSingleBagGenerator*>(pActor);
+						if (!pGenerator->bHidden)
+							fnAdd(pGenerator->BagType, 1);
+					}
+					else if (pActor->IsA(SDK::ASBZMultiBagGenerator::StaticClass()))
+					{
+						auto* pGenerator = static_cast<SDK::ASBZMultiBagGenerator*>(pActor);
+						if (!pGenerator->bHidden && !pGenerator->bIsInfinite)
+							fnAdd(pGenerator->BagType, pGenerator->NumberOfBags);
+					}
+					else if (pActor->IsA(SDK::ASBZBagSpawner::StaticClass()))
+						fnAdd(static_cast<SDK::ASBZBagSpawner*>(pActor)->BagTypeToSpawn, 1);
+				});
+				int iBanked = 0;
+				for (const auto& [strName, rEntry] : mapBags)
+				{
+					pCheat->SecureBag(rEntry.second, rEntry.first);
+					iBanked += rEntry.second;
+					LogInfo("spawner: banked {} x {} straight into the secured loot", rEntry.second, strName);
+				}
+				LogInfo("spawner: banked {} bags from {} bag types that had not been picked up yet", iBanked, mapBags.size());
 			}
 
 			void FinishHeist()
@@ -578,32 +656,26 @@ namespace OmegaWare
 				static_cast<SDK::USBZCheatManager*>(pCheat)->RequestMissionSuccess(m_iFinishPlayers);
 				LogInfo("spawner: asked the game to end the mission as a success with {} players in the escape volume", m_iFinishPlayers);
 				m_bFinishCheck = true;
-				m_tpFinishCheck = std::chrono::steady_clock::now() + kFinishCheckDelay;
+				m_tpFinishCheck = std::chrono::steady_clock::now() + std::max(kFinishCheckDelay, std::chrono::milliseconds(static_cast<std::int64_t>((m_flEscapeSeconds + 3.f) * 1000.f)));
 			}
 
 			void FinishHeistFallback()
 			{
 				if (m_bMissionEndSeen)
 					return;
-				LogWarning("spawner: the game ignored the cheat manager request, calling its game state machine directly");
-				SDK::UClass* pClass = SDK::USBZGameStateMachine::StaticClass();
-				const SDK::TUObjectArray* pObjects = SDK::UObject::GObjects.GetTypedPtr();
-				if (!pClass || !pObjects)
-					return;
-				const std::int32_t iCount = pObjects->Num();
-				for (std::int32_t iObject = 0; iObject < iCount; ++iObject)
+				SDK::UWorld* pWorld = Unreal::GetWorld();
+				SDK::USBZGameStateMachine* pMachine = pWorld ? SDK::USBZGameStateMachineFunctionLibrary::GetGameStateMachine(pWorld) : nullptr;
+				if (!Payday3::IsAlive(pMachine))
 				{
-					SDK::UObject* pObject = pObjects->GetByIndex(iObject);
-					if (!pObject || pObject->Class != pClass || pObject->IsDefaultObject() || !Payday3::IsAlive(pObject))
-						continue;
-					SDK::FSBZEndMissionRequestData stRequest{};
-					stRequest.MissionResult = SDK::ESBZEndMissionResult::Success;
-					stRequest.OutroVariation = 0;
-					static_cast<SDK::USBZGameStateMachine*>(pObject)->RequestMissionEnd(stRequest);
-					LogInfo("spawner: asked the game state machine to end the mission as a success");
+					LogWarning("spawner: the game ignored the cheat manager request and no game state machine was found");
 					return;
 				}
-				LogWarning("spawner: no game state machine was found");
+				LogWarning("spawner: the game ignored the cheat manager request, calling its game state machine {} directly", static_cast<const void*>(pMachine));
+				SDK::FSBZEndMissionRequestData stRequest{};
+				stRequest.MissionResult = SDK::ESBZEndMissionResult::Success;
+				stRequest.OutroVariation = 0;
+				pMachine->RequestMissionEnd(stRequest);
+				LogInfo("spawner: asked the game state machine to end the mission as a success");
 			}
 
 			void ProcessPending()
@@ -654,6 +726,7 @@ namespace OmegaWare
 			std::atomic<bool> m_bGuiWantsMouse = false;
 			std::atomic<bool> m_bTickQueued = false;
 			bool m_bFinishPending = false;
+			float m_flEscapeSeconds = 0.f;
 			bool m_bFinishCheck = false;
 			std::atomic<bool> m_bMissionEndSeen = false;
 			std::chrono::steady_clock::time_point m_tpFinishCheck;
