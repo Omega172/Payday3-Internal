@@ -386,6 +386,8 @@ inline const OmegaLocalization::stLocaleData g_stLocaleEnglish{
 		{ "crashguards.chance", "ai chance roll guard" },
 		{ "crashguards.scoring", "ai scoring guard" },
 		{ "crashguards.nullobject", "ai object guard" },
+		{ "crashguards.pawnaction", "ai pawn action guard" },
+		{ "crashguards.endtick", "mission end update guard" },
 		{ "feature.spawner", "spawner" },
 		{ "spawner.section", "spawn" },
 		{ "spawner.role_host", "you are the host or playing solo, spawns happen directly" },

@@ -354,6 +354,8 @@ inline const OmegaLocalization::stLocaleData g_stLocaleRussian{
 		{ "crashguards.chance", "защита броска шанса ии" },
 		{ "crashguards.scoring", "защита оценки ии" },
 		{ "crashguards.nullobject", "защита объекта ии" },
+		{ "crashguards.pawnaction", "защита действий пешки ии" },
+		{ "crashguards.endtick", "защита обновления конца миссии" },
 		{ "feature.spawner", "спавнер" },
 		{ "spawner.section", "спавн" },
 		{ "spawner.role_host", "вы хост или играете один, спавн происходит сразу" },

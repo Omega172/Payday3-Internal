@@ -354,6 +354,8 @@ inline const OmegaLocalization::stLocaleData g_stLocalePolish{
 		{ "crashguards.chance", "ochrona losowania ai" },
 		{ "crashguards.scoring", "ochrona oceny ai" },
 		{ "crashguards.nullobject", "ochrona obiektu ai" },
+		{ "crashguards.pawnaction", "strażnik akcji pionka ai" },
+		{ "crashguards.endtick", "strażnik aktualizacji końca misji" },
 		{ "feature.spawner", "spawner" },
 		{ "spawner.section", "spawnuj" },
 		{ "spawner.role_host", "jesteś hostem lub grasz solo, spawny dzieją się od razu" },

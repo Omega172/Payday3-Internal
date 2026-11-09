@@ -386,6 +386,8 @@ inline const OmegaLocalization::stLocaleData g_stLocaleChinese{
 		{ "crashguards.chance", "AI 概率判定保护" },
 		{ "crashguards.scoring", "AI 评分保护" },
 		{ "crashguards.nullobject", "AI 对象保护" },
+		{ "crashguards.pawnaction", "AI 角色动作保护" },
+		{ "crashguards.endtick", "任务结束更新保护" },
 		{ "feature.spawner", "生成器" },
 		{ "spawner.section", "生成" },
 		{ "spawner.role_host", "你是主机或单人游戏，会直接生成" },

@@ -39,6 +39,12 @@ namespace OmegaWare
 		std::atomic<std::uint32_t> g_uScoreSkips = 0;
 		using FnNullThisGuard = std::uint8_t (*)(void*);
 		Hooks::clHook<FnNullThisGuard> g_clNullThisGuard("ai null object guard");
+		using FnPawnGuard = void (*)(void*);
+		Hooks::clHook<FnPawnGuard> g_clPawnGuard("ai pawn action guard");
+		std::atomic<std::uint32_t> g_uPawnSkips = 0;
+		using FnTickGuard = void (*)(void*, float);
+		Hooks::clHook<FnTickGuard> g_clTickGuard("mission end tick guard");
+		std::atomic<std::uint32_t> g_uTickSkips = 0;
 		using FnPureCall = int (*)();
 		Hooks::clHook<FnPureCall> g_clPureCall("pure virtual guard");
 		std::atomic<std::uint32_t> g_uPureCalls = 0;
@@ -49,7 +55,7 @@ namespace OmegaWare
 		{
 			const std::uint32_t uCount = rCounter.fetch_add(1, std::memory_order_relaxed) + 1;
 			if (uCount == 1 || uCount == 10 || uCount == 100 || uCount % 1000 == 0)
-				LogWarning("crash guard: skipped {} on an AI without a pawn ({} so far)", strWhat, uCount);
+				LogWarning("crash guard: skipped {} ({} so far)", strWhat, uCount);
 		}
 
 		int HkPureCall()
@@ -70,7 +76,7 @@ namespace OmegaWare
 			Hooks::clCallGuard clGuard;
 			if (!pCharacter)
 			{
-				NoteSkip(g_uAbilitySkips, "an ability system read");
+				NoteSkip(g_uAbilitySkips, "an ability system read on an AI without a pawn");
 				return;
 			}
 			g_clAbilityGuard(pCharacter, pArgument);
@@ -82,7 +88,7 @@ namespace OmegaWare
 			SDK::AAIController* pOwner = pBrain ? pBrain->AIOwner : nullptr;
 			if (!pOwner || !Memory::IsValidObjectPtr(pOwner) || !pOwner->Pawn)
 			{
-				NoteSkip(g_uBrainSkips, "a brain tick");
+				NoteSkip(g_uBrainSkips, "a brain tick on an AI without a pawn");
 				return;
 			}
 			g_clBrainGuard(pThis, pBrain, pArgument);
@@ -107,7 +113,7 @@ namespace OmegaWare
 			}
 			if (!bValid)
 			{
-				NoteSkip(g_uChanceSkips, "a chance roll");
+				NoteSkip(g_uChanceSkips, "a chance roll on an AI without a pawn");
 				return 0.f;
 			}
 			return g_clChanceGuard(pThis);
@@ -118,7 +124,7 @@ namespace OmegaWare
 			Hooks::clCallGuard clGuard;
 			if (!pThis)
 			{
-				NoteSkip(g_uScoreSkips, "an ai scoring call");
+				NoteSkip(g_uScoreSkips, "an ai scoring call on an AI without a pawn");
 				return 0.f;
 			}
 			float flScore = 0.f;
@@ -126,7 +132,7 @@ namespace OmegaWare
 			OmegaRenderHook::stFault stFault;
 			if (OmegaRenderHook::InvokeGuarded(fnCall, stFault))
 				return flScore;
-			NoteSkip(g_uScoreSkips, "an ai scoring call that faulted");
+			NoteSkip(g_uScoreSkips, "an ai scoring call that faulted on an AI without a pawn");
 			return 0.f;
 		}
 
@@ -135,10 +141,45 @@ namespace OmegaWare
 			Hooks::clCallGuard clGuard;
 			if (!pThis)
 			{
-				NoteSkip(g_uScoreSkips, "an ai check on a missing object");
+				NoteSkip(g_uScoreSkips, "an ai check on a missing object on an AI without a pawn");
 				return 0;
 			}
 			return g_clNullThisGuard(pThis);
+		}
+
+		void HkPawnGuard(void* pThis)
+		{
+			Hooks::clCallGuard clGuard;
+			const auto pBase = reinterpret_cast<const std::uint8_t*>(pThis);
+			const std::uint8_t* pOwner = nullptr;
+			bool bValid = pThis && Memory::IsReadable(pBase + 0x118, sizeof(void*));
+			if (bValid)
+			{
+				pOwner = *reinterpret_cast<const std::uint8_t* const*>(pBase + 0x118);
+				bValid = pOwner && Memory::IsReadable(pOwner + 0x370, sizeof(void*));
+			}
+			if (bValid)
+				bValid = *reinterpret_cast<const std::uint8_t* const*>(pOwner + 0x370) != nullptr;
+			if (!bValid)
+			{
+				NoteSkip(g_uPawnSkips, "an ai action while its pawn was missing");
+				return;
+			}
+			g_clPawnGuard(pThis);
+		}
+
+		void HkTickGuard(void* pThis, float flDelta)
+		{
+			Hooks::clCallGuard clGuard;
+			if (!pThis)
+			{
+				NoteSkip(g_uTickSkips, "a tick on a missing object");
+				return;
+			}
+			auto fnCall = [&] { g_clTickGuard(pThis, flDelta); };
+			OmegaRenderHook::stFault stFault;
+			if (!OmegaRenderHook::InvokeGuarded(fnCall, stFault))
+				NoteSkip(g_uTickSkips, "a per frame update that faulted while the mission was ending");
 		}
 
 		[[nodiscard]] std::uintptr_t FindUnique(const auto& rPattern)
@@ -153,6 +194,18 @@ namespace OmegaWare
 		[[nodiscard]] std::uintptr_t FindScoreGuardTarget()
 		{
 			constexpr auto aPattern = Memory::Pattern<"48 8B C4 48 89 58 08 48 89 68 10 48 89 70 18 57 48 83 EC 50 0F 29 70 E8 48 8B F1 0F 29 78 D8 44 0F 29 40 C8 48 8B 01 FF 90 00 03 00 00 F3 0F 10 3D ? ? ? ? 0F 28 F0">;
+			return FindUnique(aPattern);
+		}
+
+		[[nodiscard]] std::uintptr_t FindPawnGuardTarget()
+		{
+			constexpr auto aPattern = Memory::Pattern<"48 89 5C 24 08 57 48 83 EC 40 48 8B D9 E8 ? ? ? ? 48 8B 83 18 01 00 00 48 8B CB 48 8B B8 70 03 00 00 E8 ? ? ? ? 48 85 C0 74 14 48 8B D7">;
+			return FindUnique(aPattern);
+		}
+
+		[[nodiscard]] std::uintptr_t FindTickGuardTarget()
+		{
+			constexpr auto aPattern = Memory::Pattern<"48 8B C4 48 89 58 18 55 56 57 41 54 41 55 41 56 41 57 48 8D A8 A8 FE FF FF 48 81 EC 20 02 00 00 0F 29 70 B8 0F 29 78 A8 44 0F 29 40 98 44 0F 29 48 88 44 0F 29 90 78 FF FF FF 44 0F 29 98 68 FF FF FF 44 0F 29 A0 58 FF FF FF 44 0F 29 A8 48 FF FF FF 44 0F 29 B0 38 FF FF FF 44 0F 29 B8 28 FF FF FF 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 70 4C 8B">;
 			return FindUnique(aPattern);
 		}
 
@@ -220,6 +273,14 @@ namespace OmegaWare
 					g_clNullThisGuard.Install(uNull, &HkNullThisGuard);
 				else
 					LogWarning("crash guard: the ai object check was not found in this game build, it is not guarded");
+				if (const std::uintptr_t uPawn = FindPawnGuardTarget())
+					g_clPawnGuard.Install(uPawn, &HkPawnGuard);
+				else
+					LogWarning("crash guard: the ai pawn action was not found in this game build, it is not guarded");
+				if (const std::uintptr_t uTick = FindTickGuardTarget())
+					g_clTickGuard.Install(uTick, &HkTickGuard);
+				else
+					LogWarning("crash guard: the per frame update crashing at mission end was not found in this game build, it is not guarded");
 				const HMODULE hRuntime = GetModuleHandleW(L"vcruntime140.dll");
 				if (void* pPureCall = hRuntime ? reinterpret_cast<void*>(GetProcAddress(hRuntime, "_purecall")) : nullptr)
 					g_clPureCall.Install(pPureCall, &HkPureCall);
@@ -236,6 +297,8 @@ namespace OmegaWare
 				g_clChanceGuard.Remove();
 				g_clScoreGuard.Remove();
 				g_clNullThisGuard.Remove();
+				g_clPawnGuard.Remove();
+				g_clTickGuard.Remove();
 			}
 
 			void DrawMenu() override
@@ -249,6 +312,8 @@ namespace OmegaWare
 					OmegaGUI::TextMuted(std::format("{}: {} ({})", "crashguards.chance"_t, Hooks::ToString(g_clChanceGuard.GetStatus()), g_uChanceSkips.load()));
 					OmegaGUI::TextMuted(std::format("{}: {} ({})", "crashguards.scoring"_t, Hooks::ToString(g_clScoreGuard.GetStatus()), g_uScoreSkips.load()));
 					OmegaGUI::TextMuted(std::format("{}: {}", "crashguards.nullobject"_t, Hooks::ToString(g_clNullThisGuard.GetStatus())));
+					OmegaGUI::TextMuted(std::format("{}: {} ({})", "crashguards.pawnaction"_t, Hooks::ToString(g_clPawnGuard.GetStatus()), g_uPawnSkips.load()));
+					OmegaGUI::TextMuted(std::format("{}: {} ({})", "crashguards.endtick"_t, Hooks::ToString(g_clTickGuard.GetStatus()), g_uTickSkips.load()));
 					OmegaGUI::TextMuted(std::format("{}: {} ({})", "crashguards.purecall"_t, Hooks::ToString(g_clPureCall.GetStatus()), g_uPureCalls.load()));
 					OmegaGUI::EndSection();
 				}

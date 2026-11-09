@@ -353,6 +353,8 @@ inline const OmegaLocalization::stLocaleData g_stLocaleGerman{
 		{ "crashguards.chance", "ki-zufallswurf-schutz" },
 		{ "crashguards.scoring", "ki-bewertungsschutz" },
 		{ "crashguards.nullobject", "ki-objektschutz" },
+		{ "crashguards.pawnaction", "ki-pawn-aktionswächter" },
+		{ "crashguards.endtick", "missionsende-update-wächter" },
 		{ "feature.spawner", "spawner" },
 		{ "spawner.section", "spawnen" },
 		{ "spawner.role_host", "du bist host oder spielst solo, spawns passieren direkt" },
