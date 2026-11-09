@@ -23,7 +23,7 @@ set_toolchains("clang-cl")
 set_toolset("ld", LlvmTool("lld-link"))
 set_toolset("sh", LlvmTool("lld-link"))
 set_toolset("ar", LlvmTool("llvm-ar"))
-add_cxxflags("-Wno-c++11-narrowing", "-Wno-character-conversion", "-Wno-microsoft-template-shadow", "-Wno-pragma-once-outside-header", "-Wno-class-conversion", "-Wno-invalid-offsetof", "-Wno-implicitly-unsigned-literal", "-Wno-undefined-bool-conversion", {tools = "clang_cl"})
+add_cxxflags("-Wno-c++11-narrowing", "-Wno-microsoft-template-shadow", "-Wno-pragma-once-outside-header", "-Wno-class-conversion", "-Wno-invalid-offsetof", "-Wno-implicitly-unsigned-literal", "-Wno-undefined-bool-conversion", {tools = "clang_cl"})
 
 if is_mode("debug") then
     set_symbols("debug")
