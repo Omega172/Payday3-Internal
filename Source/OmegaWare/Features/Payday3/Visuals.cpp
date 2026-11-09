@@ -141,13 +141,79 @@ namespace OmegaWare
 			}
 		};
 
+		[[nodiscard]] bool IsValidUtf8Text(std::string_view strText)
+		{
+			for (std::size_t uIndex = 0; uIndex < strText.size();)
+			{
+				const auto byLead = static_cast<unsigned char>(strText[uIndex]);
+				if (byLead < 32 || byLead == 127)
+					return false;
+				std::size_t uLength = 1;
+				if (byLead >= 0xF0 && byLead <= 0xF4)
+					uLength = 4;
+				else if (byLead >= 0xE0)
+					uLength = 3;
+				else if (byLead >= 0xC2)
+					uLength = 2;
+				else if (byLead >= 0x80)
+					return false;
+				if (uIndex + uLength > strText.size())
+					return false;
+				for (std::size_t uTail = 1; uTail < uLength; ++uTail)
+					if ((static_cast<unsigned char>(strText[uIndex + uTail]) & 0xC0) != 0x80)
+						return false;
+				uIndex += uLength;
+			}
+			return true;
+		}
+
 		std::string FormatEntityName(std::string_view strName)
 		{
 			if (strName.empty() || strName.size() >= 256)
 				return "Unknown";
-			if (std::ranges::any_of(strName, [](char chLetter) { return chLetter < 32 || chLetter > 126; }))
+			if (!IsValidUtf8Text(strName))
 				return "Invalid";
 			return std::string(strName);
+		}
+
+		struct stEspTextHash
+		{
+			using is_transparent = void;
+			std::size_t operator()(std::string_view strText) const { return std::hash<std::string_view>{}(strText); }
+			std::size_t operator()(const std::string& strText) const { return std::hash<std::string_view>{}(strText); }
+		};
+
+		const std::string& EspText(std::string_view strEnglish)
+		{
+			thread_local std::string t_strLocale;
+			thread_local std::unordered_map<std::string, std::string, stEspTextHash, std::equal_to<>> t_mapText;
+			const std::string_view strLocale = OmegaLocalization::GetLocale();
+			if (strLocale != t_strLocale)
+			{
+				t_strLocale = std::string(strLocale);
+				t_mapText.clear();
+			}
+			if (const auto itText = t_mapText.find(strEnglish); itText != t_mapText.end())
+				return itText->second;
+			std::string strKey = "esp.";
+			bool bSeparator = false;
+			for (const char chLetter : strEnglish)
+			{
+				const bool bAlnum = (chLetter >= 'a' && chLetter <= 'z') || (chLetter >= 'A' && chLetter <= 'Z') || (chLetter >= '0' && chLetter <= '9');
+				if (bAlnum)
+				{
+					if (bSeparator)
+						strKey.push_back('_');
+					strKey.push_back(static_cast<char>(std::tolower(static_cast<unsigned char>(chLetter))));
+					bSeparator = false;
+				}
+				else if (strKey.size() > 4)
+					bSeparator = true;
+			}
+			if (t_mapText.size() > 1024)
+				t_mapText.clear();
+			const std::string strText = OmegaLocalization::Has(strKey) ? std::string(OmegaLocalization::Get(strKey)) : std::string(strEnglish);
+			return t_mapText.emplace(std::string(strEnglish), strText).first->second;
 		}
 
 		std::string FormatDistance(float flDistance)
@@ -666,6 +732,7 @@ namespace OmegaWare
 				case Payday3::EItemType::RareMinerals:
 				case Payday3::EItemType::Cocaine:
 				case Payday3::EItemType::SatellitePart:
+				case Payday3::EItemType::CigarBox:
 				case Payday3::EItemType::Container:
 				case Payday3::EItemType::ATM:
 				case Payday3::EItemType::Plank:
@@ -732,7 +799,6 @@ namespace OmegaWare
 				fnOption("visuals.skeleton", "skeleton", rCategory.pSkeleton);
 				fnOption("visuals.outline", "outline", rCategory.pOutline);
 				OmegaGUI::ItemTooltip(rCategory.bPeople ? "visuals.outline_people_hint"_t : "visuals.outline_items_hint"_t);
-				case Payday3::EItemType::CigarBox:
 				if (eCategory == ECategory::Enemies && (stCategory::On(rCategory.pBox) || stCategory::On(rCategory.pName) || stCategory::On(rCategory.pDistance) || stCategory::On(rCategory.pOutline)))
 				{
 					OmegaGUI::Separator();
@@ -1173,7 +1239,7 @@ namespace OmegaWare
 						const bool bStats = stCategory::On(rCategory.pHealthBar) || stCategory::On(rCategory.pArmorBar);
 						const stPawnStats stStats = bStats ? ReadPawnStats(pActor).value_or(stPawnStats{}) : stPawnStats{};
 						const float flDistance = static_cast<float>((vecActor - vecCamera).Magnitude() / 100.0);
-						DrawBox(rList, *optBox, bPlayerPawn ? std::string_view(strPlayerName) : (bVip ? std::string_view("VIP") : stInfo.strName), flDistance, stStats, rCategory, eSet, *m_pOmegaTag ? eModKind : Payday3::EModUserKind::None, bTarget);
+						DrawBox(rList, *optBox, bPlayerPawn ? std::string_view(strPlayerName) : (bVip ? std::string_view(EspText("VIP")) : std::string_view(EspText(stInfo.strName))), flDistance, stStats, rCategory, eSet, *m_pOmegaTag ? eModKind : Payday3::EModUserKind::None, bTarget);
 					}
 
 					if (!bDrone && stCategory::On(rCategory.pSkeleton))
@@ -1402,6 +1468,7 @@ namespace OmegaWare
 					return pActor->bHidden;
 				case Payday3::EItemType::RareMinerals:
 				case Payday3::EItemType::SatellitePart:
+				case Payday3::EItemType::CigarBox:
 					return pActor->bHidden || !IsUsableInteractable(static_cast<SDK::ASBZSingleBagGenerator*>(pActor)->Interactable);
 				case Payday3::EItemType::Container:
 					if (const std::uint8_t uCrate = pActor->Class ? CrateFlags(pActor->Class) : std::uint8_t{ 0 }; (uCrate & 1) != 0)
@@ -1419,6 +1486,10 @@ namespace OmegaWare
 				case Payday3::EItemType::MoneyMedium:
 				case Payday3::EItemType::Jewelry:
 					return IsLootedInstant(pActor);
+				case Payday3::EItemType::DepositBox:
+					return pActor->IsA(SDK::ASBZMiniGameActor::StaticClass()) && static_cast<SDK::ASBZMiniGameActor*>(pActor)->bIsUnlocked;
+				case Payday3::EItemType::KeycardReader:
+					return pActor->IsA(SDK::ASBZKeycardReader::StaticClass()) && !IsUsableInteractable(static_cast<SDK::ASBZKeycardReader*>(pActor)->InteractableComponent);
 				case Payday3::EItemType::QRPhone:
 					return IsCollectedPhone(pActor);
 				case Payday3::EItemType::ATM:
@@ -1459,7 +1530,7 @@ namespace OmegaWare
 				}
 				if (*rEnemies.pName || *rEnemies.pDistance)
 				{
-					const std::string_view strLabel = byAlpha == 255 ? "Camera" : "Camera (off)";
+					const std::string_view strLabel = EspText(byAlpha == 255 ? "Camera" : "Camera (off)");
 					DrawNameAndDistance(rList, optScreen->x, optScreen->y - 8.f, *rEnemies.pName ? strLabel : std::string_view(), m_stNameColors.pCop->WithAlpha(byAlpha), *rEnemies.pDistance ? FormatDistance(DistanceMeters(vecActor, vecCamera)) : std::string(), m_stDistanceColors.pCop->WithAlpha(byAlpha));
 				}
 			}
@@ -1468,7 +1539,6 @@ namespace OmegaWare
 			{
 				const SDK::FVector vecActor = Payday3::GetActorLocation(pVolume);
 				const std::optional<OmegaGUI::vec2> optScreen = Project(pController, vecActor);
-				case Payday3::EItemType::CigarBox:
 				if (!optScreen)
 					return;
 				const stCategory& rObjectives = Category(ECategory::Objectives);
@@ -1476,7 +1546,7 @@ namespace OmegaWare
 				const OmegaGUI::color col = bActive ? *m_pDropOffColor : m_pDropOffColor->WithAlpha(110);
 				rList.AddCircle(*optScreen, 6.f, kOutline, 16, 3.f);
 				rList.AddCircle(*optScreen, 6.f, col, 16, 1.5f);
-				const std::string_view strLabel = bActive ? "Drop-off" : "Drop-off (inactive)";
+				const std::string_view strLabel = EspText(bActive ? "Drop-off" : "Drop-off (inactive)");
 				DrawNameAndDistance(rList, optScreen->x, optScreen->y - 10.f, *rObjectives.pName ? strLabel : std::string_view(), col, *rObjectives.pDistance ? FormatDistance(DistanceMeters(vecActor, vecCamera)) : std::string(), col);
 			}
 
@@ -1486,10 +1556,6 @@ namespace OmegaWare
 			static constexpr std::chrono::milliseconds kDebugCycleMinimum{ 250 };
 
 			struct stDebugBones
-				case Payday3::EItemType::DepositBox:
-					return pActor->IsA(SDK::ASBZMiniGameActor::StaticClass()) && static_cast<SDK::ASBZMiniGameActor*>(pActor)->bIsUnlocked;
-				case Payday3::EItemType::KeycardReader:
-					return pActor->IsA(SDK::ASBZKeycardReader::StaticClass()) && !IsUsableInteractable(static_cast<SDK::ASBZKeycardReader*>(pActor)->InteractableComponent);
 			{
 				std::int32_t iIndex = -1;
 				std::vector<SDK::FName> aNames;
@@ -1779,7 +1845,7 @@ namespace OmegaWare
 						auto* pCrate = static_cast<SDK::ABP_WoodenCrate_C*>(pActor);
 						if (!IsUsableInteractable(pCrate->SBZInteractable))
 							return;
-						std::string strLabel = "Unopened crate";
+						std::string strLabel = EspText("Unopened crate");
 						if (Unreal::IsNetHost() && (uCrate & 2) != 0)
 						{
 							SDK::TArray<SDK::AActor*>& aInside = static_cast<SDK::ABP_WoodenCrate_SatellitePart_LowValue_C*>(pActor)->actorsInside;
@@ -1790,12 +1856,12 @@ namespace OmegaWare
 								if (!Payday3::IsAliveActor(pInside))
 									continue;
 								const Payday3::stItemInfo& rInside = Payday3::ResolveItem(pInside);
-								if (rInside.eType == Payday3::EItemType::None || strContents.find(rInside.strLabel) != std::string::npos)
+								if (rInside.eType == Payday3::EItemType::None || strContents.find(EspText(rInside.strLabel)) != std::string::npos)
 									continue;
-								strContents += (strContents.empty() ? "" : ", ") + std::string(rInside.strLabel);
+								strContents += (strContents.empty() ? "" : ", ") + EspText(rInside.strLabel);
 							}
 							if (!strContents.empty())
-								strLabel = "Crate: " + strContents;
+								strLabel = EspText("Crate") + ": " + strContents;
 						}
 						pSnapshot->aThings.push_back({ pActor, pActor->Class, EThingKind::Item, kCrate, std::move(strLabel) });
 						return;
@@ -1806,14 +1872,14 @@ namespace OmegaWare
 						auto* pContainer = static_cast<SDK::ASBZItemContainer*>(pActor);
 						if (!IsUsableInteractable(pContainer->InteractableComponent))
 							return;
-						std::string strLabel = "Unopened container";
+						std::string strLabel = EspText("Unopened container");
 						if (Unreal::IsNetHost())
 						{
 							SDK::AActor* pHidden = pContainer->HiddenItem;
 							if (!pContainer->bHasItem || !Payday3::IsAliveActor(pHidden))
 								return;
 							const Payday3::stItemInfo& rHidden = Payday3::ResolveItem(pHidden);
-							strLabel = std::format("Container: {}", rHidden.eType != Payday3::EItemType::None ? std::string(rHidden.strLabel) : (pHidden->Class ? pHidden->Class->GetName() : std::string("item")));
+							strLabel = std::format("{}: {}", EspText("Container"), rHidden.eType != Payday3::EItemType::None ? EspText(rHidden.strLabel) : (pHidden->Class ? pHidden->Class->GetName() : std::string("?")));
 						}
 						pSnapshot->aThings.push_back({ pActor, pActor->Class, EThingKind::Item, kContainer, std::move(strLabel) });
 						return;
@@ -1885,7 +1951,7 @@ namespace OmegaWare
 				const std::optional<OmegaGUI::vec2> optScreen = Project(pController, vecActor);
 				if (!optScreen)
 					return;
-				const std::string_view strLabel = strLabelOverride.empty() ? rItem.strLabel : strLabelOverride;
+				const std::string_view strLabel = strLabelOverride.empty() ? std::string_view(EspText(rItem.strLabel)) : strLabelOverride;
 				const float flLineHeight = OmegaGUI::CalcTextSize(strLabel).y;
 				DrawNameAndDistance(rList, optScreen->x, optScreen->y + flLineHeight * .5f, *rCategory.pName ? strLabel : std::string_view(), *pSetting->pColor, *rCategory.pDistance ? FormatDistance(DistanceMeters(vecActor, vecCamera)) : std::string(), *pSetting->pColor);
 			}
@@ -1941,6 +2007,7 @@ namespace OmegaWare
 				{ Payday3::EItemType::Jewelry, "visuals.show_jewelry", "visuals.item_jewelry_color", OmegaGUI::color(255, 0, 255) },
 				{ Payday3::EItemType::RareMinerals, "visuals.show_rare_minerals", "visuals.item_rare_minerals_color", OmegaGUI::color(255, 90, 200) },
 				{ Payday3::EItemType::Container, "visuals.show_containers", "visuals.item_containers_color", OmegaGUI::color(200, 170, 110) },
+				{ Payday3::EItemType::CigarBox, "visuals.show_cigar_boxes", "visuals.item_cigar_boxes_color", OmegaGUI::color(190, 120, 60) },
 				{ Payday3::EItemType::SatellitePart, "visuals.show_satellite_parts", "visuals.item_satellite_parts_color", OmegaGUI::color(120, 200, 255) },
 				{ Payday3::EItemType::Cocaine, "visuals.show_cocaine", "visuals.item_cocaine_color", OmegaGUI::color(240, 240, 255) },
 				{ Payday3::EItemType::ATM, "visuals.show_atms", "visuals.item_atm_color", OmegaGUI::color(80, 200, 255) },
@@ -2001,4 +2068,3 @@ namespace OmegaWare
 }
 
 #endif
-				{ Payday3::EItemType::CigarBox, "visuals.show_cigar_boxes", "visuals.item_cigar_boxes_color", OmegaGUI::color(190, 120, 60) },
