@@ -155,6 +155,7 @@ namespace OmegaWare::Payday3
 			std::unordered_map<SDK::UStruct*, std::string> mapLowerNames;
 			std::unordered_map<SDK::UClass*, EEnemyType> mapEnemies;
 			std::unordered_map<SDK::UClass*, bool> mapVips;
+			std::unordered_map<SDK::UClass*, std::string_view> mapVipLabels;
 			std::unordered_map<SDK::UClass*, const stItemInfo*> mapItems;
 		};
 
@@ -169,6 +170,7 @@ namespace OmegaWare::Payday3
 			g_stCache.mapLowerNames.clear();
 			g_stCache.mapEnemies.clear();
 			g_stCache.mapVips.clear();
+			g_stCache.mapVipLabels.clear();
 			g_stCache.mapItems.clear();
 		}
 
@@ -315,10 +317,42 @@ namespace OmegaWare::Payday3
 		for (SDK::UStruct* pStruct = pActor->Class; pStruct && !bVip; pStruct = static_cast<SDK::UStruct*>(pStruct->SuperStruct))
 		{
 			const std::string& strName = LowerStructName(pStruct);
-			bVip = strName.find("vip") != std::string::npos || strName.find("civilian_bank_manager") != std::string::npos || strName.find("insider") != std::string::npos;
+			bVip = strName.find("vip") != std::string::npos || strName.find("civilian_bank_manager") != std::string::npos || strName.find("insider") != std::string::npos || strName.find("ch_nc_clubowner") != std::string::npos || strName.find("ch_nc_accountant") != std::string::npos;
 		}
 		g_stCache.mapVips.emplace(pActor->Class, bVip);
 		return bVip;
+	}
+
+	std::string_view VipLabel(SDK::AActor* pActor)
+	{
+		if (!Memory::IsValidObjectPtr(pActor) || !pActor->Class)
+			return "VIP";
+		std::scoped_lock lckCache(g_stCache.mtxCache);
+		ResetOnWorldChange();
+		if (auto itLabel = g_stCache.mapVipLabels.find(pActor->Class); itLabel != g_stCache.mapVipLabels.end())
+			return itLabel->second;
+		std::string_view strLabel = "VIP";
+		for (SDK::UStruct* pStruct = pActor->Class; pStruct; pStruct = static_cast<SDK::UStruct*>(pStruct->SuperStruct))
+		{
+			const std::string& strName = LowerStructName(pStruct);
+			if (strName.find("civilian_bank_manager") != std::string::npos)
+			{
+				strLabel = "Manager";
+				break;
+			}
+			if (strName.find("ch_nc_clubowner") != std::string::npos)
+			{
+				strLabel = "Director";
+				break;
+			}
+			if (strName.find("ch_nc_accountant") != std::string::npos)
+			{
+				strLabel = "Accountant";
+				break;
+			}
+		}
+		g_stCache.mapVipLabels.emplace(pActor->Class, strLabel);
+		return strLabel;
 	}
 
 	EEnemyType ResolveEnemyType(SDK::AActor* pActor)

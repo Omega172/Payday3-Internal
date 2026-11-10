@@ -1250,7 +1250,7 @@ namespace OmegaWare
 						const bool bStats = stCategory::On(rCategory.pHealthBar) || stCategory::On(rCategory.pArmorBar);
 						const stPawnStats stStats = bStats ? ReadPawnStats(pActor).value_or(stPawnStats{}) : stPawnStats{};
 						const float flDistance = static_cast<float>((vecActor - vecCamera).Magnitude() / 100.0);
-						DrawBox(rList, *optBox, bPlayerPawn ? std::string_view(strPlayerName) : (bVip ? std::string_view(EspText("VIP")) : std::string_view(EspText(stInfo.strName))), flDistance, stStats, rCategory, eSet, *m_pOmegaTag ? eModKind : Payday3::EModUserKind::None, bTarget);
+						DrawBox(rList, *optBox, bPlayerPawn ? std::string_view(strPlayerName) : (bVip ? std::string_view(EspText(Payday3::VipLabel(pActor))) : std::string_view(EspText(stInfo.strName))), flDistance, stStats, rCategory, eSet, *m_pOmegaTag ? eModKind : Payday3::EModUserKind::None, bTarget);
 					}
 
 					if (!bDrone && stCategory::On(rCategory.pSkeleton))
