@@ -161,6 +161,18 @@ namespace OmegaWare
 						LogInfo("spawner: mission result: result {}, bags secured {} of {}, objectives {}, milestones {}, players {}, in custody {}, instant loot entries {}", static_cast<int>(rResult.MissionResult), rResult.SecuredBags.Num(), rResult.BagTotal, rResult.ExperienceObjectiveArray.Num(), rResult.MilestoneArray.Num(), rResult.PlayerResultArray.Num(), iCustody, rResult.InstantLootArray.Num());
 						for (int iLoot = 0; iLoot < rResult.InstantLootArray.Num(); ++iLoot)
 							LogInfo("spawner: result instant loot {} x {}", rResult.InstantLootArray[iLoot].Name.ToString(), rResult.InstantLootArray[iLoot].Counter);
+						LogInfo("spawner: result details: mission time {:.0f} s, ticking loot progress {:.2f}, assault waves {}, all civilians alive {}", rResult.MissionTime, rResult.TickingLootProgress, rResult.CompletedAssaultWaveCount, static_cast<bool>(rResult.bAllCiviliansAlive));
+						for (int iBag = 0; iBag < rResult.SecuredBags.Num(); ++iBag)
+							LogInfo("spawner: result secured bag entry {} x {}", iBag, rResult.SecuredBags[iBag].Count);
+						for (int iObjective = 0; iObjective < rResult.ExperienceObjectiveArray.Num(); ++iObjective)
+							LogInfo("spawner: result objective {} completed {}", rResult.ExperienceObjectiveArray[iObjective].ObjectiveId.ToString(), static_cast<bool>(rResult.ExperienceObjectiveArray[iObjective].bCompleted));
+						for (int iMilestone = 0; iMilestone < rResult.MilestoneArray.Num(); ++iMilestone)
+							LogInfo("spawner: result milestone {} completed {}", rResult.MilestoneArray[iMilestone].MilestoneId.ToString(), static_cast<bool>(rResult.MilestoneArray[iMilestone].bCompleted));
+						for (int iPlayer = 0; iPlayer < rResult.PlayerResultArray.Num(); ++iPlayer)
+						{
+							const SDK::FSBZCashRewardData& rCash = rResult.PlayerResultArray[iPlayer].CashRewardData;
+							LogInfo("spawner: result cash for player {}: total value {}, earned {}, loot {}, individual loot {}, individual total {}, ticking loot {} of {}, challenges {}, reductions {}, events {}, bags {}", iPlayer, rCash.TotalCashValue, rCash.TotalCashEarned, rCash.LootCashValue, rCash.IndividualLootCashValue, rCash.IndividualTotalCashValue, rCash.TickingLootValue, rCash.MaxTickingLootValue, rCash.CashFromChallenges, rCash.CashRewardReductionData.Num(), rCash.CashRewardEventData.Num(), rCash.CashRewardBagData.Num());
+						}
 					});
 				return true;
 			}
