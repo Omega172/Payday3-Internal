@@ -145,6 +145,7 @@ else
         add_deps("OmegaGUI", "OmegaRenderHook", "OmegaLocalization")
         add_packages("vcpkg::nlohmann-json")
         add_includedirs("Source/OmegaWare", "Source/OmegaWarePlugin")
+        set_pcxxheader("Source/OmegaWare/Pch.hpp")
         add_defines("OMEGAWARE_PLUGIN_HOST=1")
         add_defines("OMEGAWARE_GAME_DEPTH=" .. (has_config("game_depth") and "1" or "0"))
         add_files("Source/OmegaWare/**.cpp|Engines/Unity/**.cpp|Engines/Unreal/**.cpp")
@@ -166,6 +167,21 @@ else
             add_files("Source/OmegaWare/Engines/Unity/*.cpp")
         elseif strEngine == "unreal" then
             local strSdk = get_config("unreal_sdk") or ""
+            before_build(function (target)
+                local strPch = target:pcoutputfile("cxx")
+                local strSdkRoot = get_config("unreal_sdk") or ""
+                if not strPch or not os.isfile(strPch) or strSdkRoot == "" then
+                    return
+                end
+                local iPchTime = os.mtime(strPch)
+                for _, strHeader in ipairs({ "Basic.hpp", "Engine_classes.hpp", "Starbreeze_classes.hpp" }) do
+                    local strFile = path.join(strSdkRoot, "SDK", strHeader)
+                    if os.isfile(strFile) and os.mtime(strFile) > iPchTime then
+                        os.tryrm(strPch)
+                        return
+                    end
+                end
+            end)
             on_config(function (target)
                 local strConfiguredSdk = get_config("unreal_sdk") or ""
                 local aMissing = {}
