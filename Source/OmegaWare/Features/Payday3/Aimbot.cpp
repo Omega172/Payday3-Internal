@@ -374,6 +374,12 @@ namespace OmegaWare
 			return static_cast<SDK::APD3HeistGameState*>(pWorld->GameState)->CurrentHeistState >= SDK::EPD3HeistState::Alarm;
 		}
 
+		[[nodiscard]] bool IsCasingNow()
+		{
+			SDK::ASBZPlayerCharacter* pCharacter = Payday3::GetLocalCharacter();
+			return pCharacter && pCharacter->IsCasing();
+		}
+
 		void ActivateFireAbility()
 		{
 			const TryActivateAbility_t fnTryActivate = ResolveTryActivateAbility();
@@ -614,6 +620,13 @@ namespace OmegaWare
 				Payday3::SetAimbotTarget(nullptr);
 				const bool bKeyHeld = m_pKey->uKey == 0 || m_pKey->bActive;
 				if (!*m_pEnabled || !bKeyHeld || !Payday3::IsReady())
+				{
+					m_pLockedTarget = nullptr;
+					SetOverride(false);
+					return;
+				}
+
+				if (IsCasingNow() || (*m_pAutoFire && *m_pAutoFireLoudOnly && !IsLoud()))
 				{
 					m_pLockedTarget = nullptr;
 					SetOverride(false);
