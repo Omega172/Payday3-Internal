@@ -1517,6 +1517,8 @@ namespace OmegaWare
 				case Payday3::EItemType::KeycardReader:
 					return pActor->IsA(SDK::ASBZKeycardReader::StaticClass()) && !IsUsableInteractable(static_cast<SDK::ASBZKeycardReader*>(pActor)->InteractableComponent);
 				case Payday3::EItemType::QRPhone:
+					if (pActor->IsA(SDK::ASBZCarriedStaticInteractionActor::StaticClass()))
+						return pActor->bHidden;
 					return IsCollectedPhone(pActor);
 				case Payday3::EItemType::ATM:
 					return IsLootedAtm(pActor);

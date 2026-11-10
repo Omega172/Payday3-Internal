@@ -49,7 +49,8 @@ namespace OmegaWare::Payday3
 
 		constexpr stItemInfo kNoItem{};
 
-		constexpr std::array<stItemLookup, 76> g_aItemLookup = { {
+		constexpr std::array<stItemLookup, 77> g_aItemLookup = { {
+			{ "carriedhackablephone", { "QR Phone", EItemType::QRPhone, EItemCategory::KeyItem } },
 			{ "carriedredkeycard", { "Red Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carriedbluekeycard", { "Blue Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carried", kNoItem },
