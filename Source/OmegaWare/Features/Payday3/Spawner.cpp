@@ -2,6 +2,7 @@
 
 #if OMEGAWARE_ENGINE_UNREAL
 
+#include "SDK/BP_WoodenCrate_SatellitePart_LowValue_classes.hpp"
 #include "SDK/Starbreeze_parameters.hpp"
 
 #include "Config/Config.hpp"
@@ -814,6 +815,8 @@ namespace OmegaWare
 			{
 				std::unordered_map<std::string, std::pair<SDK::FName, int>> mapBags;
 				const std::unordered_map<SDK::USBZBagType*, SDK::USBZBagType*> mapWash = BuildWashMap();
+				std::unordered_set<SDK::AActor*> setSeen;
+				int iInsideBags = 0;
 				auto fnAdd = [&](SDK::USBZBagType* pType, int iCount) {
 					if (!Payday3::IsAlive(pType) || iCount <= 0)
 						return;
@@ -830,17 +833,62 @@ namespace OmegaWare
 					{
 						auto* pGenerator = static_cast<SDK::ASBZSingleBagGenerator*>(pActor);
 						if (!pGenerator->bHidden)
+						{
+							setSeen.insert(pActor);
 							fnAdd(pGenerator->BagType, 1);
+						}
 					}
 					else if (pActor->IsA(SDK::ASBZMultiBagGenerator::StaticClass()))
 					{
 						auto* pGenerator = static_cast<SDK::ASBZMultiBagGenerator*>(pActor);
 						if (!pGenerator->bHidden && !pGenerator->bIsInfinite)
+						{
+							setSeen.insert(pActor);
 							fnAdd(pGenerator->BagType, pGenerator->NumberOfBags);
+						}
 					}
 					else if (pActor->IsA(SDK::ASBZBagSpawner::StaticClass()))
 						fnAdd(static_cast<SDK::ASBZBagSpawner*>(pActor)->BagTypeToSpawn, 1);
 				});
+				SDK::UClass* pSatelliteCrate = SDK::ABP_WoodenCrate_SatellitePart_LowValue_C::StaticClass();
+				auto fnInside = [&](SDK::AActor* pInside) {
+					if (!Payday3::IsAliveActor(pInside) || setSeen.contains(pInside))
+						return;
+					if (pInside->IsA(SDK::ASBZSingleBagGenerator::StaticClass()))
+					{
+						setSeen.insert(pInside);
+						fnAdd(static_cast<SDK::ASBZSingleBagGenerator*>(pInside)->BagType, 1);
+						iInsideBags++;
+					}
+					else if (pInside->IsA(SDK::ASBZMultiBagGenerator::StaticClass()))
+					{
+						auto* pMulti = static_cast<SDK::ASBZMultiBagGenerator*>(pInside);
+						if (pMulti->bIsInfinite)
+							return;
+						setSeen.insert(pInside);
+						fnAdd(pMulti->BagType, pMulti->NumberOfBags);
+						iInsideBags += pMulti->NumberOfBags;
+					}
+				};
+				Payday3::ForEachLevelActor(Unreal::GetWorld(), [&](SDK::AActor* pActor) {
+					if (!Payday3::IsAliveActor(pActor))
+						return;
+					if (pActor->IsA(SDK::ASBZItemContainer::StaticClass()))
+					{
+						auto* pContainer = static_cast<SDK::ASBZItemContainer*>(pActor);
+						if (pContainer->bHasItem && Payday3::IsAlive(pContainer->InteractableComponent) && pContainer->InteractableComponent->bInteractionEnabled && !pContainer->InteractableComponent->bIsHidden)
+							fnInside(pContainer->HiddenItem);
+					}
+					else if (pSatelliteCrate && pActor->IsA(pSatelliteCrate))
+					{
+						auto* pCrate = static_cast<SDK::ABP_WoodenCrate_SatellitePart_LowValue_C*>(pActor);
+						if (Payday3::IsAlive(pCrate->SBZInteractable) && pCrate->SBZInteractable->bInteractionEnabled && !pCrate->SBZInteractable->bIsHidden)
+							for (int iInside = 0; iInside < pCrate->actorsInside.Num(); ++iInside)
+								fnInside(pCrate->actorsInside[iInside]);
+					}
+				});
+				if (iInsideBags > 0)
+					LogInfo("spawner: counted {} bags that were still inside unopened containers and crates", iInsideBags);
 				int iBanked = 0;
 				for (const auto& [strName, rEntry] : mapBags)
 				{
