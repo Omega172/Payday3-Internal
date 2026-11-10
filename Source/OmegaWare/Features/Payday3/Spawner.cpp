@@ -682,7 +682,10 @@ namespace OmegaWare
 				SDK::AGameStateBase* pGameState = Unreal::GetGameState();
 				m_iFinishPlayers = Payday3::IsAlive(pGameState) ? std::max(pGameState->PlayerArray.Num(), 1) : 1;
 				pSbzCheat->ListenToRewardLogs();
+				const int iLooseBefore = CountUnlootedInstant();
 				pSbzCheat->GrabInstantLoot();
+				LogInfo("spawner: loose loot before the grab all request {}, after {}", iLooseBefore, CountUnlootedInstant());
+				GrabRemainingInstantLoot();
 				BankGeneratedBags(pSbzCheat);
 				SecureManagerBags(pSbzCheat);
 				pSbzCheat->SecureAllAvailableLoot(true, true);
@@ -724,6 +727,43 @@ namespace OmegaWare
 				}
 				LogInfo("spawner: moved {} players into the escape volume, which needs {:.0f} s", iSlot, pVolume->EscapeTimeDuration);
 				return pVolume->EscapeTimeDuration;
+			}
+
+			static int CountUnlootedInstant()
+			{
+				int iCount = 0;
+				Payday3::ForEachLevelActor(Unreal::GetWorld(), [&](SDK::AActor* pActor) {
+					if (Payday3::IsAliveActor(pActor) && pActor->IsA(SDK::ASBZInstantLoot::StaticClass()) && !pActor->bHidden && !static_cast<SDK::ASBZInstantLoot*>(pActor)->bIsLooted)
+						++iCount;
+				});
+				return iCount;
+			}
+
+			static void GrabRemainingInstantLoot()
+			{
+				SDK::ASBZPlayerCharacter* pCharacter = Payday3::GetLocalCharacter();
+				SDK::USBZPlayerInteractorComponent* pInteractor = pCharacter ? pCharacter->Interactor : nullptr;
+				if (!Payday3::IsAlive(pInteractor))
+				{
+					LogWarning("spawner: no interactor was found, loose loot is not grabbed by hand");
+					return;
+				}
+				std::vector<SDK::USBZInteractableComponent*> aLoot;
+				Payday3::ForEachLevelActor(Unreal::GetWorld(), [&](SDK::AActor* pActor) {
+					if (!Payday3::IsAliveActor(pActor) || !pActor->IsA(SDK::ASBZInstantLoot::StaticClass()) || pActor->bHidden)
+						return;
+					auto* pLoot = static_cast<SDK::ASBZInstantLoot*>(pActor);
+					if (!pLoot->bIsLooted && Payday3::IsAlive(pLoot->Interactable) && !pLoot->Interactable->bIsHidden)
+						aLoot.push_back(pLoot->Interactable);
+				});
+				for (SDK::USBZInteractableComponent* pInteractable : aLoot)
+				{
+					const std::int32_t iId = pInteractor->InteractId + 1;
+					pInteractor->InteractId = iId;
+					pInteractor->Server_StartInteraction(pInteractable, iId, 0);
+					pInteractor->Server_CompleteInteraction(pInteractable, iId);
+				}
+				LogInfo("spawner: grabbed {} loose loot items by hand, {} left", aLoot.size(), CountUnlootedInstant());
 			}
 
 			static void LogManagerBags(std::string_view strWhen)
