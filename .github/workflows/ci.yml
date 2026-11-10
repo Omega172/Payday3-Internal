@@ -17,7 +17,7 @@ jobs:
         build_configuration: [debug, release]
     steps:
     - name: Checkout Repository with Submodules
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         path: src
         submodules: recursive
@@ -33,7 +33,7 @@ jobs:
         & ./src/Scripts/BuildPackage.ps1 -Modes ${{ matrix.build_configuration }} -Out packages
         exit $LASTEXITCODE
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: payday3-internal-${{ matrix.build_configuration }}
         path: packages/${{ matrix.build_configuration }}
