@@ -26,6 +26,7 @@ namespace OmegaWare::CrashDump
 		std::atomic<int> g_iDumpsWritten = 0;
 
 		LPTOP_LEVEL_EXCEPTION_FILTER g_pfnPreviousFilter = nullptr;
+		bool g_bFilterInstalled = false;
 		void WriteDump(const void* pExceptionPointers);
 
 		void OnRecoveredFault(const void* pExceptionPointers)
@@ -98,15 +99,18 @@ namespace OmegaWare::CrashDump
 		// dump there costs hundreds of milliseconds and froze the game on every skip.
 		OmegaRenderHook::SetFaultObserver(&OnRecoveredFault);
 		g_pfnPreviousFilter = SetUnhandledExceptionFilter(&OnUnhandledException);
+		g_bFilterInstalled = true;
 	}
 
 	void Uninstall()
 	{
 		OmegaRenderHook::SetFaultObserver(nullptr);
-		if (g_pfnPreviousFilter)
-		{
-			SetUnhandledExceptionFilter(g_pfnPreviousFilter);
-			g_pfnPreviousFilter = nullptr;
-		}
+		if (!g_bFilterInstalled)
+			return;
+		g_bFilterInstalled = false;
+		const LPTOP_LEVEL_EXCEPTION_FILTER pCurrentFilter = SetUnhandledExceptionFilter(g_pfnPreviousFilter);
+		if (pCurrentFilter != &OnUnhandledException)
+			SetUnhandledExceptionFilter(pCurrentFilter);
+		g_pfnPreviousFilter = nullptr;
 	}
 }
