@@ -61,67 +61,15 @@ CI and releases run `Scripts/BuildPackage.ps1`, which builds, runs the tests and
 
 After dropping in a new Dumper-7 dump, run `FixSdk.bat`. It gives `FOptionalProperty_` placeholders their real sizes (otherwise Dumper-7's own layout asserts fail) and adds the `_parameters.hpp` includes some `_functions.cpp` files are missing. Running it twice is harmless.
 
-## Features
+## TODO Features
 ### Player
-- [x] Godmode (Set health / Block damage)
-- [x] Infinite Stamina
-- [x] Instant Melee
-- [x] No Screenshake
-- [x] No Fall Damage
-- [x] No Detection
-- [x] Instant Interaction
-- [x] Instant Bag Grab
-- [x] Instant Minigame
-- [x] Custom Display Name
-- [x] Auto Secure Thrown Bags (solo / host)
-- [x] Pick Up Through Walls (experimental, normal pickup range)
-- [x] Client Move (noclip with position sync)
 - [ ] Revive
-
-- [x] Host-only teammate options: godmode, infinite ammo, instant interaction, bring to me (No there won't griefing options so don't ask)
-
-- [x] Instant Reload
-- [x] Infinite Ammo
-- [x] No Recoil
-- [x] No Spread
-- [x] Custom fire rate
-
-### Visuals
-Every option is set separately for each category.
-- Enemies (cops, plus security cameras as an option) / Civilians
-    - [x] Bounding Boxes
-    - [x] Names
-    - [x] Distance
-    - [x] Health Bar
-    - [x] Armor Bar (enemies)
-    - [x] Skeleton
-    - [x] Outline through walls
-- Loot (Cash / Medium Money / Large Money / Jewelry / ATMs that have not been looted)
-    - [x] Short names, distance, outline, per-type filters and colors
-- Key items (Deposit Boxes / Keycards / QR Phone / USB)
-    - [x] Short names, distance, outline, per-type filters and colors
-- Objectives (Keycard readers / Drop-off zones)
-    - [x] Short names, distance, outline (readers), filters and colors
-- [x] Recolor the game's own outlines
-- [ ] Bounding boxes for items
-
-### Aimbot
-- [x] Snapping
-- [x] Silent
-- [x] Fov Circle
-- [x] Smoothing
-
-### Misc
-- [x] Config saving & loading (profiles in `Documents\Payday3-Internal\<exe>\Configs`)
 
 ### Possible Future Features
 (These are not guaranteed and only ideas that may become features)
 - [ ] Lua scripts
 - [ ] Player Teleporting (pre-set locations)
-- [X] Bag Teleporting
-- [ ] Heist Automation
 - [ ] Player Hud customisation
-- [X] More language support
 - [ ] Other packet sniffing and manipulating features
 
 ## Usage
