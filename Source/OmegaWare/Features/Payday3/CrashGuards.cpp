@@ -165,7 +165,10 @@ namespace OmegaWare
 				NoteSkip(g_uPawnSkips, "an ai action while its pawn was missing");
 				return;
 			}
-			g_clPawnGuard(pThis);
+			auto fnCall = [&] { g_clPawnGuard(pThis); };
+			OmegaRenderHook::stFault stFault;
+			if (!OmegaRenderHook::InvokeGuarded(fnCall, stFault))
+				NoteSkip(g_uPawnSkips, "an ai pawn action that faulted");
 		}
 
 		void HkTickGuard(void* pThis, float flDelta)
