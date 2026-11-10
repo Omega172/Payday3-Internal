@@ -49,7 +49,7 @@ namespace OmegaWare::Payday3
 
 		constexpr stItemInfo kNoItem{};
 
-		constexpr std::array<stItemLookup, 59> g_aItemLookup = { {
+		constexpr std::array<stItemLookup, 61> g_aItemLookup = { {
 			{ "carriedredkeycard", { "Red Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carriedbluekeycard", { "Blue Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carried", kNoItem },
@@ -83,6 +83,8 @@ namespace OmegaWare::Payday3
 			{ "rfidtagreaderred", { "Red RFID Reader", EItemType::KeycardReader, EItemCategory::KeycardReader } },
 			{ "qrreader", { "QR Reader", EItemType::KeycardReader, EItemCategory::KeycardReader } },
 			{ "depositbox", { "Deposit Box", EItemType::DepositBox, EItemCategory::KeyItem } },
+			{ "bp_safe_", { "Safe", EItemType::Safe, EItemCategory::Loot } },
+			{ "bp_locker_", { "Locker", EItemType::Safe, EItemCategory::Loot } },
 			{ "breakable_atm", { "ATM", EItemType::ATM, EItemCategory::Loot } },
 			{ "instantloot_money", { "Cash", EItemType::Cash, EItemCategory::Loot } },
 			{ "moneypile_lowvalue", { "Medium Money", EItemType::MoneyMedium, EItemCategory::Loot } },

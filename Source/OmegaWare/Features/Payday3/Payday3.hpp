@@ -79,6 +79,7 @@ namespace OmegaWare::Payday3
 		RFIDTag,
 		RareMinerals,
 		RareStone,
+		Safe,
 		Cocaine,
 		Lab,
 		SatellitePart,

@@ -6,6 +6,7 @@
 #pragma warning(disable : 4005 4369 4309 4267 4244)
 #include "SDK/BP_MethIngredientBase_classes.hpp"
 #include "SDK/BP_QRPhone_classes.hpp"
+#include "SDK/BP_Safe_classes.hpp"
 #include "SDK/BP_USBDrive_classes.hpp"
 #include "SDK/BP_WoodenCrate_classes.hpp"
 #include "SDK/BP_WoodenCrate_SatellitePart_LowValue_classes.hpp"
@@ -731,6 +732,7 @@ namespace OmegaWare
 				case Payday3::EItemType::Jewelry:
 				case Payday3::EItemType::RareMinerals:
 				case Payday3::EItemType::RareStone:
+				case Payday3::EItemType::Safe:
 				case Payday3::EItemType::Cocaine:
 				case Payday3::EItemType::SatellitePart:
 				case Payday3::EItemType::CigarBox:
@@ -1490,6 +1492,12 @@ namespace OmegaWare
 					return IsLootedInstant(pActor);
 				case Payday3::EItemType::DepositBox:
 					return pActor->IsA(SDK::ASBZMiniGameActor::StaticClass()) && static_cast<SDK::ASBZMiniGameActor*>(pActor)->bIsUnlocked;
+				case Payday3::EItemType::Safe:
+					if (pActor->IsA(SDK::ASBZMiniGameActor::StaticClass()))
+						return static_cast<SDK::ASBZMiniGameActor*>(pActor)->bIsUnlocked;
+					if (pActor->IsA(SDK::ABP_Safe_C::StaticClass()))
+						return static_cast<SDK::ABP_Safe_C*>(pActor)->Open;
+					return false;
 				case Payday3::EItemType::KeycardReader:
 					return pActor->IsA(SDK::ASBZKeycardReader::StaticClass()) && !IsUsableInteractable(static_cast<SDK::ASBZKeycardReader*>(pActor)->InteractableComponent);
 				case Payday3::EItemType::QRPhone:
@@ -2002,7 +2010,7 @@ namespace OmegaWare
 			OmegaGUI::color* m_pVipColor = nullptr;
 			stCategory m_stVip{ "vip", "", true };
 			OmegaGUI::color* m_pDropOffColor = nullptr;
-			std::array<stItemSetting, 26> m_aItems = { {
+			std::array<stItemSetting, 27> m_aItems = { {
 				{ Payday3::EItemType::Cash, "visuals.show_cash", "visuals.item_cash_color", OmegaGUI::color(0, 255, 255) },
 				{ Payday3::EItemType::MoneyMedium, "visuals.show_money_medium", "visuals.item_money_medium_color", OmegaGUI::color(120, 220, 120) },
 				{ Payday3::EItemType::MoneyLarge, "visuals.show_money_large", "visuals.item_money_large_color", OmegaGUI::color(0, 255, 0) },
@@ -2015,6 +2023,7 @@ namespace OmegaWare
 				{ Payday3::EItemType::Cocaine, "visuals.show_cocaine", "visuals.item_cocaine_color", OmegaGUI::color(240, 240, 255) },
 				{ Payday3::EItemType::ATM, "visuals.show_atms", "visuals.item_atm_color", OmegaGUI::color(80, 200, 255) },
 				{ Payday3::EItemType::DepositBox, "visuals.show_deposit_boxes", "visuals.item_deposit_box_color", OmegaGUI::color(255, 0, 0) },
+				{ Payday3::EItemType::Safe, "visuals.show_safes", "visuals.item_safes_color", OmegaGUI::color(230, 190, 60) },
 				{ Payday3::EItemType::Keycard, "visuals.show_keycards", "visuals.item_keycard_color", OmegaGUI::color(0, 0, 255) },
 				{ Payday3::EItemType::QRPhone, "visuals.show_qr_phones", "visuals.item_qr_phone_color", OmegaGUI::color(255, 255, 0) },
 				{ Payday3::EItemType::USB, "visuals.show_usbs", "visuals.item_usb_color", OmegaGUI::color(255, 128, 0) },
