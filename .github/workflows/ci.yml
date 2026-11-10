@@ -26,12 +26,39 @@ jobs:
       uses: xmake-io/github-action-setup-xmake@v1
       with:
         xmake-version: latest
+        package-cache: true
+        package-cache-key: packages-${{ matrix.build_configuration }}
+        project-path: src
+    - name: Restore compiled objects
+      id: objects
+      uses: actions/cache@v5
+      with:
+        path: |
+          src/Build/.objs
+          src/Build/.deps
+          src/Build/.gens
+          src/Build/SourceManifest.txt
+        key: objects-${{ matrix.build_configuration }}-${{ env.ImageVersion }}-${{ hashFiles('src/xmake.lua', 'src/Scripts/RestoreObjectTimes.ps1','src/Source/OmegaWare/Pch.hpp', 'src/Source/Third-Party/Dumper-7/CppSDK/SDK/Basic.hpp', 'src/Source/Third-Party/Dumper-7/CppSDK/SDK/Engine_classes.hpp', 'src/Source/Third-Party/Dumper-7/CppSDK/SDK/Starbreeze_classes.hpp') }}-${{ github.sha }}
+        restore-keys: |
+          objects-${{ matrix.build_configuration }}-${{ env.ImageVersion }}-${{ hashFiles('src/xmake.lua', 'src/Scripts/RestoreObjectTimes.ps1','src/Source/OmegaWare/Pch.hpp', 'src/Source/Third-Party/Dumper-7/CppSDK/SDK/Basic.hpp', 'src/Source/Third-Party/Dumper-7/CppSDK/SDK/Engine_classes.hpp', 'src/Source/Third-Party/Dumper-7/CppSDK/SDK/Starbreeze_classes.hpp') }}-
+    - name: Restore source times for the cached objects
+      shell: pwsh
+      run: ./src/Scripts/RestoreObjectTimes.ps1 -Action Restore
     - name: Build, test and package
       timeout-minutes: 75
       shell: pwsh
       run: |
         & ./src/Scripts/BuildPackage.ps1 -Modes ${{ matrix.build_configuration }} -Out packages
+        if ($LASTEXITCODE -ne 0 -and '${{ steps.objects.outputs.cache-matched-key }}' -ne '') {
+          Write-Host "the build failed with cached objects, retrying from scratch"
+          Remove-Item -Recurse -Force src/Build/.objs, src/Build/.deps, src/Build/.gens, src/Build/SourceManifest.txt -ErrorAction SilentlyContinue
+          & ./src/Scripts/RestoreObjectTimes.ps1 -Action Restore
+          & ./src/Scripts/BuildPackage.ps1 -Modes ${{ matrix.build_configuration }} -Out packages
+        }
         exit $LASTEXITCODE
+    - name: Record the source hashes for the next run
+      shell: pwsh
+      run: ./src/Scripts/RestoreObjectTimes.ps1 -Action Save
     - name: Upload build artifacts
       uses: actions/upload-artifact@v6
       with:
