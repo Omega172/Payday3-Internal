@@ -683,7 +683,7 @@ namespace OmegaWare
 				pSbzCheat->ListenToRewardLogs();
 				pSbzCheat->GrabInstantLoot();
 				BankGeneratedBags(pSbzCheat);
-				SecureManagerBags();
+				SecureManagerBags(pSbzCheat);
 				pSbzCheat->SecureAllAvailableLoot(true, true);
 				LogManagerBags("after the secure all request");
 				m_iOverlapTries = 0;
@@ -741,7 +741,27 @@ namespace OmegaWare
 				LogInfo("spawner: the bag manager holds {} bags and {} are secured {}", aBags.Num(), iSecured, strWhen);
 			}
 
-			static void SecureManagerBags()
+			static std::unordered_map<SDK::USBZBagType*, SDK::USBZBagType*> BuildWashMap()
+			{
+				std::unordered_map<SDK::USBZBagType*, SDK::USBZBagType*> mapWash;
+				Payday3::ForEachLevelActor(Unreal::GetWorld(), [&](SDK::AActor* pActor) {
+					if (!Payday3::IsAliveActor(pActor) || !pActor->IsA(SDK::ASBZLootProcessorBase::StaticClass()))
+						return;
+					const SDK::TMap<SDK::USBZBagType*, SDK::USBZBagType*>& rTypes = static_cast<SDK::ASBZLootProcessorBase*>(pActor)->BagTypeMap;
+					for (int iType = 0; iType < rTypes.NumAllocated(); ++iType)
+					{
+						if (!rTypes.IsValidIndex(iType))
+							continue;
+						SDK::USBZBagType* pFrom = rTypes[iType].Key();
+						SDK::USBZBagType* pTo = rTypes[iType].Value();
+						if (Payday3::IsAlive(pFrom) && Payday3::IsAlive(pTo) && pFrom != pTo)
+							mapWash[pFrom] = pTo;
+					}
+				});
+				return mapWash;
+			}
+
+			static void SecureManagerBags(SDK::USBZCheatManager* pCheat)
 			{
 				SDK::USBZBagManager* pManager = SDK::USBZBagManager::Get(Unreal::GetWorld());
 				if (!Payday3::IsAlive(pManager))
@@ -750,6 +770,30 @@ namespace OmegaWare
 					return;
 				}
 				LogManagerBags("before securing");
+				const std::unordered_map<SDK::USBZBagType*, SDK::USBZBagType*> mapWash = BuildWashMap();
+				std::unordered_map<std::string, std::pair<SDK::FName, int>> mapWashed;
+				std::vector<std::int32_t> aWashIds;
+				for (int iBag = 0; iBag < pManager->Bags.Num(); ++iBag)
+				{
+					const SDK::FSBZBagPersistentData& rBag = pManager->Bags[iBag];
+					if (rBag.Secured)
+						continue;
+					const auto itWash = mapWash.find(rBag.Handle.BagType);
+					if (itWash == mapWash.end())
+						continue;
+					aWashIds.push_back(rBag.Handle.Id);
+					auto& rEntry = mapWashed[itWash->second->GetName()];
+					rEntry.first = itWash->second->Name;
+					++rEntry.second;
+				}
+				for (const std::int32_t iId : aWashIds)
+					pManager->Multicast_RemoveBag(iId);
+				if (Payday3::IsAlive(pCheat))
+					for (const auto& [strName, rEntry] : mapWashed)
+				{
+					pCheat->SecureBag(rEntry.second, rEntry.first);
+					LogInfo("spawner: washed {} unsecured bags into {} x {} through the loot processor map", rEntry.second, rEntry.second, strName);
+				}
 				std::vector<SDK::FSBZBagHandle> aHandles;
 				const SDK::TArray<SDK::FSBZBagPersistentData>& aBags = pManager->Bags;
 				for (int iBag = 0; iBag < aBags.Num(); ++iBag)
@@ -769,9 +813,12 @@ namespace OmegaWare
 			static void BankGeneratedBags(SDK::USBZCheatManager* pCheat)
 			{
 				std::unordered_map<std::string, std::pair<SDK::FName, int>> mapBags;
+				const std::unordered_map<SDK::USBZBagType*, SDK::USBZBagType*> mapWash = BuildWashMap();
 				auto fnAdd = [&](SDK::USBZBagType* pType, int iCount) {
 					if (!Payday3::IsAlive(pType) || iCount <= 0)
 						return;
+					if (const auto itWash = mapWash.find(pType); itWash != mapWash.end())
+						pType = itWash->second;
 					auto& rEntry = mapBags[pType->GetName()];
 					rEntry.first = pType->Name;
 					rEntry.second += iCount;
