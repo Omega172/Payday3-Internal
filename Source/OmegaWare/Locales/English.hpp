@@ -411,6 +411,7 @@ inline const OmegaLocalization::stLocaleData g_stLocaleEnglish{
 		{ "spawner.wait_input", "finish heist: waiting for the intro to end" },
 		{ "spawner.wait_scan", "finish heist: waiting for the escape zone and objectives to load" },
 		{ "spawner.wait_settle", "finish heist: letting the mission settle, seconds left:" },
+		{ "spawner.wait_paused", "finish heist: unpause the game first" },
 		{ "spawner.allow_clients", "let other OmegaWare users spawn" },
 		{ "spawner.allow_clients_hint", "host only: accepts spawn requests from players detected as OmegaWare users; clients need another detected OmegaWare user in the lobby to send requests" },
 		{ "feature.profiler", "profiler" },

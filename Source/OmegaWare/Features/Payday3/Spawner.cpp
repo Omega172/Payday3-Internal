@@ -261,7 +261,7 @@ namespace OmegaWare
 					}
 					else
 					{
-						static constexpr std::array<std::string_view, 7> aKeys = { "", "spawner.wait_world", "spawner.wait_match", "spawner.wait_pawn", "spawner.wait_input", "spawner.wait_scan", "spawner.wait_settle" };
+						static constexpr std::array<std::string_view, 8> aKeys = { "", "spawner.wait_world", "spawner.wait_match", "spawner.wait_pawn", "spawner.wait_input", "spawner.wait_scan", "spawner.wait_settle", "spawner.wait_paused" };
 						std::string strWait(OmegaLocalization::Get(aKeys[static_cast<std::size_t>(eWait)]));
 						if (eWait == EWait::Settling)
 							strWait += std::format(" {}", m_iSettleLeft.load());
@@ -576,6 +576,7 @@ namespace OmegaWare
 				InputLocked,
 				NoScan,
 				Settling,
+				Paused,
 			};
 
 			void UpdateReadiness(bool bScan)
@@ -611,7 +612,7 @@ namespace OmegaWare
 						m_iSettleLeft = static_cast<int>(std::chrono::ceil<std::chrono::seconds>(kSettleTime - (tpNow - m_tpPlayable)).count());
 					}
 				}
-				else
+				else if (eWait != EWait::Paused)
 					m_bPlayable = false;
 				if (eWait != m_eWait.load())
 					LogInfo("spawner: finish heist readiness is now {}", static_cast<int>(eWait));
@@ -624,6 +625,8 @@ namespace OmegaWare
 				SDK::AGameStateBase* pGameState = Unreal::GetGameState();
 				if (!pWorld || !Payday3::IsAlive(pGameState))
 					return EWait::NoWorld;
+				if (SDK::UGameplayStatics::IsGamePaused(pWorld))
+					return EWait::Paused;
 				if (!pGameState->HasMatchStarted())
 					return EWait::MatchNotStarted;
 				SDK::APawn* pPawn = Unreal::GetLocalPawn();
