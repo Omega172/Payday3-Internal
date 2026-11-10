@@ -730,6 +730,7 @@ namespace OmegaWare
 				case Payday3::EItemType::MoneyLarge:
 				case Payday3::EItemType::Jewelry:
 				case Payday3::EItemType::RareMinerals:
+				case Payday3::EItemType::RareStone:
 				case Payday3::EItemType::Cocaine:
 				case Payday3::EItemType::SatellitePart:
 				case Payday3::EItemType::CigarBox:
@@ -1467,6 +1468,7 @@ namespace OmegaWare
 				case Payday3::EItemType::RFIDTag:
 					return pActor->bHidden;
 				case Payday3::EItemType::RareMinerals:
+				case Payday3::EItemType::RareStone:
 				case Payday3::EItemType::SatellitePart:
 				case Payday3::EItemType::CigarBox:
 					return pActor->bHidden || !IsUsableInteractable(static_cast<SDK::ASBZSingleBagGenerator*>(pActor)->Interactable);
@@ -2000,12 +2002,13 @@ namespace OmegaWare
 			OmegaGUI::color* m_pVipColor = nullptr;
 			stCategory m_stVip{ "vip", "", true };
 			OmegaGUI::color* m_pDropOffColor = nullptr;
-			std::array<stItemSetting, 25> m_aItems = { {
+			std::array<stItemSetting, 26> m_aItems = { {
 				{ Payday3::EItemType::Cash, "visuals.show_cash", "visuals.item_cash_color", OmegaGUI::color(0, 255, 255) },
 				{ Payday3::EItemType::MoneyMedium, "visuals.show_money_medium", "visuals.item_money_medium_color", OmegaGUI::color(120, 220, 120) },
 				{ Payday3::EItemType::MoneyLarge, "visuals.show_money_large", "visuals.item_money_large_color", OmegaGUI::color(0, 255, 0) },
 				{ Payday3::EItemType::Jewelry, "visuals.show_jewelry", "visuals.item_jewelry_color", OmegaGUI::color(255, 0, 255) },
 				{ Payday3::EItemType::RareMinerals, "visuals.show_rare_minerals", "visuals.item_rare_minerals_color", OmegaGUI::color(255, 90, 200) },
+				{ Payday3::EItemType::RareStone, "visuals.show_rare_stones", "visuals.item_rare_stones_color", OmegaGUI::color(255, 150, 90) },
 				{ Payday3::EItemType::Container, "visuals.show_containers", "visuals.item_containers_color", OmegaGUI::color(200, 170, 110) },
 				{ Payday3::EItemType::CigarBox, "visuals.show_cigar_boxes", "visuals.item_cigar_boxes_color", OmegaGUI::color(190, 120, 60) },
 				{ Payday3::EItemType::SatellitePart, "visuals.show_satellite_parts", "visuals.item_satellite_parts_color", OmegaGUI::color(120, 200, 255) },

@@ -49,7 +49,7 @@ namespace OmegaWare::Payday3
 
 		constexpr stItemInfo kNoItem{};
 
-		constexpr std::array<stItemLookup, 57> g_aItemLookup = { {
+		constexpr std::array<stItemLookup, 59> g_aItemLookup = { {
 			{ "carriedredkeycard", { "Red Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carriedbluekeycard", { "Blue Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carried", kNoItem },
@@ -71,6 +71,8 @@ namespace OmegaWare::Payday3
 			{ "rfidtagred", { "Red RFID Tag", EItemType::RFIDTag, EItemCategory::KeyItem } },
 			{ "rfidtagblue", { "Blue RFID Tag", EItemType::RFIDTag, EItemCategory::KeyItem } },
 			{ "interactablerareminerals", { "Rare Minerals", EItemType::RareMinerals, EItemCategory::Loot } },
+			{ "interactable_rarestone", { "Rare Stone", EItemType::RareStone, EItemCategory::Loot } },
+			{ "interactableopal", { "Rare Stone", EItemType::RareStone, EItemCategory::Loot } },
 			{ "instantloot_cocaine", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
 			{ "interactablecocaine", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
 			{ "cocainepile", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
