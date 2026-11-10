@@ -25,6 +25,28 @@ namespace OmegaWare::CrashDump
 		MiniDumpWriteDumpFn g_pfnWriteDump = nullptr;
 		std::atomic<int> g_iDumpsWritten = 0;
 
+		LPTOP_LEVEL_EXCEPTION_FILTER g_pfnPreviousFilter = nullptr;
+		bool g_bFilterInstalled = false;
+		void WriteDump(const void* pExceptionPointers);
+
+		void OnRecoveredFault(const void* pExceptionPointers)
+		{
+			const auto* pPointers = static_cast<const EXCEPTION_POINTERS*>(const_cast<void*>(pExceptionPointers));
+			if (!pPointers || !pPointers->ExceptionRecord)
+				return;
+			LogWarning("recovered from fault 0x{:08X} at {} (guarded call, no dump written)",
+				pPointers->ExceptionRecord->ExceptionCode, pPointers->ExceptionRecord->ExceptionAddress);
+		}
+
+		LONG WINAPI OnUnhandledException(EXCEPTION_POINTERS* pPointers)
+		{
+			if (pPointers)
+				WriteDump(pPointers);
+			if (g_pfnPreviousFilter)
+				return g_pfnPreviousFilter(pPointers);
+			return EXCEPTION_CONTINUE_SEARCH;
+		}
+
 		void WriteDump(const void* pExceptionPointers)
 		{
 			std::scoped_lock lckDump(g_mtxDump);
@@ -72,11 +94,23 @@ namespace OmegaWare::CrashDump
 			LogWarning("dbghelp.dll is unavailable, crash dumps are disabled");
 			return;
 		}
-		OmegaRenderHook::SetFaultObserver(&WriteDump);
+
+		// Guarded calls recover from their own faults, so they only get a log line: writing a
+		// dump there costs hundreds of milliseconds and froze the game on every skip.
+		OmegaRenderHook::SetFaultObserver(&OnRecoveredFault);
+		g_pfnPreviousFilter = SetUnhandledExceptionFilter(&OnUnhandledException);
+		g_bFilterInstalled = true;
 	}
 
 	void Uninstall()
 	{
 		OmegaRenderHook::SetFaultObserver(nullptr);
+		if (!g_bFilterInstalled)
+			return;
+		g_bFilterInstalled = false;
+		const LPTOP_LEVEL_EXCEPTION_FILTER pCurrentFilter = SetUnhandledExceptionFilter(g_pfnPreviousFilter);
+		if (pCurrentFilter != &OnUnhandledException)
+			SetUnhandledExceptionFilter(pCurrentFilter);
+		g_pfnPreviousFilter = nullptr;
 	}
 }

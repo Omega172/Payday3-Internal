@@ -487,6 +487,34 @@ namespace
 		std::filesystem::remove_all(pathLogs, errCode);
 	}
 
+	EXCEPTION_RECORD g_stCapturedRecord{};
+	CONTEXT g_stCapturedContext{};
+	EXCEPTION_POINTERS g_stCapturedPointers{};
+
+	LONG CaptureException(EXCEPTION_POINTERS* pPointers)
+	{
+		g_stCapturedRecord = *pPointers->ExceptionRecord;
+		g_stCapturedContext = *pPointers->ContextRecord;
+		g_stCapturedPointers = { &g_stCapturedRecord, &g_stCapturedContext };
+		return EXCEPTION_EXECUTE_HANDLER;
+	}
+
+	__declspec(noinline) void WriteToNull()
+	{
+		*static_cast<volatile int*>(nullptr) = 1;
+	}
+
+	void RaiseAndCapture()
+	{
+		__try
+		{
+			WriteToNull();
+		}
+		__except (CaptureException(GetExceptionInformation()))
+		{
+		}
+	}
+
 	void TestCrashDump()
 	{
 		std::puts("crash dumps");
@@ -509,13 +537,27 @@ namespace
 			return !OmegaRenderHook::InvokeGuarded(fnFault, stFault) && stFault.uCode == EXCEPTION_ACCESS_VIOLATION;
 		};
 
+		const LPTOP_LEVEL_EXCEPTION_FILTER pFilterBefore = SetUnhandledExceptionFilter(nullptr);
+		SetUnhandledExceptionFilter(pFilterBefore);
 		OmegaWare::CrashDump::Install(pathDumps);
 		Check("guarded fault is caught while dumps are enabled", Fault());
-		const std::size_t uAfterFault = CountDumps();
-		Check("a fault writes one crash dump", uAfterFault == 1, std::format("{} dumps", uAfterFault));
+		Check("a recovered fault writes no crash dump", CountDumps() == 0, std::format("{} dumps", CountDumps()));
+		const LPTOP_LEVEL_EXCEPTION_FILTER pFilter = SetUnhandledExceptionFilter(nullptr);
+		SetUnhandledExceptionFilter(pFilter);
+		Check("an unhandled exception filter is installed", pFilter != nullptr && pFilter != pFilterBefore);
+		if (pFilter)
+		{
+			RaiseAndCapture();
+			pFilter(&g_stCapturedPointers);
+		}
+		const std::size_t uAfterCrash = CountDumps();
+		Check("an unhandled exception writes one crash dump", uAfterCrash == 1, std::format("{} dumps", uAfterCrash));
 		OmegaWare::CrashDump::Uninstall();
+		const LPTOP_LEVEL_EXCEPTION_FILTER pFilterAfter = SetUnhandledExceptionFilter(nullptr);
+		SetUnhandledExceptionFilter(pFilterAfter);
+		Check("the previous unhandled exception filter is restored", pFilterAfter == pFilterBefore);
 		Check("guarded fault is caught after dumps are disabled", Fault());
-		Check("no dump is written after uninstall", CountDumps() == uAfterFault);
+		Check("no dump is written after uninstall", CountDumps() == uAfterCrash);
 		std::filesystem::remove_all(pathDumps, ecRemove);
 	}
 
