@@ -2,7 +2,9 @@
 
 #if OMEGAWARE_ENGINE_UNREAL
 
+#include "SDK/BP_ConnectedCableBox_classes.hpp"
 #include "SDK/G_Cookie_Scripting_classes.hpp"
+#include "SDK/G_NightClub_Scripting_classes.hpp"
 #include "SDK/Starbreeze_parameters.hpp"
 
 #include "Config/Config.hpp"
@@ -28,6 +30,7 @@ namespace OmegaWare
 	{
 		constexpr std::chrono::milliseconds kRefreshInterval{ 1000 };
 		constexpr std::chrono::milliseconds kUpdateInterval{ 100 };
+		constexpr int kDisableAllWires = 99;
 				constexpr int kClearKey = 10;
 		constexpr int kEnterKey = 11;
 
@@ -76,6 +79,7 @@ namespace OmegaWare
 			SDK::ASBZConnectedCableBox* pBox = nullptr;
 			std::int32_t iIndex = -1;
 			bool bRestricted = false;
+			std::int32_t iLoggedState = -9999;
 		};
 
 		[[nodiscard]] int CorrectWire(const SDK::ASBZConnectedCableBox* pBox)
@@ -193,6 +197,19 @@ namespace OmegaWare
 				return bScript;
 			}
 
+			[[nodiscard]] bool IsClubScriptClass(const SDK::UClass* pClass)
+			{
+				if (const auto itKnown = m_mapClubScriptClasses.find(pClass); itKnown != m_mapClubScriptClasses.end())
+					return itKnown->second;
+				if (m_mapClubScriptClasses.size() > 1024)
+					m_mapClubScriptClasses.clear();
+				bool bScript = false;
+				for (const SDK::UStruct* pStruct = pClass; pStruct && !bScript; pStruct = pStruct->SuperStruct)
+					bScript = pStruct->Name.ToString() == "G_NightClub_Scripting_C";
+				m_mapClubScriptClasses.emplace(pClass, bScript);
+				return bScript;
+			}
+
 			void Refresh()
 			{
 				std::vector<SDK::ASBZCookingStation*> aOldStations;
@@ -203,6 +220,7 @@ namespace OmegaWare
 				std::vector<SDK::ASBZCookingStation*> aStations;
 				std::vector<SDK::ASBZConnectedCableBox*> aWireBoxes;
 				SDK::AG_Cookie_Scripting_C* pScript = nullptr;
+				SDK::AG_NightClub_Scripting_C* pClub = nullptr;
 				Payday3::ForEachLevelActor(Unreal::GetWorld(), [&](SDK::AActor* pActor) {
 					if (!Payday3::IsAliveActor(pActor))
 						return;
@@ -214,6 +232,8 @@ namespace OmegaWare
 						aWireBoxes.push_back(static_cast<SDK::ASBZConnectedCableBox*>(pActor));
 					else if (*m_pMethLab && pActor->Class && IsScriptClass(pActor->Class))
 						pScript = static_cast<SDK::AG_Cookie_Scripting_C*>(pActor);
+					else if (*m_pWireSwitch && pActor->Class && IsClubScriptClass(pActor->Class))
+						pClub = static_cast<SDK::AG_NightClub_Scripting_C*>(pActor);
 				});
 				for (SDK::ASBZCookingStation* pStation : aStations)
 				{
@@ -233,6 +253,7 @@ namespace OmegaWare
 				m_aKeypads = std::move(aKeypads);
 				m_aStations = std::move(aKept);
 				m_pScript = pScript;
+				m_pClubScript = pClub;
 				m_tpNextRefresh = std::chrono::steady_clock::now() + kRefreshInterval;
 			}
 
@@ -291,7 +312,22 @@ namespace OmegaWare
 				{
 					if (!Payday3::IsSameObject(rBox.pBox, rBox.iIndex))
 						continue;
-					const int iCorrect = CorrectWire(rBox.pBox);
+					int iCorrect = CorrectWire(rBox.pBox);
+					const SDK::ASBZConnectedCableBox* pCorrectOne = Payday3::IsAlive(m_pClubScript) ? m_pClubScript->CorrectCableBox1 : nullptr;
+					const SDK::ASBZConnectedCableBox* pCorrectTwo = Payday3::IsAlive(m_pClubScript) ? m_pClubScript->CorrectCableBox2 : nullptr;
+					const bool bScriptKnowsBoxes = Payday3::IsAlive(pCorrectOne) || Payday3::IsAlive(pCorrectTwo);
+					const bool bScriptCorrect = rBox.pBox == pCorrectOne || rBox.pBox == pCorrectTwo;
+					if (bScriptKnowsBoxes && !bScriptCorrect && !rBox.pBox->bIsCompleted && !rBox.pBox->bIsDoorOpen)
+						iCorrect = kDisableAllWires;
+					const std::int32_t iState = iCorrect * 1000 + rBox.pBox->CurrentSequenceIndex * 10 + (rBox.pBox->bIsCompleted ? 1 : 0) + (rBox.pBox->bIsDoorOpen ? 2 : 0) + rBox.pBox->FailCounter * 100000;
+					if (iState != rBox.iLoggedState)
+					{
+						rBox.iLoggedState = iState;
+						std::string strSequence;
+						for (int iStep = 0; iStep < rBox.pBox->CurrentCorrectSequence.Num(); ++iStep)
+							strSequence += std::format("{} ", rBox.pBox->CurrentCorrectSequence[iStep]);
+						LogInfo("wire helper: {} ({}) correct wire {}, step {}, sequence [{}], color index {}, wires {}, completed {}, door open {}, fails {}, script knows boxes {}, script picked this box {}", rBox.pBox->GetName(), rBox.pBox->Class ? rBox.pBox->Class->GetName() : std::string(), iCorrect, rBox.pBox->CurrentSequenceIndex, strSequence, rBox.pBox->CurrentCorrectColorIndex, rBox.pBox->CableInteractables.Num(), rBox.pBox->bIsCompleted, rBox.pBox->bIsDoorOpen, static_cast<int>(rBox.pBox->FailCounter), bScriptKnowsBoxes, bScriptCorrect);
+					}
 					if (iCorrect >= 0)
 						SetWiresEnabled(rBox.pBox, iCorrect);
 					else if (rBox.bRestricted && !rBox.pBox->bIsCompleted && !rBox.pBox->bIsDoorOpen)
@@ -333,6 +369,8 @@ namespace OmegaWare
 			std::vector<stStation> m_aStations;
 			std::vector<stWireBox> m_aWireBoxes;
 			SDK::AG_Cookie_Scripting_C* m_pScript = nullptr;
+			SDK::AG_NightClub_Scripting_C* m_pClubScript = nullptr;
+			std::unordered_map<const SDK::UClass*, bool> m_mapClubScriptClasses;
 			std::unordered_map<const SDK::UClass*, bool> m_mapScriptClasses;
 		};
 
