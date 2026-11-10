@@ -49,7 +49,7 @@ namespace OmegaWare::Payday3
 
 		constexpr stItemInfo kNoItem{};
 
-		constexpr std::array<stItemLookup, 66> g_aItemLookup = { {
+		constexpr std::array<stItemLookup, 70> g_aItemLookup = { {
 			{ "carriedredkeycard", { "Red Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carriedbluekeycard", { "Blue Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carried", kNoItem },
@@ -78,6 +78,10 @@ namespace OmegaWare::Payday3
 			{ "interactablepainting", { "Paintings", EItemType::Paintings, EItemCategory::Loot } },
 			{ "uv_painting", { "Paintings", EItemType::Paintings, EItemCategory::Loot } },
 			{ "bp_painting_c", { "Paintings", EItemType::Paintings, EItemCategory::Loot } },
+			{ "baggablecatfigure", { "Cat Figure", EItemType::CatFigure, EItemCategory::Loot } },
+			{ "baggablerifles", { "Rifles", EItemType::Rifles, EItemCategory::Loot } },
+			{ "baggableteddymoo", { "Teddy", EItemType::Teddy, EItemCategory::Loot } },
+			{ "chus_evidence_c", { "Evidence", EItemType::Evidence, EItemCategory::Loot } },
 			{ "instantloot_cocaine", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
 			{ "interactablecocaine", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
 			{ "cocainepile", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
