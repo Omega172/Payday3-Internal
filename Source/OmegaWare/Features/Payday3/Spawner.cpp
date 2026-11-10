@@ -49,6 +49,8 @@ namespace OmegaWare
 		constexpr std::chrono::milliseconds kShootInterval{ 250 };
 		constexpr std::chrono::milliseconds kFinishDelay{ 1500 };
 		constexpr std::chrono::seconds kSettleTime{ 10 };
+		constexpr std::chrono::milliseconds kOverlapRetry{ 500 };
+		constexpr int kMaxOverlapTries = 12;
 		constexpr std::chrono::milliseconds kReadyPoll{ 250 };
 		constexpr std::chrono::milliseconds kFinishCheckDelay{ 2500 };
 		constexpr std::chrono::milliseconds kRemoteInterval{ 500 };
@@ -147,7 +149,13 @@ namespace OmegaWare
 				m_hMissionResult = Unreal::OnFunction<SDK::Params::SBZMissionState_Multicast_MissionResult>("Starbreeze.SBZMissionState.Multicast_MissionResult",
 					[](SDK::UObject*, SDK::Params::SBZMissionState_Multicast_MissionResult& rParams, bool&) {
 						const SDK::FSBZEndMissionResultData& rResult = rParams.InMissionResultData;
-						LogInfo("spawner: mission result: result {}, bags secured {} of {}, objectives {}, milestones {}, players {}", static_cast<int>(rResult.MissionResult), rResult.SecuredBags.Num(), rResult.BagTotal, rResult.ExperienceObjectiveArray.Num(), rResult.MilestoneArray.Num(), rResult.PlayerResultArray.Num());
+						int iCustody = 0;
+						for (int iPlayer = 0; iPlayer < rResult.PlayerResultArray.Num(); ++iPlayer)
+							if (rResult.PlayerResultArray[iPlayer].bHasBeenInCustody)
+								++iCustody;
+						LogInfo("spawner: mission result: result {}, bags secured {} of {}, objectives {}, milestones {}, players {}, in custody {}, instant loot entries {}", static_cast<int>(rResult.MissionResult), rResult.SecuredBags.Num(), rResult.BagTotal, rResult.ExperienceObjectiveArray.Num(), rResult.MilestoneArray.Num(), rResult.PlayerResultArray.Num(), iCustody, rResult.InstantLootArray.Num());
+						for (int iLoot = 0; iLoot < rResult.InstantLootArray.Num(); ++iLoot)
+							LogInfo("spawner: result instant loot {} x {}", rResult.InstantLootArray[iLoot].Name.ToString(), rResult.InstantLootArray[iLoot].Counter);
 					});
 				return true;
 			}
@@ -675,6 +683,10 @@ namespace OmegaWare
 				SecureManagerBags();
 				pSbzCheat->SecureAllAvailableLoot(true, true);
 				LogManagerBags("after the secure all request");
+				m_iOverlapTries = 0;
+				s_iVolumeIndex = 0;
+				if (SDK::UWorld* pWorld = Unreal::GetWorld())
+					LogInfo("spawner: finishing the heist on {}", pWorld->GetName());
 				m_flEscapeSeconds = MovePlayersToEscape();
 				m_tpFinishAt = std::chrono::steady_clock::now() + kFinishDelay;
 				m_bFinishPending = true;
@@ -683,17 +695,14 @@ namespace OmegaWare
 
 			static float MovePlayersToEscape()
 			{
-				SDK::ASBZPlayerEscapeVolume* pVolume = nullptr;
-				Payday3::ForEachLevelActor(Unreal::GetWorld(), [&](SDK::AActor* pActor) {
-					if (!pVolume && Payday3::IsAliveActor(pActor) && pActor->IsA(SDK::ASBZPlayerEscapeVolume::StaticClass()))
-						pVolume = static_cast<SDK::ASBZPlayerEscapeVolume*>(pActor);
-				});
+				SDK::ASBZPlayerEscapeVolume* pVolume = FindEscapeVolume();
 				SDK::AGameStateBase* pGameState = Unreal::GetGameState();
 				if (!pVolume || !Payday3::IsAlive(pGameState))
 				{
 					LogWarning("spawner: no escape volume was found, players are not moved so they may count as in custody");
 					return 0.f;
 				}
+				pVolume->SetVolumeEnabled(true);
 				const SDK::FVector vecCenter = pVolume->K2_GetActorLocation();
 				SDK::APawn* pLocalPawn = Unreal::GetLocalPawn();
 				int iSlot = 0;
@@ -792,8 +801,43 @@ namespace OmegaWare
 				LogInfo("spawner: banked {} bags from {} bag types that had not been picked up yet", iBanked, mapBags.size());
 			}
 
+			static SDK::ASBZPlayerEscapeVolume* FindEscapeVolume(int* piCount = nullptr)
+			{
+				std::vector<SDK::ASBZPlayerEscapeVolume*> aVolumes;
+				Payday3::ForEachLevelActor(Unreal::GetWorld(), [&](SDK::AActor* pActor) {
+					if (Payday3::IsAliveActor(pActor) && pActor->IsA(SDK::ASBZPlayerEscapeVolume::StaticClass()))
+						aVolumes.push_back(static_cast<SDK::ASBZPlayerEscapeVolume*>(pActor));
+				});
+				if (piCount)
+					*piCount = static_cast<int>(aVolumes.size());
+				return aVolumes.empty() ? nullptr : aVolumes[static_cast<std::size_t>(s_iVolumeIndex) % aVolumes.size()];
+			}
+
+			static void LogEscapeStatus(std::string_view strWhen)
+			{
+				int iCount = 0;
+				SDK::ASBZPlayerEscapeVolume* pVolume = FindEscapeVolume(&iCount);
+				if (!pVolume)
+				{
+					LogWarning("spawner: no escape volume {}", strWhen);
+					return;
+				}
+				const SDK::FVector vecAt = pVolume->K2_GetActorLocation();
+				LogInfo("spawner: escape volume {} ({} of {}, {} at {:.0f} {:.0f} {:.0f}): {} players overlapping, all players inside {}, hidden {}", strWhen, s_iVolumeIndex % iCount + 1, iCount, pVolume->GetName(), vecAt.X, vecAt.Y, vecAt.Z, pVolume->GetCurrentNumOverlappingPlayers(), pVolume->AreAllPlayerPawnsInside(), static_cast<bool>(pVolume->bHidden));
+			}
+
 			void FinishHeist()
 			{
+				LogEscapeStatus("when the finish is requested");
+				if (SDK::ASBZPlayerEscapeVolume* pVolume = FindEscapeVolume(); pVolume && (pVolume->GetCurrentNumOverlappingPlayers() < m_iFinishPlayers || !pVolume->AreAllPlayerPawnsInside()) && m_iOverlapTries < kMaxOverlapTries)
+				{
+					++m_iOverlapTries;
+					++s_iVolumeIndex;
+					MovePlayersToEscape();
+					m_tpFinishAt = std::chrono::steady_clock::now() + kOverlapRetry;
+					m_bFinishPending = true;
+					return;
+				}
 				SDK::APlayerController* pController = Unreal::GetPlayerController();
 				SDK::UCheatManager* pCheat = Payday3::IsAlive(pController) ? pController->CheatManager : nullptr;
 				if (!Payday3::IsAlive(pCheat) || !pCheat->IsA(SDK::USBZCheatManager::StaticClass()))
@@ -817,6 +861,23 @@ namespace OmegaWare
 					return;
 				}
 				LogWarning("spawner: the game ignored the cheat manager request, calling its game state machine {} directly", static_cast<const void*>(pMachine));
+				LogEscapeStatus("before the fallback");
+				if (SDK::ASBZPlayerEscapeVolume* pVolume = FindEscapeVolume())
+				{
+					const bool bInside = pVolume->GetCurrentNumOverlappingPlayers() >= m_iFinishPlayers && pVolume->AreAllPlayerPawnsInside();
+					if (!bInside)
+					{
+						++s_iVolumeIndex;
+						MovePlayersToEscape();
+					}
+					if (!bInside && m_iOverlapTries < kMaxOverlapTries)
+					{
+						++m_iOverlapTries;
+						m_bFinishCheck = true;
+						m_tpFinishCheck = std::chrono::steady_clock::now() + kOverlapRetry;
+						return;
+					}
+				}
 				SDK::FSBZEndMissionRequestData stRequest{};
 				stRequest.MissionResult = SDK::ESBZEndMissionResult::Success;
 				stRequest.OutroVariation = 0;
@@ -882,6 +943,8 @@ namespace OmegaWare
 			std::chrono::steady_clock::time_point m_tpNextReadyPoll;
 			bool m_bFinishPending = false;
 			float m_flEscapeSeconds = 0.f;
+			int m_iOverlapTries = 0;
+			static inline int s_iVolumeIndex = 0;
 			bool m_bFinishCheck = false;
 			std::atomic<bool> m_bMissionEndSeen = false;
 			std::chrono::steady_clock::time_point m_tpFinishCheck;
