@@ -1923,6 +1923,12 @@ namespace OmegaWare
 						std::string strMisc;
 						if (rItem.eType == Payday3::EItemType::Misc && pActor->Class)
 							strMisc = pActor->Class->GetName();
+						else if (rItem.eType == Payday3::EItemType::Paintings && pActor->IsA(SDK::ASBZSingleBagGenerator::StaticClass()))
+						{
+							SDK::USBZBagType* pBagType = static_cast<SDK::ASBZSingleBagGenerator*>(pActor)->BagType;
+							if (Payday3::IsAlive(pBagType) && pBagType->GetName().find("CryptoWallet") != std::string::npos)
+								strMisc = EspText("Crypto Wallet");
+						}
 						pSnapshot->aThings.push_back({ pActor, pActor->Class, EThingKind::Item, rItem, std::move(strMisc) });
 					}
 				});

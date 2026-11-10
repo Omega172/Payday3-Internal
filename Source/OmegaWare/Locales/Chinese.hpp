@@ -321,6 +321,7 @@ inline const OmegaLocalization::stLocaleData g_stLocaleChinese{
 		{ "esp.sentry_gun", "哨戒炮" },
 		{ "esp.drone", "无人机" },
 		{ "esp.vip", "VIP" },
+		{ "esp.crypto_wallet", "加密钱包" },
 		{ "esp.camera", "摄像头" },
 		{ "esp.camera_off", "摄像头（关闭）" },
 		{ "esp.drop_off", "交付点" },

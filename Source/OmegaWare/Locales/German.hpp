@@ -309,6 +309,7 @@ inline const OmegaLocalization::stLocaleData g_stLocaleGerman{
 		{ "esp.sentry_gun", "Selbstschussanlage" },
 		{ "esp.drone", "Drohne" },
 		{ "esp.vip", "VIP" },
+		{ "esp.crypto_wallet", "Krypto-Wallet" },
 		{ "esp.camera", "Kamera" },
 		{ "esp.camera_off", "Kamera (aus)" },
 		{ "esp.drop_off", "Abgabe" },

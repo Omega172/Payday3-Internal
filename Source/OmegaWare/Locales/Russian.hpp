@@ -310,6 +310,7 @@ inline const OmegaLocalization::stLocaleData g_stLocaleRussian{
 		{ "esp.sentry_gun", "Турель" },
 		{ "esp.drone", "Дрон" },
 		{ "esp.vip", "VIP" },
+		{ "esp.crypto_wallet", "Криптокошелёк" },
 		{ "esp.camera", "Камера" },
 		{ "esp.camera_off", "Камера (выкл.)" },
 		{ "esp.drop_off", "Точка сдачи" },

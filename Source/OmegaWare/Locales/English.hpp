@@ -321,6 +321,7 @@ inline const OmegaLocalization::stLocaleData g_stLocaleEnglish{
 		{ "esp.sentry_gun", "Sentry Gun" },
 		{ "esp.drone", "Drone" },
 		{ "esp.vip", "VIP" },
+		{ "esp.crypto_wallet", "Crypto Wallet" },
 		{ "esp.camera", "Camera" },
 		{ "esp.camera_off", "Camera (off)" },
 		{ "esp.drop_off", "Drop-off" },

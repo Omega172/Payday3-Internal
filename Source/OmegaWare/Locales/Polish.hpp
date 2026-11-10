@@ -310,6 +310,7 @@ inline const OmegaLocalization::stLocaleData g_stLocalePolish{
 		{ "esp.sentry_gun", "Działko wartownicze" },
 		{ "esp.drone", "Dron" },
 		{ "esp.vip", "VIP" },
+		{ "esp.crypto_wallet", "Portfel kryptowalut" },
 		{ "esp.camera", "Kamera" },
 		{ "esp.camera_off", "Kamera (wył.)" },
 		{ "esp.drop_off", "Punkt zrzutu" },
