@@ -413,6 +413,8 @@ inline const OmegaLocalization::stLocaleData g_stLocaleChinese{
 		{ "spawner.wait_settle", "完成劫案：任务稳定中，剩余秒数：" },
 		{ "spawner.wait_paused", "完成抢劫：请先取消暂停游戏" },
 		{ "spawner.allow_clients", "允许其他OmegaWare用户生成" },
+		{ "spawner.complete_objectives", "先完成目标" },
+		{ "spawner.complete_objectives_hint", "仅限主机：在完成抢劫之前完成所有进行中的目标，并重复数秒以完成后续解锁的目标，然后存入战利品" },
 		{ "spawner.allow_clients_hint", "仅主机：接受被检测为OmegaWare用户的玩家发来的生成请求；客户端需要大厅里还有另一位被检测到的OmegaWare用户才能发送请求" },
 		{ "feature.profiler", "性能分析" },
 		{ "feature.calltrace", "调用追踪" },

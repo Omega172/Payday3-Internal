@@ -413,6 +413,8 @@ inline const OmegaLocalization::stLocaleData g_stLocaleEnglish{
 		{ "spawner.wait_settle", "finish heist: letting the mission settle, seconds left:" },
 		{ "spawner.wait_paused", "finish heist: unpause the game first" },
 		{ "spawner.allow_clients", "let other OmegaWare users spawn" },
+		{ "spawner.complete_objectives", "complete objectives first" },
+		{ "spawner.complete_objectives_hint", "host only: completes every active objective before the finish, repeating for a few seconds so objectives that unlock after each other are completed too, then banks the loot" },
 		{ "spawner.allow_clients_hint", "host only: accepts spawn requests from players detected as OmegaWare users; clients need another detected OmegaWare user in the lobby to send requests" },
 		{ "feature.profiler", "profiler" },
 		{ "feature.calltrace", "call trace" },

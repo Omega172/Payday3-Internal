@@ -52,6 +52,9 @@ namespace OmegaWare
 		constexpr std::chrono::seconds kSettleTime{ 10 };
 		constexpr std::chrono::milliseconds kOverlapRetry{ 500 };
 		constexpr int kMaxOverlapTries = 12;
+		constexpr int kMaxObjectivePasses = 12;
+		constexpr std::array<std::string_view, 6> kSkippedObjectives = { "Escape", "LOUD", "HackOwnerPhone", "UnlockDisplayCase", "ForgeVIPInvitation", "ShowVIPInvitationBouncer" };
+		constexpr std::chrono::milliseconds kObjectivePassGap{ 600 };
 		constexpr std::chrono::milliseconds kReadyPoll{ 250 };
 		constexpr std::chrono::milliseconds kFinishCheckDelay{ 2500 };
 		constexpr std::chrono::milliseconds kRemoteInterval{ 500 };
@@ -142,6 +145,7 @@ namespace OmegaWare
 				m_pCount = &Config::Add("spawner.count", 1);
 				m_pShoot = &Config::Add("spawner.shoot", false);
 				m_pAllowClients = &Config::Add("spawner.allow_clients", false);
+				m_pCompleteObjectives = &Config::Add("spawner.complete_objectives", true);
 				m_hMissionEnd = Unreal::OnFunction<SDK::Params::SBZMissionState_Multicast_MissionEnd>("Starbreeze.SBZMissionState.Multicast_MissionEnd",
 					[this](SDK::UObject*, SDK::Params::SBZMissionState_Multicast_MissionEnd& rParams, bool&) {
 						m_bMissionEndSeen = true;
@@ -270,6 +274,8 @@ namespace OmegaWare
 					}
 				}
 				OmegaGUI::Separator();
+				OmegaGUI::Checkbox("spawner.complete_objectives"_l, m_pCompleteObjectives);
+				OmegaGUI::ItemTooltip("spawner.complete_objectives_hint"_t);
 				OmegaGUI::Checkbox("spawner.allow_clients"_l, m_pAllowClients);
 				OmegaGUI::ItemTooltip("spawner.allow_clients_hint"_t);
 				OmegaGUI::EndSection();
@@ -671,6 +677,52 @@ namespace OmegaWare
 					LogWarning("spawner: the mission is not ready to be finished yet (state {})", static_cast<int>(m_eWait.load()));
 					return;
 				}
+				if (*m_pCompleteObjectives)
+				{
+					m_iObjectivePass = 0;
+					m_iObjectivesCompleted = 0;
+					m_bObjectiveSweep = true;
+					m_tpObjectiveNext = std::chrono::steady_clock::now();
+					LogInfo("spawner: completing the active objectives before finishing the heist");
+					return;
+				}
+				ContinueFinishHeist();
+			}
+
+			void SweepObjectives()
+			{
+				const auto tpNow = std::chrono::steady_clock::now();
+				std::vector<SDK::ASBZObjective*> aActive;
+				Payday3::ForEachLevelActor(Unreal::GetWorld(), [&](SDK::AActor* pActor) {
+					if (!Payday3::IsAliveActor(pActor) || !pActor->IsA(SDK::ASBZObjective::StaticClass()))
+						return;
+					auto* pObjective = static_cast<SDK::ASBZObjective*>(pActor);
+					if (pObjective->State != SDK::ESBZObjectiveState::Active && pObjective->State != SDK::ESBZObjectiveState::None)
+						return;
+					const std::string strName = pActor->GetName();
+					if (std::ranges::any_of(kSkippedObjectives, [&](std::string_view strSkipped) { return strName.find(strSkipped) != std::string::npos; }))
+						return;
+					aActive.push_back(pObjective);
+				});
+				for (SDK::ASBZObjective* pObjective : aActive)
+				{
+					LogInfo("spawner: completing objective {} (state {})", pObjective->GetName(), static_cast<int>(pObjective->State));
+					pObjective->Complete(true);
+				}
+				m_iObjectivesCompleted += static_cast<int>(aActive.size());
+				++m_iObjectivePass;
+				if ((aActive.empty() && m_iObjectivePass >= 2) || m_iObjectivePass >= kMaxObjectivePasses)
+				{
+					m_bObjectiveSweep = false;
+					LogInfo("spawner: completed {} objectives in {} passes", m_iObjectivesCompleted, m_iObjectivePass);
+					ContinueFinishHeist();
+					return;
+				}
+				m_tpObjectiveNext = tpNow + kObjectivePassGap;
+			}
+
+			void ContinueFinishHeist()
+			{
 				SDK::APlayerController* pController = Unreal::GetPlayerController();
 				SDK::UCheatManager* pCheat = Payday3::IsAlive(pController) ? EnsureCheatManager(pController) : nullptr;
 				if (!pCheat || !pCheat->IsA(SDK::USBZCheatManager::StaticClass()))
@@ -1025,6 +1077,11 @@ namespace OmegaWare
 
 			void ProcessPending()
 			{
+				if (m_bObjectiveSweep && std::chrono::steady_clock::now() >= m_tpObjectiveNext)
+				{
+					m_tpObjectiveNext = std::chrono::steady_clock::now() + std::chrono::hours(1);
+					SweepObjectives();
+				}
 				if (m_bFinishPending && std::chrono::steady_clock::now() >= m_tpFinishAt)
 				{
 					m_bFinishPending = false;
@@ -1063,6 +1120,11 @@ namespace OmegaWare
 			int* m_pCount = nullptr;
 			bool* m_pShoot = nullptr;
 			bool* m_pAllowClients = nullptr;
+			bool* m_pCompleteObjectives = nullptr;
+			bool m_bObjectiveSweep = false;
+			int m_iObjectivePass = 0;
+			int m_iObjectivesCompleted = 0;
+			std::chrono::steady_clock::time_point m_tpObjectiveNext;
 			std::mutex m_mtxCatalog;
 			std::array<std::vector<stEntry>, CategoryCount> m_aCatalog;
 			std::mutex m_mtxRemote;

@@ -381,6 +381,8 @@ inline const OmegaLocalization::stLocaleData g_stLocaleRussian{
 		{ "spawner.wait_settle", "завершить ограбление: миссия стабилизируется, секунд осталось:" },
 		{ "spawner.wait_paused", "завершить ограбление: сначала снимите игру с паузы" },
 		{ "spawner.allow_clients", "разрешить спавн другим пользователям omegaware" },
+		{ "spawner.complete_objectives", "сначала выполнить цели" },
+		{ "spawner.complete_objectives_hint", "только хост: выполняет все активные цели перед завершением и повторяет это несколько секунд, чтобы выполнились и цели, открывающиеся по цепочке, затем сохраняет добычу" },
 		{ "spawner.allow_clients_hint", "только хост: принимает запросы от игроков, определённых как пользователи omegaware; клиентам нужен другой определённый пользователь omegaware в лобби" },
 		{ "feature.profiler", "профайлер" },
 		{ "feature.calltrace", "трассировка вызовов" },

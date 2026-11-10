@@ -381,6 +381,8 @@ inline const OmegaLocalization::stLocaleData g_stLocalePolish{
 		{ "spawner.wait_settle", "zakończ skok: misja się stabilizuje, pozostało sekund:" },
 		{ "spawner.wait_paused", "zakończ napad: najpierw wznów grę" },
 		{ "spawner.allow_clients", "pozwól innym użytkownikom omegaware spawnować" },
+		{ "spawner.complete_objectives", "najpierw ukończ cele" },
+		{ "spawner.complete_objectives_hint", "tylko host: kończy wszystkie aktywne cele przed zakończeniem napadu i powtarza to przez kilka sekund, aby ukończyć też cele odblokowywane kolejno, a potem zabezpiecza łup" },
 		{ "spawner.allow_clients_hint", "tylko host: przyjmuje prośby od graczy wykrytych jako użytkownicy omegaware; klienci potrzebują innego wykrytego użytkownika omegaware w lobby" },
 		{ "feature.profiler", "profiler" },
 		{ "feature.calltrace", "ślad wywołań" },

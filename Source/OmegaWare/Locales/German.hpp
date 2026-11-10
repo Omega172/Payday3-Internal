@@ -380,6 +380,8 @@ inline const OmegaLocalization::stLocaleData g_stLocaleGerman{
 		{ "spawner.wait_settle", "heist beenden: die mission setzt sich, sekunden übrig:" },
 		{ "spawner.wait_paused", "Heist beenden: Spiel zuerst fortsetzen" },
 		{ "spawner.allow_clients", "andere omegaware-nutzer spawnen lassen" },
+		{ "spawner.complete_objectives", "zuerst ziele abschließen" },
+		{ "spawner.complete_objectives_hint", "nur host: schließt vor dem beenden alle aktiven ziele ab und wiederholt das einige sekunden lang, damit nachfolgende ziele ebenfalls erledigt werden, danach wird die beute eingelagert" },
 		{ "spawner.allow_clients_hint", "nur host: akzeptiert spawn-anfragen von spielern, die als omegaware-nutzer erkannt wurden; clients brauchen einen weiteren erkannten omegaware-nutzer in der lobby" },
 		{ "feature.profiler", "profiler" },
 		{ "feature.calltrace", "aufrufprotokoll" },
