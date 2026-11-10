@@ -740,6 +740,7 @@ namespace OmegaWare
 				case Payday3::EItemType::Rifles:
 				case Payday3::EItemType::Teddy:
 				case Payday3::EItemType::Evidence:
+				case Payday3::EItemType::Misc:
 				case Payday3::EItemType::Cocaine:
 				case Payday3::EItemType::SatellitePart:
 				case Payday3::EItemType::CigarBox:
@@ -1485,6 +1486,7 @@ namespace OmegaWare
 				case Payday3::EItemType::Rifles:
 				case Payday3::EItemType::Teddy:
 				case Payday3::EItemType::Evidence:
+				case Payday3::EItemType::Misc:
 				case Payday3::EItemType::SatellitePart:
 				case Payday3::EItemType::CigarBox:
 					return pActor->bHidden || !IsUsableInteractable(static_cast<SDK::ASBZSingleBagGenerator*>(pActor)->Interactable);
@@ -1917,7 +1919,12 @@ namespace OmegaWare
 					}
 					const Payday3::stItemInfo& rItem = Payday3::ResolveItem(pActor);
 					if (rItem.eType != Payday3::EItemType::None)
-						pSnapshot->aThings.push_back({ pActor, pActor->Class, EThingKind::Item, rItem });
+					{
+						std::string strMisc;
+						if (rItem.eType == Payday3::EItemType::Misc && pActor->Class)
+							strMisc = pActor->Class->GetName();
+						pSnapshot->aThings.push_back({ pActor, pActor->Class, EThingKind::Item, rItem, std::move(strMisc) });
+					}
 				});
 
 				std::scoped_lock lckThings(m_mtxThings);
@@ -2024,7 +2031,7 @@ namespace OmegaWare
 			OmegaGUI::color* m_pVipColor = nullptr;
 			stCategory m_stVip{ "vip", "", true };
 			OmegaGUI::color* m_pDropOffColor = nullptr;
-			std::array<stItemSetting, 34> m_aItems = { {
+			std::array<stItemSetting, 35> m_aItems = { {
 				{ Payday3::EItemType::Cash, "visuals.show_cash", "visuals.item_cash_color", OmegaGUI::color(0, 255, 255) },
 				{ Payday3::EItemType::MoneyMedium, "visuals.show_money_medium", "visuals.item_money_medium_color", OmegaGUI::color(120, 220, 120) },
 				{ Payday3::EItemType::MoneyLarge, "visuals.show_money_large", "visuals.item_money_large_color", OmegaGUI::color(0, 255, 0) },
@@ -2045,6 +2052,7 @@ namespace OmegaWare
 				{ Payday3::EItemType::Rifles, "visuals.show_rifles", "visuals.item_rifles_color", OmegaGUI::color(190, 190, 150) },
 				{ Payday3::EItemType::Teddy, "visuals.show_teddy", "visuals.item_teddy_color", OmegaGUI::color(220, 160, 110) },
 				{ Payday3::EItemType::Evidence, "visuals.show_evidence", "visuals.item_evidence_color", OmegaGUI::color(170, 200, 255) },
+				{ Payday3::EItemType::Misc, "visuals.show_misc", "visuals.item_misc_color", OmegaGUI::color(200, 200, 200) },
 				{ Payday3::EItemType::Keycard, "visuals.show_keycards", "visuals.item_keycard_color", OmegaGUI::color(0, 0, 255) },
 				{ Payday3::EItemType::QRPhone, "visuals.show_qr_phones", "visuals.item_qr_phone_color", OmegaGUI::color(255, 255, 0) },
 				{ Payday3::EItemType::USB, "visuals.show_usbs", "visuals.item_usb_color", OmegaGUI::color(255, 128, 0) },

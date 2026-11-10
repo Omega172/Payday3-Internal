@@ -250,6 +250,7 @@ inline const OmegaLocalization::stLocaleData g_stLocaleEnglish{
 		{ "visuals.show_rifles", "rifles" },
 		{ "visuals.show_teddy", "teddy" },
 		{ "visuals.show_evidence", "evidence" },
+		{ "visuals.show_misc", "misc" },
 		{ "visuals.show_cocaine", "cocaine" },
 		{ "visuals.show_satellite_parts", "satellite parts" },
 		{ "visuals.show_cigar_boxes", "cigar boxes" },

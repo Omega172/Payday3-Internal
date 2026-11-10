@@ -250,6 +250,7 @@ inline const OmegaLocalization::stLocaleData g_stLocaleChinese{
 		{ "visuals.show_rifles", "步枪" },
 		{ "visuals.show_teddy", "泰迪熊" },
 		{ "visuals.show_evidence", "证据" },
+		{ "visuals.show_misc", "杂项" },
 		{ "visuals.show_cocaine", "可卡因" },
 		{ "visuals.show_satellite_parts", "卫星部件" },
 		{ "visuals.show_cigar_boxes", "雪茄盒" },

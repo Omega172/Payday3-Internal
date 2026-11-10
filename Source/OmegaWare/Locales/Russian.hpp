@@ -239,6 +239,7 @@ inline const OmegaLocalization::stLocaleData g_stLocaleRussian{
 		{ "visuals.show_rifles", "винтовки" },
 		{ "visuals.show_teddy", "мишка" },
 		{ "visuals.show_evidence", "улики" },
+		{ "visuals.show_misc", "прочее" },
 		{ "visuals.show_cocaine", "кокаин" },
 		{ "visuals.show_satellite_parts", "части спутника" },
 		{ "visuals.show_cigar_boxes", "коробки сигар" },

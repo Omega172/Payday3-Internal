@@ -87,6 +87,7 @@ namespace OmegaWare::Payday3
 		Rifles,
 		Teddy,
 		Evidence,
+		Misc,
 		Cocaine,
 		Lab,
 		SatellitePart,

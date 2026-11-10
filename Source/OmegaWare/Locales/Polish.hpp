@@ -239,6 +239,7 @@ inline const OmegaLocalization::stLocaleData g_stLocalePolish{
 		{ "visuals.show_rifles", "karabiny" },
 		{ "visuals.show_teddy", "miś" },
 		{ "visuals.show_evidence", "dowody" },
+		{ "visuals.show_misc", "różne" },
 		{ "visuals.show_cocaine", "kokaina" },
 		{ "visuals.show_satellite_parts", "części satelity" },
 		{ "visuals.show_cigar_boxes", "pudełka cygar" },

@@ -49,7 +49,7 @@ namespace OmegaWare::Payday3
 
 		constexpr stItemInfo kNoItem{};
 
-		constexpr std::array<stItemLookup, 70> g_aItemLookup = { {
+		constexpr std::array<stItemLookup, 76> g_aItemLookup = { {
 			{ "carriedredkeycard", { "Red Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carriedbluekeycard", { "Blue Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carried", kNoItem },
@@ -82,6 +82,12 @@ namespace OmegaWare::Payday3
 			{ "baggablerifles", { "Rifles", EItemType::Rifles, EItemCategory::Loot } },
 			{ "baggableteddymoo", { "Teddy", EItemType::Teddy, EItemCategory::Loot } },
 			{ "chus_evidence_c", { "Evidence", EItemType::Evidence, EItemCategory::Loot } },
+			{ "ssdloot", { "Misc", EItemType::Misc, EItemCategory::None } },
+			{ "stashedsmallthermitebag", { "Misc", EItemType::Misc, EItemCategory::None } },
+			{ "datacenterai", { "Misc", EItemType::Misc, EItemCategory::None } },
+			{ "datacenterserver", { "Misc", EItemType::Misc, EItemCategory::None } },
+			{ "interactableserver", { "Misc", EItemType::Misc, EItemCategory::None } },
+			{ "degradabletech", { "Misc", EItemType::Misc, EItemCategory::None } },
 			{ "instantloot_cocaine", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
 			{ "interactablecocaine", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
 			{ "cocainepile", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },

@@ -238,6 +238,7 @@ inline const OmegaLocalization::stLocaleData g_stLocaleGerman{
 		{ "visuals.show_rifles", "gewehre" },
 		{ "visuals.show_teddy", "teddy" },
 		{ "visuals.show_evidence", "beweise" },
+		{ "visuals.show_misc", "sonstiges" },
 		{ "visuals.show_cocaine", "kokain" },
 		{ "visuals.show_satellite_parts", "satellitenteile" },
 		{ "visuals.show_cigar_boxes", "zigarrenkisten" },
