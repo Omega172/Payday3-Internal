@@ -733,6 +733,9 @@ namespace OmegaWare
 				case Payday3::EItemType::RareMinerals:
 				case Payday3::EItemType::RareStone:
 				case Payday3::EItemType::Safe:
+				case Payday3::EItemType::Meth:
+				case Payday3::EItemType::Paintings:
+				case Payday3::EItemType::Gold:
 				case Payday3::EItemType::Cocaine:
 				case Payday3::EItemType::SatellitePart:
 				case Payday3::EItemType::CigarBox:
@@ -1471,6 +1474,9 @@ namespace OmegaWare
 					return pActor->bHidden;
 				case Payday3::EItemType::RareMinerals:
 				case Payday3::EItemType::RareStone:
+				case Payday3::EItemType::Meth:
+				case Payday3::EItemType::Paintings:
+				case Payday3::EItemType::Gold:
 				case Payday3::EItemType::SatellitePart:
 				case Payday3::EItemType::CigarBox:
 					return pActor->bHidden || !IsUsableInteractable(static_cast<SDK::ASBZSingleBagGenerator*>(pActor)->Interactable);
@@ -2010,7 +2016,7 @@ namespace OmegaWare
 			OmegaGUI::color* m_pVipColor = nullptr;
 			stCategory m_stVip{ "vip", "", true };
 			OmegaGUI::color* m_pDropOffColor = nullptr;
-			std::array<stItemSetting, 27> m_aItems = { {
+			std::array<stItemSetting, 30> m_aItems = { {
 				{ Payday3::EItemType::Cash, "visuals.show_cash", "visuals.item_cash_color", OmegaGUI::color(0, 255, 255) },
 				{ Payday3::EItemType::MoneyMedium, "visuals.show_money_medium", "visuals.item_money_medium_color", OmegaGUI::color(120, 220, 120) },
 				{ Payday3::EItemType::MoneyLarge, "visuals.show_money_large", "visuals.item_money_large_color", OmegaGUI::color(0, 255, 0) },
@@ -2024,6 +2030,9 @@ namespace OmegaWare
 				{ Payday3::EItemType::ATM, "visuals.show_atms", "visuals.item_atm_color", OmegaGUI::color(80, 200, 255) },
 				{ Payday3::EItemType::DepositBox, "visuals.show_deposit_boxes", "visuals.item_deposit_box_color", OmegaGUI::color(255, 0, 0) },
 				{ Payday3::EItemType::Safe, "visuals.show_safes", "visuals.item_safes_color", OmegaGUI::color(230, 190, 60) },
+				{ Payday3::EItemType::Meth, "visuals.show_meth", "visuals.item_meth_color", OmegaGUI::color(120, 255, 200) },
+				{ Payday3::EItemType::Paintings, "visuals.show_paintings", "visuals.item_paintings_color", OmegaGUI::color(210, 140, 255) },
+				{ Payday3::EItemType::Gold, "visuals.show_gold", "visuals.item_gold_color", OmegaGUI::color(255, 215, 0) },
 				{ Payday3::EItemType::Keycard, "visuals.show_keycards", "visuals.item_keycard_color", OmegaGUI::color(0, 0, 255) },
 				{ Payday3::EItemType::QRPhone, "visuals.show_qr_phones", "visuals.item_qr_phone_color", OmegaGUI::color(255, 255, 0) },
 				{ Payday3::EItemType::USB, "visuals.show_usbs", "visuals.item_usb_color", OmegaGUI::color(255, 128, 0) },

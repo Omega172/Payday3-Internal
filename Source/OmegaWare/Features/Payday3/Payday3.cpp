@@ -49,7 +49,7 @@ namespace OmegaWare::Payday3
 
 		constexpr stItemInfo kNoItem{};
 
-		constexpr std::array<stItemLookup, 61> g_aItemLookup = { {
+		constexpr std::array<stItemLookup, 66> g_aItemLookup = { {
 			{ "carriedredkeycard", { "Red Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carriedbluekeycard", { "Blue Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carried", kNoItem },
@@ -73,6 +73,11 @@ namespace OmegaWare::Payday3
 			{ "interactablerareminerals", { "Rare Minerals", EItemType::RareMinerals, EItemCategory::Loot } },
 			{ "interactable_rarestone", { "Rare Stone", EItemType::RareStone, EItemCategory::Loot } },
 			{ "interactableopal", { "Rare Stone", EItemType::RareStone, EItemCategory::Loot } },
+			{ "methpure", { "Meth", EItemType::Meth, EItemCategory::Loot } },
+			{ "interactablegold", { "Gold", EItemType::Gold, EItemCategory::Loot } },
+			{ "interactablepainting", { "Paintings", EItemType::Paintings, EItemCategory::Loot } },
+			{ "uv_painting", { "Paintings", EItemType::Paintings, EItemCategory::Loot } },
+			{ "bp_painting_c", { "Paintings", EItemType::Paintings, EItemCategory::Loot } },
 			{ "instantloot_cocaine", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
 			{ "interactablecocaine", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
 			{ "cocainepile", { "Cocaine", EItemType::Cocaine, EItemCategory::Loot } },
