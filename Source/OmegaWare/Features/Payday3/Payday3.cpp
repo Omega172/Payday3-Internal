@@ -3,6 +3,7 @@
 #if OMEGAWARE_ENGINE_UNREAL
 
 #include "Engines/Engine.hpp"
+#include "Engines/Unreal/Field.hpp"
 #include "Memory/Safety.hpp"
 
 #include <algorithm>
@@ -282,10 +283,16 @@ namespace OmegaWare::Payday3
 			return false;
 		if (IsDrone(pActor))
 		{
-			SDK::USBZAIDroneAttributeSet* pAttributes = static_cast<SDK::ASBZAIDrone*>(pActor)->AttributeSet;
+			SDK::USBZAIDroneAttributeSet* pAttributes = OW_FIELD(static_cast<SDK::ASBZAIDrone*>(pActor), AttributeSet);
 			return !Memory::IsValidObjectPtr(pAttributes) || pAttributes->Health.CurrentValue > 0.f;
 		}
-		return static_cast<SDK::ASBZCharacter*>(pActor)->bIsAlive;
+		return IsCharacterAlive(static_cast<SDK::ASBZCharacter*>(pActor));
+	}
+
+	bool IsCharacterAlive(const SDK::ASBZCharacter* pCharacter)
+	{
+		static const std::size_t s_uOffset = Unreal::ResolveFieldOffset(SDK::ASBZCharacter::StaticClass(), "bIsAlive", offsetof(SDK::ASBZCharacter, ClientReplicatedMontage) + sizeof(SDK::FSBZReplicatedMontage));
+		return (Unreal::FieldAt<std::uint8_t>(pCharacter, s_uOffset) & 1) != 0;
 	}
 
 	SDK::USkeletalMeshComponent* GetPawnMesh(SDK::AActor* pActor)
@@ -300,7 +307,7 @@ namespace OmegaWare::Payday3
 	{
 		if (!Memory::IsValidObjectPtr(pActor))
 			return nullptr;
-		return IsDrone(pActor) ? static_cast<SDK::ASBZAIDrone*>(pActor)->OutlineComponent : static_cast<SDK::ASBZCharacter*>(pActor)->OutlineComponent;
+		return IsDrone(pActor) ? OW_FIELD(static_cast<SDK::ASBZAIDrone*>(pActor), OutlineComponent) : OW_FIELD(static_cast<SDK::ASBZCharacter*>(pActor), OutlineComponent);
 	}
 
 	bool IsVip(SDK::AActor* pActor)

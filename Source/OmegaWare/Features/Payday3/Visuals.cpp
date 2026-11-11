@@ -1168,7 +1168,7 @@ namespace OmegaWare
 							{
 								auto* pCamera = static_cast<SDK::ASBZSecurityCamera*>(pActor);
 								if (bCameras && pCamera->CameraState != SDK::ESBZCameraState::Destroyed)
-									mapWanted[pActor] = { kPeopleOutlineIndex, pCamera->OutlineComponent };
+									mapWanted[pActor] = { kPeopleOutlineIndex, OW_FIELD(pCamera, OutlineComponent) };
 								continue;
 							}
 							if (rThing.eKind != EThingKind::Item || !bItems)
@@ -1370,7 +1370,7 @@ namespace OmegaWare
 				auto* pIngredient = static_cast<SDK::ABP_MethIngredientBase_C*>(pActor);
 				if (pActor->bHidden)
 					return true;
-				return Memory::IsValidObjectPtr(pIngredient->StaticMesh) && !pIngredient->StaticMesh->bVisible;
+				return Memory::IsValidObjectPtr(OW_FIELD(pIngredient, StaticMesh)) && !OW_FIELD(pIngredient, StaticMesh)->bVisible;
 			}
 
 			[[nodiscard]] static bool IsLootedAtm(SDK::AActor* pActor)
@@ -1489,7 +1489,7 @@ namespace OmegaWare
 				case Payday3::EItemType::Misc:
 				case Payday3::EItemType::SatellitePart:
 				case Payday3::EItemType::CigarBox:
-					return pActor->bHidden || !IsUsableInteractable(static_cast<SDK::ASBZSingleBagGenerator*>(pActor)->Interactable);
+					return pActor->bHidden || !IsUsableInteractable(OW_FIELD(static_cast<SDK::ASBZSingleBagGenerator*>(pActor), Interactable));
 				case Payday3::EItemType::Container:
 					if (const std::uint8_t uCrate = pActor->Class ? CrateFlags(pActor->Class) : std::uint8_t{ 0 }; (uCrate & 1) != 0)
 						return pActor->bHidden || !IsUsableInteractable(static_cast<SDK::ABP_WoodenCrate_C*>(pActor)->SBZInteractable);
@@ -1498,7 +1498,7 @@ namespace OmegaWare
 					if (pActor->IsA(SDK::ASBZInstantLoot::StaticClass()))
 						return IsLootedInstant(pActor);
 					if (pActor->IsA(SDK::ASBZSingleBagGenerator::StaticClass()))
-						return pActor->bHidden || !IsUsableInteractable(static_cast<SDK::ASBZSingleBagGenerator*>(pActor)->Interactable);
+						return pActor->bHidden || !IsUsableInteractable(OW_FIELD(static_cast<SDK::ASBZSingleBagGenerator*>(pActor), Interactable));
 					if (pActor->IsA(SDK::ASBZMultiBagGenerator::StaticClass()))
 						return pActor->bHidden || !IsUsableInteractable(static_cast<SDK::ASBZMultiBagGenerator*>(pActor)->InteractableComponent);
 					return false;
@@ -1507,10 +1507,10 @@ namespace OmegaWare
 				case Payday3::EItemType::Jewelry:
 					return IsLootedInstant(pActor);
 				case Payday3::EItemType::DepositBox:
-					return pActor->IsA(SDK::ASBZMiniGameActor::StaticClass()) && static_cast<SDK::ASBZMiniGameActor*>(pActor)->bIsUnlocked;
+					return pActor->IsA(SDK::ASBZMiniGameActor::StaticClass()) && OW_FIELD(static_cast<SDK::ASBZMiniGameActor*>(pActor), bIsUnlocked);
 				case Payday3::EItemType::Safe:
 					if (pActor->IsA(SDK::ASBZMiniGameActor::StaticClass()))
-						return static_cast<SDK::ASBZMiniGameActor*>(pActor)->bIsUnlocked;
+						return OW_FIELD(static_cast<SDK::ASBZMiniGameActor*>(pActor), bIsUnlocked);
 					if (pActor->IsA(SDK::ABP_Safe_C::StaticClass()))
 						return static_cast<SDK::ABP_Safe_C*>(pActor)->Open;
 					return false;

@@ -371,7 +371,7 @@ namespace OmegaWare
 			SDK::UWorld* pWorld = Unreal::GetWorld();
 			if (!pWorld || !Payday3::IsAlive(pWorld->GameState) || !pWorld->GameState->IsA(SDK::APD3HeistGameState::StaticClass()))
 				return true;
-			return static_cast<SDK::APD3HeistGameState*>(pWorld->GameState)->CurrentHeistState >= SDK::EPD3HeistState::Alarm;
+			return OW_FIELD(static_cast<SDK::APD3HeistGameState*>(pWorld->GameState), CurrentHeistState) >= SDK::EPD3HeistState::Alarm;
 		}
 
 		[[nodiscard]] bool IsCasingNow()
@@ -386,7 +386,7 @@ namespace OmegaWare
 			SDK::APlayerController* pController = Unreal::GetPlayerController();
 			if (!fnTryActivate || !pController || !Payday3::IsAlive(pController->PlayerState) || !pController->PlayerState->IsA(SDK::ASBZPlayerState::StaticClass()))
 				return;
-			SDK::USBZPlayerAbilitySystemComponent* pAbilities = static_cast<SDK::ASBZPlayerState*>(pController->PlayerState)->AbilitySystem;
+			SDK::USBZPlayerAbilitySystemComponent* pAbilities = OW_FIELD(static_cast<SDK::ASBZPlayerState*>(pController->PlayerState), AbilitySystem);
 			if (!Payday3::IsAlive(pAbilities))
 				return;
 			for (SDK::FGameplayAbilitySpec& rSpec : pAbilities->ActivatableAbilities.Items)

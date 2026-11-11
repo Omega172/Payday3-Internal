@@ -806,7 +806,7 @@ namespace OmegaWare
 			static void GrabRemainingInstantLoot()
 			{
 				SDK::ASBZPlayerCharacter* pCharacter = Payday3::GetLocalCharacter();
-				SDK::USBZPlayerInteractorComponent* pInteractor = pCharacter ? pCharacter->Interactor : nullptr;
+				SDK::USBZPlayerInteractorComponent* pInteractor = pCharacter ? OW_FIELD(pCharacter, Interactor) : nullptr;
 				if (!Payday3::IsAlive(pInteractor))
 				{
 					LogWarning("spawner: no interactor was found, loose loot is not grabbed by hand");
@@ -817,8 +817,8 @@ namespace OmegaWare
 					if (!Payday3::IsAliveActor(pActor) || !pActor->IsA(SDK::ASBZInstantLoot::StaticClass()) || pActor->bHidden)
 						return;
 					auto* pLoot = static_cast<SDK::ASBZInstantLoot*>(pActor);
-					if (!pLoot->bIsLooted && Payday3::IsAlive(pLoot->Interactable) && !pLoot->Interactable->bIsHidden)
-						aLoot.push_back(pLoot->Interactable);
+					if (!pLoot->bIsLooted && Payday3::IsAlive(OW_FIELD(pLoot, Interactable)) && !OW_FIELD(pLoot, Interactable)->bIsHidden)
+						aLoot.push_back(OW_FIELD(pLoot, Interactable));
 				});
 				for (SDK::USBZInteractableComponent* pInteractable : aLoot)
 				{

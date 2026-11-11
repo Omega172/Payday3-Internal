@@ -93,7 +93,7 @@ namespace OmegaWare
 		{
 			if (!pCharacter)
 				return nullptr;
-			SDK::USBZPlayerAttributeSet* pAttributes = pCharacter->PlayerAttributeSet;
+			SDK::USBZPlayerAttributeSet* pAttributes = OW_FIELD(pCharacter, PlayerAttributeSet);
 			return Memory::IsValidObjectPtr(pAttributes) ? pAttributes : nullptr;
 		}
 
@@ -201,14 +201,14 @@ namespace OmegaWare
 				if (*m_pInfStamina && pAttributes)
 					pAttributes->Stamina.CurrentValue = 100.f;
 
-				ApplyMontageRate(m_stMelee, pCharacter ? pCharacter->CurrentMeleeMontage : nullptr, *m_pInstantMelee);
+				ApplyMontageRate(m_stMelee, pCharacter ? OW_FIELD(pCharacter, CurrentMeleeMontage) : nullptr, *m_pInstantMelee);
 
 				if (*m_pNoScreenshake)
 					if (SDK::APlayerCameraManager* pCamera = Unreal::GetCameraManager())
 						pCamera->StopAllCameraShakes(true);
 
 				if (*m_pNoFallDamage && pCharacter)
-					pCharacter->FallingStartHeight = pCharacter->K2_GetActorLocation().Z;
+					OW_FIELD(pCharacter, FallingStartHeight) = pCharacter->K2_GetActorLocation().Z;
 
 				if (*m_pNoDetection && pCharacter)
 					ClearDetection(pCharacter);
@@ -235,7 +235,7 @@ namespace OmegaWare
 				else if (pCharacter && *m_pReach && m_pReachKey->uKey != 0 && m_pReachKey->bActive && Due(m_tpNextReach, kActorScanInterval))
 					GrabThroughWalls(pCharacter);
 
-				ApplyMontageRate(m_stReload, pCharacter ? pCharacter->LastLocalReloadMontage : nullptr, *m_pInstantReload);
+				ApplyMontageRate(m_stReload, pCharacter ? OW_FIELD(pCharacter, LastLocalReloadMontage) : nullptr, *m_pInstantReload);
 
 				if (bInfAmmo && pAttributes)
 					for (SDK::FGameplayAttributeData* pAmmo : AmmoAttributes(pAttributes))
@@ -272,8 +272,8 @@ namespace OmegaWare
 				}
 				if (m_bPrevInfAmmo)
 					RestoreAmmo(pCharacter);
-				ApplyMontageRate(m_stMelee, pCharacter ? pCharacter->CurrentMeleeMontage : nullptr, false);
-				ApplyMontageRate(m_stReload, pCharacter ? pCharacter->LastLocalReloadMontage : nullptr, false);
+				ApplyMontageRate(m_stMelee, pCharacter ? OW_FIELD(pCharacter, CurrentMeleeMontage) : nullptr, false);
+				ApplyMontageRate(m_stReload, pCharacter ? OW_FIELD(pCharacter, LastLocalReloadMontage) : nullptr, false);
 				if (pCharacter && m_bWeaponsBackedUp)
 				{
 					const std::vector<SDK::USBZRangedWeaponData*> aWeapons = CurrentWeapons(pCharacter);
@@ -442,7 +442,7 @@ namespace OmegaWare
 					OmegaGUI::TableNextColumn();
 					OmegaGUI::TextUnformatted(pCharacter && pLocalPawn ? std::format("{:.0f}m", (pCharacter->K2_GetActorLocation() - vecOrigin).Magnitude() / 100.f) : "-");
 					OmegaGUI::TableNextColumn();
-					OmegaGUI::TextUnformatted(pCharacter && pCharacter->bIsAlive ? "player.status_alive"_t : "player.status_down"_t);
+					OmegaGUI::TextUnformatted(pCharacter && Payday3::IsCharacterAlive(pCharacter) ? "player.status_alive"_t : "player.status_down"_t);
 					OmegaGUI::TableNextColumn();
 					if (pCharacter && pPawn != pLocalPawn)
 					{
@@ -651,7 +651,7 @@ namespace OmegaWare
 					{
 						pTeammate->bCanBeDamaged = false;
 						m_setProtected.insert(pTeammate);
-						if (pAttributes && pTeammate->bIsAlive)
+						if (pAttributes && Payday3::IsCharacterAlive(pTeammate))
 							pAttributes->Health.CurrentValue = pAttributes->HealthMax.CurrentValue;
 					}
 					if (*m_pTeamInfAmmo && pAttributes)
@@ -659,14 +659,14 @@ namespace OmegaWare
 							pAmmo->CurrentValue = 999.f;
 					if (*m_pTeamInfStamina && pAttributes)
 						pAttributes->Stamina.CurrentValue = 100.f;
-					if (*m_pTeamInfArmor && pAttributes && pTeammate->bIsAlive)
+					if (*m_pTeamInfArmor && pAttributes && Payday3::IsCharacterAlive(pTeammate))
 						pAttributes->Armor.CurrentValue = pAttributes->ArmorMax.CurrentValue;
 					if (*m_pTeamNoDetection)
 						ClearDetection(pTeammate);
 					if (*m_pTeamInstantInteraction)
 						CompleteTeammateInteraction(pTeammate);
 					SDK::APlayerState* pTeammateState = pTeammate->PlayerState;
-					if (pAttributes && pTeammate->bIsAlive && !aHeal.empty() && (std::ranges::find(aHeal, nullptr) != aHeal.end() || std::ranges::find(aHeal, pTeammateState) != aHeal.end()))
+					if (pAttributes && Payday3::IsCharacterAlive(pTeammate) && !aHeal.empty() && (std::ranges::find(aHeal, nullptr) != aHeal.end() || std::ranges::find(aHeal, pTeammateState) != aHeal.end()))
 					{
 						pAttributes->Health.CurrentValue = pAttributes->HealthMax.CurrentValue;
 						pAttributes->Armor.CurrentValue = pAttributes->ArmorMax.CurrentValue;
@@ -705,7 +705,7 @@ namespace OmegaWare
 				SDK::ASBZPlayerState* pState = OW_FIELD(pCharacter, SBZPlayerState);
 				if (!Memory::IsValidObjectPtr(pState))
 					return;
-				const SDK::EPD3MiniGameState eState = pState->MiniGameState;
+				const SDK::EPD3MiniGameState eState = OW_FIELD(pState, MiniGameState);
 				if (eState == SDK::EPD3MiniGameState::Initiated || eState == SDK::EPD3MiniGameState::InProgress)
 					pState->Server_SetMiniGameState(SDK::EPD3MiniGameState::Success);
 			}
@@ -736,12 +736,12 @@ namespace OmegaWare
 			void GrabThroughWalls(SDK::ASBZPlayerCharacter* pCharacter)
 			{
 				const Profiler::clScope clProfile("player.auto loot");
-				SDK::USBZPlayerInteractorComponent* pInteractor = pCharacter->Interactor;
+				SDK::USBZPlayerInteractorComponent* pInteractor = OW_FIELD(pCharacter, Interactor);
 				SDK::UWorld* pWorld = Unreal::GetWorld();
 				if (!Memory::IsValidObjectPtr(pInteractor) || !pWorld)
 					return;
-				SDK::ASBZPlayerState* pLocalState = pCharacter->SBZPlayerState;
-				if (Memory::IsValidObjectPtr(pLocalState) && (pLocalState->MiniGameState == SDK::EPD3MiniGameState::Initiated || pLocalState->MiniGameState == SDK::EPD3MiniGameState::InProgress))
+				SDK::ASBZPlayerState* pLocalState = OW_FIELD(pCharacter, SBZPlayerState);
+				if (Memory::IsValidObjectPtr(pLocalState) && (OW_FIELD(pLocalState, MiniGameState) == SDK::EPD3MiniGameState::Initiated || OW_FIELD(pLocalState, MiniGameState) == SDK::EPD3MiniGameState::InProgress))
 					return;
 				if (pWorld != m_pReachWorld || m_setGrabbed.size() > 512)
 				{
@@ -766,18 +766,18 @@ namespace OmegaWare
 					if (bMiniGame)
 					{
 						const auto* pMiniGame = static_cast<SDK::ASBZMiniGameActor*>(pActor);
-						if (pMiniGame->bIsUnlocked || pMiniGame->bIsMiniGameIgnored || !Payday3::IsAlive(pMiniGame->MiniGameComponent))
+						if (OW_FIELD(pMiniGame, bIsUnlocked) || OW_FIELD(pMiniGame, bIsMiniGameIgnored) || !Payday3::IsAlive(OW_FIELD(pMiniGame, MiniGameComponent)))
 							return;
 					}
 					else if (bDyePack)
 					{
 						const auto* pConverter = static_cast<SDK::ASBZTimedBagConverter*>(pActor);
-						if (!Payday3::IsAlive(pConverter->InteractableComponent) || !Payday3::IsAlive(pConverter->PropDamageComponent))
+						if (!Payday3::IsAlive(pConverter->InteractableComponent) || !Payday3::IsAlive(OW_FIELD(pConverter, PropDamageComponent)))
 							return;
 					}
-					else if (bOpens && pActor->IsA(SDK::ASBZInteractableGate::StaticClass()) && !Payday3::IsAlive(static_cast<SDK::ASBZInteractableGate*>(pActor)->MiniGameComponent))
+					else if (bOpens && pActor->IsA(SDK::ASBZInteractableGate::StaticClass()) && !Payday3::IsAlive(OW_FIELD(static_cast<SDK::ASBZInteractableGate*>(pActor), MiniGameComponent)))
 						return;
-					auto* pInteractable = bMiniGame ? static_cast<SDK::USBZBaseInteractableComponent*>(static_cast<SDK::ASBZMiniGameActor*>(pActor)->Interactable) : (bDyePack ? static_cast<SDK::USBZBaseInteractableComponent*>(static_cast<SDK::ASBZTimedBagConverter*>(pActor)->InteractableComponent) : static_cast<SDK::USBZBaseInteractableComponent*>(pActor->GetComponentByClass(SDK::USBZBaseInteractableComponent::StaticClass())));
+					auto* pInteractable = bMiniGame ? static_cast<SDK::USBZBaseInteractableComponent*>(OW_FIELD(static_cast<SDK::ASBZMiniGameActor*>(pActor), Interactable)) : (bDyePack ? static_cast<SDK::USBZBaseInteractableComponent*>(static_cast<SDK::ASBZTimedBagConverter*>(pActor)->InteractableComponent) : static_cast<SDK::USBZBaseInteractableComponent*>(pActor->GetComponentByClass(SDK::USBZBaseInteractableComponent::StaticClass())));
 					if (!Payday3::IsAlive(pInteractable) || pInteractable->bIsHidden || m_setGrabbed.contains(pInteractable) || pInteractable->GetOwner() != pActor)
 						return;
 					if (pInteractable->IsA(SDK::USBZInteractableComponent::StaticClass()) && !static_cast<SDK::USBZInteractableComponent*>(pInteractable)->bInteractionEnabled)
@@ -815,11 +815,11 @@ namespace OmegaWare
 			{
 				using Clock_t = std::chrono::steady_clock;
 				SDK::USBZBaseInteractableComponent* pPending = std::exchange(m_pReachPending, nullptr);
-				SDK::USBZPlayerInteractorComponent* pInteractor = pCharacter->Interactor;
-				SDK::ASBZPlayerState* pState = pCharacter->SBZPlayerState;
+				SDK::USBZPlayerInteractorComponent* pInteractor = OW_FIELD(pCharacter, Interactor);
+				SDK::ASBZPlayerState* pState = OW_FIELD(pCharacter, SBZPlayerState);
 				if (!Payday3::IsAlive(pPending) || !Payday3::IsAlive(pInteractor) || !Payday3::IsAlive(pState))
 					return;
-				const SDK::EPD3MiniGameState eState = pState->MiniGameState;
+				const SDK::EPD3MiniGameState eState = OW_FIELD(pState, MiniGameState);
 				if (eState == SDK::EPD3MiniGameState::Initiated || eState == SDK::EPD3MiniGameState::InProgress)
 				{
 					pState->Server_SetMiniGameState(SDK::EPD3MiniGameState::Success);
@@ -897,7 +897,7 @@ namespace OmegaWare
 
 			void ApplyName(SDK::ASBZPlayerCharacter* pCharacter)
 			{
-				SDK::ASBZPlayerState* pState = pCharacter->SBZPlayerState;
+				SDK::ASBZPlayerState* pState = OW_FIELD(pCharacter, SBZPlayerState);
 				if (!Memory::IsValidObjectPtr(pState))
 					return;
 				if (!m_bOriginalNameSaved)
@@ -935,9 +935,9 @@ namespace OmegaWare
 
 			static void ClearDetection(SDK::ASBZPlayerCharacter* pCharacter)
 			{
-				for (int iDetector = 0; iDetector < pCharacter->VisualDetectors.Num(); ++iDetector)
+				for (int iDetector = 0; iDetector < OW_FIELD(pCharacter, VisualDetectors).Num(); ++iDetector)
 				{
-					auto* pDetector = pCharacter->VisualDetectors[iDetector];
+					auto* pDetector = OW_FIELD(pCharacter, VisualDetectors)[iDetector];
 					if (!Payday3::IsAlive(pDetector))
 						continue;
 					for (int iEnemy = pDetector->EnemyDetectionValue.Num() - 1; iEnemy >= 0; --iEnemy)
@@ -1013,7 +1013,7 @@ namespace OmegaWare
 							return false;
 						if (!pWeaponData->IsA(SDK::USBZRangedWeaponData::StaticClass()))
 							continue;
-						if (!pWeaponData->SpreadData || !pWeaponData->RecoilData || !pWeaponData->FireData)
+						if (!pWeaponData->SpreadData || !pWeaponData->RecoilData || !OW_FIELD(pWeaponData, FireData))
 							return false;
 
 						const std::string strKey = Payday3::SafeSubstr(pWeaponData->Name.ToString(), 14);
@@ -1028,14 +1028,14 @@ namespace OmegaWare
 							.flFireSpreadMinCap = pWeaponData->SpreadData->FireSpreadMinCap,
 							.flFireSpreadCap = pWeaponData->SpreadData->FireSpreadCap,
 							.flFireSpreadIncrease = pWeaponData->SpreadData->FireSpreadIncrease,
-							.flRoundsPerMinute = pWeaponData->FireData->RoundsPerMinute,
-							.eFireMode = pWeaponData->FireData->FireMode,
-							.uProjectilesPerFiredRound = pWeaponData->FireData->ProjectilesPerFiredRound,
-							.flArmorPenetration = pWeaponData->FireData->ArmorPenetration,
-							.flArmorPenetrationProjectile = pWeaponData->FireData->ArmorPenetrationProjectile,
-							.flArmorPenetrationCollision = pWeaponData->FireData->ArmorPenetrationCollision,
-							.uMaximumPenetrationCount = pWeaponData->FireData->MaximumPenetrationCount,
-							.bCanPenetrateBlocked = pWeaponData->FireData->bCanPenetrateBlocked,
+							.flRoundsPerMinute = OW_FIELD(pWeaponData, FireData)->RoundsPerMinute,
+							.eFireMode = OW_FIELD(pWeaponData, FireData)->FireMode,
+							.uProjectilesPerFiredRound = OW_FIELD(pWeaponData, FireData)->ProjectilesPerFiredRound,
+							.flArmorPenetration = OW_FIELD(pWeaponData, FireData)->ArmorPenetration,
+							.flArmorPenetrationProjectile = OW_FIELD(pWeaponData, FireData)->ArmorPenetrationProjectile,
+							.flArmorPenetrationCollision = OW_FIELD(pWeaponData, FireData)->ArmorPenetrationCollision,
+							.uMaximumPenetrationCount = OW_FIELD(pWeaponData, FireData)->MaximumPenetrationCount,
+							.bCanPenetrateBlocked = OW_FIELD(pWeaponData, FireData)->bCanPenetrateBlocked,
 						});
 					}
 				}
@@ -1065,12 +1065,12 @@ namespace OmegaWare
 						aWeapons.push_back(pRanged);
 				};
 
-				if (Memory::IsValidObjectPtr(pCharacter->FPCameraAttachment))
-					fnAdd(pCharacter->FPCameraAttachment->EquippedWeaponData);
+				if (Memory::IsValidObjectPtr(OW_FIELD(pCharacter, FPCameraAttachment)))
+					fnAdd(OW_FIELD(pCharacter, FPCameraAttachment)->EquippedWeaponData);
 
-				for (int iEquippable = 0; iEquippable < pCharacter->EquippableArray.Num(); ++iEquippable)
+				for (int iEquippable = 0; iEquippable < OW_FIELD(pCharacter, EquippableArray).Num(); ++iEquippable)
 				{
-					auto* pEquippable = pCharacter->EquippableArray[iEquippable];
+					auto* pEquippable = OW_FIELD(pCharacter, EquippableArray)[iEquippable];
 					if (Memory::IsValidObjectPtr(pEquippable))
 						fnAdd(pEquippable->EquippableConfig.EquippableData);
 				}
@@ -1129,7 +1129,7 @@ namespace OmegaWare
 			{
 				for (SDK::USBZRangedWeaponData* pWeaponData : aWeapons)
 				{
-					auto* pFire = pWeaponData->FireData;
+					auto* pFire = OW_FIELD(pWeaponData, FireData);
 					const stWeaponBackup* pBackup = FindWeapon(pWeaponData);
 					if (!Memory::IsValidObjectPtr(pFire) || !pBackup)
 						continue;

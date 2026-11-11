@@ -152,6 +152,7 @@ namespace OmegaWare::Payday3
 	[[nodiscard]] bool IsVip(SDK::AActor* pActor);
 	[[nodiscard]] std::string_view VipLabel(SDK::AActor* pActor);
 	[[nodiscard]] bool IsPawnAlive(SDK::AActor* pActor);
+	[[nodiscard]] bool IsCharacterAlive(const SDK::ASBZCharacter* pCharacter);
 	[[nodiscard]] SDK::USkeletalMeshComponent* GetPawnMesh(SDK::AActor* pActor);
 	[[nodiscard]] SDK::USBZOutlineComponent* GetPawnOutline(SDK::AActor* pActor);
 	[[nodiscard]] const stItemInfo& ResolveItem(SDK::AActor* pActor);
