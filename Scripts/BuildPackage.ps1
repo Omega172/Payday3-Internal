@@ -12,9 +12,12 @@ try {
         $Folder = if ($Mode -eq "debug") { "Debug" } else { "Release" }
         $Build = Join-Path $Repo "Build\$Folder\x64"
         Write-Host "== $Mode"
-        xmake f -p windows -m $Mode -a x64 --proxy=version -y
+        $ConfigureArguments = @("f", "-p", "windows", "-m", $Mode, "-a", "x64", "--proxy=version", "-y")
+        if ($env:OMEGAWARE_DIAGNOSE_BUILD) { $ConfigureArguments += "--policies=diagnosis.check_build_deps:y" }
+        xmake @ConfigureArguments
         if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-        xmake build
+        & (Join-Path $PSScriptRoot "RestoreObjectTimes.ps1") -Action Packages
+        xmake build -v
         if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
         & (Join-Path $Build "OmegaWareTests\OmegaWareTests.exe")
         if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

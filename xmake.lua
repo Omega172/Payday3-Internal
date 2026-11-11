@@ -23,7 +23,7 @@ set_toolchains("clang-cl")
 set_toolset("ld", LlvmTool("lld-link"))
 set_toolset("sh", LlvmTool("lld-link"))
 set_toolset("ar", LlvmTool("llvm-ar"))
-add_cxxflags("-Wno-c++11-narrowing", "-Wno-microsoft-template-shadow", "-Wno-pragma-once-outside-header", "-Wno-class-conversion", "-Wno-invalid-offsetof", "-Wno-implicitly-unsigned-literal", "-Wno-undefined-bool-conversion", {tools = "clang_cl"})
+add_cxxflags("-Wno-c++11-narrowing", "-Wno-microsoft-template-shadow", "-Wno-pragma-once-outside-header", "-Wno-pragma-system-header-outside-header","-Wno-class-conversion", "-Wno-invalid-offsetof", "-Wno-implicitly-unsigned-literal", "-Wno-undefined-bool-conversion", {tools = "clang_cl"})
 
 if is_mode("debug") then
     set_symbols("debug")
@@ -145,7 +145,7 @@ else
         add_deps("OmegaGUI", "OmegaRenderHook", "OmegaLocalization")
         add_packages("vcpkg::nlohmann-json")
         add_includedirs("Source/OmegaWare", "Source/OmegaWarePlugin")
-        set_pcxxheader("Source/OmegaWare/Pch.hpp")
+        set_pcxxheader("Source/OmegaWare/Pch/Pch.hpp")
         add_defines("OMEGAWARE_PLUGIN_HOST=1")
         add_defines("OMEGAWARE_GAME_DEPTH=" .. (has_config("game_depth") and "1" or "0"))
         add_files("Source/OmegaWare/**.cpp|Engines/Unity/**.cpp|Engines/Unreal/**.cpp")
@@ -291,6 +291,7 @@ else
     end
 
     target("ExamplePlugin")
+        set_default(false)
         set_kind("shared")
         set_languages("c++latest")
         set_encodings("utf-8")
