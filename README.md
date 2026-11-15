@@ -4,8 +4,6 @@
 # Payday 3 Internal
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Omega172/Payday3-Internal/total)
 
-Download the latest DLL from [here](https://github.com/Omega172/Payday3-Internal/releases/latest)
-
 For injection I recommend downloading Xenos Injector 2.3.2 from [here](https://www.unknowncheats.me/forum/downloads.php?do=file&id=23686)
 or from the official Xenos Github [here](https://github.com/DarthTon/Xenos)
 
